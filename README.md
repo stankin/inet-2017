@@ -14,6 +14,6 @@ https://htmlacademy.ru/blog/99-github-as-hosting
 
 https://qiao.github.io/PathFinding.js/visual/
 
-Материалы лаборраторных работ бакалавриата:
+Материалы лабораторных работ бакалавриата:
 
 https://github.com/stankin/oop/wiki
