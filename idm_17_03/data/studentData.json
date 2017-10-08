@@ -1,0 +1,224 @@
+{
+  "data": [
+    {
+      "name": "Константин",
+      "surname": "Атмаджиди",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Денис",
+      "surname": "Байрак",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Михаил",
+      "surname": "Бережков",
+      "subgroup": "Б",
+      "role": [
+        "СП",
+        "ПП"
+      ],
+      "githubURL": "https://github.com/YourLeg",
+      "team": "ПМ-1"
+    },
+    {
+      "name": "Александр",
+      "surname": "Винников",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": "ПМ-1"
+    },
+    {
+      "name": "Ксения",
+      "surname": "Володина",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Дмитрий",
+      "surname": "Гладких",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Надежда",
+      "surname": "Дмитриева",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Роман",
+      "surname": "Досан",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": "ПМ-2"
+    },
+    {
+      "name": "Петр",
+      "surname": "Игнатов",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Анастасия",
+      "surname": "Куницина",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": "ПМ-1"
+    },
+    {
+      "name": "Никита",
+      "surname": "Лапшинов",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Вероника",
+      "surname": "Мартынова",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": "ПМ-1"
+    },
+    {
+      "name": "Алена",
+      "surname": "Матвеева",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Никита",
+      "surname": "Рассахан",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": "ПМ-2"
+    },
+    {
+      "name": "Виктор",
+      "surname": "Романов",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": "ПМ-2"
+    },
+    {
+      "name": "Евгения",
+      "surname": "Рыбникова",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Максим",
+      "surname": "Федосов",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": "ПМ-2"
+    },
+    {
+      "name": "Людмила",
+      "surname": "Чернова",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Никита",
+      "surname": "Чикунов",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    },
+    {
+      "name": "Барнохон",
+      "surname": "Юлбарсова",
+      "subgroup": "",
+      "role": [
+        "",
+        ""
+      ],
+      "githubURL": "",
+      "team": ""
+    }
+  ]
+}
