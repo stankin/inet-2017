@@ -12,7 +12,7 @@ function draw() {
 
 function tableCreate(jsn) {
   students = jsn.data;
-  var body = document.body, 
+  var body = document.body,
     tbl  = document.createElement('table');
   tbl.style.width  = '100px';
   tbl.style.border = '1px solid black';
@@ -31,4 +31,9 @@ function tableCreate(jsn) {
     }
   }
   body.appendChild(tbl);
+}
+
+window.onload = function function_name() {
+    setup();
+    console.log("функцию сборки сделал");
 }
