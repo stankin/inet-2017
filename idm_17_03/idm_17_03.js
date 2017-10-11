@@ -15,13 +15,10 @@ function tableCreate(jsn) {
   
   students = jsn.data;
   var body = document.body, tbl  = document.createElement('table');
-  tbl.style.width  = '100px';
-  tbl.style.border = '1px solid black';
   var tr = tbl.insertRow();
   for (var j = 0; j < rcolumes.length; ++j) {
     td = tr.insertCell();
     td.appendChild(document.createTextNode( rcolumes[j] ));
-    td.style.border = '1px solid black';
   }
   for (var i = 0; i < students.length; ++i) {
     tr = tbl.insertRow();
@@ -29,14 +26,12 @@ function tableCreate(jsn) {
       if (columes[j]!='role') {
         td = tr.insertCell();
         td.appendChild(document.createTextNode( students[i][columes[j]] ));
-        td.style.border = '1px solid black';
       } else {
         var st = students[i].role;
         //console.log(st);
         for (var k=0; k<st.length; ++k) {
           td = tr.insertCell();
           td.appendChild(document.createTextNode( st.charAt(k) ));
-          td.style.border = '1px solid black';
         }
       }
     }
