@@ -4,21 +4,15 @@
       "name": "Константин",
       "surname": "Атмаджиди",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "V   V   ",
       "githubURL": "",
-      "team": ""
+      "team": "ПМ-1"
     },
     {
       "name": "Денис",
       "surname": "Байрак",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "        ",
       "githubURL": "",
       "team": ""
     },
@@ -26,10 +20,7 @@
       "name": "Михаил",
       "surname": "Бережков",
       "subgroup": "Б",
-      "role": [
-        "СП",
-        "ПП"
-      ],
+      "role": " V     V",
       "githubURL": "https://github.com/YourLeg",
       "team": "ПМ-1"
     },
@@ -37,10 +28,7 @@
       "name": "Александр",
       "surname": "Винников",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "V    V  ",
       "githubURL": "",
       "team": "ПМ-1"
     },
@@ -48,10 +36,7 @@
       "name": "Ксения",
       "surname": "Володина",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "V     V ",
       "githubURL": "",
       "team": ""
     },
@@ -59,10 +44,7 @@
       "name": "Дмитрий",
       "surname": "Гладких",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "    V V ",
       "githubURL": "",
       "team": ""
     },
@@ -70,10 +52,7 @@
       "name": "Надежда",
       "surname": "Дмитриева",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "   VV   ",
       "githubURL": "",
       "team": ""
     },
@@ -81,10 +60,7 @@
       "name": "Роман",
       "surname": "Досан",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "        ",
       "githubURL": "",
       "team": "ПМ-2"
     },
@@ -92,10 +68,7 @@
       "name": "Петр",
       "surname": "Игнатов",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "V    V  ",
       "githubURL": "",
       "team": ""
     },
@@ -103,10 +76,7 @@
       "name": "Анастасия",
       "surname": "Куницина",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "  VV    ",
       "githubURL": "",
       "team": "ПМ-1"
     },
@@ -114,10 +84,7 @@
       "name": "Никита",
       "surname": "Лапшинов",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "V    V  ",
       "githubURL": "",
       "team": ""
     },
@@ -125,10 +92,7 @@
       "name": "Вероника",
       "surname": "Мартынова",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "    V V ",
       "githubURL": "",
       "team": "ПМ-1"
     },
@@ -136,10 +100,7 @@
       "name": "Алена",
       "surname": "Матвеева",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "  V   V ",
       "githubURL": "",
       "team": ""
     },
@@ -147,10 +108,7 @@
       "name": "Никита",
       "surname": "Рассахан",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "        ",
       "githubURL": "",
       "team": "ПМ-2"
     },
@@ -158,10 +116,7 @@
       "name": "Виктор",
       "surname": "Романов",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": " V   V  ",
       "githubURL": "",
       "team": "ПМ-2"
     },
@@ -169,10 +124,7 @@
       "name": "Евгения",
       "surname": "Рыбникова",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "  V V   ",
       "githubURL": "",
       "team": ""
     },
@@ -180,10 +132,7 @@
       "name": "Максим",
       "surname": "Федосов",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "        ",
       "githubURL": "",
       "team": "ПМ-2"
     },
@@ -191,10 +140,7 @@
       "name": "Людмила",
       "surname": "Чернова",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "  VV    ",
       "githubURL": "",
       "team": ""
     },
@@ -202,10 +148,7 @@
       "name": "Никита",
       "surname": "Чикунов",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": " V     V",
       "githubURL": "",
       "team": ""
     },
@@ -213,10 +156,7 @@
       "name": "Барнохон",
       "surname": "Юлбарсова",
       "subgroup": "",
-      "role": [
-        "",
-        ""
-      ],
+      "role": "        ",
       "githubURL": "",
       "team": ""
     }
