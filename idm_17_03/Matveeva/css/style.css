@@ -1,0 +1,10 @@
+.style1{
+	color:maroon;
+}
+
+div .style1 {
+	font-size: 25px;
+}
+
+body {font-family:Arial,Sans-Serif;
+ background-color: #FAF0E6;}
