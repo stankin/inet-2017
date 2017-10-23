@@ -1,0 +1,36 @@
+﻿table {
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+td {
+border: 1px solid black;
+padding: 4px 2px;
+}
+
+span {
+font-weight: bold;
+}
+
+tr:first-child {
+font-weight: bold;
+}
+
+img {
+width: 400px;
+height: 300px;
+display: block;
+margin: 0 auto;
+}
+
+body {
+background: rgb(103,125,15);
+}
+
+tr {
+background: grey;
+}
+
+.centr {
+max-width: 938px;
+}
