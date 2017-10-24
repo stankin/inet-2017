@@ -9,7 +9,7 @@ req.onreadystatechange = function(){
 	else{
 		return;
 	}
-	var ulist = udata.split("/n");
+	var ulist = udata.split("\n");
 	console.log("ulist length: "+ulist.length);
 	for (var i = 0; i < ulist.length; i++){
 		var sudata = ulist[i].split("!!!");
