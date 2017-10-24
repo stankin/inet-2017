@@ -33,7 +33,7 @@ req.onreadystatechange = function(){
 		stra += "<td>"+sudata[0]+"</td>";
 		stra += "<td>"+sudata[1]+"</td>";
 		stra += "<td>"+sudata[2]+"</td>";
-		stra += "<td> <a href=idm-17-01/"+sudata[3]+">Page link</a>"+"</td>";
+		stra += "<td> <a href='https://stankin.github.io/inet-2017/idm-17-01/"+sudata[3]+"'>Page link</a>"+"</td>";
 		stra += "<td>"+sudata[4]+"</td>";
 		stra += "<td>"+sudata[5]+"</td>";
 		
