@@ -37,9 +37,9 @@ req.onreadystatechange = function(){
 		udiv.innerHTML += "<td>"+sudata[5]+"</td>";
 		
 		udiv.innerHTML += "</tr>";
-		udiv.innerHTML += "</table>";
 		
 	}
+	udiv.innerHTML += "</table>";
 	var bdy = document.body;
 	bdy.appendChild(udiv);
 }
