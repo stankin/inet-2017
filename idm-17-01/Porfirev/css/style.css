@@ -1,7 +1,7 @@
 
 
 #service{ padding: 96px 0px;}
-#service .service-header{text-align: center; margin: 0px}
+#service .service-header{text-align: center; margin-bottom: 20px;}
 #service .service-header h1{color:#636C6C; font-size: 36px; font-family: 'Raleway', sans-serif; font-weight: 700; }
 #service .service-header p{color:#AFB8B8; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 400; line-height: 24px}
 
