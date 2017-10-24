@@ -1,6 +1,11 @@
+var udata = "";
 var req = new XMLHttpRequest();
 req.open('GET','data.txt');
 req.onreadystatechange = function(){
-	console.log(req.responseText);
+	udata = req.responseText;
 }
 req.send();
+var ulist = udata.split("/n");
+for (var i = 0; i < ulist.length; i++){
+	console.log(ulist[i]);
+}
