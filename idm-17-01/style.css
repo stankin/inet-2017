@@ -1,0 +1,35 @@
+.header{
+	width: 25%;
+	background-color: #b3ffd9;
+	padding: 20px;
+	opacity: 0.8;
+	text-align: right;
+}
+#pheader{
+	font-size: 25px;
+	font-family: 'Tahoma';
+	font-style: italic;
+}
+.theader{
+	width: 60%;
+}
+.name{
+	width: 16%;
+	background-color: #ffffb3;
+	border: 2px inset black;
+	font-size: 25px;
+	font-family: 'Verdana';
+	text-align: center;
+}
+.mod1{
+	width: 16%;
+	background-color: #ffffb3;
+	border: 2px inset black;
+	font-size: 25px;
+	font-family: 'Verdana';
+	text-align: center;
+	margin-left: 17%;
+}	
+body{
+	background-image: url(b.png);
+}
