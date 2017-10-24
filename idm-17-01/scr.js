@@ -13,8 +13,9 @@ req.onreadystatechange = function(){
 	console.log("ulist length: "+ulist.length);
 	var udiv = document.createElement('div');
 	udiv.className = 'idm_user';
-	udiv.innerHTML += "<table border = '1'>";
-	udiv.innerHTML += "<tr><th>Студент</th>"+
+	var stra = ""
+	stra += "<table border = '1'>";
+	stra += "<tr><th>Студент</th>"+
 							"<th>Модуль 1</th>"+
 							"<th>Модуль 2</th>"+
 							"<th>Страница</th>"+
@@ -27,19 +28,20 @@ req.onreadystatechange = function(){
 			continue;
 		}
 		
-		udiv.innerHTML += "<tr>";
+		stra += "<tr>";
 		
-		udiv.innerHTML += "<td>"+sudata[0]+"</td>";
-		udiv.innerHTML += "<td>"+sudata[1]+"</td>";
-		udiv.innerHTML += "<td>"+sudata[2]+"</td>";
-		udiv.innerHTML += "<td> <a href="+sudata[3]+">Page link</a>"+"</td>";
-		udiv.innerHTML += "<td>"+sudata[4]+"</td>";
-		udiv.innerHTML += "<td>"+sudata[5]+"</td>";
+		stra += "<td>"+sudata[0]+"</td>";
+		stra += "<td>"+sudata[1]+"</td>";
+		stra += "<td>"+sudata[2]+"</td>";
+		stra += "<td> <a href="+sudata[3]+">Page link</a>"+"</td>";
+		stra += "<td>"+sudata[4]+"</td>";
+		stra += "<td>"+sudata[5]+"</td>";
 		
-		udiv.innerHTML += "</tr>";
+		stra += "</tr>";
 		
 	}
-	udiv.innerHTML += "</table>";
+	stra += "</table>";
+	udiv.innerHTML = stra;
 	var bdy = document.body;
 	bdy.appendChild(udiv);
 }
