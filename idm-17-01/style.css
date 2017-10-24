@@ -13,7 +13,7 @@
 .theader{
 	width: 60%;
 }
-.name{
+.idm_user{
 	width: 16%;
 	background-color: #ffffb3;
 	border: 2px inset black;
@@ -21,15 +21,6 @@
 	font-family: 'Verdana';
 	text-align: center;
 }
-.mod1{
-	width: 16%;
-	background-color: #ffffb3;
-	border: 2px inset black;
-	font-size: 25px;
-	font-family: 'Verdana';
-	text-align: center;
-	margin-left: 17%;
-}	
 body{
 	background-image: url(b.png);
 }
