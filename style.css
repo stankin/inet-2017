@@ -37,9 +37,9 @@ table
 	text-align: left;
 	border-collapse: separate;
 	border-spacing: 5px;
-	background: #E5E0D2;
+	background: #C2EFE1 /*E5E0D2*/;
 	color: #414E41;
-	border: 16px solid #ECE9E0;
+	border: 16px solid #C2EFE1 /*ECE9E0*/;
 	border-radius: 20px;
 }
 th 
