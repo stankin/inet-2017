@@ -13,6 +13,7 @@ req.onreadystatechange = function(){
 	for (var i = 0; i < ulist.length; i++){
 		var sudata = ulist[i].split("!!!");
 		if(sudata.length < 6 || sudata[0]=="#"){
+			console.log("alo!!!!!");
 			continue;
 		}
 		var udiv = document.createElement('div');
