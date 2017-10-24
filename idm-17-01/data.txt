@@ -1,4 +1,22 @@
 #!!!THIS IS A COMMENT!!!HI MOM
-Андрей Зудилов!!!0!!!0!!!zudilov/index.html!!!TEAM C!!!NE POMNIU
-KTOETOKTOETOKETOETOЫЫЫЫЫЫЫЫЫ!!!0!!!0!!!zudilov/index.html!!!TEAM C!!!NE POMNIU
-Александр Порфирьев!!!0!!!0!!!Porfirev/index.html!!!1701-Д!!!NE POMNIU
+Бедретдинова Анна Юрьевна!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Бирюков Сергей Сергеевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Брагин Дмитрий Александрович!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!TEAM C!!!Network developer
+Верещагин Владимир Геннадьевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Зайцев Александр Сергеевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Зудилов Андрей Александрович!!!0!!!0!!!zudilov/index.html!!!TEAM C!!!Scrum master
+Ильин Максим Александрович!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Колмыков Максим Леонидович!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Колосов Михаил Владимирович!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Кузьменко Иван Алексеевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Магомедов Махмуд Джамалдинович!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_TEAM_LINK_HERE!!!ROLE
+Махмутов Илья Шамилевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Мещеряков Никита Сергеевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Мирскова Елизавета Сергеевна!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!TEAM C!!!Tester
+Мурзайкина Олеся Анатольевна!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_LINK_HERE!!!ROLE
+Порфирьев Александр Юрьевич!!!0!!!0!!!Porfirev/index.html!!!1701-Д!!!NE POMNIU
+Прокопьев Максим Эдуардович!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!TEAM C!!!System developer
+Селин Николай Сергеевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!TEAM C!!!UI Developer
+Смирнова Ирина Александровна!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_LINK_HERE!!!ROLE
+Чащин Георгий Алексеевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!TEACM C!!!Architect
+Штыков Александр Александрович!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_LINK_HERE!!!ROLE
