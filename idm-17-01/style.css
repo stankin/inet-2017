@@ -14,10 +14,10 @@
 	width: 60%;
 }
 .idm_user{
-	display: inline;
-	background-color: #ffffb3;
+	display: inline-block;
+	background-color: #FFFEC6;
 	border: 2px inset black;
-	font-size: 25px;
+	font-size: 35px;
 	font-family: 'Verdana';
 	text-align: center;
 }
