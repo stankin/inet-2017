@@ -1,7 +1,7 @@
 var udata = "";
 var req = new XMLHttpRequest();
 req.open('GET','data.txt');
-req.onreadystatechange = function(){
+req.onload = function(){
 	udata = req.responseText;
 }
 req.send();
