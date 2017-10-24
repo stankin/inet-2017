@@ -10,13 +10,14 @@ req.onreadystatechange = function(){
 		return;
 	}
 	var ulist = udata.split("/n");
+	console.log("ulist length: "+ulist.length);
 	for (var i = 0; i < ulist.length; i++){
 		var sudata = ulist[i].split("!!!");
 		if(sudata.length < 6 || sudata[0]=="#"){
-			console.log("alo!!!!!");
+			console.log("wrong string: "+sudata[0]);
+			console.log("length: "+sudata.length);
 			continue;
 		}
-		console.log(sudata[0]);
 		var udiv = document.createElement('div');
 		udiv.className = 'idm_user';
 		
