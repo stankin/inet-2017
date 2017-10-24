@@ -21,12 +21,12 @@ req.onreadystatechange = function(){
 		var udiv = document.createElement('div');
 		udiv.className = 'idm_user';
 		
-		udiv.innerHTML += "<br>"+sudata[0];
-		udiv.innerHTML += " "+sudata[1];
-		udiv.innerHTML += " "+sudata[2];
-		udiv.innerHTML += " <a href="+sudata[3]+">Page link</a>";
-		udiv.innerHTML += " "+sudata[4];
-		udiv.innerHTML += " "+sudata[5];
+		udiv.innerHTML += "<br><div class = 'name'>"+sudata[0]+"</div>";
+		udiv.innerHTML += "<div class='mod1'> "+sudata[1]+"</div>";
+		udiv.innerHTML += "<div class='mod2'> "+sudata[2]+"</div>";
+		udiv.innerHTML += "<div class='page'> <a href="+sudata[3]+">Page link</a>"+"</div>";
+		udiv.innerHTML += "<div class='team'> "+sudata[4]+"</div>";
+		udiv.innerHTML += "<div class='role'> "+sudata[5]+"</div>";
 		udiv.innerHTML += "<hr>"
 		
 		var bdy = document.body;
