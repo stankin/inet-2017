@@ -16,6 +16,7 @@ req.onreadystatechange = function(){
 			console.log("alo!!!!!");
 			continue;
 		}
+		console.log(sudata[0]);
 		var udiv = document.createElement('div');
 		udiv.className = 'idm_user';
 		
