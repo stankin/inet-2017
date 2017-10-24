@@ -1,12 +1,12 @@
 
 
-	*, *:before, *:after {
+	/**, *:before, *:after {
 		-moz-box-sizing: border-box;
 		-webkit-box-sizing: border-box;
-		box-sizing: border-box;
+		box-sizing: border-box;*/
         
 	}
-	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
+	/*body.is-loading *, body.is-loading *:before, body.is-loading *:after {
 		/*-moz-animation: none !important;
 		-webkit-animation: none !important;
 		-ms-animation: none !important;
@@ -15,7 +15,7 @@
 		-webkit-transition: none !important;
 		-ms-transition: none !important;
 		transition: none !important;
-	}
+	}*/
 
 	html {
 		height: 100%;
@@ -34,7 +34,7 @@
 		background-attachment: fixed,			fixed,				fixed;
 	}
 
-		body:after {
+	/*	body:after {
 			content: '';
 			display: block;
 			position: fixed;
@@ -61,7 +61,7 @@
 		body.is-loading:after {
 			opacity: 1;
 		}
-
+*/
 /* Type */
 
 	body, input, select, textarea {
