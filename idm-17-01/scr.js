@@ -28,6 +28,9 @@ req.onreadystatechange = function(){
 		udiv.innerHTML += " "+sudata[4];
 		udiv.innerHTML += " "+sudata[5];
 		udiv.innerHTML += "<hr>"
+		
+		var bdy = document.body;
+		bdy.appendChild(udiv);
 	}
 }
 req.send();
