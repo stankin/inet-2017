@@ -11,26 +11,35 @@ req.onreadystatechange = function(){
 	}
 	var ulist = udata.split("\n");
 	console.log("ulist length: "+ulist.length);
+	var udiv = document.createElement('div');
+	udiv.className = 'idm_user';
+	udiv.innerHTML += "<table border = '1'";
+	udiv.innerHTML += "<tr><th>Студент</th>"+
+							"<th>Модуль 1</th>"+
+							"<th>Модуль 2</th>"+
+							"<th>Страница</th>"+
+							"<th>Команда</th>"+
+							"<th>Роль</th></tr>";
+	
 	for (var i = 0; i < ulist.length; i++){
 		var sudata = ulist[i].split("!!!");
 		if(sudata.length < 6 || sudata[0]=="#"){
-			console.log("wrong string: "+sudata[0]);
-			console.log("length: "+sudata.length);
 			continue;
 		}
-		var udiv = document.createElement('div');
-		udiv.className = 'idm_user';
 		
-		udiv.innerHTML += "<br><div class = 'name'>"+sudata[0]+"</div>";
-		udiv.innerHTML += "<div class='mod1'> "+sudata[1]+"</div>";
-		udiv.innerHTML += "<div class='mod2'> "+sudata[2]+"</div>";
-		udiv.innerHTML += "<div class='page'> <a href="+sudata[3]+">Page link</a>"+"</div>";
-		udiv.innerHTML += "<div class='team'> "+sudata[4]+"</div>";
-		udiv.innerHTML += "<div class='role'> "+sudata[5]+"</div>";
-		udiv.innerHTML += "<hr>"
+		udiv.innerHTML += "<tr>";
 		
-		var bdy = document.body;
-		bdy.appendChild(udiv);
+		udiv.innerHTML += "<td>"+sudata[0]+"</td>";
+		udiv.innerHTML += "<td>"+sudata[1]+"</td>";
+		udiv.innerHTML += "<td>"+sudata[2]+"</td>";
+		udiv.innerHTML += "<td> <a href="+sudata[3]+">Page link</a>"+"</td>";
+		udiv.innerHTML += "<td>"+sudata[4]+"</td>";
+		udiv.innerHTML += "<td>"+sudata[5]+"</td>";
+		
+		udiv.innerHTML += "</tr>";
+		
 	}
+	var bdy = document.body;
+	bdy.appendChild(udiv);
 }
 req.send();
