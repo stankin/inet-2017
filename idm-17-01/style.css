@@ -16,10 +16,11 @@
 .idm_user{
 	display: inline-block;
 	background-color: #FFFEC6;
-	border: 2px inset black;
+	border: 1px inset black;
 	font-size: 35px;
 	font-family: 'Verdana';
 	text-align: center;
+	opacity: 0.9;
 }
 body{
 	background-image: url(b.png);
