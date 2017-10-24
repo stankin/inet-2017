@@ -13,7 +13,7 @@ req.onreadystatechange = function(){
 	console.log("ulist length: "+ulist.length);
 	var udiv = document.createElement('div');
 	udiv.className = 'idm_user';
-	udiv.innerHTML += "<table border = '1'";
+	udiv.innerHTML += "<table border = '1'>";
 	udiv.innerHTML += "<tr><th>Студент</th>"+
 							"<th>Модуль 1</th>"+
 							"<th>Модуль 2</th>"+
