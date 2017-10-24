@@ -6,14 +6,11 @@
 		box-sizing: border-box;
         
 	}
-    
-
-
 	body.is-loading *, body.is-loading *:before, body.is-loading *:after {
-		-moz-animation: none !important;
+		/*-moz-animation: none !important;
 		-webkit-animation: none !important;
 		-ms-animation: none !important;
-		animation: none !important;
+		animation: none !important;*/
 		-moz-transition: none !important;
 		-webkit-transition: none !important;
 		-ms-transition: none !important;
@@ -69,13 +66,12 @@
 
 	body, input, select, textarea {
 		color: #055967;
-    font-family: cursive, serif, -webkit-pictograph;
-   
+    font-family: cursive, 'Marck Script';
     font-weight: 200;
     line-height: 1.5;
 	}
 
-		@media screen and (max-width: 1680px) {
+		/*@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
 				font-size: 11pt;
@@ -90,7 +86,7 @@
 				line-height: 1.75;
 			}
 
-		}
+		}*/
 
 	a {
 		-moz-transition: color 0.2s ease, border-color 0.2s ease;
@@ -160,13 +156,13 @@
 	}
 
 
-	@media screen and (max-width: 480px) {
+	/*@media screen and (max-width: 480px) {
 
 		h1 {
 			font-size: 1.65em;
 		}
 
-	}
+	}*/
 
 
 	hr {
@@ -217,7 +213,7 @@
 			}
             
 
-		@media screen and (max-width: 480px) {
+		/*@media screen and (max-width: 480px) {
 
 			#main {
 				min-width: 0;
@@ -231,7 +227,7 @@
 				}
 
 		}
-
+*/
 		body.is-loading #main {
 			opacity: 0;
 			-moz-transform: rotateY(30deg);
@@ -277,13 +273,13 @@
 			display: block;
 		}
 
-		@media screen and (max-width: 360px) {
+		/*@media screen and (max-width: 360px) {
 
 			#wrapper {
 				padding: 0.75em;
 			}
 
-		}
+		}*/
 
 		body.is-ie #wrapper {
 			height: 100%;
