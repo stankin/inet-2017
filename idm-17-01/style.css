@@ -14,6 +14,7 @@
 	width: 60%;
 }
 .idm_user{
+	display: inline;
 	background-color: #ffffb3;
 	border: 2px inset black;
 	font-size: 25px;
