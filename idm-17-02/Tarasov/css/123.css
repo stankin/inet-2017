@@ -1,5 +1,5 @@
 p{
-  color: blue;
+ /*color: blue;*/
   font-size: 24px;
   font-family: "Verdana";
   font-style: italic;
@@ -17,6 +17,7 @@ p{
  border-radius:5px 15px 30px 60px;
  box-shadow: 3px 3px 2px #000;
  margin: 15px;
+ padding: 5px 10px 50px 10px;
 }
 
 #div2{
@@ -29,4 +30,6 @@ p{
  border-radius:15px 0px 0px 0px;
  box-shadow: 3px 3px 2px #000;
  margin: 5px 25px 25px 5px;
+ box-shadow: 3px 3px 2px #000;
+ margin-left: 15px;
 }
