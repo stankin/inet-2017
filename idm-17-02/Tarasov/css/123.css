@@ -2,4 +2,7 @@ p{
   color: green;
   font-size: 24px;
   font-family: "Verdana"
+  font-style: italic;
+  text-indent: 1.25cm;
+  text-align: left;
 }
