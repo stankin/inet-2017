@@ -1,5 +1,4 @@
-<script type="text/javascript">
-  function digitalWatch() {
+ function digitalWatch() {
     var date = new Date();
     var hours = date.getHours();
     var minutes = date.getMinutes();
@@ -10,4 +9,3 @@
     document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
     setTimeout("digitalWatch()", 1000);
   }
-</script>
