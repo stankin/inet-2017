@@ -1,1 +1,9 @@
-
+p {
+   color:red;
+   font-size:24hx;
+   font-family:"Courier New";
+   font-weight: bold;
+   font-style:italic;
+   text-indent:1.25cm;
+   text-align:justify;
+}
