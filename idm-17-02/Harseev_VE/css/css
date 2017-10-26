@@ -1,0 +1,27 @@
+body{
+	 background: #FFEBCD;
+}
+H1 {
+	color: blue;
+	font-size: 200%;
+	font-family: Arial, Verdana, sans-serif;
+	text-align: center;
+}
+.st1{
+    font-size: 120%; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color: #333366; 
+	text-align: justify;	
+	padding-top: 100px;
+	font-style: italic;
+	font-weight: bolder;
+	text-indent: 20px;
+}
+.st2{
+    font-size: 120%; 
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color: black; 
+	text-align: justify;	
+	padding-top: 20px;
+	text-indent: 20px;
+}
