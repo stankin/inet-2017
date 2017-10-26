@@ -28,7 +28,8 @@ h3
   color: pink;
   text-align: center;
   border: 3px dashed #fff;
+  padding: 5px;
   border-radius: 5px;
-  border-width: 5px;
+  
 }
 
