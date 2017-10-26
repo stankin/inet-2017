@@ -5,13 +5,13 @@ html
 body 
 {	
   height: 100%;	
-  background: linear-gradient(to left, #1E90FF 30%, #00BFFF 50%);
+  background: linear-gradient(to left, #772953 30%, #960018 50%);
 }
 h1 
 {	
   font-family: fantasy, 'Almendra Display';
   font-size: 3.5em;
-  color: burgundy;
+  color: cream;
   text-align: center;
 }
 h2
@@ -25,9 +25,9 @@ h3
 {	
   font-family: fantasy, 'Almendra Display';
   font-size: 3.5em;
-  color: burgundy;
+  color: pink;
   text-align: center;
   border: 3px dashed #fff;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
