@@ -6,3 +6,17 @@ p{
   text-indent: 1.25cm;
   text-align: left;
 }
+#div1{
+ background: blue;
+ width: 100px;
+ height: 75px;
+ float: left;
+ overflow: auto;
+}
+#div2{
+ background: red;
+ width: 75px;
+ height: 75px;
+ float: left;
+ overflow: auto;
+}
