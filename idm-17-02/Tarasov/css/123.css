@@ -7,6 +7,20 @@ p{
   text-align: left;
 }
 
+#main{
+  width: 50%;
+  margin: auto;
+  background: #AFA;
+  height: 100%;
+  padding: 10px
+}
+
+*{
+font-family: Meiryo;
+}
+
+div .zadanie
+
 #div1{
  background: linear-gradient(90deg,red,blue);
  width: 100px;
