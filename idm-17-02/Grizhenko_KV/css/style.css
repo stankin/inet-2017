@@ -9,7 +9,7 @@ body
 }
 h1 
 {	
-  font-family: Comic Sans;
+  font-face: Comic Sans;
   font-size: 3.5em;
   color: gold;
   position: center;
