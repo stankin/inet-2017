@@ -6,17 +6,27 @@ p{
   text-indent: 1.25cm;
   text-align: left;
 }
+
 #div1{
  background: linear-gradient(90deg,red,blue);
  width: 100px;
  height: 75px;
  float: left;
  overflow: auto;
+ border: 2px solid green;
+ border-radius:5px 15px 30px 60px;
+ box-shadow: 3px 3px 2px #000;
+ margin: 15px;
 }
+
 #div2{
- background: red;
+ background: #AAAABF;
+ background-color: #AAAABF;
  width: 75px;
  height: 75px;
- float: left;
+ float: right;
  overflow: auto;
+ border-radius:15px 0px 0px 0px;
+ box-shadow: 3px 3px 2px #000;
+ margin: 5px 25px 25px 5px;
 }
