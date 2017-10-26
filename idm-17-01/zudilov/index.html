@@ -26,9 +26,9 @@
 	  var grayscale = function() {
 		for (var i = 0; i < data.length; i += 4) {
 		  var avg = (data[i] + data[i + 1] + data[i + 2]) / 3;
-		  data[i]     = avg; // red
-		  data[i + 1] = avg; // green
-		  data[i + 2] = avg; // blue
+		  data[i]     = 255 * Math.abs(Math.cos(data[i]*Math.PI/180));     // red
+		  data[i + 1] = 255 * Math.abs(Math.cos(data[i+1]*Math.PI/180)); // green
+		  data[i + 2] = 255 * Math.abs(Math.cos(data[i+2]*Math.PI/180)); // blue
 		}
 		ctx.putImageData(imageData, 0, 0);
 	  };
@@ -43,6 +43,6 @@
 </head>
 <canvas id="canvas" width="300" height="227"></canvas>
 <div>
-  <input id="grayscalebtn" value="Grayscale" type="button">
-  <input id="invertbtn" value="Invert" type="button">
+  <input id="grayscalebtn" value="COS" type="button">
+  <input id="invertbtn" value="SIN" type="button">
 </div>
