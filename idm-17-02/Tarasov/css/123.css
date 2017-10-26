@@ -7,7 +7,7 @@ p{
   text-align: left;
 }
 #div1{
- background: blue;
+ background: linear-gradient(90deg,red,blue);
  width: 100px;
  height: 75px;
  float: left;
