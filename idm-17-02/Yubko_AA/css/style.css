@@ -67,12 +67,6 @@ h2
 	margin: 0 0 0.525em 0;
 	text-transform: uppercase;
 }
-hr 
-{
-	border: 0;
-	border-bottom: solid 1px #c8cccf;
-	margin: 3em 0;
-}
 
 #main 
 {
@@ -102,11 +96,8 @@ hr
 {
 	display: block;
 	margin: 0 auto;
-	border-top-left-radius: 10%;
-	border-top-right-radius: 10%;
-	border-bottom-right-radius: 10%;
-	border-bottom-left-radius: 10%;
-	box-shadow: 0 0 20px 1.5em #f9f8db;
+	border-radius: 50% 50%;
+	box-shadow: 0 0 20px 1.5em #eaead6;
 }
 
 body.is-loading #main 
@@ -157,7 +148,7 @@ body.is-loading #main
 .msg {
   position: relative;
   overflow: hidden;
-  max-height: 800px;
+  max-width: 900px;
   opacity: 1;
   transform: translate(0, 0);
   border-left: 1px solid #87CEEB;
@@ -177,4 +168,59 @@ body.is-loading #main
   line-height: 20px;
   letter-spacing: 1px;
   padding: 0 20px;
+}
+.clock{
+	font-size:20px;
+	font-weight:bold;	
+	top: 10px;
+    right: 10px;
+    width: 300px;
+    height: 250px;
+	position: absolute;
+	z-index: 1000;
+}
+
+
+.clock:hover 
+{
+	color: red;
+	font-size:20px;
+	font-weight:bold;	
+	top: 10px;
+    right: 10px;
+    width: 300px;
+    height: 250px;
+	position: absolute;
+	z-index: 1000;
+}
+
+.clock:active
+{
+	font-size:20px;
+	font-weight:bold;	
+	top: 30px;
+    left: 10px;
+    width: 300px;
+    height: 250px;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+}
+.submit
+{
+	background-color: #83cbe9;
+    padding: 5px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #355461;
+    border: none;
+    outline: none;
+    font-weight: bold;
+	margin: 15px 0px 0px 0px;
+}
+.forma
+{
+	border: 2px dashed #83cbe9;
+	margin-right: 20px;
+    margin-top: 10px;
 }
