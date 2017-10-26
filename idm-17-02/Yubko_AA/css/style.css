@@ -224,3 +224,13 @@ body.is-loading #main
 	margin-right: 20px;
     margin-top: 10px;
 }
+.qw
+{
+	position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    background-color: #055967;
+    z-index: 100000;
+}
