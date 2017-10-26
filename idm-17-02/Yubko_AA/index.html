@@ -21,7 +21,7 @@
                     <span class="avatar"><img src="image/06.jpg" alt style="width: 150px; height: 200px" /></span>
 					<h1>ЮБКО АЛИНА АЛЕКСАНДРОВНА</h1>
                     <h2>ИДМ-17-02</h2>			
-			</header>
+			 </header>
             <div><hr/>
         							<h1>Отчет по лабораторным работам:</h1>
                                     
@@ -29,7 +29,7 @@
 										<ul>
 											<li>
 												<a onclick="javascript:document.getElementById('subMenuTip1').style.display='block'" href="javascript:void(0)">
-												<h2>Лабораторная работа №1"Экосистема разработки программ с открытым кодом":</h2>
+												<h2 id="Laba1">Лабораторная работа №1"Экосистема разработки программ с открытым кодом":</h2>
 												<p>Создание персональной страницы-отчета на github и работа с git</p></a>
 												<div id="subMenuTip1" class="msg" style="display:none;">
 												<ol>
@@ -43,7 +43,7 @@
 											</li><br />
 											<li>
 												<a onclick="javascript:document.getElementById('subMenuTip2').style.display='block'" href="javascript:void(0)">
-												<h2>Лабораторная работа №2 "Разработка простого веб-приложения":</h2>
+												<h2 id="Laba2">Лабораторная работа №2 "Разработка простого веб-приложения":</h2>
 												<p>Проектирование и разработка индивидуального или коллективного веб-приложения (SPA) с использованием html,css,js + json,xml</p></a>
 												<div id="subMenuTip2" class="msg" style="display:none;">
 													<ul>
@@ -74,7 +74,7 @@
 											</li><br />
 											<li>
 												<a onclick="javascript:document.getElementById('subMenuTip3').style.display='block'" href="javascript:void(0)">	
-												<h2>Лабораторная работа №3 "Настройка локальной сети передачи данных":</h2>
+												<h2 id="Laba3">Лабораторная работа №3 "Настройка локальной сети передачи данных":</h2>
 												<p>Настройка коммутаторов и маршрутизаторов</p></a>
 												<div id="subMenuTip3" class="msg" style="display:none;">
 													<ul>
@@ -85,7 +85,7 @@
 											</li><br />
 											<li class="contur" class="msg">
 												<a onclick="javascript:document.getElementById('subMenuTip4').style.display='block'" href="javascript:void(0)">
-												<h2>Подготовка к экзамену:</h2>
+												<h2 id="Laba4">Подготовка к экзамену:</h2>
 												<p>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии"</p></a>
 												<div id="subMenuTip4" class="msg" style="display:none;">
 													<ol>
@@ -119,8 +119,18 @@
                                     
                                </div>
             </div>
-        </div>                                
-    </div>    
+	
+
+
+        </div> 
+	
+    </div>  
+<div class="wq" >
+	<a href="#Laba1" style="border: 2px dashed #83cbe9;">	Лаб/р №1</a> 
+	<a href="#Laba2" style="border: 2px dashed #83cbe9;">	Лаб/р №2</a> 
+	<a href="#Laba3" style="border: 2px dashed #83cbe9;">	Лаб/р №3</a> 
+	<a href="#Laba4" style="border: 2px dashed #83cbe9;">	Подготовка к экзамену</a> 
+</div>		
   <script>
    		if ('addEventListener' in window) {
     					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
