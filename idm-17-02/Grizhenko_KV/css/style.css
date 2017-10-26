@@ -11,6 +11,23 @@ h1
 {	
   font-family: fantasy, 'Almendra Display';
   font-size: 3.5em;
-  color: gold;
-  position: center;
+  color: burgundy;
+  text-align: center;
 }
+h2
+{	
+  font-family: fantasy, 'Almendra Display';
+  font-size: 2.5em;
+  color: gold;
+  text-align: center;
+}
+h3 
+{	
+  font-family: fantasy, 'Almendra Display';
+  font-size: 3.5em;
+  color: burgundy;
+  text-align: center;
+  border: 3px dashed #fff;
+  border-radius: 10px;
+}
+
