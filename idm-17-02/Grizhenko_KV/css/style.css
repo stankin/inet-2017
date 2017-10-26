@@ -5,7 +5,7 @@ html
 body 
 {	
   height: 100%;	
-  background: linear-gradient(to center, #00008B 30%, #00BFFF 50%);
+  background: linear-gradient(to left, #00008B 30%, #00BFFF 50%);
 }
 h1 
 {	
