@@ -176,7 +176,7 @@ body.is-loading #main
     right: 10px;
     width: 300px;
     height: 250px;
-	position: relative;
+	position: absolute;
 	z-index: 1000;
 }
 
@@ -190,7 +190,7 @@ body.is-loading #main
     right: 10px;
     width: 300px;
     height: 250px;
-	position: relative;
+	position: absolute;
 	z-index: 1000;
 }
 
@@ -202,7 +202,7 @@ body.is-loading #main
     left: 10px;
     width: 300px;
     height: 250px;
-	position: relative;
+	position: absolute;
 	z-index: 1000;
 	display: none;
 }
