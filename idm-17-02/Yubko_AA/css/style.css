@@ -178,6 +178,7 @@ body.is-loading #main
     height: 250px;
 	position: absolute;
 	z-index: 1000;
+	border-radius: 50%;
 }
 
 
@@ -192,6 +193,7 @@ body.is-loading #main
     height: 250px;
 	position: absolute;
 	z-index: 1000;
+	border-radius: 50%;
 }
 
 .clock:active
@@ -205,6 +207,7 @@ body.is-loading #main
 	position: absolute;
 	z-index: 1000;
 	display: none;
+	 border-radius: 50%;
 }
 .submit
 {
@@ -217,6 +220,7 @@ body.is-loading #main
     outline: none;
     font-weight: bold;
 	margin: 15px 0px 0px 0px;
+	box-shadow: 0 0 4px 0px black;
 }
 .forma
 {
