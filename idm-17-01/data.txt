@@ -1,6 +1,6 @@
-#!!!THIS IS A COMMENT!!!HI MOM
+﻿#!!!THIS IS A COMMENT!!!HI MOM
 Бедретдинова Анна Юрьевна!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
-Бирюков Сергей Сергеевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
+Бирюков Сергей Сергеевич!!!0!!!0!!!Biryukov/index.html!!!1701-Б!!!РП,ПП
 Брагин Дмитрий Александрович!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!TEAM C!!!АД,СП
 Верещагин Владимир Геннадьевич!!!0!!!0!!!ADD_YOUR_LINK_HERE!!!WRITE_YOUR_TEAM_HERE!!!ROLE
 Зайцев Александр Сергеевич!!!0!!!0!!!Zaytsev/index.html!!!1701-Д!!!ROLE
