@@ -176,7 +176,7 @@ body.is-loading #main
     right: 10px;
     width: 300px;
     height: 250px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
 }
 
@@ -190,7 +190,7 @@ body.is-loading #main
     right: 10px;
     width: 300px;
     height: 250px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
 }
 
@@ -202,7 +202,7 @@ body.is-loading #main
     left: 10px;
     width: 300px;
     height: 250px;
-	position: absolute;
+	position: relative;
 	z-index: 1000;
 	display: none;
 }
@@ -224,13 +224,4 @@ body.is-loading #main
 	margin-right: 20px;
     margin-top: 10px;
 }
-.wq
-{
-	position: fixed;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    text-align: center;
-    background-color: #055967;
-    z-index: 100000;
-}
+
