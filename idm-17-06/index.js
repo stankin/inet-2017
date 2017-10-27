@@ -28,7 +28,7 @@ req.onreadystatechange = function(){
 		tbl += "<td>"+sudata.name + "</td>";
 		tbl += "<td>"+sudata.module1 + "</td>";
 		tbl += "<td>"+sudata.module2 + "</td>";
-		tbl += "<td> <a href='https://stankin.github.io/inet-2017/idm-17-06/"+sudata.project + "'>Project</a>" + "</td>";
+		tbl += "<td> <a href='"+sudata.project + "'>Project</a>" + "</td>";
 		tbl += "<td>"+sudata.team + "</td>";
 		tbl += "<td>"+sudata.role + "</td>";
 		
