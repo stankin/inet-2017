@@ -37,10 +37,20 @@ li
   overflow: hidden;
   max-width: 900px;
   opacity: 1;
-  transform: translate(0, 0);
+  transform: translate(30, 0);
   border-left: 1px solid #87CEEB;
   border-right: 1px solid #87CEEB;
   border-bottom: 1px solid #87CEEB;
   border-top: 1px solid #87CEEB;
   background-color: #f9f8db;
+}
+a 
+{
+	color: #77dd77;
+	text-decoration: none;
+}
+a:hover 
+{
+	color: #01796f;
+	text-decoration: underline;
 }
