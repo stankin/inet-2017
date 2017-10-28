@@ -28,8 +28,9 @@ h3
 }
 li
 {
-	font-family: fantasy, 'Almendra Display';
-	text-align: left;
+   font-family: fantasy, 'Almendra Display';
+   text-align: left;
+   font-size: 2.5em;
 }
 .msg {
   position: relative;
