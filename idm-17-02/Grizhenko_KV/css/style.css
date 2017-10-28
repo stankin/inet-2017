@@ -21,6 +21,16 @@ body
   transition: opacity 1s ease, transform 1s ease;
   box-shadow: 0 0 5px 5px #085d6c;
 }
+.accordion {
+    width: 100%;
+    max-width: 900px;
+    min-height: 0;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden
+}
 h1 
 {	
   font-family: fantasy, 'Almendra Display';
