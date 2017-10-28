@@ -11,12 +11,11 @@ body
   position: relative;
   max-width: 100%;
   min-width: 27em;
-  padding: 4.5em 3em 3em 3em ;
+  padding: 0em 0em 0em 0em ;
   background: #FFF;
   border-radius: 4px;
   cursor: default;
-  opacity: 0.95;
-  text-align: center;
+  opacity: 0.75;
   transform-origin: 50% 50%;
   transform: rotateX(0deg);
   transition: opacity 1s ease, transform 1s ease;
