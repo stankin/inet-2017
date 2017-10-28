@@ -43,3 +43,13 @@ li
   border-top: 1px solid #87CEEB;
   background-color: #f9f8db;
 }
+.accordion {
+    width: 100%;
+    max-width: 900px;
+    min-height: 0;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden
+}
