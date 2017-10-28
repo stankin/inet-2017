@@ -29,7 +29,7 @@ app.controller('AppCtrl', ['$scope','$http', function($scope,$http){
 
   $http.get("database.json")
   .then(function(response){
-    $scope.content = $scope.$$childHead.orderBy(response.data,'team',true);
+    $scope.content = $scope.$$childHead.orderBy(response.data,'name',true);
     console.log($scope.$$childHead)
     $scope.$$childHead.order('name',true);
   })
