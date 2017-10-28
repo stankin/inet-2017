@@ -62,9 +62,9 @@
     <tbody>
       <tr ng-click="goToHref(c.href)" class="md-table-content-row" ng-repeat="c in content | filter:filters | startFrom:tablePage*count | limitTo: count">
         <td class="md-table-content" ng-repeat="h in headers" ng-class="customClass[h.field]" ng-if="h.field != thumbs">{{(h.field.indexOf('date') > 0) ? $filter('date')(c[h.field]) : c[h.field];}}</td>
-        <td class="md-table-td-more">
+<!--         <td class="md-table-td-more">
           <md-button aria-label="Info"><i class="ion-android-more-vertical"></i></md-button>
-        </td>
+        </td> -->
       </tr>
     </tbody>
   </table>
