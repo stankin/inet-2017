@@ -29,6 +29,7 @@
 							<xsl:value-of select="'https://stankin.github.io/inet-2017/idm-17-01/'" />
 							<xsl:value-of select="page" />
 						</xsl:attribute>
+						Page link
 					</a>
 				</td>
 				<td><xsl:value-of select="team" /></td>
