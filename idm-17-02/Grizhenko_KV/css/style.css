@@ -17,6 +17,7 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
 }
 .area
 {
+ font-family: fantasy, 'Almendra Display';
  text-align: center;
  color: pink;
  font-size: 2.5em;
@@ -24,7 +25,6 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
  font-weight: 700;
  text-transform: none;
  animation: blur .75s ease-out infinite;
- font-family: fantasy, 'Almendra Display'
  text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
 @keyframes blur {
