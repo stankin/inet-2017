@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="idm1710.xsl" type="text/xsl"?>
+<group>
+	<user>
+		<name>Андрей Зудилов</name>
+		<m1>0</m1>
+		<m2>0</m2>
+		<page>zudilov/index.html</page>
+		<team>Team C</team>
+		<role>РП,КО</role>
+	</user>
+</group>
