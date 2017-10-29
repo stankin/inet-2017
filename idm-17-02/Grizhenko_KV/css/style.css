@@ -15,7 +15,7 @@ body
   background: #FFF;
   border-radius: 4px;
   cursor: default;
-  opacity: 0.75;
+  opacity: 0.8;
   transform-origin: 50% 50%;
   transform: rotateX(0deg);
   transition: opacity 1s ease, transform 1s ease;
