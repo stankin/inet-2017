@@ -5,10 +5,6 @@ html
 body 
 {	
   height: 100%;	
-	background-repeat: repeat, no-repeat, no-repeat;
-	background-size: 100px 100px, cover, cover;
-	background-position: top left, center center, bottom center;
-	background-attachment: fixed, fixed, fixed;
 }
 #main 
 {
@@ -24,27 +20,6 @@ body
   transform: rotateX(0deg);
   transition: opacity 1s ease, transform 1s ease;
   box-shadow: 0 0 5px 5px #772953;
-}
-body.is-loading #main 
-{
-	opacity: 0;
-	transform: rotateY(310deg);
-}
-#wrapper 
-{
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-direction: column;
-	perspective: 1000px;
-	position: relative;
-	min-height: 100%;
-	padding: 1.5em;
-	z-index: 2;
-}
-#wrapper > * 
-{
-	z-index: 1;
 }
 .accordion {
     width: 100%;
