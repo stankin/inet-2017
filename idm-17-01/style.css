@@ -1,0 +1,27 @@
+.header{
+	width: 25%;
+	background-color: #b3ffd9;
+	padding: 20px;
+	opacity: 0.8;
+	text-align: right;
+}
+#pheader{
+	font-size: 25px;
+	font-family: 'Tahoma';
+	font-style: italic;
+}
+.theader{
+	width: 60%;
+}
+.idm_user{
+	display: inline-block;
+	background-color: #FFFEC6;
+	border: 1px inset black;
+	font-size: 35px;
+	font-family: 'Verdana';
+	text-align: center;
+	opacity: 0.9;
+}
+body{
+	background-image: url(b.png);
+}

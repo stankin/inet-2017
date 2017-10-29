@@ -1,0 +1,138 @@
+html 
+{ 
+  height: 120%;
+}
+body 
+{	
+  height: 100%;	
+}
+.hit-the-floor 
+{
+text-align: center;
+color: yellow;
+font-size: 2.5em;
+font-weight: bold;
+font-family: fantasy, 'Almendra Display';
+text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
+.area
+{
+ font-family: fantasy, 'Almendra Display';
+ text-align: center;
+ color: pink;
+ font-size: 2.5em;
+ letter-spacing: normal;
+ font-weight: 700;
+ text-transform: none;
+ animation: blur .75s ease-out infinite;
+ text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+@keyframes blur {
+  from {
+    text-shadow:0px 0px 10px #fff,
+      0px 0px 10px #fff, 
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 25px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #fff,
+      0px 0px 50px #7B96B8,
+      0px 0px 150px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px 10px 100px #7B96B8,
+      0px -10px 100px #7B96B8,
+      0px -10px 100px #7B96B8;
+  }
+}
+#main 
+{
+  position: relative;
+  max-width: 100%;
+  min-width: 27em;
+  padding: 0em 0em 0em 0em ;
+  background: linear-gradient(to top right, #C41E3A, #772953);
+  border-radius: 4px;
+  cursor: default;
+  opacity: 0.85;
+  transform-origin: 50% 50%;
+  transform: rotateX(0deg);
+  transition: opacity 1s ease, transform 1s ease;
+  box-shadow: 0 0 5px 5px #772953;
+}
+body.fade
+{ 
+  opacity: 0; 
+} 
+
+body.appear
+{ 
+  opacity: 1; 
+  transition: opacity 3s; 
+} 
+.accordion 
+{
+  width: 100%;
+  max-width: 900px;
+  min-height: 0;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden
+}
+h1 
+{	
+  font-family: fantasy, 'Almendra Display';
+  font-size: 2.5em;
+  color: yellow;
+  text-align: center;
+}
+h2 
+{	
+  font-family: fantasy, 'Almendra Display';
+  font-size: 2em;
+  color: yellow;
+  text-align: center;
+}
+h3 
+{	
+  font-family: fantasy, 'Almendra Display';
+  font-size: 3em;
+  height: 40px;
+  color: pink;
+  text-align: center;
+}
+li
+{
+  font-family: fantasy, 'Almendra Display';
+  text-align: left;
+  color: #FADADD;
+  font-size: 20px;
+  max-width: 860px;
+  border: 4px dashed #DE3163;
+  padding: 5px;
+  border-radius: 5px;
+}
+.msg 
+{
+  position: relative;
+  overflow: hidden;
+  max-width: 780px;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+a 
+{
+  color: #2E8B57;
+  text-decoration: none;
+}
+a:hover 
+{
+  color: #01796f;
+  text-decoration: underline;
+}

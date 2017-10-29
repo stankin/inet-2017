@@ -1,9 +1,10 @@
 body {
-    background-color: SlateBlue;
+    background-color: #CCCCFF;
+	padding: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: white;
+    color : #003366;
     text-align: center;
 }
 
@@ -14,7 +15,7 @@ p {
 
 div {
     width: 400px; 
-    background: #ccc;
+    background: #6666FF;
     padding: 15px;
     padding-right: 20px; 
     border: solid 1px black;
@@ -22,7 +23,7 @@ div {
 
 .text {
     width: 800px; 
-    background: Plum;
+    background: #66CC99;
     padding: 10px;
     padding-right: 50px; 
     border: solid 2px black;
