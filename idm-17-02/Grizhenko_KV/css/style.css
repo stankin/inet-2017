@@ -23,7 +23,7 @@ body
 }
 .accordion {
     width: 100%;
-    max-width: 850px;
+    max-width: 900px;
     min-height: 0;
     display: block;
     position: relative;
@@ -58,7 +58,7 @@ li
   font-family: fantasy, 'Almendra Display';
   text-align: left;
   font-size: 20px;
-  max-width: 900px;
+  max-width: 850px;
   border: 4px dashed #DE3163;
   padding: 5px;
   border-radius: 5px;
