@@ -38,6 +38,10 @@ body.is-loading #main
 	padding: 1.5em;
 	z-index: 2;
 }
+#wrapper > * 
+{
+	z-index: 1;
+}
 .accordion {
     width: 100%;
     max-width: 900px;
