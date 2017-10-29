@@ -66,7 +66,8 @@ li
   padding: 5px;
   border-radius: 5px;
 }
-.msg {
+.msg 
+{
   position: relative;
   overflow: hidden;
   max-width: 780px;
@@ -80,11 +81,11 @@ li
 }
 a 
 {
-	color: #77dd77;
-	text-decoration: none;
+  color: #0BDA51;
+  text-decoration: none;
 }
 a:hover 
 {
-	color: #01796f;
-	text-decoration: underline;
+  color: #01796f;
+  text-decoration: underline;
 }
