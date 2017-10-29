@@ -51,11 +51,7 @@ h3
   font-size: 3em;
   height: 40px;
   color: pink;
-  text-align: left;
-  border: 3px dashed #fff;
-  padding: 5px;
-  border-radius: 5px;
- 
+  text-align: center;
 }
 li
 {
