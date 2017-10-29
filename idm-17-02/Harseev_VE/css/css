@@ -42,3 +42,10 @@ H1 {
          -o-user-select: none;
             user-select: none;
 }
+.st4{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	right: 15px;
+	top: 5px;
+}
