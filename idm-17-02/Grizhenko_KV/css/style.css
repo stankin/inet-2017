@@ -63,14 +63,6 @@ li
   padding: 5px;
   border-radius: 5px;
 }
-.align_left
-{
-	text-align: left;
-}
-.align_right
-{
-	text-align: right;
-}
 .msg 
 {
   position: relative;
