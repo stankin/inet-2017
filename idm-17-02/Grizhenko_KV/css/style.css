@@ -21,6 +21,11 @@ body
   transition: opacity 1s ease, transform 1s ease;
   box-shadow: 0 0 5px 5px #772953;
 }
+body.is-loading #main 
+{
+	opacity: 0;
+	transform: rotateY(310deg);
+}
 .accordion {
     width: 100%;
     max-width: 900px;
