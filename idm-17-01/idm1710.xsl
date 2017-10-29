@@ -6,6 +6,9 @@
 		<link href="style.css" rel="stylesheet" type="text/css" />
 		</head>
 		<body>
+		<div class = "header">
+			<span id = "pheader">Группа ИДМ-17-01</span>
+		</div>
 		<table border = '1'>
 			<tr>
 				<th>Студент</th>
