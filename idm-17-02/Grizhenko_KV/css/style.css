@@ -64,6 +64,11 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
   transition: opacity 1s ease, transform 1s ease;
   box-shadow: 0 0 5px 5px #772953;
 }
+body.fade
+{ 
+  opacity: 0; 
+} 
+
 body.appear
 { 
   opacity: 1; 
