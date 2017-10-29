@@ -21,7 +21,7 @@ text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px
  text-align: center;
  color: pink;
  font-size: 2.5em;
- letter-spacing: -7px;
+ letter-spacing: normal;
  font-weight: 700;
  text-transform: none;
  animation: blur .75s ease-out infinite;
