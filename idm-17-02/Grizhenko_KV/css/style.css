@@ -26,6 +26,18 @@ body.is-loading #main
 	opacity: 0;
 	transform: rotateY(310deg);
 }
+#wrapper 
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	perspective: 1000px;
+	position: relative;
+	min-height: 100%;
+	padding: 1.5em;
+	z-index: 2;
+}
 .accordion {
     width: 100%;
     max-width: 900px;
