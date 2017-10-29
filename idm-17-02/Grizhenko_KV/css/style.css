@@ -69,9 +69,9 @@ li
 .msg {
   position: relative;
   overflow: hidden;
-  max-width: 900px;
+  max-width: 700px;
   opacity: 1;
-  transform: translate(30, 0);
+  transform: translate(90, 0);
   border-left: 1px solid #87CEEB;
   border-right: 1px solid #87CEEB;
   border-bottom: 1px solid #87CEEB;
