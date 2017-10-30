@@ -7,7 +7,7 @@
 	  <center>Поверни куб с помощью стрелок</center>
     <title>Гриженко К. В.</title>     
   </head>
-  <body background="images/fon3.png" onload="Main_ThreeJS_example();">
+  <body background="images/fon3.png">
     <div id="ThreeJS_div"></div>
 <script> 
 document.body.className='fade';
@@ -70,10 +70,12 @@ document.body.className='fade';
             <br>1. Самооценка прохождения теста по инновациям;
             <br>2. Формулировка одного вопроса по теме «Интернет-технологии» в одной из форм, встречающихся в тесте.
             </li>
-            <li>	      <canvas width="425" height="425" style="width: 500px; height: 500px; margin-left: 80%;"></canvas>
+            <frameset>
+		    <frame onload="Main_ThreeJS_example();">
+		    <!--<canvas width="425" height="425" style="width: 500px; height: 500px; margin-left: 80%;"></canvas>-->
 	      <script type="text/javascript" src="js/three.min.js"></script>
 	      <script type="text/javascript" src="js/ThreeJS_Example_v2-1.js"></script>
-               </li>
+               </frameset>
   </div> 	
 	 </div>
 <script> 
