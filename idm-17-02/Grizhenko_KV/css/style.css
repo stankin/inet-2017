@@ -78,13 +78,15 @@ body.appear
 {
   font-family: sans-serif;
   position:absolute;
-  right:100px;
+  right:150px;
+  top:20px;
   height:30px;
-  border-color:#ffffff;
+  border-color:#000000;
   border-style:solid;
   border-width:1px;
   border-radius:2px;
   background:#E75480;
+  cursor:pointer;
 }
 .btn:active 
 {
