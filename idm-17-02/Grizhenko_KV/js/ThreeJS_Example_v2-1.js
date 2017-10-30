@@ -5,9 +5,7 @@
 function Main_ThreeJS_example() {
     var width = 500;
     var height = 500;
-    var marginLeft = 'auto';
-    var marginRight = 'auto';
-
+    
     // Переменные
     var theta = 0, phi= 0;              // углы поворота
     var zStart = 2;                     // чтобы можно было восстановить начальное состояние по кнопке [home]
