@@ -70,13 +70,19 @@ document.body.className='fade';
             </li>
   </div>
     <footer>              
-               <div id="background">
-		       <div id="notes">Повращай куб с помощью стрелок<br/></div>
-			<script src="js/three.min.js"></script>
-                        <script src="js/ThreeJS_Example_v2-1.js"></script>
-		        <div id="ThreeJS_div"></div>
-		        <script type="text/javascript" src="js/index.js"></script>
-	        </div>
+           <head>
+      <title>ThreeJS Example</title>
+      <script src="three.min.js"></script>
+      <script src="ThreeJS_Example_v2-1.js"></script>
+     </head>
+    <body onload="Main_ThreeJS_example();">
+    <div id="ThreeJS_div"></div>
+     <ul>
+     <li>Стрелочки - поворот куба
+     <li><code>[Home]</code> - вернуть куб в исходное положение
+     <li><code>[Page Up]</code>/<code>[Page Down]</code> - приближение/отдаление
+     </ul>
+     </body>
     </footer>    
  <script>  
 setTimeout(function()
