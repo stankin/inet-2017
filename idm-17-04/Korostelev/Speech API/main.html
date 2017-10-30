@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Search</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="w256h2561380453883Audio2256x25632.png">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="col-md-4">
+		<h2 onclick="info();"><a>Info</a></h2>
+	</div>
+	<div class="col-md-4">
+		<div class="search-block">
+			<div id="parent">
+			    <div id="child">
+					<input type="hidden" name="name" onkeyup="">
+					<img id="d2" onclick="speaker()" src="sound.ico">
+					<div id=d1></div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<strong>Влад Коростелёв, ИДМ-17-04</strong>
+	</div>
+</body>
+</html>
+<script>
+
+function info() {
+	speechSynthesis.speak(
+	  new SpeechSynthesisUtterance('Здравствуйте, я помошник Анжела, нажмите микрофон и скажите что вам нужно')
+	);
+}
+
+$("#d2").bind("click", function() {
+	$("#d2").attr("src","sound2.ico");
+});
+var recognizer = new webkitSpeechRecognition();
+recognizer.interimResults = true;
+recognizer.lang = 'ru-Ru';
+recognizer.onresult = function (event) {
+	var result = event.results[event.resultIndex];
+		if (result.isFinal) {
+			document.getElementById('d1').innerText = result[0].transcript;
+			window.open('http://google.com/search?q=' + result[0].transcript);
+			$("#d2").attr("src","sound.ico");
+		} else {
+		console.log('Промежуточный результат: ', result[0].transcript);
+		}
+};
+
+function speaker() {
+	recognizer.start();
+}
+</script>
