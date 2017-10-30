@@ -29,8 +29,7 @@ body
 }
 .position
 {
-  position: absolute;
-  center: 15px;
+  margin: 0px 0px 0px 75px;
 }
 @keyframes blur 
 {
