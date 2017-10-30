@@ -1,0 +1,20 @@
+.popup {
+  display: none;
+  background: #b9e0e0;
+  font-size: 24px;
+  font-family:  Helvetica, sans-serif;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+  .popup li {
+    list-style: decimal;
+    list-style-position: inside;
+  }
+
+.fancybox-close-small {
+  width: 20px;
+  height: 20px;
+}
+
+a:active, a:focus { outline: none; }

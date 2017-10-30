@@ -1,0 +1,29 @@
+H1 {
+  color: #000080;
+  font-size: 200%;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center;
+}
+P {
+  padding-left: 20px;
+}
+
+H2{
+
+}
+
+.class1 {
+	width: 200px; 
+    background: #ccc;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 1px black; 
+    float: left;
+}
+button{
+	color: #ff0000
+}
+BODY {
+color: #080;
+background: #ffe;
+}
