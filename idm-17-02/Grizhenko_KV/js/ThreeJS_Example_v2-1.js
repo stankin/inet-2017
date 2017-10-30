@@ -3,8 +3,13 @@
 
     //-- Параметры --//
 function Main_ThreeJS_example() {
-    var width = 500;
-    var height = 500;
+   // var width = 500;
+   // var height = 500;
+    container = document.createElement( 'div' );
+	container.style.width = '640px';
+	container.style.height = '480px';
+	container.style.marginLeft = 'auto';
+	container.style.marginRight = 'auto';
 
     // Переменные
     var theta = 0, phi= 0;              // углы поворота
