@@ -64,7 +64,6 @@ function Main_ThreeJS_example() {
         renderer = new THREE.WebGLRenderer();
         renderer.setSize(width, height);
         renderer.setClearColor( 0xeeeeff, 1);
-        renderer.setAlign(Align.CENTER);
 
         var geometry = new THREE.BoxGeometry(1,1,1);            // геометрия фигуры, задаем куб
         var material = new THREE.MeshLambertMaterial({          // материал куба, в данном случае - текстура
