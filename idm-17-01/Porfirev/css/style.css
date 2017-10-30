@@ -1,0 +1,27 @@
+
+
+#service{ padding: 96px 0px;}
+#service .service-header{text-align: center; margin-bottom: 20px;}
+#service .service-header h1{color:#636C6C; font-size: 36px; font-family: 'Raleway', sans-serif; font-weight: 700; }
+#service .service-header p{color:#AFB8B8; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 400; line-height: 24px}
+
+#service .service-tab ul{float: left;list-style: outside none none;padding: 0;margin-right: 150px;}
+#service .service-tab ul li{ border-right: 1px solid #DBE2E2;}
+#service .service-tab ul li a{color: #9FA9A9; padding-top: 23px; padding-bottom: 17px;font-size: 20px; font-family: 'Raleway', sans-serif; font-weight: 400;display: block; padding-right: 60px}
+#service .service-tab ul li a i{font-size: 45px; margin-right: 40px; position: relative;top: 10px;}
+#service .service-tab ul li a:hover{border-right: 10px solid #5DCA88;padding-right: 50px}
+#service .service-tab ul li a:hover i{color: #5DCA88}
+
+.edit-tab{overflow: hidden;}
+.edit-tab h1{color: #636C6C; font-size: 18px; font-family: 'Raleway', sans-serif; font-weight: 700; margin: 0px;margin: 0px;padding-bottom: 30px; }
+.edit-tab h2{color: #636C6C; font-size: 24px; font-family: 'Raleway', sans-serif; font-weight: 300; margin: 0px;margin: 0px;padding-bottom: 10px; }
+.edit-tab p{color:#AFB8B8; font-size: 16px;font-family: 'Raleway', sans-serif; font-weight: 400; line-height: 24px;margin: 0px;}
+
+.edit-tab-content{padding-top: 30px}
+
+
+
+
+
+
+
