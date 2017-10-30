@@ -68,7 +68,7 @@ function Main_ThreeJS_example() {
 
         var geometry = new THREE.BoxGeometry(1,1,1);            // геометрия фигуры, задаем куб
         var material = new THREE.MeshLambertMaterial({          // материал куба, в данном случае - текстура
-            map: THREE.ImageUtils.loadTexture('teormeh.png')
+            map: THREE.ImageUtils.loadTexture('images/topoboi_com-36665.jpg')
         });
 
         cube = new THREE.Mesh(geometry, material);
