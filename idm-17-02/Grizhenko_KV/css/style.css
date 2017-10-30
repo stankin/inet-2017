@@ -144,9 +144,10 @@ li
 {
   position: relative;
   overflow: hidden;
-  max-width: 780px;
+  max-width: 860px;
   opacity: 1;
   transform: translate(0, 0);
+  background-color: #ff8c69;
 }
 a 
 {
