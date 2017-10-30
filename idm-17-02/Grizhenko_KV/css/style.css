@@ -120,7 +120,7 @@ li
   text-align: left;
   color: #FADADD;
   font-size: 21px;
-  max-width: 882px;
+  max-width: 885px;
   border: 4px dashed #DE3163;
   padding: 5px;
   border-radius: 5px;
@@ -129,7 +129,7 @@ li
 {
   position: relative;
   overflow: hidden;
-  max-width: 882px;
+  max-width: 885px;
   opacity: 1;
   transform: translate(0, 0);
   background-color:#E75480;
