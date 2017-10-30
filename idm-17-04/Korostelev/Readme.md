@@ -10,10 +10,18 @@
 ```
 Если в ответ будет **true**, то браузер поддерживает API.
 
-[API SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)
+Для работы необходимо установить серверное программное обеспечение, [OpenServer](https://ospanel.io/download/)
 
-[Личная страница]()
+Пример озвучивания текста:
+```javascript
+speechSynthesis.speak(
+	  new SpeechSynthesisUtterance('Здравствуйте, я помошник Анжела, нажмите микрофон и скажите что вам нужно')
+	);
+```
+Проект Анжела распознаёт речь и делает запрос в поисковую систему google.com с открытием окна по вашему запросу
+
+[API SpeechSynthesis](https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis)
 
 [Статья]()
 
-[Проект]()
+[Проект Speech API](https://github.com/stankin/inet-2017/tree/master/idm-17-04/Korostelev/Speech%20API)
