@@ -1,7 +1,5 @@
-﻿// Куб на движке Three.js
+// Куб на движке Three.js
 // Версия 2.1 от 24.08.2014
-
-function Main_ThreeJS_example() {
 
     //-- Параметры --//
     var width = 500;
@@ -89,4 +87,3 @@ function Main_ThreeJS_example() {
 
     // Запуск программы
     start3DCanvas();
-}
