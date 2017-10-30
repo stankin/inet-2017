@@ -2,6 +2,7 @@
 // Версия 2.1 от 24.08.2014
 
     //-- Параметры --//
+function Main_ThreeJS_example() {
     var width = 500;
     var height = 500;
 
@@ -87,3 +88,4 @@
 
     // Запуск программы
     start3DCanvas();
+}
