@@ -76,6 +76,7 @@ body.appear
 }
 .btn 
 {
+	font-family: fantasy, 'Almendra Display';
 	height:30px;
 	border-color:#c2e254 #9bb838 #9bb838 #c2e254;
 	border-style:solid;
@@ -96,7 +97,7 @@ body.appear
 	border-color:#ddd #333 #333 #ddd;
 	border-style:solid;
 	border-width:1px;
-	}
+}
 .accordion 
 {
   width: 100%;
