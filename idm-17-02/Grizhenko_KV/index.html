@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">   
     <title>Гриженко К. В.</title>     
   </head>
-  <body class="is-loading" background="images/fon3.png">	  
+  <body class="is-loading" background="images/fon3.png" onload="Main_ThreeJS_example();">	  
 <script> 
 document.body.className='fade'; 
 </script>
@@ -69,20 +69,16 @@ document.body.className='fade';
             <br>2. Формулировка одного вопроса по теме «Интернет-технологии» в одной из форм, встречающихся в тесте.
             </li>
   </div>
-    <footer>              
-           <head>
-      <title>ThreeJS Example</title>
+    <footer>
+      <title>Повращай куб стрелочками</title>
       <script src="three.min.js"></script>
       <script src="ThreeJS_Example_v2-1.js"></script>
-     </head>
-    <body onload="Main_ThreeJS_example();">
-    <div id="ThreeJS_div"></div>
+      <div id="ThreeJS_div"></div>
      <ul>
      <li>Стрелочки - поворот куба
      <li><code>[Home]</code> - вернуть куб в исходное положение
      <li><code>[Page Up]</code>/<code>[Page Down]</code> - приближение/отдаление
      </ul>
-     </body>
     </footer>    
  <script>  
 setTimeout(function()
