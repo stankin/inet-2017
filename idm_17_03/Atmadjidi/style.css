@@ -1,4 +1,8 @@
-﻿table {
+﻿body {
+transform: scale (1.5);
+}
+
+table {
 border: 1px solid black;
 border-collapse: collapse;
 }
@@ -25,7 +29,7 @@ margin: 0 auto;
 }
 
 body {
-background-image: url(pexels-photo-55787.jpeg);
+background-image: url(1234567.svg);
 background-size:cover;
 }
 
@@ -35,6 +39,7 @@ background: white;
 
 .centr {
 max-width: 938px;
+margin: 0 auto;
 }
 
 li {
@@ -50,20 +55,18 @@ p {
 color: white;
 }
 
-ol {
-counter-reset: list1;
+h2 {
+color: white;
 }
 
-ol li:before {
-counter-increament: list1;
-countent: counter(list1) ". ";
+ol li {
+list-style-type: decimal;
 }
 
-ol ol {
-counter-reset: list2;
+a:visited {
+  color: #fff;
 }
 
-ol ol li:before {
-counter-increment: list2;
-content^ counter(list1) "." counter(list2) ". ";
+a:hover {
+color: #000;
 }
