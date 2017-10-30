@@ -1,0 +1,29 @@
+body
+{
+    margin: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.head
+{
+    background:#CCC;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Arial";
+    font-size: 20pt;
+}
+.containes
+{
+    background: #DDF;
+    padding: 15px;
+    border: solid 4px #CCC;
+    font-family: "Courier";
+    font-size: 14pt;
+}
+summary
+{    
+    padding: 12px;
+}
