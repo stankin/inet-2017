@@ -2,7 +2,7 @@
 
 Поддержка есть только Chrome и Opera
 
-![group]()
+![group](https://github.com/stankin/inet-2017/blob/master/idm-17-04/Korostelev/SpeechRecognition.JPG)
 
 Чтобы проверить поддерживает ли ваш браузер данный API, откройте консоль разработчика и введите:
 ```bash
