@@ -304,6 +304,10 @@ body, html {
     margin-right: 50px;
 }
 
+.colum.half a{
+  color: #66cccc;
+}
+
 .colum.half img {
     display:block;
     text-align: center;
