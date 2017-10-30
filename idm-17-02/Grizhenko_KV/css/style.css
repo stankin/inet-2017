@@ -76,28 +76,22 @@ body.appear
 }
 .btn 
 {
-	font-family: fantasy, 'Almendra Display';
-	vertical-align: bottom;
-	height:30px;
-	border-color:#c2e254 #9bb838 #9bb838 #c2e254;
-	border-style:solid;
-	border-width:1px;
-	background:#c2e254;
-	cursor:pointer;
-}
-.btn:hover 
-{	
-	border-color:#FFCC66 #FFFF99 #FFFF99 #FFCC66;
-	border-style:solid;
-	border-width:1px;
-	background:#FFFF99;
+  font-family: sans-serif;
+  position:absolute;
+  right:100px;
+  height:30px;
+  border-color:#ffffff;
+  border-style:solid;
+  border-width:1px;
+  border-radius:2px;
+  background:#E75480;
 }
 .btn:active 
 {
-	background:#ff0000;
-	border-color:#ddd #333 #333 #ddd;
-	border-style:solid;
-	border-width:1px;
+  background:#993366;
+  border-color:#ffffff;
+  border-style:solid;
+  border-width:1px;
 }
 .accordion 
 {
@@ -134,7 +128,7 @@ h3
 }
 li
 {
-  background-color: #990066;
+  background-color: #B22222;
   font-family: fantasy, 'Almendra Display';
   text-align: left;
   color: #FADADD;
