@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег CITE</title>
+  <style> 
+	.hide{
+	  display:none;
+	}  
+	</style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+ </head>
+ <body> 
+	<h3> Бабенко Е.В.</h3>
+	<div id="toggle" class="hide"> Персональная страница </div>
+	<button onclick="show_div('toggle')">Нажми на кнопку </button>
+	<script>
+		function show_div(id){
+			console.log("test")
+			$("#" +id).show()
+		}
+	</script>
+ </body>
+</html>

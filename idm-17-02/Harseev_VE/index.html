@@ -1,11 +1,124 @@
 <html>
   <head>
-    <title> Личная страница Харсеева </title>
+    <title> Личная страница </title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
   </head>
   <body>
-    <h1> Здесь пока пусто </h1>
-    <h2> Зайдите позже! </h2>
-    <h3> Заголовок 3  </h3>
-    <h4> Заголовок 4 </h4>
+    <h1> Личная страница студента группы ИДМ-17-02 Харсеева В.Е. </h1>
+<script type="text/javascript">
+    function clockPainting() {
+        var now = new Date();
+        var sec = now.getSeconds();
+        var min = now.getMinutes();
+        var hr = now.getHours();
+
+        var ctx = document.getElementById("canvas").getContext("2d");
+        ctx.save();
+
+        ctx.clearRect(0,0,150,150);
+        ctx.translate(75, 75);
+        ctx.scale(0.4,0.4);
+        ctx.rotate(-Math.PI/2);
+
+        ctx.strokeStyle = "black";
+        ctx.fillStyle = "black";
+        ctx.lineWidth = 8;
+        ctx.lineCap = "round";
+
+        ctx.save();
+        ctx.beginPath();
+
+        for (var i = 0; i < 12; i++) {
+            ctx.rotate(Math.PI/6);
+            ctx.moveTo(100,0);
+            ctx.lineTo(120,0);
+        }
+
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+        ctx.rotate((Math.PI/6)*hr +
+            (Math.PI/360)*min +
+            (Math.PI/21600)*sec);
+        ctx.lineWidth = 14;
+
+        ctx.beginPath();
+        ctx.moveTo(-20,0);
+
+        // линия часовых меток
+        ctx.lineTo(80,0);
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+
+        // минутная стрелка
+        ctx.rotate((Math.PI/30*min) +
+            (Math.PI/1800)*sec);
+        ctx.lineWidth = 10;
+
+        ctx.beginPath();
+        ctx.moveTo(-28,0);
+        ctx.lineTo(112,0);
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+
+        // секундная стрелка
+        ctx.rotate(sec * Math.PI/30);
+        ctx.strokeStyle = "#D40000";
+        ctx.fillStyle = "#D40000";
+        ctx.lineWidth = 6;
+
+        ctx.beginPath();
+        ctx.moveTo(-30,0);
+        ctx.lineTo(83,0);
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.restore();
+    }
+    window.onload = function() {
+        setInterval(clockPainting, 1000);
+    }
+</script>
+<div class="st4"><canvas id="canvas" height="150" width="150"></canvas></div>	
+
+<div class="st1">Лабораторная работа №1 "Экосистема разработки программ с открытым кодом":
+Создание персональной страницы-отчета на github и работа с git <br>
+<a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Harseev_VE/index.html">ссылка на работу</a></div>
+
+<div class="st2">Лабораторная работа №2 "Разработка простого веб-приложения":
+Проектирование и разработка индивидуального или коллективного веб-приложения с использованием html,css,js + json,xml</div>
+
+<div class="st2">Лабораторная работа №3 "Настройка локальной сети передачи данных":
+Настройка коммутаторов и маршрутизаторов
+Описание лабораторной
+ПО есть на Яндекс-диск С.Е.Сосенушкина</div>
+
+<div class="st2">Подготовка к экзамену:
+Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)
+Презентации лекций и тесты расположены на Яндекс-диск </div><br>
+
+<div onmousedown="mDown(this)"
+class="st3">Нажмите на кнопку</div>
+
+<script>
+function get_random_color() {
+    var letters = '0123456789ABCDEF'.split('');
+    var color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.round(Math.random() * 15)];
+    }
+    return color;
+}
+function mDown(obj)
+{
+obj.style.backgroundColor=get_random_color();
+}
+</script>
+
   </body>
 </html>
