@@ -3,7 +3,7 @@
 
     //-- Параметры --//
 function Main_ThreeJS_example() {
-    var right = 100;
+    margin: 0 auto;
     var width = 500;
     var height = 500;
 
