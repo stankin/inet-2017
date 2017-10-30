@@ -79,7 +79,7 @@ body.appear
   font-family: sans-serif;
   position:absolute;
   right:0px;
-  bottom:1px;
+  bottom:0px;
   height:30px;
   border-color:#000000;
   border-style:solid;
@@ -147,7 +147,7 @@ li
   max-width: 860px;
   opacity: 1;
   transform: translate(0, 0);
-  background-color: #ff8c69;
+  background-color: #CC0605;
 }
 a 
 {
