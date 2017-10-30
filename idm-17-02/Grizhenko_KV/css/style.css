@@ -79,7 +79,7 @@ body.appear
   font-family: sans-serif;
   position:absolute;
   right:150px;
-  top:20px;
+  bottom:20px;
   height:30px;
   border-color:#000000;
   border-style:solid;
@@ -91,7 +91,7 @@ body.appear
 .btn:active 
 {
   background:#993366;
-  border-color:#ffffff;
+  border-color:#000000;
   border-style:solid;
   border-width:1px;
 }
