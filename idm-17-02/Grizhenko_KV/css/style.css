@@ -4,10 +4,13 @@ html
 }
 body 
 {	
-  height: 100%;	
+  background: #333;
+  color: #eee;
+  font-size: 34px;
+  font-family: 'Open Sans'	
 }
-.wrap {
-  font-family: 'Open Sans'
+.wrap 
+{
   width: 250px;
   text-align: center;
   position: absolute;
