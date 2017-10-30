@@ -78,8 +78,8 @@ body.appear
 {
   font-family: sans-serif;
   position:absolute;
-  right:350px;
-  bottom:5px;
+  right:50px;
+  bottom:3px;
   height:30px;
   border-color:#000000;
   border-style:solid;
