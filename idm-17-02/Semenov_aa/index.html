@@ -1,0 +1,72 @@
+<html>
+
+<head>
+    <title>me_another</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">
+            <img src="images/lab.svg" width="45px">
+            <h1 style="margin: 0px;">Personal page Semenov_aa</h1>
+        </div>
+
+        <div>
+            <p> "Task list" </p>
+            
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex1: Экосистема разработки программ с открытым кодом.
+            </button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Зарегистрироваться на <a href="https://github.com/">github.com</a></li>
+                    <li>Создать персональную веб страницу-отчет с использованием html, css, js. <a href="https://github.com/meanother/">my personal page</a></li>
+                    <li>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.(Папка с исходными кодами в репозитории)<a href="https://github.com/meanother/">my personal page</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex2: Разработка простого веб-приложения.</button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Собрать команду для разработки веб-приложения (SPA) и распределить роли <a href="https://github.com/">Страница команды</a></li>
+                    <li>Создать персональную страницу по макету. Исходный код для html: <a href="https://github.com/meanother/">html code</a></li>
+                    <li>Прописать стили страницы. Исходный код для css<a href="https://github.com/meanother/">css code</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex3: Настройка локальной сети передачи данных. </button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Собрать команду для разработки веб-приложения (SPA) и распределить роли <a href="https://github.com/">Страница команды</a></li>
+                    <li>Создать персональную страницу по макету. Исходный код для html: <a href="https://github.com/meanother/">html code</a></li>
+                    <li>Прописать стили страницы. Исходный код для css<a href="https://github.com/meanother/">css code</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
