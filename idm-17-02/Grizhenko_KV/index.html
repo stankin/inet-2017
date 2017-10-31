@@ -52,7 +52,7 @@
      dn="AM" 
     if ((hours>=23)&&(minutes>=1)||(hours>=24))
        {dn="PM"
-       hours=hours}
+       hours=hours-12}
      if (hours==0)
      hours=23
      extract(hours,minutes,seconds)
