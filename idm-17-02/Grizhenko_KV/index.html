@@ -19,7 +19,7 @@
   cb=new Image(); cb.src="images/cb.gif"
   //cam=new Image(); cam.src="images/cam.gif"
   //cpm=new Image(); cpm.src="images/cpm.gif"
-  function extract(h,m,s,type)
+  function extract(h,m,s)
    {if (!document.images)
     return
     if (h<=9)
@@ -53,8 +53,8 @@
    // if ((hours>=12)&&(minutes>=1)||(hours>=13))
     //   {dn="PM"
     //    hours=hours-12}
-    // if (hours==0)
-   //  hours=12
+     if (hours==0)
+     hours=24
      extract(hours,minutes,seconds)
      setTimeout("show3()",1000)}
 </Script>
