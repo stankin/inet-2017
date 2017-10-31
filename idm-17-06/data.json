@@ -1,0 +1,156 @@
+{
+    "students" :[
+        {
+            "name" : "Валитов Алексей Олегович",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Дёмин Степан Евгеньевич",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Иванников Дмитрий Владимирович",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "Хранители Секретов",
+            "role" : "АД и ПП"
+        },
+        {
+            "name" : "Иванов Алексей Алексеевич",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Карев Илья Вадимович",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Копий Анна Александровна",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Костин Сергей Викторович",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Куковинец Дмитрий Валерьевич",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Ласковый Никита Алексеевич",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Маслова Вероника Олеговна",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "Хранители Секретов",
+            "role" : "КО и РП"
+        },
+        {
+            "name" : "Минкашев Дамир Маратович",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Попов Денис Павлович",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Продувнова Вера Александровна",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Салоид Владимир Дмитриевич",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Соколов Алексей Александрович",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Солодко Алексей Андреевич",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "Хранители Секретов",
+            "role" : "СП и НИ"
+        },
+        {
+            "name" : "Солодуев Игорь Алексеевич",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        },
+        {
+            "name" : "Толчинский Алексей Юрьевич",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Tolchinski/index.html",
+            "team" : "Хранители Секретов",
+            "role" : "ВН и БА"
+        },
+        {
+            "name" : "Яковлев Андрей Борисович",
+            "module1" : "0",
+            "module2" : "0",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "team" : "write your team",
+            "role" : "write your role"
+        }
+    ]
+}
