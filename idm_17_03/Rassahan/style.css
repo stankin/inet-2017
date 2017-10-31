@@ -1,30 +1,136 @@
 body {
-    background-color: #CCCCFF;
-	padding: 25px;
+    background-color: #B1C9E0;
+	background-image: url(batthern.png);
+	background-repeat: repeat;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color : #003366;
-    text-align: center;
+.mainframe {
+    margin: auto;
+    width: 70%;
+    background-color: #A7BED3;
+}
+
+.cell {
+    margin: auto;
+    width: 98%;
+    background-color: #A7BED3;
+	padding: 15px;
+}
+
+.cell:hover {
+	background:#9DB2C6; 
+	width:98%;
+	display:block; 
+	text-decoration:none;
+	margin: auto
+}
+
+h1 {
+	font: bold 2em arial, sans-serif;
+}
+
+h2 {
+	font: bold 1.5em arial, sans-serif;
 }
 
 p {
-    font-family: verdana;
-    font-size: 20px;
+	font: 1em arial, sans-serif;
 }
 
-div {
-    width: 400px; 
-    background: #6666FF;
-    padding: 15px;
-    padding-right: 20px; 
-    border: solid 1px black;
+table {
+    border-collapse: collapse;
+    width: 75%;
+	padding: 15px;
+	margin: auto;
 }
 
-.text {
-    width: 800px; 
-    background: #66CC99;
-    padding: 10px;
-    padding-right: 50px; 
-    border: solid 2px black;
+th, td {
+    text-align: left;
+    padding: 8px;
 }
+
+tr:nth-child(even){background-color: #8699AA}
+tr:nth-child(uneven){background-color: #91A4B7}
+tr:hover {background-color: #93A0AD}
+
+
+.ripple {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.ripple:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #000 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .5s, opacity 1s;
+}
+
+.ripple:active:after {
+  transform: scale(0, 0);
+  opacity: .2;
+  transition: 0s;
+}
+
+a.inh {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #586068;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: -10%;
+    margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.lonely {
+	position: absolute;
+	left: 72%;
+	top: 0.5%;
+	width: 200px;
+	height: 200px;
+	z-index:2;
+}
+
+img {
+    opacity: 0.7;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+
+img:hover {
+    opacity: 1;
+    transition: opacity .55s ease-in-out;
+    -moz-transition: opacity .55s ease-in-out;
+    -webkit-transition: opacity .55s ease-in-out;
+}​
