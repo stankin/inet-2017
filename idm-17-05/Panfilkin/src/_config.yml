@@ -1,0 +1,13 @@
+
+title: Лабораторные работы
+baseurl: "/inet-2017/idm-17-05/Panfilkin" # the subpath of your site, e.g. /blog/
+url: "https://stankin.github.io/inet-2017/idm-17-05/Panfilkin" # the base hostname & protocol for your site
+css: "cyan"
+scroll-cursor: "#00BCD4"
+scroll-rail: "#0097A7"
+
+# Build settings
+markdown: kramdown
+highlighter: null #pygments
+lsi: false
+safe: false
