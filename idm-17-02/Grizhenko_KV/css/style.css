@@ -98,7 +98,7 @@ body.appear
 .accordion 
 {
   width: 100%;
-  max-width: 950px;
+  max-width: 970px;
   min-height: 0;
   display: block;
   position: relative;
@@ -120,7 +120,7 @@ li
   text-align: left;
   color: #FADADD;
   font-size: 20px;
-  max-width: 940px;
+  max-width: 960px;
   border: 4px dashed #DE3163;
   padding: 5px;
   border-radius: 5px;
@@ -129,7 +129,7 @@ li
 {
   position: relative;
   overflow: hidden;
-  max-width: 940px;
+  max-width: 960px;
   opacity: 1;
   transform: translate(0, 0);
   background-color:#E75480;
