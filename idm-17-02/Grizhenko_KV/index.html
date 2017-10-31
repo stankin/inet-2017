@@ -4,14 +4,70 @@
     <meta charset="UTF-8">      
     <meta name="viewport" content="width=device-width, initial-scale=1" />      
     <link rel="stylesheet" type="text/css" href="css/style.css">
+	  <Script Language="JavaScript1.1">
+  var dn
+  c1=new Image(); c1.src="c1.gif"
+  c2=new Image(); c2.src="c2.gif"
+  c3=new Image(); c3.src="c3.gif"
+  c4=new Image(); c4.src="c4.gif"
+  c5=new Image(); c5.src="c5.gif"
+  c6=new Image(); c6.src="c6.gif"
+  c7=new Image(); c7.src="c7.gif"
+  c8=new Image(); c8.src="c8.gif"
+  c9=new Image(); c9.src="c9.gif"
+  c0=new Image(); c0.src="c0.gif"
+  cb=new Image(); cb.src="cb.gif"
+  cam=new Image(); cam.src="cam.gif"
+  cpm=new Image(); cpm.src="cpm.gif"
+  function extract(h,m,s,type)
+   {if (!document.images)
+    return
+    if (h<=9)
+      {document.images.a.src=cb.src
+       document.images.b.src=eval("c"+h+".src")}
+    else
+      {document.images.a.src=eval("c"+Math.floor(h/10)+".src")
+       document.images.b.src=eval("c"+(h%10)+".src")}
+    if (m<=9)
+      {document.images.d.src=c0.src
+       document.images.e.src=eval("c"+m+".src")}
+    else
+      {document.images.d.src=eval("c"+Math.floor(m/10)+".src")
+       document.images.e.src=eval("c"+(m%10)+".src")}
+    if (s<=9)
+      {document.g.src=c0.src
+       document.images.h.src=eval("c"+s+".src")}
+    else
+      {document.images.g.src=eval("c"+Math.floor(s/10)+".src")
+       document.images.h.src=eval("c"+(s%10)+".src")}
+    if (dn=="AM") document.j.src=cam.src
+    else document.images.j.src=cpm.src}
+  function show3()
+    {if (!document.images)
+       return
+     var Digital=new Date()
+     var hours=Digital.getHours()
+     var minutes=Digital.getMinutes()
+     var seconds=Digital.getSeconds()
+     dn="AM" 
+     if ((hours>=12)&&(minutes>=1)||(hours>=13))
+       {dn="PM"
+        hours=hours-12}
+     if (hours==0)
+     hours=12
+     extract(hours,minutes,seconds,dn)
+     setTimeout("show3()",1000)}
+</Script>
+
     <title>Гриженко К. В.</title>     
   </head>
-  <body background="images/fon3.png">
+  <body background="images/fon3.png" OnLoad="show3()">
 <script> 
 document.body.className='fade';
 </script>
       <div id="main">     
         <header>
+  <Img Src="cb.gif" Name="a"><Img Src="cb.gif" Name="b"><Img Src="colon.gif" Name="c"><Img Src="cb.gif" Name="d"><Img Src="cb.gif" Name="e"><Img Src="colon.gif" Name="f"><Img Src="cb.gif" Name="g"><Img Src="cb.gif" Name="h"><Img Src="cam.gif" Name="j">
 	<div class="hit-the-floor">ГРИЖЕНКО КИРИЛЛ ВАДИМОВИЧ</div>	
 		<h2>ИДМ-17-02</h2>
 		<center><img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif"></center>
