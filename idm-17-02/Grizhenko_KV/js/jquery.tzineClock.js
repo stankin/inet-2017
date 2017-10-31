@@ -1,17 +1,3 @@
-/*!
- * jquery.tzineClock.js - Tutorialzine Colorful Clock Plugin
- *
- * Copyright (c) 2009 Martin Angelov
- * http://tutorialzine.com/
- *
- * Licensed under MIT
- * http://www.opensource.org/licenses/mit-license.php
- *
- * Launch  : December 2009
- * Version : 1.0
- * Released: Monday 28th December, 2009 - 00:00
- */
-
 (function($){
 	
 	// A global array used by the functions of the plug-in:
@@ -168,4 +154,4 @@
 	
 	}
 	
-})(jQuery)
+}
