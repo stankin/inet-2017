@@ -14,3 +14,4 @@ safe: false
 
 
 #How to build command: jekyll build
+# jekyll build --watch
