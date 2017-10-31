@@ -7,7 +7,7 @@ body{
 	width:100%;
 	padding:0;
 	margin:0;
-	background:linear-gradient(to right,#61210B 20%,#A4A4A4 50%);
+	background:linear-gradient(to right,#FA5858 20%,#A4A4A4 50%);
 }
 #back-banner-box{
 	position:fixed;
@@ -97,3 +97,24 @@ p{
 	text-align:justify;
 	color:#61210B;
 }
+.msg {
+  position: relative;
+  overflow: hidden;
+  max-width: 800px;
+  opacity: 1;
+  transform: translate(0, 0);
+  border-left: 2px dotted #DF013A;
+  border-right: 2px dotted #DF013A;
+  border-bottom: 2px dotted #DF013A;
+  border-top: 2px dotted #DF013A;
+  background-color: #F2F2F2;
+}
+.msg p {
+  color: #0101DF;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  font-style:italic;
+}
+
