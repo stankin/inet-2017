@@ -11,3 +11,6 @@ markdown: kramdown
 highlighter: null #pygments
 lsi: false
 safe: false
+
+
+#How to build command: jekyll build
