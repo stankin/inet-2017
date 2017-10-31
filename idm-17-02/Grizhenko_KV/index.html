@@ -17,8 +17,8 @@
   c9=new Image(); c9.src="images/c9.gif"
   c0=new Image(); c0.src="images/c0.gif"
   cb=new Image(); cb.src="images/cb.gif"
-  cam=new Image(); cam.src="images/cam.gif"
-  cpm=new Image(); cpm.src="images/cpm.gif"
+  //cam=new Image(); cam.src="images/cam.gif"
+  //cpm=new Image(); cpm.src="images/cpm.gif"
   function extract(h,m,s,type)
    {if (!document.images)
     return
@@ -40,8 +40,8 @@
     else
       {document.images.g.src=eval("c"+Math.floor(s/10)+".src")
        document.images.h.src=eval("c"+(s%10)+".src")}
-    if (dn=="AM") document.j.src=cam.src
-    else document.images.j.src=cpm.src}
+    //if (dn=="AM") document.j.src=cam.src
+   // else document.images.j.src=cpm.src}
   function show3()
     {if (!document.images)
        return
@@ -49,13 +49,13 @@
      var hours=Digital.getHours()
      var minutes=Digital.getMinutes()
      var seconds=Digital.getSeconds()
-     dn="AM" 
-     if ((hours>=12)&&(minutes>=1)||(hours>=13))
-       {dn="PM"
-        hours=hours-12}
-     if (hours==0)
-     hours=12
-     extract(hours,minutes,seconds,dn)
+    // dn="AM" 
+   // if ((hours>=12)&&(minutes>=1)||(hours>=13))
+    //   {dn="PM"
+    //    hours=hours-12}
+    // if (hours==0)
+   //  hours=12
+     extract(hours,minutes,seconds)
      setTimeout("show3()",1000)}
 </Script>
 
@@ -67,7 +67,7 @@ document.body.className='fade';
 </script>
       <div id="main">     
         <header>
-  <img src="images/cb.gif" name="b"><img src="images/colon.gif" name="c"><img src="images/cb.gif" name="d"><img src="images/cb.gif" name="e"><img src="images/colon.gif" name="f"><img src="images/cb.gif" name="g"><img src="images/cb.gif" name="h"><img src="images/cam.gif" name="j">
+  <img src="images/cb.gif" name="a"><img src="images/cb.gif" name="b"><img src="images/colon.gif" name="c"><img src="images/cb.gif" name="d"><img src="images/cb.gif" name="e"><img src="images/colon.gif" name="f"><img src="images/cb.gif" name="g"><img src="images/cb.gif" name="h"><img src="images/cam.gif" name="j">
 	<div class="hit-the-floor">ГРИЖЕНКО КИРИЛЛ ВАДИМОВИЧ</div>	
 		<h2>ИДМ-17-02</h2>
 		<center><img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif"></center>
