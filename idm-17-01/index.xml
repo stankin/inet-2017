@@ -2,7 +2,7 @@
 <?xml-stylesheet href="idm1710.xsl" type="text/xsl"?>
 <group>
 	<user>
-		<name>Бедретдинова Анна Юрьевн</name>
+		<name>Бедретдинова Анна Юрьевна</name>
 		<m1>0</m1>
 		<m2>0</m2>
 		<page>PLINK</page>
@@ -158,7 +158,7 @@
 		<name>Селин Николай Сергеевич</name>
 		<m1>0</m1>
 		<m2>0</m2>
-		<page>PLINK</page>
+		<page>Selin/index.html</page>
 		<team>TEAM C</team>
 		<role>ПП,ВН</role>
 	</user>
