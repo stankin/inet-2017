@@ -40,8 +40,8 @@
     else
       {document.images.g.src=eval("c"+Math.floor(s/10)+".src")
        document.images.h.src=eval("c"+(s%10)+".src")}
-    //if (dn=="AM") document.j.src=cam.src
-   // else document.images.j.src=cpm.src}
+    if (dn=="AM") document.j.src=cam.src
+    else document.images.j.src=cpm.src}
   function show3()
     {if (!document.images)
        return
@@ -49,10 +49,10 @@
      var hours=Digital.getHours()
      var minutes=Digital.getMinutes()
      var seconds=Digital.getSeconds()
-    // dn="AM" 
+     dn="AM" 
     if ((hours>=23)&&(minutes>=1)||(hours>=24))
-       {//dn="PM"
-    /   hours=hours}
+       {dn="PM"
+       hours=hours}
      if (hours==0)
      hours=23
      extract(hours,minutes,seconds)
