@@ -25,15 +25,15 @@ p {
 }
 div.panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: Gray;
     display: none;
 }
 
 h1 {
     text-align: center;
     color: DodgerBlue;
-    font-size: 28px;
-    font-family: Segoe UI Light;
+    font-size: 30px;
+    font-family: Arial;
     font-style: italic;
     font-weight: bold;
 
@@ -42,8 +42,8 @@ h1 {
 h2 {
     text-align: center;
     color: DarkBlue;
-    font-size: 28px;
-    font-family: Segoe UI Light;
+    font-size: 30px;
+    font-family: Arial;
     font-style: italic;
     font-weight: bold;
 }
@@ -51,8 +51,8 @@ h2 {
 ul {
     text-align: left;
     color: black;
-    font-size: 18px;
-    font-family: Segoe UI Light;
+    font-size: 30px;
+    font-family: Arial;
     font-style: italic;
     font-weight: bold;
 }
@@ -60,8 +60,8 @@ ul {
 h3 {
     text-align: center;
     color: #191970;
-    font-size: 22px;
-    font-family: Segoe UI Light;
+    font-size: 24px;
+    font-family: Arial;
     font-style: italic;
     font-weight: bold;
 
@@ -71,13 +71,13 @@ button.accordion {
     background-color: transparent;
     color: #444;
     cursor: pointer;
-    padding: 18px;
+    padding: 20px;
     width: 100%;
     text-align: left;
     border: none;
     outline: none;
     font-size: 37px;
-    font-family: Segoe UI Light;
+    font-family: Arial;
     font-style: italic;
     transition: 0.4s;
     border-bottom: 2px solid #cecece;
@@ -91,5 +91,5 @@ button.accordion:hover {
 div.panel {
     padding: 0 18px;
     display: none;
-    background-color: white;
+    background-color: gray;
 }
