@@ -7,7 +7,7 @@ body
 
 .head
 {
-    background: #CСD;
+    background: #CCD;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -19,7 +19,7 @@ body
 {
     background: #DDF;
     padding: 15px;
-    border: solid 4px #CСD;
+    border: solid 4px #CCD;
     font-family: "Courier";
     font-size: 14pt;
 }
