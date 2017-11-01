@@ -7,7 +7,7 @@ body
 
 .head
 {
-    background:#CCD;
+    background:#CСCСDD;
     padding: 10px;
     display: flex;
     align-items: center;
@@ -17,9 +17,9 @@ body
 }
 .containes
 {
-    background: #DDF;
+    background: #DDDDFF;
     padding: 15px;
-    border: solid 4px #CCD;
+    border: solid 4px #CСCСDD;
     font-family: "Courier";
     font-size: 14pt;
 }
