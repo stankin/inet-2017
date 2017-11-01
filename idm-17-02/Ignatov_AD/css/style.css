@@ -2,20 +2,30 @@
 
 h1
 {
-   font-family: 'Capture it', arial;
+   font: inherit;
   font-size: 70px;
   text-align: center;
   color: #121;
   letter-spacing: 25px;
   line-height: 1.4em;
   text-transform: uppercase;
+  text-shadow: 8px 4px 4px #aaa;
   margin-bottom: 0;
 }
 
-.font-effect-blood {
-        font-family: 'Capture it', Arial;
-        font-size: 48px;
-      }
+h2
+{
+   font: inherit;
+  font-size: 70px;
+  text-align: center;
+  color: #121;
+  letter-spacing: 25px;
+  line-height: 1.4em;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 4px #aaa;
+  margin-bottom: 0;
+}
+
 /*.ssiixx {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 400;
