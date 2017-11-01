@@ -1,4 +1,3 @@
-
 function digitalWatch() {
     var date = new Date();
     var hours = date.getHours();
