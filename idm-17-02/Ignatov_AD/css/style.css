@@ -25,12 +25,10 @@ h2
   text-shadow: 4px 4px 4px #aaa;
   margin-bottom: 0;
 }
-
-/*.ssiixx {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #777;
-  background: #fff;
+.bo{
+  border: 5px  double #112;
+  border-radius: 35px;
+  text-align: center;
+  margin: auto;
+  width: 1000px;
 }
