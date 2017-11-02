@@ -10,15 +10,72 @@ display:none;
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.m…"> </script>
 </head>
-<body> 
-<h3> Бабенко Е.В.</h3>
-<div id="toggle" class="hide"> Персональная страница </div>
-<button onclick="show_div('toggle')">Нажми на кнопку </button>
-<script>
-function show_div(id){
-console.log("test")
-$("#" +id).show()
-}
-</script>
-</body>
+<body> <html title="Личная страница">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<head>
+		<title>Личная страница</title>
+		<script scr="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"> </script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="animate.min.css">
+		<!-- Main CSS -->
+    	<link rel="stylesheet" href="style.css">
+	</head>
+
+	<body vlink="#800080" alink="#7777FF">
+		<div class="container">
+			<div class="row">
+                <div class="footer-area footer-white-style">
+					<h4>Лабораторные работы по интернет-технологиям</h4>
+				</div>
+				<h3>Cкакленева Алина</h3>
+				<h3>Студентка группы ИДМ-17-05</h3>	
+			</div>
+		</div>
+		<nav>
+    	<ul>
+     		<li><a href="#lab1">Лабораторная работа №1</a></li>
+      		<li><a href="#lab2">Лабораторная работа №2</a></li>
+      		<li><a href="#lab3">Лабораторная работа №3</a></li>
+      		<li><a href="https://github.com/stankin/inet-2017/tree/master/idm-17-05/Skakleneva">Исходники</a></li>
+      		<li><a href="https://github.com/stankin/inet-2017/wiki">Wiki</a></li>
+   		</ul>
+		</nav>
+		<div class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div id="lab1" class="wow fadeInUp">
+                        <h3>Описание лабораторной работы №1</h3>
+                        <p>Описание...</p>
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="lab2" class="wow fadeInUp" data-wow-delay="1.1s">
+                        <h3>Описание лабораторной работы №2</h3>
+                        <p>Описание...</p>
+                        <p>...</p>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div id="lab3" class="wow fadeInUp" data-wow-delay="1.2s">
+                        <h3>Описание лабораторной работы №3</h3>
+                        <p>Описание...</p>
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	</div>
+    	<div class="footer-area footer-solid-style">
+                <div class="col-md-12">
+                    <div class="footer-copyright">© Stankin 2017</div>
+                </div>
+            </div>
+        </div>
+        <script src="wow.min.js"></script>
+		<script>
+    		new WOW().init();
+		</script>
+	</body>
 </html>
