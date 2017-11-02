@@ -1,6 +1,7 @@
 body {
     background-image: url(../images/140520040122.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 p {
