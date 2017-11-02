@@ -1,0 +1,47 @@
+﻿#main{
+  padding-left: 5%;
+  padding-top: 1%;
+  width: 80%;
+}
+#head1{
+
+  padding-left: 2%;
+  border: 4px double black;
+
+}
+#lab1{
+  border: 4px double black;
+  background-color: #FFA9EA;
+  padding-left: 5%;
+
+}
+#lab2{
+  border: 4px double black;
+  background-color: #80D3FF;
+  padding-left: 5%;
+
+}
+#lab3{
+  border: 4px double black;
+  background-color: #FFA9EA;
+  padding-left: 5%;
+
+}
+#lab4{
+  border: 4px double black;
+  background-color: #80D3FF;
+  padding-left: 5%;
+
+}
+#nav
+{
+  border: 4px double black;
+  background-color: #82FFD5;
+  padding-left: 5%;
+  padding-right: 5%;
+
+
+}
+#pict{
+  padding-left: 80%;
+}
