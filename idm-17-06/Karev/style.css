@@ -3,7 +3,7 @@ body
     margin: 30px;
     padding-left: 300px;
     padding-right: 300px;
-    background-color: #2255CC;
+    background-color: #87CEFA;
 }
 
 .head
@@ -18,7 +18,7 @@ body
 }
 .containes
 {
-    background: #DDF;
+    background: #98FB98;
     padding: 15px;
     border: solid 4px #CCD;
     font-family: "Courier";
