@@ -13,7 +13,7 @@
 	<user>
 		<name>Бирюков Сергей Сергеевич</name>
 		<m1>53</m1>
-		<m2>47</m2>
+		<m2>0</m2>
 		<page>Biryukov/index.html</page>
 		<team>1701-Б</team>
 		<role>РП, СП</role>
@@ -39,7 +39,7 @@
 	
 	<user>
 		<name>Зайцев Александр Сергеевич</name>
-		<m1>48</m1>
+		<m1>35</m1>
 		<m2>0</m2>
 		<page>Zaytsev/index.html</page>
 		<team>1701-Д</team>
@@ -48,7 +48,7 @@
 	
 	<user>
 		<name>Зудилов Андрей Александрович</name>
-		<m1>45</m1>
+		<m1>40</m1>
 		<m2>0</m2>
 		<page>zudilov/index.html</page>
 		<team>TEAM C</team>
@@ -58,7 +58,7 @@
 	<user>
 		<name>Ильин Максим Александрович</name>
 		<m1>0</m1>
-		<m2>47</m2>
+		<m2>0</m2>
 		<page>PLINK</page>
 		<team>1701-Б</team>
 		<role>АД, ВН</role>
@@ -184,7 +184,7 @@
 	<user>
 		<name>Штыков Александр Александрович(shtykov.com)</name>
 		<m1>51</m1>
-		<m2>47</m2>
+		<m2>0</m2>
 		<page>PAGE</page>
 		<team>1701-Б</team>
 		<role>ПП, КО</role>
