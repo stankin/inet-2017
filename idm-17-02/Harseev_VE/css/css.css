@@ -25,7 +25,8 @@ H1 {
 	position: relative;
 	width: 960px;
 	height: 540px;
-	left: 25%;
+	margin-left: auto;
+	margin-right: auto;
 	top:250px;
 	background-color: rgb(238,238,238); 
 	@include filter-gradient(#eeeeee, #cccccc, horizontal); // IE6-9 fallback on horizontal gradient
@@ -71,8 +72,8 @@ H1 {
 	position: absolute;
 	width: 150px;
 	height: 150px;
-	right: 15px;
-	top: 5px;
+	right: 0;
+	top: 0;
 }
 
 .logo{
