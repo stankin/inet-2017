@@ -85,6 +85,17 @@
                         <h3>Лабораторная работа №3 "Настройка локальной сети передачи данных"</h3>
                         <b>Требования:</b>
                         <p>Настройка коммутаторов и маршрутизаторов</p>
+			    <script type="text/javascript">
+			$(document).ready(function(){
+				$('.view-source .hide').hide();
+				$a = $('.view-source a');
+				$a.on('click', function(event) {
+					event.preventDefault();
+					$a.not(this).next().slideUp(500);
+					$(this).next().slideToggle(500);
+				});
+			});
+		</script>
                         <div class="view-source">Задание <a href="#">(раскрыть)</a>
                         	<div class="hide">
                         		1. Разместить на рабочем поле коммутатор и два компьютера и соединить их <br>
@@ -133,17 +144,6 @@
         <script src="wow.min.js"></script>
 		<script>
     		new WOW().init();
-		</script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				$('.view-source .hide').hide();
-				$a = $('.view-source a');
-				$a.on('click', function(event) {
-					event.preventDefault();
-					$a.not(this).next().slideUp(500);
-					$(this).next().slideToggle(500);
-				});
-			});
 		</script>
 	</body>
 </html>
