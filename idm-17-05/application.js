@@ -8,11 +8,11 @@ app.controller('AppCtrl', ['$scope','$http', function($scope,$http){
       field: 'name'
     },
     {
-      name:'Модуль 1',  
+      name:'Модуль #1',  
       field: 'm1'
     },
     {
-      name: 'Модуль 2', 
+      name: 'Модуль #2', 
       field: 'm2'
     },
     {
