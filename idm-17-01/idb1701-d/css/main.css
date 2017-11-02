@@ -58,6 +58,7 @@ A:hover		{
     width:800px;
     min-height:500px;
     margin:auto;
+     margin-top: 150px;
     border:1px solid #000;
     position: relative;
 }
