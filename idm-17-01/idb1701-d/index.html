@@ -1,1 +1,102 @@
+<!DOCTYPE html>
 
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="js/game2.js"></script>
+
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+
+<div class="container">
+    <h1>Качественный игровой контент</h1>
+    <nav>
+
+        <a href="#page2" class="button1">Игра №1</a>
+        <a href="#page3">Игра 2</a>
+        <a href="#page4">Игра 3</a>
+
+    </nav>
+    <div class="page" id="page1" ><img id="bg" src="Choose-your-own-adventure.jpg"> </div>
+    <div class="page" id="page2">
+
+
+        <table border="0" width="500" cellspacing="2" cellpadding="2">
+            <tr>
+                <td class="copy2" valign="top">
+                    <br><br><br>
+
+                    <table cellspacing="1" cellpadding="1">
+                        <tr><FORM>
+                            <td><INPUT SIZE=1 NAME="a0" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b0" OnClick="clickit(this)"></td>
+                            <td><INPUT SIZE=1 NAME="a1" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b1" OnClick="clickit(this)"></td>
+                            <td><INPUT SIZE=1 NAME="a2" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b2" OnClick="clickit(this)"></td>
+                        </tr>
+                        <tr>
+                            <td><INPUT SIZE=1 NAME="a3" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b3" OnClick="clickit(this)"></td>
+                            <td><INPUT SIZE=1 NAME="a4" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b4" OnClick="clickit(this)"></td>
+                            <td><INPUT SIZE=1 NAME="a5" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b5" OnClick="clickit(this)"></td>
+                        </tr>
+                        <tr>
+                            <td><INPUT SIZE=1 NAME="a6" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b6" OnClick="clickit(this)"></td>
+                            <td><INPUT SIZE=1 NAME="a7" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b7" OnClick="clickit(this)"></td>
+                            <td><INPUT SIZE=1 NAME="a8" OnFocus="complain(this)"></td>
+                            <td><INPUT TYPE="button" NAME="b8" OnClick="clickit(this)"></td>
+                        </tr>
+                    </table>
+                    <table cellspacing="1" cellpadding="1">
+                        <tr>
+                            <td colspan="6"><p>Сообщения: <INPUT NAME="output" TYPE="text"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"><p>Уровень сложности: <SELECT NAME="difficulty"	OnChange="diff=form.difficulty[form.difficulty.selectedIndex].value;">
+                                <OPTION VALUE=1> Новичок
+                                <OPTION VALUE=2> Начинающий
+                                <OPTION VALUE=3 SELECTED> Продвинутый
+                                <OPTION VALUE=4> Асс
+                            </SELECT></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"><p>
+                                <INPUT TYPE="button" VALUE="Начинает компьютер" OnClick="if (!step++) this.form.a4.value='O';"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6"><p><INPUT TYPE="reset" VALUE="Новая игра" OnClick="clear_all(this.form)"></td>
+                        </tr></FORM>
+                    </table>
+                    <br><br><br>
+                </td>
+            </tr>
+        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="page" id="page3">страница 3 одностраничного сайта</div>
+    <div class="page" id="page4">страница 4 одностраничного сайта</div>
+</div>
+
+</body>
+</html>
