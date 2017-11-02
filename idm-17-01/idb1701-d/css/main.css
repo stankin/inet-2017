@@ -89,6 +89,32 @@ div:target{
     color:#ffffff;
     background-color:#3BA4C7;
     background-image: linear-gradient(top, #3BA4C7 0% ,#1982A5 100%);
+}
 
 
+body {
+    background-color: black;
+}
+.actions {
+    text-align: center;
+}
+.ai {
+    background-image: url('../images/ai.jpg');
+}
+.container2 {
+    margin: 50px auto;
+    width: 300px;
+}
+.cell {
+    background-color: white;
+    border: 2px solid black;
+    float: left;
+    height: 96px;
+    width: 96px;
+}
+.cell:hover {
+    border-color: red;
+}
+.player {
+    background-image: url('../images/player.jpg');
 }
