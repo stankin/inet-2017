@@ -20,6 +20,7 @@ nav{
 
 
 }
+
 .container>h1
 {
     background-color: #003399;
@@ -54,7 +55,7 @@ A:hover		{
 
 .container{
     font: 1em sans-serif;
-    width:600px;
+    width:800px;
     min-height:500px;
     margin:auto;
     border:1px solid #000;
@@ -62,7 +63,7 @@ A:hover		{
 }
 h1,h2,h3,h4,h5,h6 {margin: 0;}
 .page{
-    width:600px;
+    width:800px;
     height:440px;
     position: absolute;
     top:60px;
@@ -81,7 +82,7 @@ div:target{
 
 .button1 {
 
-    padding:11px 32px;
+    padding:1px 32px;
     border:solid 1px #004F72;
     border-radius: 4px;
     font:19px Arial, Helvetica, sans-serif;
@@ -117,4 +118,10 @@ body {
 }
 .player {
     background-image: url('../images/player.jpg');
+}
+
+#krest
+{
+    text-align: center;
+    margin-top: 20px;
 }
