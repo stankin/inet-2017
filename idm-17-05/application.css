@@ -45,7 +45,7 @@ a {
     text-align: left;
     font-size: 0.75em;
     font-weight: 700;
-    padding: 16px 16px 16px 0;
+    padding: 4px 4px 4px 0;
   }
 
   .md-table-header a{
@@ -56,8 +56,8 @@ a {
   .md-table-content {
     white-space: nowrap;
     font-size: 0.8em;
-    padding: 16px 16px 16px 0;
-    height: 72px;
+    padding: 4px 4px 4px 0;
+    height: 32px;
   }
 
   .md-table-td-more {
@@ -134,5 +134,5 @@ a {
   }
 
   .md-table-content, .md-table-header{
-    padding: 16px;
+    padding: 4px;
   }
