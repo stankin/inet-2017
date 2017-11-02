@@ -1,0 +1,323 @@
+/* Default CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+body {
+    font-weight: 300;
+    line-height: 2;
+}
+body,
+.cta-style-3 h4,
+.section-heading.startup-heading {
+    font-family: 'Merriweather', serif;
+}
+input:focus {outline: none}
+.logo,
+.mainmenu,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button[type="submit"],
+input[type="submit"],
+.bordered-btn,
+.boxed-btn.cta-btn,
+.boxed-btn.cta-btn-style-2,
+.ticker,
+.section-heading,
+.single-service-item.no-padding-right .readmore-btn,
+.service-box-style-4,
+.service-box-style-5 .readmore-btn,
+.login-form-style-1 button,
+.login-form-style-2 button,
+.coming-soon p,
+.coming-soon p span {
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+a {
+    transition: .2s
+}
+img {
+    max-width: 100%;
+    height: auto
+}
+a:hover,
+a:focus {
+    text-decoration: none
+}
+h3 {
+    line-height: 35px;
+}
+textarea {
+    border: 1px solid #ddd;
+    padding: 9px 15px;
+}
+button[type="submit"],
+input[type="submit"] {
+    color: #fff;
+    border: medium none;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 9px 20px;
+}
+button[type="submit"] i.fa {
+    font-size: 120%;
+    padding-left: 5px;
+}
+.content-block {
+    padding: 80px 0;
+    position: relative;
+}
+.content-block.gray-bg {
+    background-color: #f8fafd;
+}
+.content-block.no-padding {
+    padding: 0;
+}
+.dark-overlay {
+    position: relative;
+    z-index: 1;
+}
+.parallax-mirror {z-index: 1}
+.dark-overlay:after, .parallax-mirror:after {
+    background: #17191c none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.parallax-mirror:after {
+  z-index: 1;
+}
+.green-bg,
+.ticker.green-bg {
+    background-color: #65bc2f;
+}
+.orange-bg,
+.ticker.orange-bg {
+    background-color: #f59727;
+}
+.specer-70 {
+    height: 70px;
+}
+.padidng-bottom-0 {
+    padding-bottom: 0
+}
+.spacer-30 {
+    height: 30px
+}
+.spacer-20 {
+    height: 20px
+}
+.spacer-10 {
+    height: 10px
+}
+.spacer-45 {
+    height: 45px;
+}
+.spacer-80 {
+    height: 80px;
+}
+.spacer-100 {
+    height: 100px;
+}
+.padding-100 {
+    padding: 100px 0;
+}
+.margin-100 {
+    margin: 100px 0;
+}
+.shadow-img {
+    box-shadow: 0 0 12px #ddd;
+}
+.readmore-btn,
+.boxed-btn {
+    color: #333;
+    display: inline-block;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bordered-btn {
+    border: 1px solid;
+    color: #fff;
+    display: inline-block;
+    font-weight: 700;
+    padding: 10px 30px;
+    text-transform: uppercase;
+}
+.bordered-btn i.fa {
+    font-size: 135%;
+    margin-left: 7px;
+}
+.readmore-btn i.fa,
+.boxed-btn i.fa {
+    font-size: 17px;
+    padding-left: 6px;transition: .3s
+}
+.slide-simple-btn i.fa {
+    transition: .3s
+}
+.readmore-btn:hover i.fa, .slide-simple-btn:hover i.fa{padding-left: 10px}
+.single-service-item .readmore-btn {
+    margin-top: 15px;
+}
+.bg-left {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    max-width: 60%;
+}
+.big-play-icon {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 50%;
+    display: inline-block;
+    font-size: 35px;
+    height: 75px;
+    line-height: 75px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    text-align: center;
+    width: 75px;
+    color: #333 !important;
+}
+.big-play-icon:hover {
+    opacity: 0.7;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+}
+/* Backgrounds CSS */
+
+.slide-01 {
+    background-image: url(../img/slide-bg.jpg)
+}
+.cta-area {
+    background-image: url(../img/cta-bg.jpg)
+}
+.cta-bg-3 {
+    background-image: url(../img/cta-bg.jpg)
+}
+.footer-area {
+    background-image: url(footer-bg.jpg)
+}
+.header-style-2 {
+    background-image: url(../img/slide-bg-2.jpg)
+}
+.register-style-1, .header-style-3 {
+    background-image: url(../img/slide-bg-3.jpg)
+}
+.hero-bg-1 {
+    background-image: url(../img/slide-bg-3.jpg)
+}
+.box-bg-1 {
+    background-image: url(../img/service-box-bg-1.jpg)
+}
+.blog-bg-1 {
+    background-image: url(../img/slide-bg-4.jpg)
+}
+.box-bg-1 {
+    background-image: url(../img/cta-bg-3.jpg)
+}
+.project-bg-1 {
+    background-image: url(../img/project-1.jpg)
+}
+.button-bg-1 .wide-button-bg {
+    background-image: url(../img/button-bg-1.jpg)
+}
+.mega-site-preloader-wrap {
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+}
+.cont {
+    display: block;
+    left: 50%;
+    margin: 0 auto 0 -2.5em;
+    position: absolute;
+    top: 50%;
+    width: 5em;
+}
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform: translateY(0%);
+    }
+    30% {
+        -webkit-transform: translateY(-0.25em);
+    }
+    50% {
+        -webkit-transform: translateY(0%);
+    }
+    70% {
+        -webkit-transform: translateY(0.25em);
+    }
+}
+.cont {
+    display: block;
+}
+.cont .line.square,
+.cont .line.square2,
+.cont .line.square3 {
+    display: inline-block;
+    margin: 0.125em;
+    width: 0.75em;
+    height: 0.75em;
+    border: 1px solid lightgray;
+    border-radius: 1em;
+    background-color: lightgray;
+    -webkit-transform-origin: 50%;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+}
+.cont .line.square2 {
+    -webkit-animation-delay: 0.1875s;
+}
+.cont .line.square3 {
+    -webkit-animation-delay: 0.375s;
+}
+/* Footer CSS */
+.footer-area.footer-solid-style:after {
+    display: none;
+}
+.footer-area.footer-solid-style {
+    background: #333333 none repeat scroll 0 0;
+}
+.footer-area.footer-solid-style,
+.footer-area.footer-solid-style a {
+    color: #ccc;
+}
+.footer-area.footer-solid-style h3,
+.footer-area.footer-solid-style h4 {
+    color: #fff;
+}
+
+.footer-area.footer-white-style:after {
+    display: none;
+}
+.footer-area.footer-white-style {
+    background: #222222 none repeat scroll 0 0;
+}
+.footer-area.footer-white-style h3,
+.footer-area.footer-white-style h4 {
+    color: #fff;
+}
