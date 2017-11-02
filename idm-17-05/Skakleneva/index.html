@@ -3,7 +3,6 @@
 	<head>
 		<title>Личная страница</title>
 		<script scr="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"> </script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="animate.min.css">
 		<script src="game.js" defer></script>
 		<!-- Main CSS -->
@@ -136,7 +135,7 @@
     		new WOW().init();
 		</script>
 		<script type="text/javascript">
-			$(function(){
+			$(document).ready(function(){
 				$('.view-source .hide').hide();
 				$a = $('.view-source a');
 				$a.on('click', function(event) {
