@@ -2231,3 +2231,16 @@ div.slider_text p {
 	text-align: left;
 	color: #fff;
 }
+
+.lantable {
+	border-collapse: collapse; 
+	border: 1px solid black;
+}
+
+.lantable tr {
+	border: 1px solid black;
+}
+
+.lantable tr td {
+	border: 1px solid black;
+}
