@@ -1,18 +1,72 @@
-﻿table{
-border: 1px solid black;
-border-collapse: collapse;
+﻿
+
+table{
+ border: 1px solid black;
+ border-collapse: collapse;
 
 }
 
 td,th{
-border: 1px solid black;
+ border: 1px solid black;
 }
 td,th{
-padding:15px;
+ padding:15px;
 }
- img{ margin: 5%;
+img{ margin: 5%;
 
 }
 body{
-background:LightPink;
+ background:LightPink;
+ background-color:LightPink;
+ position: absolute;
+ width: 100%;
+}
+#c {
+  opacity:.8;
+}
+
+.content{
+   position: absolute;
+  z-index: 2;
+}
+
+.rain{
+    position:fixed;
+  top:0; left:0;
+  z-index: 1;
+}
+
+
+ .block1 {
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin: 0%;
+   flex-wrap: wrap;
+   flex-direction: row;
+   padding: 20px;
+   box-sizing: border-box;
+   width: 33%;
+   min-width: 320px;
+ }
+ .block2 {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin: 0% 14% 0% 29%;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 33%;
+min-width: 320px;
+}
+.block3 {
+ margin-top: 40px;
+ margin-bottom: 40px;
+ margin: 1% 14% 1% 59%;
+ flex-wrap: wrap;
+ flex-direction: row;
+ padding: 20px;
+ box-sizing: border-box;
+ width: 33%;
+ min-width: 320px;
 }
