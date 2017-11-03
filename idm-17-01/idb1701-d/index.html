@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="utf-8">
-    <title> Онлайн Казино</title>
+	<meta charset="utf-8">
+	<title> Онлайн Казино</title>
     <script src="js/game2.js"></script>
-
+    <script src="js/mem.js"></script>
     <link rel="stylesheet" href="css/main.css">
 
 </head>
-<body>
+<body OnLoad="init()">
 
 
 <div class="container">
@@ -39,7 +39,18 @@
     </div>
     </div>>
 
-    <div class="page" id="page3">Игра 2</div>
+    <div class="page" id="page3">
+		<h1 id="krest">Тест на память</h1>
+		<form name="f">
+		<center>
+		<table cellpadding="0" cellspacing="0" border="0">
+		<script language="javascript" src="js/mem1.js"></script>
+		
+		</table><br>
+		<input type="button" value=" " style="font-weight: bold" name="b" onClick="init()">
+		</form>
+		</center> 
+	</div>
     <div class="page" id="page4">Игра 3</div>
 </div>
 
