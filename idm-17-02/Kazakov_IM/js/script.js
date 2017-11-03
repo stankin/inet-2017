@@ -60,4 +60,3 @@ tl.to('#cartman, #stan, #kyle', 8, {
   .to("#blink", .1, {
     opacity: 0
   }, "5.1")
-
