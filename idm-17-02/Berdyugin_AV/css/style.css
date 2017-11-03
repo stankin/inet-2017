@@ -18,6 +18,9 @@ top: 0px;
 
 }
 
+#AAA{
+}
+
 
 .menu>a{
 
@@ -124,8 +127,9 @@ color: black;
 	background: linear-gradient(to top left, LightBlue, LightSteelBlue);
 	width: 50%;
 	height: auto;
-	margin: 130px auto 5px;
-	
+	margin: 100px auto 5px;
+	text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+}
 
 }
 
@@ -147,7 +151,7 @@ background:linear-gradient(to top left, White, LightBlue);
 	text-align: justify; 
 }
 	
-#main_1>.knopka{
+#main_1>.lab>ol>.knopka{
  font-family: Haettenschweiler;
  font-size: 20px;
  position: relative;
@@ -163,7 +167,7 @@ background:linear-gradient(to top left, White, LightBlue);
  cursor: pointer;
  }
  
- #main_1>.knopka:active
+ #main_1>.lab>ol>.knopka:active
  {
  background: Violet;
  border-color: black;
@@ -171,13 +175,13 @@ background:linear-gradient(to top left, White, LightBlue);
  border-width: 1px; 
  }
  
-#main_2>.knopka{
+ #main_2>.lab>ol>.knopka{
  font-family: Haettenschweiler;
  font-size: 20px;
  position: relative;
  left: 710px;
  right: 0px;
- bottom: 0px;
+ bottom: -5px;
  height: 30px;
  border-color: black;
  border-style: solid;
@@ -186,7 +190,7 @@ background:linear-gradient(to top left, White, LightBlue);
  background: MediumAquamarine;
  cursor: pointer;
  }
-#main_2>.knopka:active
+ #main_2>.lab>ol>.knopka:active
  {
  background: Violet;
  border-color: black;
@@ -194,10 +198,12 @@ background:linear-gradient(to top left, White, LightBlue);
  border-width: 1px; 
  }
 
- /*#digital_watch{
+ #digital_watch{
  position: relative;
  text-align: right;
  font-size: 10px;
  color: black;
  font-weight: bold;
- }*/
+ top: 120px;
+ z-index: 10000;
+ }
