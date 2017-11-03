@@ -141,4 +141,14 @@ p{
   padding: 0 20px;
   font-style:italic;
 }
+#digital_watch{
+ position: relative;
+ color: #08088A;
+ font-weight: bold;
+ border:2px dashed;
+ border-radius:20px 20px 20px 20px;
+ font-family:arial;
+ border-color:#000000;
+ background-color: #E6E6E6;
+ }
 

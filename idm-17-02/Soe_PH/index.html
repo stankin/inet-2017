@@ -2,9 +2,10 @@
    <head>
          <title>Со Пьей Хейн</title>
          <link rel="stylesheet" type="text/css" href="css/style.css">
-		 <script type="text/javascript" src="script.js"></script>
+		 <script type="text/javascript" src="JS/clock.js"></script>
 	</head>
-	<body>
+	<body class="gradient" onload="digitalWatch()">
+	<p id="digital_watch" style="float:right; font-size: 32px; font-weight: bold;"></p>
 	     <a href="../">
 		 <div id="back-banner-box">
 		        <div id="back-banner">
@@ -13,8 +14,11 @@
 		</div>
 		</a>
 		<div id="wrapper">
+		
+		
 		<img src ="https://upload.wikimedia.org/wikipedia/ru/8/8a/Stankin.gif" style="float:right" width="150" height="100"/>
-				<div id="header">
+				<div id="header" >
+				
 		         <h1>Со Пьей Хейн</h1>
 				 <h2>ИДМ-17-02</h2>
 				 <div id="nav"><br>   
@@ -26,10 +30,11 @@
 						<a href="#question"><li>Подготовка к экзамену</li></a>
 		            </div>
 					</div>
-				    </ul>	
+				    </ul>			
 		        </div>
+			
 				<hr>
-	    <div id="main">
+	        <div id="main">
 	        <div class="material" id="labrab1">
 			     <h3>Лабораторная работа №1</h3>
 				 <h4>ЭКОСИСТЕМА РАЗРАБОТКИ ПРОГРАММ С ОТКРЫТЫМ КОДОМ</h4>
@@ -68,7 +73,7 @@
 					    <li>Собрать команду для разработки веб-приложения (SPA) и распределить роли.<a href="https://stankin.github.io/inet-2017/idm-17-02/index.html">Страница команды</a>.</li>
 					    <li>Сделать разметку страницы по макету. <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Soe_PH">Макет страницы</a>. Исходный код на <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Soe_PH/index.html">index.html</a>.</li>
 					    <li>Прописать стили страницы. Исходный код на <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Soe_PH/css/style.css">CSS</a>.</li>
-					    <li>Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML. Исходный код на <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Soe_PH">JavaScript</a> и <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Soe_PH">JSON</a>.</li>
+					    <li>Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML. Исходный код на <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Soe_PH/JS">JavaScript</a> и <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Soe_PH">JSON</a>.</li>
 		<a onclick="javascript:document.getElementById('subMenuTip3').style.display='none'" href="javascript:void(0)"></li><p style="text-align: right;">Свернуть</p></a>		    
 					</ol>
 				</div>
@@ -93,6 +98,5 @@
 				</div>	
 		    </div> 
 		</div>
-	    </div>
 	</body>
 </html>

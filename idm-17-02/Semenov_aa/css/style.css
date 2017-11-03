@@ -93,3 +93,29 @@ div.panel {
     display: none;
     background-color: white;
 }
+
+
+.clock{
+display:flex;
+justify-content:space-around;
+align-items:center;
+width:300px;
+height:100px;
+font-size: 40px;
+color: rgb(172, 79, 115);
+}
+.sec{
+width:80px;
+text-align:center;
+}
+
+#parentcanvas {
+display: -webkit-flex;
+display: -moz-flex;
+display: -ms-flex;
+display: -o-flex;
+display: flex;
+justify-content: center;
+-ms-align-items: center;
+align-items: center;
+}
