@@ -1,11 +1,178 @@
 <html>
   <head>
-    <title> Личная страница Харсеева </title>
+    <title> Личная страница </title>
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   </head>
-  <body>
-    <h1> Здесь пока пусто </h1>
-    <h2> Зайдите позже! </h2>
-    <h3> Заголовок 3  </h3>
-    <h4> Заголовок 4 </h4>
-  </body>
+
+  
+<body>  
+<header>
+    <div><h1> Личная страница студента группы ИДМ-17-02 Харсеева В.Е. </h1></div>
+	<div class="menu">
+	<div><img src="pics/stankin-logo.png" class="logo"></div>
+	<nav>
+	<ul>
+	<li><a href="#1">Лаб1</a></li>
+	<li><a href="#2">Лаб2</a></li>
+	<li><a href="#3">Лаб3</a></li>
+	<li><a href="#4">Лаб4</a></li>
+	<li><a href="https://stankin.github.io/inet-2017/idm-17-02/index.html">Список группы</a></li>
+	</ul>
+	</nav>
+	<div class="st4"><canvas id="canvas" height="150" width="150"></canvas></div>	
+	</div>
+</header>
+
+<script type="text/javascript">
+    function clockPainting() {
+        var now = new Date();
+        var sec = now.getSeconds();
+        var min = now.getMinutes();
+        var hr = now.getHours();
+
+        var ctx = document.getElementById("canvas").getContext("2d");
+        ctx.save();
+
+        ctx.clearRect(0,0,150,150);
+        ctx.translate(75, 75);
+        ctx.scale(0.4,0.4);
+        ctx.rotate(-Math.PI/2);
+
+        ctx.strokeStyle = "black";
+        ctx.fillStyle = "black";
+        ctx.lineWidth = 8;
+        ctx.lineCap = "round";
+
+        ctx.save();
+        ctx.beginPath();
+
+        for (var i = 0; i < 12; i++) {
+            ctx.rotate(Math.PI/6);
+            ctx.moveTo(100,0);
+            ctx.lineTo(120,0);
+        }
+
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+        ctx.rotate((Math.PI/6)*hr +
+            (Math.PI/360)*min +
+            (Math.PI/21600)*sec);
+        ctx.lineWidth = 14;
+
+        ctx.beginPath();
+        ctx.moveTo(-20,0);
+
+        // линия часовых меток
+        ctx.lineTo(80,0);
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+
+        // минутная стрелка
+        ctx.rotate((Math.PI/30*min) +
+            (Math.PI/1800)*sec);
+        ctx.lineWidth = 10;
+
+        ctx.beginPath();
+        ctx.moveTo(-28,0);
+        ctx.lineTo(112,0);
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+
+        // секундная стрелка
+        ctx.rotate(sec * Math.PI/30);
+        ctx.strokeStyle = "#D40000";
+        ctx.fillStyle = "#D40000";
+        ctx.lineWidth = 6;
+
+        ctx.beginPath();
+        ctx.moveTo(-30,0);
+        ctx.lineTo(83,0);
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.restore();
+    }
+    window.onload = function() {
+        setInterval(clockPainting, 1000);
+    }
+</script>
+
+<section id="1">
+<div class="frame">
+<div class="st1">
+<a onclick="javascript:document.getElementById('st2').style.display='block'" href="javascript:void(0)">
+Лабораторная работа №1 "Экосистема разработки программ с открытым кодом":
+Создание персональной страницы-отчета на github и работа с git<br>
+<a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Harseev_VE/index.html">ссылка на работу</a></div>
+<div id="st2" class="st2" style="display:none"> 
+<a style="cursor:hand;cursor:pointer;" onclick="document.getElementById('st2').style.display='none'"><p>Цели:</p>
+1. Зарегистрироваться на GitHub; <br>
+2. Создать персональную веб страницу-отчёт с использованием html, css, js; <br>
+3. Загрузить персональную веб страницу-отчёт в репозиторий ИДМ-17 по курсу «Интернет-технологии» на GitHub.</a></div>
+</div>
+</section>
+
+
+<div class="space"></div>
+<section id="2">
+<div class="frame">
+<div class="st1">  
+<a onclick="javascript:document.getElementById('st3').style.display='block'" href="javascript:void(0)">
+Лабораторная работа №2 "Разработка простого веб-приложения":
+Проектирование и разработка индивидуального или коллективного веб-приложения с использованием html,css,js + json,xml</div>
+<div id="st3" class="st2" style="display:none"> 
+<a style="cursor:hand;cursor:pointer;" onclick="document.getElementById('st3').style.display='none'"><p>Цели:</p> 
+1. Собрать команду для разработки веб-приложения (SPA) и распределить роли; <br>
+2. Сделать разметку страницы по макету. Исходный код; <br>
+3. Прописать стили страницы; <br>
+4. Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML. <br>
+Результат: SPA-приложение </a></div>
+</div>
+</section>
+
+<div class="space"></div>
+<section id="3">
+<div class="frame">
+<div class="st1">Лабораторная работа №3 "Настройка локальной сети передачи данных":
+Настройка коммутаторов и маршрутизаторов
+Описание лабораторной
+ПО есть на Яндекс-диск С.Е.Сосенушкина</div></div></section>
+
+<div class="space"></div>
+<section id="4">
+<div class="frame">
+<div class="st1">Подготовка к экзамену:
+Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)
+Презентации лекций и тесты расположены на Яндекс-диск </div></div></section><br>
+
+<div class="space"></div>
+<div class="frame">
+<div class="st3">Мини-игра Гадюка </div>
+ <div id="game-area" tabindex="0" style="display: table; margin: 0 auto 150px auto"></div> 
+</div>
+    <script type="text/javascript" src="snake.js"></script>
+    <script type="text/javascript">
+        var mySnakeBoard = new SNAKE.Board( {
+            boardContainer: "game-area",
+            fullScreen: false,
+            width: 580,
+            height: 400
+        });
+    </script>
+<div class="space"></div>
+<footer>
+<div class="bottom1">
+Москва 2017г.
+</div>
+</footer> 
+
+</body>
+
 </html>

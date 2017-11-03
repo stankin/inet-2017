@@ -1,0 +1,103 @@
+<html>
+
+<head>
+    <title>me_another</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">
+            <img src="images/lab.svg" width="45px">
+            <h1 style="margin: 0px;">Personal page Semenov_aa</h1>
+        </div>
+
+        <div>
+            <p> "Task list" </p>
+            
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex1: Экосистема разработки программ с открытым кодом.
+            </button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Зарегистрироваться на <a href="https://github.com/meanother">github.com</a></li>
+                    <li>Создать персональную веб страницу-отчет с использованием html, css, js. <a href="https://stankin.github.io/inet-2017/idm-17-02/Semenov_aa/index.html">my personal page</a></li>
+                    <li>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.(Папка с исходными кодами в репозитории)<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Semenov_aa">my personal page</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex2: Разработка простого веб-приложения.</button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Собрать команду для разработки веб-приложения (SPA) и распределить роли.
+                    <li>Создать персональную страницу по макету. Исходный код для html: <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Semenov_aa/index.html">html code</a></li>
+                    <li>Прописать стили страницы. Исходный код для css<a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Semenov_aa/css/style.css">css code</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex3: Настройка локальной сети передачи данных. </button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Настройка коммутаторов и маршрутизаторов</li>
+
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex4: Подготовка к экзамену. </button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</li>
+
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex4: What times o'clock?? </button>
+            <div class="panel">
+                <h3> Time: </h3>
+                <ul type="circle">
+<main>
+<section class="lab-item" id="parentcanvas">
+<div class="clock">
+<div class="hour"></div>
+:
+<div class="min"></div>
+:
+<div class="sec"></div>
+</div></section>
+</main>
+<script src="clock.js"></script>
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            }
+        }
+    </script>
+
+    
+</body>
+
+</html>

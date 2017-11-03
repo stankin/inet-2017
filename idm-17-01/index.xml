@@ -1,0 +1,194 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="idm1710.xsl" type="text/xsl"?>
+<group>
+	<user>
+		<name>Бедретдинова Анна Юрьевна</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Bedretdinova/index.html</page>
+		<team>TEAM</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Бирюков Сергей Сергеевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Biryukov/index.html</page>
+		<team>1701-Б</team>
+		<role>РП, СП</role>
+	</user>
+	
+	<user>
+		<name>Брагин Дмитрий Александрович</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Bragin/mypage.html</page>
+		<team>TEAM C</team>
+		<role>АД,СП</role>
+	</user>
+	
+	<user>
+		<name>Верещагин Владимир Геннадьевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Vereshchagin/index.html</page>
+		<team>1701-A</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Зайцев Александр Сергеевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Zaytsev/index.html</page>
+		<team>1701-Д</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Зудилов Андрей Александрович</name>
+		<m1>40</m1>
+		<m2>0</m2>
+		<page>zudilov/index.html</page>
+		<team>TEAM C</team>
+		<role>РП,КО</role>
+	</user>
+	
+	<user>
+		<name>Ильин Максим Александрович</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Ilin/index.html</page>
+		<team>1701-Б</team>
+		<role>АД, ВН</role>
+	</user>
+	
+	<user>
+		<name>Колмыков Максим Леонидович</name>
+		<m1>0</m1>
+		<m2>0</m2>
+		<page>PLINK</page>
+		<team>TEAM</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Колосов Михаил Владимирович</name>
+		<m1>0</m1>
+		<m2>0</m2>
+		<page>PLINK</page>
+		<team>TEAM</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Кузьменко Иван Алексеевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Kuzmenko/index.html</page>
+		<team>1701-A</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Магомедов Махмуд Джамалдинович</name>
+		<m1>0</m1>
+		<m2>0</m2>
+		<page>PLINK</page>
+		<team>TEAM</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Махмутов Илья Шамилевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Mahmutov/HTML/index.html</page>
+		<team>TEAM</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Мещеряков Никита Сергеевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Meshcheryakov/index.html</page>
+		<team>1701-Д</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Мирскова Елизавета Сергеевна</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Mirskova/index.html</page>
+		<team>TEAM C</team>
+		<role>АД,БА</role>
+	</user>
+	
+	<user>
+		<name>Мурзайкина Олеся Анатольевна</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Murzaykina/index.html</page>
+		<team>TEAM</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Порфирьев Александр Юрьевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Porfirev/index.html</page>
+		<team>1701-Д</team>
+		<role>СП,ПП,ВН</role>
+	</user>
+	
+	<user>
+		<name>Прокопьев Максим Эдуардович</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Prokopiev/index.html</page>
+		<team>TEAM C</team>
+		<role>АД,СП</role>
+	</user>
+	
+	<user>
+		<name>Селин Николай Сергеевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Selin/index.html</page>
+		<team>TEAM C</team>
+		<role>ПП,ВН</role>
+	</user>
+	
+	<user>
+		<name>Смирнова Ирина Александровна</name>
+		<m1>0</m1>
+		<m2>0</m2>
+		<page>PLINK</page>
+		<team>TEAM</team>
+		<role>ROLE</role>
+	</user>
+	
+	<user>
+		<name>Чащин Георгий Алексеевич</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>Chashchin/index.html</page>
+		<team>TEAM C</team>
+		<role>СП,НИ</role>
+	</user>
+	
+	<user>
+		<name>Штыков Александр Александрович(shtykov.com)</name>
+		<m1>50</m1>
+		<m2>0</m2>
+		<page>PAGE</page>
+		<team>1701-Б</team>
+		<role>ПП, КО</role>
+	</user>
+	
+	
+</group>

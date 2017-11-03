@@ -1,0 +1,94 @@
+.avatar {
+	text-align: center;
+	position: relative;
+	top: 10px;
+	}
+
+
+#main_1>a{
+text-decoration: none;
+color: black;
+}
+
+#main_1>a:hover { 
+					text-decoration: underline;  
+					color: green;
+			}
+
+#main_1{
+	text-decoration: none;
+	background-color: BlanchedAlmond;
+	border: 5px solid DarkSlateGray;
+	width: 50%;
+	height: auto;
+	margin: -10px auto;
+	text-align: center;
+}	
+
+
+.begin{
+	color: black;
+	border: 5px solid DarkSlateGray;
+	font-size: 30px;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	font-family: Consolas;
+	box-shadow: 0px 0px 25px black;
+	background: linear-gradient(to top left, LightBlue, LightSteelBlue);
+	width: 50%;
+	height: auto;
+	margin: -65px auto 5px;
+	
+
+}
+
+.lab{
+	font-size: 20px;
+	font-weight: normal;
+	text-align: left;
+	color: black;
+}
+
+.gradient{
+background:linear-gradient(to top left, White, LightBlue);
+
+}
+
+.lab1{
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify; 
+}
+	
+.knopka{
+ font-family: Haettenschweiler;
+ font-size: 20px;
+ position: relative;
+ left: 710px;
+ right: 0px;
+ bottom: -15px;
+ height: 30px;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 5px;
+ background: MediumAquamarine;
+ cursor: pointer;
+ }
+ .knopka:active
+ {
+ background: Violet;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px; 
+ }
+
+ #digital_watch{
+ position: relative;
+ text-align: right;
+ font-size: 10px;
+ color: black;
+ font-weight: bold;
+ }
+ 

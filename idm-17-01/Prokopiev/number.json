@@ -1,0 +1,8 @@
+{
+	"number":[0,1,2,3,4,5,6,7,8,9],
+	"length":[1,2,3,4],
+	"name_n":["zero","one","two","three","four","five","six","seven","eight","nine"],
+	"name_n2":["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eightteen","nineteen"],
+	"name_l":["name_n","ten","hundred","thousand"],
+	"name_l2":["undefeined","ten","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"]
+}

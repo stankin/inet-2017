@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html> 
+<html>  
+<head> 	
+    <meta charset="utf-8">  	
+    <title>Книга Рецептов</title>  	
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet"> 	
+    <link href="assets/css/styles.css" rel="stylesheet"> 
+</head>  
+<body>  	
+    <header class="compact"> 		
+        <h1><a href="#">Книга рецептов блюд со всего мира</a></h1> 	
+    </header>  	
+    <div class="main-content">  		
+        <div class="all-products page">  			
+            <div class="filters"> 				
+                <form>  					
+                    <div class="filter-criteria"> 						
+                        <span>Кухня</span> 						
+                        <label><input type="checkbox" name="cuisine" value="грузинская">Грузинская</label> 						
+                        <label><input type="checkbox" name="cuisine" value="итальянская">Итальянская</label> 						
+                        <label><input type="checkbox" name="cuisine" value="китайская">Китайская</label> 						
+                        <label><input type="checkbox" name="cuisine" value="русская">Русская</label> 						
+                        <label><input type="checkbox" name="cuisine" value="французская">Французская</label> 						
+                        <label><input type="checkbox" name="cuisine" value="японская">Японская</label> 					
+                    </div>  					
+                   <!-- <div class="filter-criteria"> 						
+                        <span>Ингридиенты</span> 						
+                        <label><input type="checkbox" value="бекон" name="ingredients">Бекон</label> 						
+                        <label><input type="checkbox" value="сыр" name="ingredients">Сыр</label> 					
+                    </div>  		-->			
+                    <div class="filter-criteria"> 						
+                        <span>Тип блюда</span> 						
+                        <label><input type="checkbox" value="салат" name="type">Салаты</label> 						
+                        <label><input type="checkbox" value="суп" name="type">Супы</label> 						
+                        <label><input type="checkbox" value="мясо" name="type">Мясо и птица</label> 
+                        <label><input type="checkbox" value="суп" name="type">Закуски</label>
+                        <label><input type="checkbox" value="суп" name="type">Лепешки</label>
+                        <label><input type="checkbox" value="суп" name="type">Макароны</label>
+                        <label><input type="checkbox" value="суп" name="type">Омлет</label>
+                        <label><input type="checkbox" value="суп" name="type">Лазаньи</label>
+                        <label><input type="checkbox" value="суп" name="type">Салаты</label>
+                        <label><input type="checkbox" value="суп" name="type">Десерты</label>
+                        <label><input type="checkbox" value="суп" name="type">Пельмени</label>	
+                        <label><input type="checkbox" value="суп" name="type">Булочки</label>
+                        <label><input type="checkbox" value="суп" name="type">Торты</label>
+                        <label><input type="checkbox" value="суп" name="type">Пироги</label>			
+                    </div>  					
+                    <div class="filter-criteria"> 						
+                        <span>Назначение</span> 						
+                        <label><input type="checkbox" value="fast" name="sphere">Быстро</label> 						
+                        <label><input type="checkbox" value="outside" name="sphere">На природу</label> 						
+                        <label><input type="checkbox" value="hollyday" name="sphere">На праздник</label>					
+                    </div>  					
+                    <button>Очистить фильтры</button>  				
+                </form>  			
+            </div>  
+            <div class="all_products">		
+            <ul class="products-list"> 				
+                <script id="products-template" type="x-handlebars-template">​ 					
+                    {{#each this}} 						
+                    <li data-index="{{id}}"> 							
+                    <a href="#" class="product-photo"><img src="{{image.small}}" height="130" alt="{{name}}"/></a> 							
+                    <h2><a href="#"> {{name}} </a></h2> 							
+                    <ul class="product-description"> 								
+                    <li><span>Кухня: </span>{{specs.cuisine}}</li> 								
+                    <li><span>Тип блюда: </span>{{specs.type}}</li> 								
+                    <li><span>Назначение: </span>{{specs.sphere}}</li>
+                    </ul> 							
+                    <button>Подробнее</button>
+                    <div class="highlight"></div> 						
+                    </li> 					
+                    {{/each}} 				
+                </script> 			
+            </ul> 
+            </div>	 		
+        </div>   		
+        <div class="single-product page">  			
+            <div class="overlay"></div>  			
+            <div class="preview-large"> 				
+                <h3>Single product view</h3> 				
+                <img src=""/> 
+                <p></p>
+                <div class="preview-large0">		
+                    <p></p>  
+                </div>
+                <div class="preview-large1"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>
+                <div class="preview-large2"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>	
+                <div class="preview-large3"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>	
+                <div class="preview-large4"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>	
+                <div class="preview-large5"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>	
+                <div class="preview-large6"> 
+                    <img src=""/>
+                </div>			
+                <br />
+                <span class="cltypee">Закрыть</span> 	
+                <br />		
+            </div>  		
+        </div>  		
+        <div class="error page"> 			
+            <h3>Sorry, something went wrong :(</h3> 		
+        </div>  	
+    </div>   	
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 	
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script> 	
+    <script src="assets/js/script.js"></script>   
+</body> 
+</html>

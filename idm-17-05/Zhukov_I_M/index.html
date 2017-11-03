@@ -1,0 +1,364 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Персональная страница</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.poptrox.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+		<script type="text/javascript">
+					jQuery(document).ready(function ($) {
+				  	
+					$('#slider ul li').css({ width: $('#slider').width(), height: $('#slider').height()});
+					var slideCount = $('#slider ul li').length;
+					var slideWidth = $('#slider ul li').width();
+					var slideHeight = $('#slider ul li').height();
+					var sliderUlWidth = slideCount * slideWidth;
+					
+					//$('#slider').css({ width: slideWidth, height: slideHeight });
+					
+					$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+					
+					$('#slider ul li:last-child').prependTo('#slider ul');
+
+					function moveLeft() {
+						$('#slider ul').animate({
+							left: + slideWidth
+						}, 200, function () {
+							$('#slider ul li:last-child').prependTo('#slider ul');
+							$('#slider ul').css('left', '');
+						});
+					};
+
+					function moveRight() {
+						$('#slider ul').animate({
+							left: - slideWidth
+						}, 200, function () {
+							$('#slider ul li:first-child').appendTo('#slider ul');
+							$('#slider ul').css('left', '');
+						});
+					};
+
+					$('a.control_prev').click(function () {
+						moveLeft();
+					});
+
+					$('a.control_next').click(function () {
+						moveRight();
+					});
+
+				});    
+			</script>
+			
+	</head>
+	<body>
+			
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="#intro">Игорь Жуков</a></h1>
+				<nav>
+					<ul>
+						<li><a href="#one">Лабораторная работа №1</a></li>
+						<li><a href="#two">Лабораторная работа №2</a></li>
+						<li><a href="#three">Лабораторная работа №3</a></li>
+					</ul>
+				</nav>
+			</header>
+			
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<div class="content">
+					<header>
+						<h2>Интернет-технологии</h2>
+					</header>
+					<p style="text-align: left">Курс данного предмета предусматривает выполнение трёх лабораторных работ:
+						<ol style="text-align: left">
+							<li>Экосистема разработки программ с открытым кодом</li>
+							<li>Настройка локальной сети передачи данных</li>
+							<li>Разработка простого веб-приложения</li>
+						</ol>
+					</p>
+					<footer>
+						<a href="#one" class="button style2 down">Работы</a>
+					</footer>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Экосистема разработки программ с открытым кодом</h2>
+					</header>
+					<p>Целью данной лабораторной работы является создание собственной персональной страницы-отчёта в github</p>
+					<div id="slider">
+						<a href="##" class="control_next">>></a>
+						<a href="##" class="control_prev"><</a>
+						<ul>
+							<li>
+								<img src="images/lab1/1.png" />
+								<div class="slider_text">
+									<p>Шаг 1. Зайти в репозиторий stankin/inet-2017 и создать собственный форк.</p>
+								</div>
+							</li>
+							<li>
+								<img src="images/lab1/2.png" />
+								<div class="slider_text">
+									<p>Шаг 2. Клонировать репозиторий на локальный компьютер. Для этого необходимо использовать утилиту git bash.</p>
+								</div>							
+							</li>
+							<li>
+								<img src="images/lab1/3.png" />
+								<div class="slider_text">
+									<p>Шаг 3. В программе git bash ввести команду <code>git clone</code>, указав скопированную ссылку в качестве аргумента.</p>
+								</div>							
+							</li>
+							<li>
+								<img src="images/lab1/4.png" />
+								<div class="slider_text">
+									<p>Шаг 4. Создать файл индивидуальной страницы. Для этого необходимо создать папку, названную в виде "Фамилия_И_О". Внутри данной папки необходимо создать файл index.html, заполнив его стандартной структурой html файла.</p>
+								</div>							
+							</li>
+							<li>
+								<img src="images/lab1/5.png" />
+								<div class="slider_text">
+									<p>Шаг 5. В программе git bash выполнить команду <code>git add</code> для добавления файлов под версионный контроль. После этого необходимо выполнить команду <code>git commit -m ""</code>, дописав в кавычках информацию о коммите.</p>
+								</div>
+							</li>
+							<li>
+								<img src="images/lab1/6.png" />
+								<div class="slider_text">
+									<p>Шаг 6. Для публикации коммита в основном репозитории необходимо выполнить команду <code>git push origin master</code>.</p>
+								</div>
+							</li>
+							<li>
+								<img src="images/lab1/7.png" />
+								<div class="slider_text">
+									<p>Шаг 7. Затем необходимо предложить коммит для внесения в основной проект. Для этого в репозитории GitHub необходимо нажать кнопку Pull Request.</p>
+								</div>
+							</li>
+						</ul>  
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2 left dark fullscreen">
+				<div class="content box style2">
+					<header>
+						<h2>Разработка простого веб-приложения</h2>
+					</header>
+					<p>Цель: Спроектировать и разработать коллективное веб-приложение.</p>
+					<table>
+						<thead>
+							<tr>
+								<td>Участник</td>
+								<td>Персональная страница</td>
+								<td>Роль</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Бабенко Евгения</td>
+								<td><a href="https://stankin.github.io/inet-2017/idm-17-05/Babenko_E_V/index.html">Персональная страница</a></td>
+								<td>Руководитель проекта</td>
+							</tr>
+							<tr>
+								<td>Жуков Игорь</td>
+								<td><a href="https://stankin.github.io/inet-2017/idm-17-05/Zhukov_I_M/index.html">Персональная страница</a></td>
+								<td>Разработчик</td>
+							</tr>							
+						</tbody>
+					</table>		
+					<h3>Описание</h3>
+					<p>Приложение решает краевую задачу для уравнения теплопроводности в одномерном пространстве.</p>
+					<h3>Требования к программе</h3>
+					<ol>
+						<li>Создать интерактивную форму для отображения приложения.</li>
+						<li>На форму добавить поле "Начальные условия", в дальнейшем здесь будут вводиться формулы начальных условий для всех точек.</li>
+						<li>Создать два поля ввода формул краевых точек (аналогично предыдущему пункту).</li>
+						<li>Добавить поле для ввода формулы, которая вносит условия для изменения температуры на точках.</li>
+						<li>Создать отдельный блок для ввода следующих данных: длина, наблюдаемое время, делители длины и времени</li>
+						<li>Добавить кнопку "Рассчитать"</li>
+						<li>По окончании вычислений строится трёхмерный температурный график</li>
+					</ol>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Настройка локальной сети передачи данных</h2>
+						<p>Целью данной лабораторной работы является ознакомление с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрузитацией.</p>
+					</header>
+					<p>Для начала выполнения лабораторной работы необходимо рассчитать диапазоны подсетей.</p>
+					<table border="1" class="lantable">
+						<thead>
+							<tr>
+								<td rowspan=2>Номер варианта</td>
+								<td rowspan=2></td>
+								<td colspan=3>Количество узлов в сети</td>
+							</tr>
+							<tr>
+								<td>LAN A</td>
+								<td>LAN B</td>
+								<td>LAN C</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>15</td>
+								<td></td>
+								<td>854</td>
+								<td>14</td>
+								<td>169</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Префиксная маска подсети</td>
+								<td>/22</td>
+								<td>/28</td>
+								<td>/24</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td>Адрес подсети</td>
+								<td>192.168.12.0/22</td>
+								<td>172.16.15.0/28</td>
+								<td>10.10.15.0/24</td>							
+							</tr>
+							<tr>
+								<td></td>
+								<td>Минимальный адрес</td>
+								<td>192.168.12.1</td>
+								<td>172.16.15.1</td>
+								<td>10.10.15.1</td>							
+							</tr>
+							<tr>
+								<td></td>
+								<td>Максимальный адрес</td>
+								<td>192.168.15.254</td>
+								<td>172.16.15.14</td>
+								<td>10.10.15.254</td>							
+							</tr>
+							<tr>
+								<td></td>
+								<td>Широковещательный адрес</td>
+								<td>192.168.15.255</td>
+								<td>172.16.15.15</td>
+								<td>10.10.15.255</td>							
+							</tr>
+						</tbody>
+					</table>
+					<p>Для рассчитаных подсетей нужно распределить адреса устройствам.</p>
+					<table class="lantable">
+						<thead>
+							<tr>
+								<td>Устройство</td>
+								<td>IP-адрес</td>
+								<td>Маска подсети</td>
+								<td>Шлюз по умолчанию</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>PC0</td>
+								<td>192.168.15.254</td>
+								<td>255.255.252.0</td>
+								<td>192.168.12.1</td>
+							</tr>
+							<tr>
+								<td>PC1</td>
+								<td>192.168.15.253</td>
+								<td>255.255.252.0</td>
+								<td>192.168.12.1</td>
+							</tr>
+							<tr>
+								<td>PC2</td>
+								<td>172.16.15.14</td>
+								<td>255.255.255.240</td>
+								<td>172.16.15.1</td>
+							</tr>	
+							<tr>
+								<td>PC3</td>
+								<td>172.16.15.13</td>
+								<td>255.255.255.240</td>
+								<td>172.15.15.1</td>
+							</tr>		
+							<tr>
+								<td>PC4</td>
+								<td>10.10.15.254</td>
+								<td>255.255.255.0</td>
+								<td>10.10.15.1</td>
+							</tr>
+							<tr>
+								<td>Router0 FastEthernet 0/0</td>
+								<td>192.168.15.1</td>
+								<td>255.255.252.0</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>Router0 FastEthernet 0/1</td>
+								<td>172.16.15.1</td>
+								<td>255.255.255.240</td>
+								<td>-</td>
+							</tr>		
+							<tr>
+								<td>Router0 Serial 2/0</td>
+								<td>15.15.15.2</td>
+								<td>255.255.255.252</td>
+								<td>-</td>
+							</tr>
+							<tr>
+								<td>Router1 FastEthernet 0/1</td>
+								<td>10.10.15.1</td>
+								<td>255.255.255.0</td>
+								<td>-</td>
+							</tr>		
+							<tr>
+								<td>Router1 Serial 2/0</td>
+								<td>15.15.15.1</td>
+								<td>255.255.255.252</td>
+								<td>-</td>
+							</tr>							
+						<tbody>
+					</table>
+					<p>После добавления на форму двух компьютеров и коммутатора, а так же их настройки, необходимо проверить отправление пакетов с устройства на устройство.</p>
+					<img src="images/lab3/4.gif" />
+					<p>При добавлении на форму ещё двух компьютеров, настроенных для подсети B, подключенных к общему коммутатору, необходимо проверить работоспособность сети. В данном варианте пакеты между устройствами, находящимися в разных сетях ходить не будут, т.к. коммутаторы находятся на 2 уровне модели OSI и не умеют обрабатывать IP-запросы</p>
+					<img src="images/lab3/6.gif" />
+					<p>После того как на форму добавлен маршрутизатор и произведена его настройка, необходимо отправить пакеты из одной сети в другую.</p>
+					<img src="images/lab3/9.PNG" />
+					<p>Так как у компьютеров не указан шлюз по умолчанию, то устройство, при направлении пакета, предназначенного устройству из другой сети, не знает кому передавать свой запрос.</p>
+					<img src="images/lab3/10.gif" />
+					<p>Для того, чтобы между устройствами из разных сетей ходили пакеты, необходимо прописать адреса интерфейсов роутера как шлюзы по умолчанию.</p>
+					<img src="images/lab3/12.gif" />
+					<p>После добавления, подключения и настройки компьютера, коммутатора и маршрутизатора, необходимо проверить возможность передачи данных между сетями. Так как маршрутизатор 1 не знает о сетях маршрутизатора 2, а маршрутизатор 2 не знает о сетях маршрутизатора 1, пакеты между этими маршрутизаторами не ходят.</p>
+					<img src="images/lab3/17.gif" />
+					<p>Для передачи между маршрутизаторами данных необходимо прописать статическую маршрутизацию сетей между этими двумя маршрутизаторами.</p>
+					<img src="images/lab3/19.gif" />
+				</div>
+			</section>
+
+
+			
+	</body>
+</html>
