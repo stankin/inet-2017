@@ -26,17 +26,17 @@ color: white;
 }	
 	
 	
-#main_1>a{
+.main_1>a{
 text-decoration: none;
 color: black;
 }
 
-#main_1>a:hover { 
+.main_1>a:hover { 
 					text-decoration: underline;  
 					color: green;
 			}
 
-#main_1{
+/*#main_1{
 	text-decoration: none;
 	background-color: BlanchedAlmond;
 	border: 5px solid DarkSlateGray;
@@ -49,7 +49,22 @@ color: black;
 	padding-top: 100px;
 	border-top: none;
 	border-bottom: none;
-}	
+}	*/
+
+.main_1{
+	text-decoration: none;
+	background-color: BlanchedAlmond;
+	border: 5px solid DarkSlateGray;
+	width: 50%;
+	height: auto;
+	margin: -105px auto 10px;	
+	text-align: center;
+	background-clip:content-box;
+	position: relative;
+	padding-top: 100px;
+	border-top: none;
+	border-bottom: none;
+}
 
 #main_2>a{
 text-decoration: none;
