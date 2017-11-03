@@ -1,0 +1,97 @@
+body {
+    background-image: url(../images/140520040122.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+p {
+    text-align: center;
+    color: Black;
+    font-size: 50px;
+    font-family: arial;
+    font-style: italic;
+    font-weight: bold;
+
+}
+.one{
+    text-align: center;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #e2e2e2;
+    margin-top: 30px;
+}
+div.panel {
+    padding: 0 18px;
+    background-color: Gray;
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    color: Black;
+    font-size: 30px;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+h2 {
+    text-align: center;
+    color: DarkBlue;
+    font-size: 30px;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+}
+
+ul {
+    text-align: left;
+    color: black;
+    font-size: 30px;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+}
+
+h3 {
+    text-align: center;
+    color: #191970;
+    font-size: 24px;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+button.accordion {
+    background-color: transparent;
+    color: #444;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    font-size: 37px;
+    font-family: Arial;
+    font-style: italic;
+    transition: 0.4s;
+    border-bottom: 2px solid #cecece;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: #efefef;
+}
+
+div.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+}

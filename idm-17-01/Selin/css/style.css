@@ -1,0 +1,59 @@
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+.clearer { height: 0px; overflow: hidden; margin: 0px; clear: both; }
+
+/* Link */
+a { color:#c26306; text-decoration:none;}
+a:link, a:visited { color: #c26306; text-decoration: none; }
+a:active, a:hover { color: #b80707; text-decoration: underline }
+
+h2 {font-size:45px;color:#161616;margin: 20px auto; letter-spacing: -1.5px;}
+h3 {font-size:40px;color:#f0a108;margin: 20px 0 30px 0;letter-spacing:-1px;}
+p {line-height:24px; font-size:14px;margin:0 auto;}
+#portfolio p {line-height:24px; font-size:13px;margin:0 auto;}
+
+body {background:#fff;font:12px "Century Gothic", arial, Helvetica, sans-serif;color:#444;}
+.container {width:960px;margin: 0 auto;}
+.logo {width:212px; margin:10px auto;}
+
+/*navigation*/
+.TopNavigation {height:35px;}
+ul.nav {width:960px;margin: 0 auto;width: 450px;}
+ul.nav li {float:left;display:inline;margin:20px 60px 0 0;font-size:15px;font-family:"Century Gothic", arial, Helvetica;}
+ul.nav a {color:#666;text-decoration:none;}
+ul.nav a:hover {color:#ae5b02;}
+ul.nav .active {color:#ae5b02;border-bottom:1px solid #ae5b02;}
+
+/*Cu3er slider*/
+#slider {margin: 0 0 0 10px;}
+.shadow {margin:0 0 50px 50px;}
+
+#containerAbout {width:960px;}
+.rightAbout {float:left;width:290px;margin:0 0 0 15px;}
+.leftAbout {float:left;width:640px;background:url(../images/me.jpg) no-repeat bottom right;border-right:1px solid #b1b1b1;}
+.leftAbout p {padding:0 280px 0 0;}
+#skills {width:960px;height:80px;background:url(../images/bg.skills.gif) no-repeat top center;margin:20px 0 50px 0;}
+#skills ul {margin: 0 0 0 270px;list-style:none;padding-top:30px;}
+#skills li {display:inline;margin:40px 40px 0 0;font-size:15px;font-family:"Century Gothic", arial, Helvetica;}
+
+.bolder {font-weight:bold;font-size:24px;letter-spacing:-1.5px;}
+
+p.footer {text-align:center;font-size:11px;margin: 0 0 20px 0;border-top:1px dashed #b1b1b1;}
