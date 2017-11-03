@@ -10,7 +10,7 @@ p{
 #main{
   width: 75%;
   margin: auto;
-  background: #AFA url(https://stankin.github.io/inet-2017/idm-17-02/Tarasov/css/img/123.jpg) no-repeat center;
+  background: url(https://stankin.github.io/inet-2017/idm-17-02/Tarasov/css/img/123.jpg) no-repeat center;
   height: 100%;
   padding: 10px
 }
