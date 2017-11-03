@@ -1,3 +1,4 @@
+
 $(function() {
 
       setInterval( function() {
@@ -29,5 +30,4 @@ $(function() {
       }, 1000 );
 
 });
-
 
