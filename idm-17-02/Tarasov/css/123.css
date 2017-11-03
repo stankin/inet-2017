@@ -10,7 +10,7 @@ p{
 #main{
   width: 50%;
   margin: auto;
-  background: #AFA;
+  background: #AFA url(123.jpg);
   height: 100%;
   padding: 10px
 }
