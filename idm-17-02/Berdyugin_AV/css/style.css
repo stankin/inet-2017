@@ -26,32 +26,17 @@ color: white;
 }	
 	
 	
-.main_1>a{
+#main_1>a{
 text-decoration: none;
 color: black;
 }
 
-.main_1>a:hover { 
+#main_1>a:hover { 
 					text-decoration: underline;  
 					color: green;
 			}
 
-/*#main_1{
-	text-decoration: none;
-	background-color: BlanchedAlmond;
-	border: 5px solid DarkSlateGray;
-	width: 50%;
-	height: auto;
-	margin: -105px auto 10px;	
-	text-align: center;
-	background-clip:content-box;
-	position: relative;
-	padding-top: 100px;
-	border-top: none;
-	border-bottom: none;
-}	*/
-
-.main_1{
+#main_1{
 	text-decoration: none;
 	background-color: BlanchedAlmond;
 	border: 5px solid DarkSlateGray;
@@ -162,7 +147,7 @@ background:linear-gradient(to top left, White, LightBlue);
 	text-align: justify; 
 }
 	
-.knopka{
+#main_1>.knopka{
  font-family: Haettenschweiler;
  font-size: 20px;
  position: relative;
@@ -177,7 +162,31 @@ background:linear-gradient(to top left, White, LightBlue);
  background: MediumAquamarine;
  cursor: pointer;
  }
- .knopka:active
+ 
+ #main_1>.knopka:active
+ {
+ background: Violet;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px; 
+ }
+ 
+#main_2>.knopka{
+ font-family: Haettenschweiler;
+ font-size: 20px;
+ position: relative;
+ left: 710px;
+ right: 0px;
+ bottom: 0px;
+ height: 30px;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 5px;
+ background: MediumAquamarine;
+ cursor: pointer;
+ }
+#main_2>.knopka:active
  {
  background: Violet;
  border-color: black;
