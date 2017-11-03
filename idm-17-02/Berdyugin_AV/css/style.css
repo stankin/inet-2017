@@ -5,6 +5,32 @@
 	}
 
 
+.menu{
+text-align: center;
+font-size: 20px;
+font-family: Verdana;
+font-style: italic;
+background-image:url(81221d1.jpg);
+position: fixed;
+width:100%;
+z-index: 1;
+top: 0px;
+
+}
+
+#psevdo{
+	
+padding: 5px;
+margin: -5px;	
+	
+}
+.menu>a{
+
+text-decoration: none;
+color: white;
+}	
+	
+	
 #main_1>a{
 text-decoration: none;
 color: black;
@@ -16,6 +42,67 @@ color: black;
 			}
 
 #main_1{
+	text-decoration: none;
+	background-color: BlanchedAlmond;
+	border: 5px solid DarkSlateGray;
+	width: 50%;
+	height: auto;
+	margin: -10px auto;	
+	text-align: center;
+	background-clip:content-box
+}	
+
+#main_2>a{
+text-decoration: none;
+color: black;
+}
+
+#main_2>a:hover { 
+					text-decoration: underline;  
+					color: green;
+			}
+
+#main_2{
+	text-decoration: none;
+	background-color: BlanchedAlmond;
+	border: 5px solid DarkSlateGray;
+	width: 50%;
+	height: auto;
+	margin: -10px auto;
+	text-align: center;
+}	
+
+#main_3>a{
+text-decoration: none;
+color: black;
+}
+
+#main_3>a:hover { 
+					text-decoration: underline;  
+					color: green;
+			}
+
+#main_3{
+	text-decoration: none;
+	background-color: BlanchedAlmond;
+	border: 5px solid DarkSlateGray;
+	width: 50%;
+	height: auto;
+	margin: -10px auto;
+	text-align: center;
+}	
+
+#main_4>a{
+text-decoration: none;
+color: black;
+}
+
+#main_4>a:hover { 
+					text-decoration: underline;  
+					color: green;
+			}
+
+#main_4{
 	text-decoration: none;
 	background-color: BlanchedAlmond;
 	border: 5px solid DarkSlateGray;
@@ -38,7 +125,7 @@ color: black;
 	background: linear-gradient(to top left, LightBlue, LightSteelBlue);
 	width: 50%;
 	height: auto;
-	margin: -65px auto 5px;
+	margin: 125px auto 5px;
 	
 
 }
@@ -84,11 +171,10 @@ background:linear-gradient(to top left, White, LightBlue);
  border-width: 1px; 
  }
 
- #digital_watch{
+ /*#digital_watch{
  position: relative;
  text-align: right;
  font-size: 10px;
  color: black;
  font-weight: bold;
- }
- 
+ }*/
