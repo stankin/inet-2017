@@ -1,100 +1,166 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script language = "JavaScript">
+  </script>
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css"
-          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
-            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-            crossorigin="anonymous"></script>
-
-    <style>
-        .btn-group {
-            display: inline-flex;
-        }
-    </style>
-    <meta charset="UTF-8">
-    <title></title>
+  <script src="./script/index.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Brand</a>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Отчет по лабораторным работам Выполнил: </h4>
+      <h5>студент группы ИДМ-17-03 Федосов М.Е.</h5>
+      <ul class="nav nav-pills nav-stacked">
+          <li data-toggle="collapse" href="#collapse1"><a href="#">Лабораторная работа 1</a></li>
+          <li  data-toggle="collapse" href="#collapse2"><a href="#">  Лабораторная работа 2</a></li>
+          <li  data-toggle="collapse" href="#collapse3"> <a href="#">Лабораторная работа 3</a></li>
+        </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Laba">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+
+      <!-- Start block For Laba1 -->
+      <hr>
+      <!--Start header -->
+      <h2>Лабораторная работа 1</h2>
+      <h5><span class="label label-danger">IMPORTANT</span> <span class="label label-primary">Some tag</span></h5><br>
+      <!-- End header -->
+      <!-- Start content -->
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse1">Цели задачи вывод</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4><div align="left">Цель:</div></h4>
+              Создать простейшую html страницу.
+              <h4><div align="left">Задачи:</div></h4>
+              <ol>
+              <li>Научится создавть простейшую html страницу.</li>
+              <li>Сделать html страницу в виде отчета по лабораторным работам.</li>
+              <li>Залить получившуюся страницу на github.</li>
+              </ol>
+              <h4><div align="left">Ход работы:</div></h4>
+              <ol>
+              <li>Научился создавать простейшую html страницу.</li>
+              <li>Познакомился с простейшими тегами такими как head,body,h1,h2,ol,div и т.д..
+              <li>Зарегистрировался на github.</li>
+              <li>Залил свою страницу на github.</li>
+              </ol>
+              <h4><div align="left">Вывод:</div></h4>
+              В ходе проделанной работы, я научился создавать простейшие html страницы и заливать их на github.
+              <p><a href="https://femax.github.io/InternetTech/">Ссылка на сайт</a></p>
+              <p><a href="https://github.com/stankin/inet-2017/tree/master/idm_17_03/Fedosov">Ссылка на исходники сайта</a></p>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- End content -->
+      <!-- End block For Laba1 -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="/news">Show News <span class="sr-only">(current)</span></a></li>
-            </ul>
+      <!--Start block For Laba2 -->
+      <hr>
+      <!--Start header -->
+      <h2>Лабораторная работа 2</h2>
+      <h5><span class="label label-success">Some tag</span></h5><br>
+      <!-- End header -->
+
+
+      <!-- Start content -->
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse2">Цели задачи вывод</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">
+              <h4><div align="left">Цель:</div></h4>
+
+              Сделать простейшее веб-приложение.
+
+              <h4><div align="left">Задачи:</div></h4>
+              <ol>
+              <li>Разбится на группы из 4 человек.</li>
+              <li>Решить какое приложение будет создано.</li>
+              <li>Распределить роли.</li>
+              <li>Создать приложение.</li>
+              </ol>
+
+              <h4><div align="left">Ход работы:</div></h4>
+              <ol>
+              <li>Разбились на группы по 4 человека.</li>
+              <li>Определились с выбором веб-приложения.</li>
+              <li>Распределили роли, каждый разобрался в поставленное ему задаче.</li>
+              <li>Было создано веб-приложение.</li>
+              </ol>
+              <h4><div align="left">Вывод:</div></h4>
+              В ходе проделанной работы научились создавать простейшее веб-приложение работая в команде.
+              <p><a href="https://github.com/Femax/FinFirst-React">Ссылка на папку с приложением</a></p>
+            <br><br>
+            </div>
+          </div>
         </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-<div class="content" style="width:80%;margin:0 auto;">
-    <div class="btn-group" role="group" aria-label="">
-        <form action="/news" method="GET" role="form" class="form-horizontal">
-            <input type="hidden" name="" value="">
-            <button type="submit" class="btn btn-default"></button>
-        </form>
-    
-    </div>
+      </div>
+      <!-- End content -->
+      <!--End block For Laba2 -->
 
 
-    <div class="news-container" style="width:100%;box-shadow: 0 0 10px rgba(0,0,0,0.5);margin:20px;">
-        <h2 style="padding-top:15px;padding-left:10px;">Title</h2>
+      <!--Start block For Laba3 -->
+      <hr>
+      <h2>Лабораторная работа 3</h2>
+      <h5><span class="label label-success">Some tag</span></h5><br>
+      <!-- Start content -->
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse3">Цели задачи вывод</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">
+                      Создать и настроить компьютерную сеть
 
-        <p style="padding:10px">
-		Lorem ipsum dolor sit amet, sit ei natum viderer, eos quando inermis te. Te fugit quidam contentiones vix. Nam at iriure prompta. Ea probo laudem postea vix, eos harum nonumes abhorreant te, cum aperiam discere signiferumque ei. Tollit graeci an his, at omnis persius assentior his. Ignota laboramus constituam ius ad.
-
-Ullum praesent intellegat quo ne, aliquam dolores expetenda cu sea. Ex ludus posidonium sit. Falli bonorum vocibus duo te, ex esse alterum mea. Iusto populo iuvaret pri ut. Prompta expetenda expetendis eum ne, has hinc dicta ea. Ut usu vidisse impedit concludaturque.
-
-Vidit equidem repudiare nec id, vis cu libris mediocritatem. Cu his illum sensibus expetendis, harum errem graece ut quo. Ea delicata vituperata cotidieque duo. Nec et vero essent democritum, erat eirmod te usu. Vero laudem vix ne.
-
-Usu nibh idque ei, tantas audiam laboramus ut eos, nonumy concludaturque cum id. Vim ne integre complectitur, eam in augue petentium. Accumsan postulant nam ex, et accusata erroribus nam. Vis stet scripserit id. Sit no semper indoctum sententiae, mea an dicat commodo molestiae, no ridens quidam abhorreant cum. Et sed odio probo fuisset.
-
-Cum ea augue euismod contentiones, cu soleat explicari dissentiunt eos. Eos amet possit et, ad tempor ignota labitur cum, possit nusquam consetetur usu an. Pri tation fuisset te, tritani partiendo ea quo, usu amet eripuit an. Oratio tritani id vix, utinam homero consectetuer qui an, pro omnes minimum eu.
-        <p/>
-
-        <div class="date" style="text-align: right;padding-right:15px;"></div>
-        <div class="btn-group" role="group" aria-label="" style="margin:10px;">
-            <form method="GET" action="/news/delete">
-                <input type="hidden" name="id" value="">
-                <button type="submit" class="btn btn-default">delete</button>
-            </form>
-            <form method="GET" action="/news/update">
-                <input type="hidden" name="id" value="">
-                <button type="submit" class="btn btn-default">update</button>
-
-            </form>
+                      <h4><div align="left">Задачи:</div></h4>
+                      <ol>
+                      <li>Создать сеть.</li>
+                      <li>Настроить созданную сеть.</li>
+                      </ol>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- End content -->
+      <hr>
 
-    </div>
-    <div style="float:right;margin:10px;">
-        <form method="GET" action="/news/add">
-            <button type="submit" class="btn btn-default">add</button>
-        </form>
-    </div>
-</div>
+      <!--End block For Laba3 -->
+
+<footer class="container-fluid">
+  <p>Fedosov Maxim(c)</p>
+</footer>
+
 </body>
 </html>
