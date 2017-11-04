@@ -30,3 +30,27 @@ h3
 	opacity: 0.9;
 
 }
+
+table 
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	text-align: left;
+	border-collapse: separate;
+	border-spacing: 5px;
+	background: #C2EFE1 /*E5E0D2*/;
+	color: #414E41;
+	border: 16px solid #C2EFE1 /*ECE9E0*/;
+	border-radius: 20px;
+	opacity: 1;
+}
+th 
+{
+	font-size: 18px;
+	padding: 10px;
+}
+td 
+{
+	background: #F8E391 /*F0C198*/;
+	padding: 10px;
+	opacity: 1;
+}
