@@ -1,4 +1,3 @@
-
 .animo {
     background: url('img/Jelly1.jpg') no-repeat center;
 	margin-bottom: 7px ;
@@ -7,3 +6,28 @@
     background: url('img/back.jpg') no-repeat center;
 	
 }
+   .left-column {
+    width: 46%;
+    min-height: 560px;
+    background: url('img/complete_left.jpg') ;
+    float: left;
+    font-size: 20px;
+    }
+
+    .right-column {
+    width: 46%;
+    min-height: 560px;
+     background: url('img/complete_right.jpg') ;
+    float: right;
+	font-size: 20px;
+	
+    }
+
+    .footer {
+    clear: both;
+    }
+
+    .footer-2 {
+      background-color: lightgray;
+      clear: both;
+    }
