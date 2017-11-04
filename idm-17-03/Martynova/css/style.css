@@ -35,6 +35,15 @@ td{
      margin-left: 10%;
 	 margin-top: 12%;
 }
+
+
+.container_question{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding-left: 1%;
+}
+
+
 body{
 	background-image: url(background.png);
 	background: url(background.png)  no-repeat;
