@@ -31,3 +31,8 @@ $(function() {
 
 });
 
+function show(Element){
+    document.getElementById(Element).style.display='block';
+};
+
+

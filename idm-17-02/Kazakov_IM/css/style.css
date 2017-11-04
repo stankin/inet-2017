@@ -34,6 +34,9 @@ body{
 .spisok{
   padding-left: 10px;
 }
+.msg{
+  display:none;
+}
 #sec,
 #min,
 #hour {
