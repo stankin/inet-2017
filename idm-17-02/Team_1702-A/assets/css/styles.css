@@ -124,6 +124,11 @@ header h2.tzine a{
 	margin: 10px 0 10px;
 }
 
+.filter-criteria_t{
+	height:150px;
+    overflow-y: scroll;
+}
+
 .filters span{
 	font-size:14px;
 	display: block;
@@ -149,10 +154,10 @@ header h2.tzine a{
 	border: 0;
 	color: #ffffff;
 	font-weight: bold;
-	font-size: 13px;
+	font-size: 12px;
 	cursor: pointer;
 
-	width: 95px;
+	width: 100px;
 	height: 32px;
 	margin-top: 10px;
 }
