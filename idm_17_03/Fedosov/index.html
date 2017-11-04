@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <title>Bootstrap Example</title>
@@ -9,6 +9,18 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <script language = "JavaScript">
+    $('.nav-item1').click(function(){
+      alert("shit");
+      $('.nav-item1').toggleClass('active');
+    });
+    $('.nav-item2').click(function(){
+      $('.nav-item2').toggleClass('active');
+    });
+
+    $('.nav-item3').click(function(){
+      $('.nav-item3').toggleClass('active');
+    });
+
   </script>
 
   <script src="./script/index.js"></script>
@@ -22,8 +34,9 @@
       <h5>студент группы ИДМ-17-03 Федосов М.Е.</h5>
       <ul class="nav nav-pills nav-stacked">
           <li data-toggle="collapse" href="#collapse1"><a href="#">Лабораторная работа 1</a></li>
-          <li  data-toggle="collapse" href="#collapse2"><a href="#">  Лабораторная работа 2</a></li>
+          <li  data-toggle="collapse" href="#collapse2"><a href="#">Лабораторная работа 2</a></li>
           <li  data-toggle="collapse" href="#collapse3"> <a href="#">Лабораторная работа 3</a></li>
+          <li  data-toggle="collapse" href="#collapse4"> <a href="#">Подготовка к экзамену</a></li>
         </ul><br>
       <div class="input-group">
         <input type="text" class="form-control" placeholder="Search Laba">
@@ -149,6 +162,34 @@
                       <li>Создать сеть.</li>
                       <li>Настроить созданную сеть.</li>
                       </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End content -->
+      <hr>
+
+      <!--End block For Laba3 -->
+
+
+      <!--Start block For Laba3 -->
+      <hr>
+      <h2>Подготовка к экзамену</h2>
+      <h5><span class="label label-success">Some tag</span></h5><br>
+      <!-- Start content -->
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse4">Подготовка к экзамену</a>
+            </h4>
+          </div>
+          <div id="collapse4" class="panel-collapse collapse">
+            <div class="panel-body">
+              <ul>
+                <li>Пройти тест</li>
+                <li>Придумать вопросы</li>
+              </ul>
             </div>
           </div>
         </div>
