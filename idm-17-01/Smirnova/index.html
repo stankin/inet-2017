@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>И.А.Смирнова</title>
+
+        <script src="rainyday.js"></script>
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this
+                    });
+					engine.rain([ [3, 2, 2] ], 100);
+				};
+                image.crossOrigin = 'anonymous';
+                image.src = 'http://i.imgur.com/U1Tqqdw.jpg';
+            }
+        </script>
+    </head>
+    <body onload="run();">
+        <img id="background" src="" />
+        <div id="container">
+            <div id="title">Личная страница</div>
+            <div id="foto"></div>
+
+            <div id="laba">
+                    <div id="vert">Лабораторные занятия</div>
+                    <section class="tabs">
+                      <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+                      <label for="tab-1" class="tab-label-1">№1</label>
+
+                      <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+                      <label for="tab-2" class="tab-label-2">№2</label>
+
+                      <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+                      <label for="tab-3" class="tab-label-3">№3</label>
+                      
+                      <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                      <label for="tab-4" class="tab-label-4">№4</label>
+
+                      <div class="content">
+                        <div class="content-1">
+                            <p class="title_sl">Задачи лабораторной работы №1</p>
+                            <p class="_sl">
+                                1. Регистрация на GitHub: <a href="https://github.com/s-irina-alexandrovna" target="_blank">Страница пользователя</a><br>
+                                2. Загрузить <a href="" >персональную веб-страницу-отчет</a> в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.<br>
+                                3. <a href="" target="_blank">Папка</a> с исходными кодами в репозитории.
+
+                            </p>
+                        </div>
+                        <div class="content-2">
+                            <p class="title_sl">Задачи лабораторной работы №2</p>
+                            <p class="_sl">
+                                  1. Собрать команду для разработки веб-приложения (SPA) и распределить роли. <a href="" target="_blank">Ссылка на страницу команд</a><br>
+                                  2. Разработать макет страницы веб-приложения. <a href="" target="_blank">Ссылка на макет</a><br>
+                                  3. Прописать стили страницы
+                                  4. Прописать js функционал и реализовать возможность чтения json.
+                                  Результат: <a href="" target="_blank"> Работающий прототип</a>
+
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <p class="title_sl">Задачи лабораторной работы №3</p>
+                            <p class="_sl">
+                                Настройка коммутаторов и маршрутизаторов.<br>
+                                <a href="" target="_blank">Отчет по лабораторной работе</a>
+                            </p>
+                        </div>
+                        <div class="content-4">
+                            <p class="title_sl">Подготовка к экзамену</p>
+                            <p class="_sl">Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</p>
+                        </div>
+                      </div>
+                    </section>
+            </div>   
+            <div id="name">
+                И.А.Смирнова<br>
+                ИДМ-17-01
+            </div>                 
+
+
+
+        </div>
+        
+    </body>
+</html>
