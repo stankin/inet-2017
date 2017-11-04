@@ -17,9 +17,9 @@
 
 	//	чекбоксы
 
-	var checkboxes = $('.all-products input[type=checkbox]');
+	var checkboxes = $('.all-products');
 
-	checkboxes.click(function () {
+	checkboxes.on('click', 'input[type=checkbox]', function () {
 
 		var that = $(this),
 			specName = that.attr('name');
@@ -65,6 +65,11 @@
 	$('.filters button').click(function (e) {
 		e.preventDefault();
 		window.location.hash = '#';
+        var checkboxes = $('input:checkbox');
+        if (checkboxes.is(':checked')) {
+            $('input:checkbox').prop('checked', false);
+        }
+        
 	});
 
 
@@ -368,5 +373,21 @@
 		}
 
 	}
+
+
+//Checkboxes
+var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+
 
 });
