@@ -142,7 +142,7 @@ header-right script {
     padding-top: 30px;
 	padding-bottom: 30px;
 }
-#lab2 {
+#lab2, #ekz {
     background: #002137;
     padding-top: 30px;
 	padding-bottom: 30px;
@@ -169,6 +169,15 @@ header-right script {
 
 #lab3 h2 {
 	color: #112233;
+}
+
+#ekz h1 {
+	color: #fff; 
+	font-size: 30px;
+}
+
+#ekz h2 {
+	color: #fff;
 }
 
 table.calendar {
@@ -255,7 +264,7 @@ margin-top:30px;
 .footer p, .footer a
 {
 font: 14px Verdana, Arial, Helvetica, sans-serif;
-color:#444;
+color:#ededed;
 }
  
 .footer a
