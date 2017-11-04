@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html> 
+<html>  
+<head> 	
+    <meta charset="utf-8">  	
+    <title>Книга Рецептов</title>  	
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet"> 	
+    <link href="assets/css/styles.css" rel="stylesheet"> 
+</head>  
+<body>  	
+    <header class="compact"> 		
+        <h1><a href="#">Книга рецептов блюд со всего мира</a></h1> 	
+    </header>  	
+    <div class="main-content">  		
+        <div class="all-products page">  			
+            <div class="filters"> 				
+                <form>  
+                    <span>Кухня</span> 					
+                    <div class="filter-criteria" id="placeholder1">
+                    </div> 
+                    <span>Ингридиенты</span>  					
+                    <div class="filter-criteria_t" id="placeholder2">
+                    </div> 
+                    <span>Тип блюда</span> 	 		
+                    <div class="filter-criteria_t" id="placeholder3">
+                    </div>
+                     <span>Назначение</span>  					
+                    <div class="filter-criteria_t" id="placeholder4">				
+                    </div>  					
+                    <button>Очистить фильтры</button>  				
+                </form>  			
+            </div>  
+            <div class="all_products">		
+            <ul class="products-list"> 				
+                <script id="products-template" type="x-handlebars-template">​ 					
+                    {{#each this}} 						
+                    <li data-index="{{id}}"> 							
+                    <a href="#" class="product-photo"><img src="{{image.small}}" height="130" alt="{{name}}"/></a> 							
+                    <h2><a href="#"> {{name}} </a></h2> 							
+                    <ul class="product-description"> 								
+                    <li><span>Кухня: </span>{{specs.cuisine}}</li> 								
+                    <li><span>Тип блюда: </span>{{specs.type}}</li> 								
+                    <li><span>Назначение: </span>{{specs.sphere}}</li>
+                    </ul> 							
+                    <button>Подробнее</button>
+                    <div class="highlight"></div> 						
+                    </li> 					
+                    {{/each}} 				
+                </script> 			
+            </ul> 
+            </div>	 		
+        </div>   		
+        <div class="single-product page">  			
+            <div class="overlay"></div>  			
+            <div class="preview-large"> 				
+                <h3>Single product view</h3> 				
+                <img src=""/> 
+                <p></p>
+                <div class="preview-large0">		
+                    <p></p>  
+                </div>
+                <div class="preview-large1"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>
+                <div class="preview-large2"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>	
+                <div class="preview-large3"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>	
+                <div class="preview-large4"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>	
+                <div class="preview-large5"> 
+                    <img src=""/> 				
+                    <p></p>  
+                </div>	
+                <div class="preview-large6"> 
+                    <img src=""/>
+                </div>			
+                <br />
+                <span class="cltypee">Закрыть</span> 	
+                <br />		
+            </div>  		
+        </div>  		
+        <div class="error page"> 			
+            <h3>Sorry, something went wrong :(</h3> 		
+        </div>  	
+    </div>   
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> 	
+        <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script> 	
+        <script src="assets/js/script2.js"></script>
+        <script src="assets/js/script.js"></script>  
+         	
+</body> 
+</html>

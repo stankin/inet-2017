@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>
+	   Лабораторные работы Селина Николая
+    </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <!-- CSS -->
+	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link rel="stylesheet" href="css/galleriffic-2.css" type="text/css" />
+	
+	 <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="favicon.ico" />
+	
+	<!-- JAVASCRIPT -->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/verticalscroller.js"></script>
+	<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+	<script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+	
+	<!-- We only want the thunbnails to display when javascript is disabled -->
+	<script type="text/javascript" src="js/noscript.js"></script>
+	
+</head>
+<body>
+	<!-- CONTAINER -->
+	<div class="container">
+		
+		<!-- LOGO + NAV  -->
+		<div class="logo" id="top">
+			<img src="images/logo.gif" alt="logo" />
+		</div>
+		
+		<div class="TopNavigation">
+			<ul class="nav">
+				<li class="active">LAB #1</li>
+				<li><a href="#lab2">LAB #2</a></li>
+				<li><a href="#lab3">LAB #3</a></li>
+				<li><a href="#examen">EXAM</a></li>
+			</ul>
+		</div>
+		<!-- END LOGO + NAV  -->
+		
+		<!-- LAB1 -->	
+		<div id="lab1">
+		<h2>Лабораторная №1</h2><p>
+		Создание персональной страницы-отчета на github и работа с git.<br/>
+		<br/>
+		1) Пройти регистрацию на сайте GitHub.<br/>
+		<br/>
+		2) Получить доступ к репозиторию.<br/>
+		<br/>
+		3) Создать личную страницу.<br/>
+		<br/>
+		4) Создать <a href="index.html">персональную веб страницу-отчет</a> с использованием HTML, CSS, JavaScript. Персональная страница-отчет.<br/>
+		<br/>
+		5) Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.</div>
+		<br/></p>
+		<img src="images/shadow.gif" alt="" class="shadow"/>
+		<!-- END LAB1 -->
+
+		<!-- LAB2  -->
+		<div id="lab2">
+<h2>Лабораторная №2</h2><p>
+"Разработка простого приложения"<br/>
+Проектирование и разработка индивидуального или коллективного приложения<br/>
+<br/>
+1) Собрать команду для разработки приложения и распределить роли.
+<a href=https://stankin.github.io/inet-2017/idm-17-01/index.xml>Страница команд.</a><br/>
+<br/>
+2) Прописать функционал и реализовать возможность работы с приложением в <a href=https://github.com/pindos11/2017_17-01_project>проекте</a><br/>
+<br/>
+3) Прописать стили страницы</p>
+		<br/>
+		<img src="images/shadow.gif" alt="" class="shadow"/>
+		</div>
+		<!-- END LAB2  -->
+
+		<!-- LAB3  -->
+		<div id="lab3">
+			<h2>Лаботаторная №3</h2>
+			
+			<p>
+			"Настройка локальной сети передачи данных".</br>
+</br>
+Настройка коммутаторов и маршрутизаторов.	
+			</p>
+			<img src="images/shadow.gif" alt="" class="shadow"/>
+	
+		<!-- END LAB3 -->
+	
+		<!-- EXAM  -->
+		<div id="examen">
+			<h2>Подготовка к экзамену</h2>
+	
+			<p>
+				Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)
+			</p>
+			
+		<!-- EXAM  -->
+	
+		<!-- FOOTER  -->
+		<p class="footer">
+			Copyright &copy; 2017 hArm0niii. All Rights Reserved. Made by <a href="https://vk.com/harmonational">Selin Nikolay</a></br>
+			<a href="http://2ch.hk">Your Inspiration Website.</a>
+		</p>
+		<!-- END FOOTER -->
+		
+	</div>
+	<!-- END CONTAINER -->
+
+						
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('div.navigation').css({'width' : '300px', 'float' : 'left'});
+	$('div.content').css('display', 'block');
+	var onMouseOutOpacity = 0.67;
+	$('#thumbs ul.thumbs li').opacityrollover({
+		mouseOutOpacity:   onMouseOutOpacity,
+		mouseOverOpacity:  1.0,
+		fadeSpeed:         'fast',
+		exemptionSelector: '.selected'
+	});
+});
+</script>
+	
+
+</body>
+</html>

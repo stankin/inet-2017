@@ -1,27 +1,71 @@
 <html>
 		<head>
-			<title> Личная страница
-			Бердюгина Антона Валериевича
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+			<title> Бердюгин А.В.
 			</title>
 			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<script type="text/javascript" src="js/Clock.js">
+			</script>
 		</head>
-		<body>
-			<div>
-				<h1> Личная страница
-			Бердюгина Антона Валериевича <h1>
-			<p> Группа ИДМ-17-02 </p>
-			<h2> Список лабораторных </h2>
-			<ol>
-				<li> Лаб.раб 1 </li>
-				<li> Лаб.раб 2 </li>
-				<li> Лаб.раб 3 </li>
-			</ol>
-			<h2> Список задач </h2>
-			<ol type="A">
-				<li> Выполнить лабораторную 1 </li>
-				<li> Выполнить лабораторную 2 </li>
-				<li> Выполнить лабораторную 3 </li>
-			</ol>	
-				
+		
+		<body class="gradient" onload="digitalWatch()">
+		  <nav class="menu"> <a href="https://stankin.github.io/inet-2017/idm-17-02/index.html" target="_blank" > Вернуться к списку группы </a> <br> <a href="#main_1">Л/Р 1</a> <br> <a href="#main_2">Л/Р 2</a> <br> <a href="#main_3">Л/Р 3</a> <br> <a href="#main_4">Подготовка к экзамену</a></nav>
+		<p id="digital_watch"></p>
+			<h2 class="begin">
+			<p class="avatar">
+			<img src="IL.jpg" width="128" height="128" style="text-align:left;" alt="Аватар" >
+			</p>
+			Отчёт по лабораторным работам Бердюгина Антона Валериевича 
+			<br> ИДМ-17-02 </h2>
+			<div id="main_1">
+				<h2> Лабораторная работа №1. "ЭКОСИСТЕМА РАЗРАБОТКИ ПРОГРАММ С ОТКРЫТЫМ КОДОМ" </h2>
+				<a onclick="javascript:document.getElementById('AAA').style.display='block'" href="javascript:void(0)";>
+				 <h2> Создание персональной страницы-отчета на GitHub и работа с git.  </h2> </a>
+				 <div id="AAA" class="lab" style="display:none;">
+					<ol>
+						<li class="lab"> Зарегистрироваться на GitHub. <a href="https://github.com/DrtD" target="_blank"> Страница пользователя. </a></li>
+						<li class="lab"> Создать персональную веб страницу-отчёт с использованием html, css, js. Исходный код находится в <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Berdyugin_AV/index.html" target="_blank"> index.html </a> и <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Berdyugin_AV/css/style.css" target="_blank"> style.css. </a></li>
+						<li class="lab"> Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub. <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> Папка с исходным кодами в репозитории. </a></li>
+					<input type="button" value="Свернуть" class="knopka" onclick="javascript:document.getElementById('AAA').style.display='none'" href="javascript:void(0)"/>
+					</ol>
+			</div>
+			</div "main_1">
+			
+			<div id="main_2">
+				<h2> Лабораторная работа №2. "РАЗРАБОТКА ПРОСТОГО ВЕБ-ПРИЛОЖЕНИЯ" </h2>
+				<a onclick="javascript:document.getElementById('AAB').style.display='block'" href="javascript:void(0)">
+				<h2> Проектирование и разработка индивидуального или коллективного веб-приложения (SPA) с использованием HTML, CSS, JavaScript + JSON/XML. </h2> </a>
+				<div id="AAB" class="lab" style="display:none;">
+					<ol type="A"> 
+						<li class="lab"> Требования к веб-приложению: </li>
+							<ol>
+								<li class="lab">  </li>
+								<li class="lab">  </li>
+								<li class="lab">  </li>
+							</ol>
+						<li class="lab"> Задачи, поставленные для выполнения разработки веб-приложения:  </li>
+							<ol>
+								<li class="lab"> Собрать команду для разработки веб-приложения (SPA) и распределить роли. <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> Страница команды. </a></li>
+								<li class="lab"> Сделать разметку страницы по макету. <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> Макет страницы. </a> Исходный код в <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> index.html. </a></li>
+								<li class="lab"> Прописать стили страницы. Исходный код на <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> CSS. </a> </li>
+								<li class="lab"> Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML. Исходный код на <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> JavaScript </a> и <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> JSON. </a></li>
+							</ol>
+						<li class="lab"> Результат выполнения разработки веб-приложения: <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> SPA приложение. </a></li>
+						<input type="button" value="Свернуть" class="knopka" onclick="javascript:document.getElementById('AAB').style.display='none'" href="javascript:void(0)"/>
+					</ol type="A">
+			</div>
+			</div id="main_2">
+			<div id="main_3">
+				<h2> Лабораторная работа №3. "НАСТРОЙКА ЛОКАЛЬНОЙ СЕТИ ПЕРЕДАЧИ ДАННЫХ" </h2>
+				<h2> Настройка коммутаторов и маршрутизаторов. </h2>
+					<ul>
+						<li id="AAC" class="lab"> <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Berdyugin_AV" target="_blank"> Отчёт по лабораторной работе №3. </a></li>
+					</ul>
+			</div id="main_3">
+			<div id="main_4">
+				<h2> Подготовка к экзамену </h2>
+				<h2  class="lab1"> Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, 
+				встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие) </h2>
+			</div id="main_4">
 		</body>
 </html>

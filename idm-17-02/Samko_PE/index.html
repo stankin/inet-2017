@@ -1,0 +1,335 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Страничка Самко П.Е.</title>
+  <link rel = "stylesheet" href = "style.css">
+  <link rel = "stylesheet" href = "added.css">
+  <style>
+  
+   
+   
+ 
+
+  </style>
+
+  <script type="text/javascript" language="javascript">
+   function toggle_show(id) 
+   {
+   document.getElementById(id).style.display = document.getElementById(id).style.display == 'none' ? 'block' : 'none';
+    } 
+
+    startdate = new Date();
+    clockStart = startdate.getTime();
+    function initStopwatch() {
+    var thisTime = new Date(); 
+    return (thisTime.getTime() - clockStart)/1000; 
+    }
+  function getSecs() {
+    var tSecs = Math.round(initStopwatch());
+    var iSecs = tSecs % 60;
+    var iMins = Math.round((tSecs-30)/60);
+    var sSecs ="" + ((iSecs > 9) ? iSecs : "0" + iSecs);
+    var sMins ="" + ((iMins > 9) ? iMins : "0" + iMins);
+    document.getElementById("timer-counter").innerHTML = sMins+":"+sSecs;
+    setTimeout('getSecs()', 1000); 
+    }  
+  </script>
+  
+</head>
+
+<body onLoad="getSecs()" class="bground">
+
+<div id="large-header" class="animo" >
+
+    <canvas id="demo-canvas"></canvas>
+
+</div>
+
+
+    <link rel="stylesheet" type="text/css" href="style.css" >
+
+<div id="adot0" style="z-index:1000;position: absolute; visibility: hidden; left: 0px; top: 0px;"><hr style="width: 8px; height: 8px; border-radius: 50%; background: radial-gradient(circle, white, red 40%);"></div>
+<div id="adot1" style="z-index:1000;position: absolute; left: 892px; top: 340.011px;background: rgba(200, 54, 54, 0)"><hr style="width: 8px; height: 8px; border-radius: 50%; background: radial-gradient(circle, white, red 40%);"></div>
+<div id="adot2" style="z-index:1000;position: absolute; left: 892px; top: 375.028px;background: rgba(200, 54, 54, 0)"><hr style="width: 9px; height: 9px; border-radius: 50%; background: radial-gradient(circle, white, blue 40%);"></div>
+<div id="adot3" style="z-index:1000;position: absolute; left: 892px; top: 405.045px;background: rgba(200, 54, 54, 0)"><hr style="width: 10px; height: 10px; border-radius: 50%; background: radial-gradient(circle, white, green 40%);"></div>
+<div id="adot4" style="z-index:1000;position: absolute; left: 892px; top: 430.052px;background: rgba(200, 54, 54, 0)"><hr style="width: 11px; height: 11px; border-radius: 50%; background: radial-gradient(circle, white, yellow 40%);"></div>
+<div id="adot5" style="z-index:1000;position: absolute; left: 892px; top: 450.058px;background: rgba(200, 54, 54, 0)"><hr style="width: 12px; height: 12px; border-radius: 50%; background: radial-gradient(circle, white, brown 40%);"></div>
+<div id="adot6" style="z-index:1000;position: absolute; left: 892px; top: 465.068px;background: rgba(200, 54, 54, 0)"><hr style="width: 13px; height: 13px; border-radius: 50%; background: radial-gradient(circle, white, cyan 40%);"></div>
+<div id="adot7" style="z-index:1000;position: absolute; left: 892px; top: 480.058px;background: rgba(200, 54, 54, 0)"><hr style="width: 14px; height: 14px; border-radius: 50%; background: radial-gradient(circle, white, pink 40%);"></div>
+<div id="adot8" style="z-index:1000;position: absolute; left: 892px; top: 500.068px;background: rgba(200, 54, 54, 0);"><hr style="width: 15px; height: 15px; border-radius: 50%; background: radial-gradient(circle, white, blue 40%);"></div>
+
+<script>
+
+var nDots = 9; // Число элементов шлейфа +1
+var Xbpos = 0;
+var Ybpos = 0;
+
+var DELTAT = .01;
+var SEGLEN = 10;
+var SPRINGK = 10;
+var MASS = 1;
+var XGRAVITY = 0;
+var YGRAVITY = 50;
+var RESISTANCE = 10;
+var STOPVEL = 0.1;
+var STOPACC = 0.1;
+var DOTSIZE = 11;
+var BOUNCE = 0.75;
+var followmouse = true;
+var dots = new Array();
+
+init();
+
+function init()
+{
+   var i = 0;
+   for (i = 0; i < nDots; i++) 
+   {
+      dots[i] = new dot(i);
+   }
+    
+   for (i = 0; i < nDots; i++) 
+   {
+      dots[i].obj.left = dots[i].X + "px";
+      dots[i].obj.top = dots[i].Y + "px";
+   }
+    
+   setTimeout("startanimate()", 10);
+}
+
+function dot(i) 
+{
+   this.X = Xbpos;
+   this.Y = Ybpos;
+   this.dx = 0;
+   this.dy = 0;
+   
+   var id = "adot" + i;
+   var elem = document.getElementById(id);
+   this.obj = elem.style;
+}
+
+function startanimate() 
+{	
+   setInterval("animate()", 20);
+}
+
+function setInitPositions(dots)
+{
+   var startloc = document.all.tags("Li");
+   var i = 0;
+   for (i = 0; i < startloc.length && i < (nDots - 1); i++) 
+   {
+      dots[i+1].X = startloc[i].offsetLeft + startloc[i].offsetParent.offsetLeft - DOTSIZE;
+      dots[i+1].Y = startloc[i].offsetTop + startloc[i].offsetParent.offsetTop + 2*DOTSIZE;
+   }
+   dots[0].X = dots[1].X;
+   dots[0].Y = dots[1].Y - SEGLEN;
+}
+
+function MoveHandler(e)
+{
+   if (window.event)
+   {
+      Xbpos = window.event.x + document.body.scrollLeft;
+      Ybpos = window.event.y + document.body.scrollTop;	
+   }
+   else
+   {
+      Xbpos = e.pageX;
+      Ybpos = e.pageY;	  
+      return true; 
+   }
+}
+
+document.onmousemove = MoveHandler;
+
+function vec(X, Y)
+{
+   this.X = X;
+   this.Y = Y;
+}
+
+function springForce(i, j, spring)
+{
+   var dx = (dots[i].X - dots[j].X);
+   var dy = (dots[i].Y - dots[j].Y);
+   var len = Math.sqrt(dx*dx + dy*dy);
+   if (len > SEGLEN) 
+   {
+      var springF = SPRINGK * (len - SEGLEN);
+      spring.X += (dx / len) * springF;
+      spring.Y += (dy / len) * springF;
+   }
+}
+
+function animate() 
+{	
+   var start = 0;
+   if (followmouse) 
+   {
+      dots[0].X = Xbpos;
+      dots[0].Y = Ybpos;	
+      start = 1;
+   }
+    
+   for (i = start ; i < nDots; i++ ) 
+   {
+      var spring = new vec(0, 0);
+      if (i > 0) 
+      {
+         springForce(i-1, i, spring);
+      }
+      if (i < (nDots - 1)) 
+      {
+         springForce(i+1, i, spring);
+      }
+        
+      var resist = new vec(-dots[i].dx * RESISTANCE, -dots[i].dy * RESISTANCE);
+      var accel = new vec((spring.X + resist.X)/MASS + XGRAVITY, (spring.Y + resist.Y)/ MASS + YGRAVITY);
+        
+      dots[i].dx += (DELTAT * accel.X);
+      dots[i].dy += (DELTAT * accel.Y);
+        
+      if (Math.abs(dots[i].dx) < STOPVEL &&  
+          Math.abs(dots[i].dy) < STOPVEL &&
+          Math.abs(accel.X) < STOPACC &&
+          Math.abs(accel.Y) < STOPACC) 
+      {
+         dots[i].dx = 0;
+         dots[i].dy = 0;
+      }
+      dots[i].X += dots[i].dx;
+      dots[i].Y += dots[i].dy;
+        
+      var height, width;
+    
+      if (typeof window.innerWidth != 'undefined')
+      {
+         width = window.innerWidth + window.pageXOffset;
+         height = window.innerHeight + window.pageYOffset;
+      }
+      else 
+      if (typeof document.documentElement != 'undefined' && typeof document.documentElement.clientWidth != 'undefined' && document.documentElement.clientWidth != 0)
+      {
+         width = document.documentElement.clientWidth + document.body.scrollLeft;
+         height = document.documentElement.clientHeight + document.body.scrollTop;
+      }
+      else
+      {
+         width = document.getElementsByTagName('body')[0].clientWidth + document.body.scrollLeft;
+         height = document.getElementsByTagName('body')[0].clientHeight + document.body.scrollTop;
+      }
+      
+      if (dots[i].Y >=  height - DOTSIZE - 1) 
+      {
+         if (dots[i].dy > 0) 
+         {
+            dots[i].dy = BOUNCE * -dots[i].dy;
+         }
+         dots[i].Y = height - DOTSIZE - 1;
+      }
+      if (dots[i].X >= width - DOTSIZE) 
+      {
+         if (dots[i].dx > 0) 
+         {
+            dots[i].dx = BOUNCE * -dots[i].dx;
+         }
+         dots[i].X = width - DOTSIZE - 1;
+      }
+      if (dots[i].X < 0) 
+      {
+         if (dots[i].dx < 0) 
+         {
+            dots[i].dx = BOUNCE * -dots[i].dx;
+         }
+         dots[i].X = 0;
+      }
+      dots[i].obj.left = dots[i].X + "px";
+      dots[i].obj.top =  dots[i].Y + "px";		
+   }
+}
+
+</script>
+</div>
+ <!-- <div class="man-header" style="z-index:0">
+  
+ <ul class="astra">
+  
+    <li class="luh"></li>
+    <li class="luh"></li>
+    <li class="luh"></li>
+   <li class="luh"></li>
+  </ul>  
+  
+  <ul class="astra1">
+  
+    <li class="luh"></li>
+    <li class="luh"></li>
+    <li class="luh"></li>
+   <li class="luh"></li>
+  </ul>  
+  <h1 align="center">Добро пожаловать на личную страницу Самко П.Е.</h1>
+  </div>!-->
+	
+	<!--<div class="header">
+    
+  </div>!-->
+
+  <div class="left-column"> 
+ <!-- <h2 align="center" style="color: gray">Моя фотка</h2>!-->
+  <p style="color: #0f93ff;font-size:113%;font-weight:bold;" align="center">Вы смотрите на мою фотку уже целых:
+   <span id='timer-counter' style='color:darkblue;font-size:150%;font-weight:bold;'></span>
+    мин:сек!</p>
+  <p align="left"> <img src="http://nionfar.ru/foto/8/taksa_udivlennyy_vzglyad_belyy_fon_1920x1200.jpg" width="40%" alt="+7-926-504-22-32" title="Это я - создатель данной странички" class="telefon"/> <h2 align=center style="color: darkblue">Немного о себе</h2></p>
+
+     <p style="color: #0f93ff;"><strong>Ф.И.О:</strong>     Самко Павел Евгеньевич  </p>
+     <p style="color: #0f93ff;"><strong>Группа:</strong>    ИДМ-17-02<p>
+     <p style="color: #0f93ff;"><strong>Направление:</strong>    ИТиВС</p>
+	 <p style="color: #0f93ff;"><strong>Предмет:</strong>   Интернет технологии</p>
+	 
+    </div>
+
+  <div class="right-column">
+  
+  
+  <h1><p  onClick="toggle_show('hidden text')";>  <u> Лабораторная работа №1 </u> </p> </h1>
+  <div class="subblock" id="hidden text"  style="display: none" > 
+     <span style="color: #f64a8a; font-size: 25px" > <strong><ul type="disc"> <li style="font-size: 33px";> <a class="hr" href="https://github.com/hellomen1995" target="_blank">Зарегистрироваться</a> на GitHub; </li> <li style="font-size: 33px";> Создать персональную веб страницу-отчет с использованием <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Samko_PE/index.html" target="_blank">html</a>, <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Samko_PE/css" target="_blank">сss</a>, js; </li> <li style="font-size: 33px";> Загрузить персональную веб страницу-отчет в <a class="hr" href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Samko_PE"target="_blank">репозиторий ИДМ-17-02</a> по курсу "Интернет-технологии" на GitHub. </li> </ul> 
+     </strong></span> 
+  </div> 
+  
+	<h1><p onClick="toggle_show('hidden text2')" > <u> Лабораторная работа №2 </u></p> </h1>
+		<div class="subblock" id="hidden text2" style="display: none"> 
+     <span style="color: #f64a8a; font-size: 25px" > <strong> <ul type="disc"> <li style="font-size: 33px";> Собрать команду для разработки веб-приложения (SPA) и распределить роли; </li> <li style="font-size: 33px">Сделать разметку страницы по макету; </li> <li style="font-size: 33px"> Прописать стили страницы; </li> <li style="font-size: 33px">Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML.</li> </ul>
+     </strong></span> 
+	</div> 
+	
+	<h1><p onClick="toggle_show('hidden text3')"> <u>Лабораторная работа №3 </u></p> </h1>
+		<div class="subblock" id="hidden text3" style="display: none"> 
+     <span style="color: #f64a8a; font-size: 25px" > <strong><ul type="disc"> <li style="font-size: 33px";> Настройка коммутаторов и маршрутизаторов </li> </ul>
+     </strong></span> 
+	</div> 
+	<h1><p onClick="toggle_show('hidden text4')" > <u>Подготовка к экзамену </u></p> </h1>
+		<div class="subblock" id="hidden text4" style="display: none"> 
+     <span style="color: #f64a8a; font-size: 25px" > <strong> <ul type="disc"> <li style="font-size: 33px";> Самооценка прохождения теста по инновациям; </li> <li style="font-size: 33px";> Формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте. </li>  </ul>
+     </strong></span> 
+	</div> 
+  </div>
+
+  <!--<div class="footer">
+    <span style="color: darkblue; font-size: 16px" > <h2> <strong><ol type="1"><br><br> <li style="font-size: 33px";> Самооценка прохождения теста по инновациям; </li> <li style="font-size: 33px";>Формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте. </li> </ol> </h2>
+  </div>!-->
+  
+<script src="js/rAF.js"></script>
+<script src="js/demo-2.js"></script>      
+	  
+</body>
+
+<!--<link rel="stylesheet" type="text/css" href="style12.css" >
+   <svg viewBox="0 0 800 600">  <symbol id="s-text">    <text text-anchor="middle"          x="50%"          y="35%"          class="text--line"          >      Elastic    </text>    <text text-anchor="middle"          x="50%"          y="68%"          class="text--line2"          >      Stroke    </text>      </symbol>    <g class="g-ants">    <use xlink:href="#s-text"      class="text-copy"></use>         <use xlink:href="#s-text"      class="text-copy"></use>         <use xlink:href="#s-text"      class="text-copy"></use>         <use xlink:href="#s-text"      class="text-copy"></use>         <use xlink:href="#s-text"      class="text-copy"></use>       </g>    </svg>
+-->
+</html>

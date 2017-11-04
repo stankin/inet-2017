@@ -1,0 +1,141 @@
+---
+layout: default
+---
+
+<div id="skrollr-body">
+<div id="non-skrollr">
+
+
+
+        <div style="margin-top:40px;">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light" style="display:block">
+                <div class="cover z-depth-1");">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            1
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Шаг 1. Форк репозитория</div>
+                    На данном этапе нужно сделать простой форк, для этого нужно нажать на кнопку форк правом верхнем углу репозитория и выбрать в модальном окне свой аккаунт
+                </div>
+            </div>
+        </div>
+
+
+        <div class="">
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light" style="display:block">
+                <div class="cover z-depth-1");">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            2
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Шаг 2. Клонирование репозитория</div>
+                    На данном этапе нужно сделать клон репозитория. Для этого нужно:
+                    <oL>
+                        <li>Скачать гит из официального источника</li>
+                        <li>Открыть консоль windows (комбинация <b>win + r</b>, в открывшееся поле вбить cmd)</li>
+                        <li>Перейти в нужную дирректорию при помощи команды cd</li>
+                        <li>Открыть форк репозитория и скопировать http ссылку на него</li>
+                        <li>Выполнить команду git clone < ссылка на личный репозиторий > </li>
+                        <li>Перейти в клонированную папку через cd</li>
+                    </oL>
+                     
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light" style="display:block">
+                <div class="cover z-depth-1");">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            3
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Шаг 3. Создание базовой иерархии и личной страницы</div>
+                    <oL>
+                        <li>Создать личную папку в локальном репозитории, по пути <b>inet-2017/idm-17-05/<Ваша фамилия></b></li>
+                        <li>Внутри папки сделать файл <b>index.html</b></li>
+                        <li>Внутрь index.html поместить базовый html шаблон</li>
+                        <li>Подключить в шаблон стороннюю библьотеку, например <b>jquery.js</b></li>
+                        <li>Сохранить файл</li>
+                        <li>В файл database.json, находящийся по пути <b>inet-2017/idm-17-05/database.json</b> добавить ссылку на свой репозиторий по аналогии с другими</li>
+                    </oL>
+                     
+                </div>
+            </div>
+        </div>
+
+
+        <div>
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light" style="display:block">
+                <div class="cover z-depth-1");">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            4
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Шаг 4. Сохранение изменений в репозитории</div>
+                    <oL>
+                        <li>Перейти в корень репозитория при помощи команды cd</li>
+                        <li>Выполнить команду <b>git status</b> для того чтобы удостовериться что изменния были вынесены</li>
+                        <li>Выполнить команду <b>git add .</b> для добавления изменений в коммит</li>
+                        <li>Выполнить команду <b>git commit -m "Создан личный репозиторий"</b> для того чтобы установить название комита</li>
+                        <li>Выполнить команду <b>git push origin master</b> для отправки изменения в удаленный репозиторий</li>
+                        <li>Далее необходим проверить в удаленном личном репозитории что личная папка и файлы появились в нем</li>
+                    </oL>
+                     
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light" style="display:block">
+                <div class="cover z-depth-1");">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            5
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Шаг 5. Pull request</div>
+                    После того как мы удостоверились что все файлы находятся на удаленном репозитории нужно сделать pull request в общий репозиторий с которого делали fork. Для этого нужно:
+                    <oL>
+                        <li>Нажать на кнопку <b>"New pull request"</b></li>
+                        <li>Выбрать удаленную ветку master, если не выбрана</li>
+                        <li>Нажать на кнопку <b>"Create pull request"</b></li>
+                        <li>Указать название пула и подтвердить</li>
+                        <li>После чего нужно дождаться поку pull request будет принят</li>
+                    </oL>
+                     
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="container-fluid card {{ site.css }} z-depth-2 waves-effect waves-light" style="display:block">
+                <div class="cover z-depth-1");">
+                    <div class="filter {{site.css}}">
+                        <div class="cover-text {{ site.css }}-text text-darken-4">
+                            6
+                        </div>
+                    </div>
+                </div>
+                <div class="card-content white-text">
+                    <div class="card-title">Шаг 6. Проверка выполнения</div>
+                    В завершении задания нужно убедиться что все работает корректно, для этого нужно зайти в песочницу своей группы <b>https://stankin.github.io/inet-2017/idm-17-05/members.html</b> и нажать на себя. Если открылась ваша страница, то все выполнено корректно.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

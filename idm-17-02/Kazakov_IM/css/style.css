@@ -1,0 +1,97 @@
+html {
+  background-color: #594c4a;
+}
+body{
+  background-color: #008B8B;
+}
+* {
+  box-sizing: border-box;
+    margin: 0;
+  padding: 0;
+}
+
+#cat{
+  max-width: 256px;
+  max-height: 256px;
+}
+
+.red{
+  background-color: #FF3C40;
+}
+
+
+#clock {
+  padding: 0;
+  position: relative;
+  list-style: none;
+  height: 234px;
+  width: 234px;
+  display: block;
+  float: right;
+  background: url("http://www.charlesamoss.com/design/images/clock_wid/clockFace.svg") 5% center no-repeat;
+
+}
+.spisok{
+  padding-left: 10px;
+}
+.msg{
+  display:none;
+}
+#sec,
+#min,
+#hour {
+  position: absolute;
+  width: 24px;
+  height: 234px;
+  top: 0px;
+  left: 102px;
+}
+.head{
+  text-align: center;
+}
+
+.center{
+  text-align: center;
+}
+
+.back{
+  background-color: white;
+}
+#GROUP{
+  text-decoration: none;
+  color:black;
+}
+#name{
+  text-align: center;
+  margin-top:80px;
+  color:black;
+}
+#sec {
+  background: url("http://www.charlesamoss.com/design/images/clock_wid/sec.svg");
+  z-index: 3;
+}
+
+#min {
+  background: url("http://www.charlesamoss.com/design/images/clock_wid/min.svg");
+  z-index: 2;
+}
+
+#hour {
+  background: url("http://www.charlesamoss.com/design/images/clock_wid/hour.svg");
+  z-index: 1;
+}
+
+.svg-cont {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+svg {
+  width: 100%;
+  transform: scale(1.7);
+}
+
+
+
+
