@@ -1,4 +1,5 @@
-# Команда 1702-А | Проект: "Книга рецептов блюд со всего мира"
+# Команда 1702-А
+# Проект: "Книга рецептов блюд со всего мира"
 
 # Требования к SPA приложению: 
 1. Приложение должно представлять из себя хорошо оформленную базу данных с различными блюдами, их описанием, ингредиентами и пошаговым рецептом приготовления. 
@@ -8,8 +9,8 @@
 5. Слева окна приложения должен быть закреплённый банер с параметрами выбора фильтров по кухне, ингредиентам и типу блюда. 
 
 # Роли:
-ПП, СП | [https://stankin.github.io/inet-2017/idm-17-02/Tyuleneva_IA/index.html] (Тюленёва И.А.)
-ПП, АД | [https://stankin.github.io/inet-2017/idm-17-02/Kuzmin_AA/index.html] (Кузьмин А.А.)
-КО     | [https://stankin.github.io/inet-2017/idm-17-02/Ignatov_AD/index.html] (Игнатов А.Д.)
-РП, НИ | [https://stankin.github.io/inet-2017/idm-17-02/Kazakov_IM/index.html] (Казаков И.М.)
-БА, ВН | [https://stankin.github.io/inet-2017/idm-17-02/Astahov_IA/index.html] (Астахов И.А.)
+ПП, СП | [Тюленёва И.А.] (https://stankin.github.io/inet-2017/idm-17-02/Tyuleneva_IA/index.html)
+ПП, АД | [Кузьмин А.А.] (https://stankin.github.io/inet-2017/idm-17-02/Kuzmin_AA/index.html)
+КО     | [Игнатов А.Д.] (https://stankin.github.io/inet-2017/idm-17-02/Ignatov_AD/index.html)
+РП, НИ | [Казаков И.М.] (https://stankin.github.io/inet-2017/idm-17-02/Kazakov_IM/index.html)
+БА, ВН | [Астахов И.А.] (https://stankin.github.io/inet-2017/idm-17-02/Astahov_IA/index.html)
