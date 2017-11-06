@@ -9,8 +9,8 @@
 5. Слева окна приложения должен быть закреплённый банер с параметрами выбора фильтров по кухне, ингредиентам и типу блюда. 
 
 # Роли:
-ПП, СП | [Тюленёва И.А.] (https://stankin.github.io/inet-2017/idm-17-02/Tyuleneva_IA/index.html)
-ПП, АД | [Кузьмин А.А.] (https://stankin.github.io/inet-2017/idm-17-02/Kuzmin_AA/index.html)
-КО     | [Игнатов А.Д.] (https://stankin.github.io/inet-2017/idm-17-02/Ignatov_AD/index.html)
-РП, НИ | [Казаков И.М.] (https://stankin.github.io/inet-2017/idm-17-02/Kazakov_IM/index.html)
-БА, ВН | [Астахов И.А.] (https://stankin.github.io/inet-2017/idm-17-02/Astahov_IA/index.html)
+* ПП, СП | [Тюленёва И.А.](https://stankin.github.io/inet-2017/idm-17-02/Tyuleneva_IA/index.html)
+* ПП, АД | [Кузьмин А.А.](https://stankin.github.io/inet-2017/idm-17-02/Kuzmin_AA/index.html)
+* КО     | [Игнатов А.Д.](https://stankin.github.io/inet-2017/idm-17-02/Ignatov_AD/index.html)
+* РП, НИ | [Казаков И.М.](https://stankin.github.io/inet-2017/idm-17-02/Kazakov_IM/index.html)
+* БА, ВН | [Астахов И.А.](https://stankin.github.io/inet-2017/idm-17-02/Astahov_IA/index.html)
