@@ -24,7 +24,7 @@ body
   letter-spacing: normal;
   font-weight: 700;
   text-transform: none;
-  animation: blur .75s ease-out infinite;
+  animation: blur 1s linear infinite;
   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
 @keyframes blur 
@@ -55,14 +55,11 @@ body
   position: relative;
   max-width: 100%;
   min-width: 27em;
-  padding: 0em 0em 0em 0em ;
+  padding: 0em 0em 0em 0em;
   background: linear-gradient(to top right, #C41E3A, #772953);
   border-radius: 4px;
   cursor: default;
   opacity: 0.85;
-  transform-origin: 50% 50%;
-  transform: rotateX(0deg);
-  transition: opacity 1s ease, transform 1s ease;
   box-shadow: 0 0 5px 5px #772953;
 }
 body.fade

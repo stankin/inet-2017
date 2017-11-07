@@ -2,9 +2,28 @@
   <head>
     <title> Личная страница </title>
 	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   </head>
-  <body>
-    <h1> Личная страница студента группы ИДМ-17-02 Харсеева В.Е. </h1>
+
+  
+<body>  
+<header>
+    <div><h1> Личная страница студента группы ИДМ-17-02 Харсеева В.Е. </h1></div>
+	<div class="menu">
+	<div><img src="pics/stankin-logo.png" class="logo"></div>
+	<nav>
+	<ul>
+	<li><a href="#1">Лаб1</a></li>
+	<li><a href="#2">Лаб2</a></li>
+	<li><a href="#3">Лаб3</a></li>
+	<li><a href="#4">Лаб4</a></li>
+	<li><a href="https://stankin.github.io/inet-2017/idm-17-02/index.html">Список группы</a></li>
+	</ul>
+	</nav>
+	<div class="st4"><canvas id="canvas" height="150" width="150"></canvas></div>	
+	</div>
+</header>
+
 <script type="text/javascript">
     function clockPainting() {
         var now = new Date();
@@ -84,41 +103,76 @@
         setInterval(clockPainting, 1000);
     }
 </script>
-<div class="st4"><canvas id="canvas" height="150" width="150"></canvas></div>	
 
-<div class="st1">Лабораторная работа №1 "Экосистема разработки программ с открытым кодом":
-Создание персональной страницы-отчета на github и работа с git <br>
+<section id="1">
+<div class="frame">
+<div class="st1">
+<a onclick="javascript:document.getElementById('st2').style.display='block'" href="javascript:void(0)">
+Лабораторная работа №1 "Экосистема разработки программ с открытым кодом":
+Создание персональной страницы-отчета на github и работа с git<br>
 <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Harseev_VE/index.html">ссылка на работу</a></div>
+<div id="st2" class="st2" style="display:none"> 
+<a style="cursor:hand;cursor:pointer;" onclick="document.getElementById('st2').style.display='none'"><p>Цели:</p>
+1. Зарегистрироваться на GitHub; <br>
+2. Создать персональную веб страницу-отчёт с использованием html, css, js; <br>
+3. Загрузить персональную веб страницу-отчёт в репозиторий ИДМ-17 по курсу «Интернет-технологии» на GitHub.</a></div>
+</div>
+</section>
 
-<div class="st2">Лабораторная работа №2 "Разработка простого веб-приложения":
+
+<div class="space"></div>
+<section id="2">
+<div class="frame">
+<div class="st1">  
+<a onclick="javascript:document.getElementById('st3').style.display='block'" href="javascript:void(0)">
+Лабораторная работа №2 "Разработка простого веб-приложения":
 Проектирование и разработка индивидуального или коллективного веб-приложения с использованием html,css,js + json,xml</div>
+<div id="st3" class="st2" style="display:none"> 
+<a style="cursor:hand;cursor:pointer;" onclick="document.getElementById('st3').style.display='none'"><p>Цели:</p> 
+1. Собрать команду для разработки веб-приложения (SPA) и распределить роли; <br>
+2. Сделать разметку страницы по макету. Исходный код; <br>
+3. Прописать стили страницы; <br>
+4. Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML. <br>
+Результат: SPA-приложение </a></div>
+</div>
+</section>
 
-<div class="st2">Лабораторная работа №3 "Настройка локальной сети передачи данных":
+<div class="space"></div>
+<section id="3">
+<div class="frame">
+<div class="st1">Лабораторная работа №3 "Настройка локальной сети передачи данных":
 Настройка коммутаторов и маршрутизаторов
 Описание лабораторной
-ПО есть на Яндекс-диск С.Е.Сосенушкина</div>
+ПО есть на Яндекс-диск С.Е.Сосенушкина</div></div></section>
 
-<div class="st2">Подготовка к экзамену:
+<div class="space"></div>
+<section id="4">
+<div class="frame">
+<div class="st1">Подготовка к экзамену:
 Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)
-Презентации лекций и тесты расположены на Яндекс-диск </div><br>
+Презентации лекций и тесты расположены на Яндекс-диск </div></div></section><br>
 
-<div onmousedown="mDown(this)"
-class="st3">Нажмите на кнопку</div>
+<div class="space"></div>
+<div class="frame">
+<div class="st3">Мини-игра Гадюка </div>
+ <div id="game-area" tabindex="0" style="display: table; margin: 0 auto 150px auto"></div> 
+</div>
+    <script type="text/javascript" src="snake.js"></script>
+    <script type="text/javascript">
+        var mySnakeBoard = new SNAKE.Board( {
+            boardContainer: "game-area",
+            fullScreen: false,
+            width: 580,
+            height: 400
+        });
+    </script>
+<div class="space"></div>
+<footer>
+<div class="bottom1">
+Москва 2017г.
+</div>
+</footer> 
 
-<script>
-function get_random_color() {
-    var letters = '0123456789ABCDEF'.split('');
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.round(Math.random() * 15)];
-    }
-    return color;
-}
-function mDown(obj)
-{
-obj.style.backgroundColor=get_random_color();
-}
-</script>
+</body>
 
-  </body>
 </html>

@@ -8,11 +8,12 @@ p{
 }
 
 #main{
-  width: 50%;
+  width: 100%;
   margin: auto;
-  background: #AFA;
+  background: url(https://stankin.github.io/inet-2017/idm-17-02/Tarasov/css/img/123.jpg) no-repeat fixed center;
+  background-size: cover;
   height: 100%;
-  padding: 10px
+  padding: 40px
 }
 
 div #knopka{
