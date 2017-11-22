@@ -18,6 +18,8 @@ https://htmlacademy.ru/blog/99-github-as-hosting
 
 https://qiao.github.io/PathFinding.js/visual/
 
+https://medium.freecodecamp.org/i-built-an-app-that-makes-learning-algorithms-and-data-structures-way-more-fun-46fbb8afacaf
+
 Материалы лабораторных работ бакалавриата:
 
 https://github.com/stankin/oop/wiki
