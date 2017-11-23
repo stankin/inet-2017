@@ -7,7 +7,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		 <link rel="stylesheet" type="text/css" href="css/style.css"/>
-		 <script src="js/jsc.js"></script>
+		 <script src="jsc.js"></script>
   
 </head>
 
@@ -79,7 +79,83 @@
  	 <div class="bo">
                 <p>3) Лабораторная работа №3 "Настройка локальной сети передачи данных":</p> 
                 <p>Настройка коммутаторов и маршрутизаторов</p>
-		<p > <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Ignatov_AD" target="_blank"> Отчёт по лабораторной работе №3. </a></p>	
+		<a onclick="javascript:document.getElementById('m3').style.display='block'" href="javascript:void(0)"> <p> Отчёт по лабораторной работе №3. </p></a>
+<div id="m3" class="msg" style="display:none;">
+					<p>Цель данной работы - ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрузитацией.</p>
+			<p> Расчет диапазонов сетей:</p>
+			<table class="simple-little-table" cellspacing='0'>
+			<tr>
+				<th>-</th><th>Lan A</th><th>Lan B</th><th>Lan C</th>
+			</tr>
+			<tr>
+				<th>Количество узлов в сети</th><th>517</th><th>6</th><th>126</th>
+			</tr>
+			<tr>
+				<th>Префиксная маска</th><th>/22</th><th>/29</th><th>/25</th>
+			</tr>
+			<tr>
+				<th>Адрес подсети</th><th>192.168.9.0</th><th>172.16.9.0</th><th>10.10.9.0</th>
+			</tr>
+			<tr>
+				<th>Минимальный адрес</th><th>192.168.8.1</th><th>172.16.9.1</th><th>10.10.9.1</th>
+			</tr>
+			<tr>
+				<th>Максимальный адрес</th><th>192.168.11.254</th><th>172.16.9.6</th><th>10.10.9.126</th>
+			</tr>
+			<tr>
+				<th>Broadcast</th><th>192.168.11.255</th><th>172.16.9.7</th><th>10.10.9.127</th>
+			</tr>
+			</table>
+			
+			<p>Адреса устройств</p>
+			<table class="simple-little-table" cellspacing='0'>
+			<tr>
+				<th>Устройство</th><th>IP</th><th>Маска</th><th>Шлюз по умолчанию</th>
+			</tr>
+			<tr>
+				<th>PC0</th><th>192.168.9.1</th><th>255.255.252.0</th><th>192.168.8.3</th>
+			</tr>
+			<tr>
+				<th>PC1</th><th>192.168.8.2</th><th>255.255.252.0</th><th>192.168.8.3</th>
+			</tr>
+			<tr>
+				<th>PC2</th><th>172.16.9.1</th><th>255.255.255.248</th><th>172.16.9.3</th>
+			</tr>
+			<tr>
+				<th>PC3</th><th>172.16.9.2</th><th>255.255.255.248</th><th>172.16.9.3</th>
+			</tr>
+			<tr>
+				<th>PC4</th><th>10.10.9.1</th><th>255.255.255.128</th><th>10.10.9.2</th>
+			</tr>
+			<tr>
+				<th>Router0 FastEthernet 0/0</th><th>192.168.9.3</th><th>255.255.252.0</th><th>-</th>
+			</tr>
+			<tr>
+				<th>Router0 FastEthernet 1/0</th><th>172.16.9.3</th><th>255.255.255.248</th><th>-</th>
+			</tr>
+			<tr>
+				<th>Router0 FastEthernet 6/0</th><th>15.15.9.2</th><th>255.255.255.252</th><th>-</th>
+			</tr>
+			<tr>
+				<th>Router1 FastEthernet 0/0</th><th>10.10.9.2</th><th>255.255.255.128</th><th>-</th>
+			</tr>
+			<tr>
+				<th>Router1 FastEthernet 6/0</th><th>15.15.12.1</th><th>255.255.255.252</th><th>-</th>
+			</tr>
+			</table>
+			
+			<p>Разместить два компьютера и коммутатор, настроить между ними адресацию.</p>
+			<p><img src="https://pp.userapi.com/c834404/v834404693/32f80/wIvx4uS7AqE.jpg"></p>
+			
+			<p>Добавить еще коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</p>
+			<p><img src="https://pp.userapi.com/c840029/v840029693/4b09d/xnG8jBhZt1s.jpg"></p>
+			
+			<p>Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
+			
+			<p>Установить банер на сетевое оборудование: banner motd [баннер]</p>
+			
+          <input type="button" value="Свернуть" class="button" a onclick="javascript:document.getElementById('m3').style.display='none'" href="javascript:void(0)"/> 
+			</div>		
   	</div>
          <br />
   <div class="bo">
@@ -91,3 +167,4 @@
 	</body>
 
 </html>
+
