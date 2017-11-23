@@ -60,7 +60,77 @@ document.body.className='fade';
 		 <a onclick="javascript:document.getElementById('subMenuTip3').style.display='block'" href="javascript:void(0)">
             <br>Настройка коммутаторов и маршрутизаторов</a>
 	     <div id="subMenuTip3" class="msg" style="display:none;">
-             Отчёт по лабораторной работе
+             <p>Цель данной работы – ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.</p>
+		     <p>Расчет диапазонов подсетей.</p>
+			<p>
+			<table>
+			<tr>
+				<td>_</td><td>LAN A</td><td>LAN B</td><td>LAN C</td>
+			</tr>
+			<tr>
+				<td>_</td><td>323</td><td>13</td><td>11</td>
+			</tr>
+			<tr>
+				<td>Префиксная маска</td><td>-</td><td>-</td><td>-</td>
+			</tr>
+			<tr>
+				<td>Адрес подсети</td><td>-</td><td>-</td><td>-</td>
+			</tr>
+			<tr>
+				<td>Минимальный адрес</td><td>-</td><td>-</td><td>-</td>
+			</tr>
+			<tr>
+				<td>Максимальный адрес</td><td>-</td><td>-</td><td>-</td>
+			</tr>
+			<tr>
+				<td>Broadcast</td><td>-</td><td>-</td><td>-</td>
+			</tr>
+			</table>
+			</p>
+			<p>Адреса устройств.</p>
+			<p>
+			<table>
+			<tr>
+				<td>Устройство</td><td>IP</td><td>Маска</td><td>Шлюз по умолчанию</td>
+			</tr>
+			<tr>
+				<td>PC0</td><td>192.168.9.253</td><td>255.255.254.0</td><td>192.168.8.1</td>
+			</tr>
+			<tr>
+				<td>PC1</td><td>192.168.9.252</td><td>255.255.254.0</td><td>192.168.8.1</td>
+			</tr>
+			<tr>
+				<td>PC2</td><td>172.16.8.13</td><td>255.255.255.240</td><td>172.16.8.1</td>
+			</tr>
+			<tr>
+				<td>PC3</td><td>172.16.8.14</td><td>255.255.255.240</td><td>172.16.8.1</td>
+			</tr>
+			<tr>
+				<td>PC4</td><td>10.10.8.14</td><td>255.255.255.240</td><td>10.10.8.1</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 0/0</td><td>192.168.8.1</td><td>255.255.254.0</td><td>_</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 1/0</td><td>172.16.8.1</td><td>255.255.255.240</td><td>_</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 6/0</td><td>15.15.8.2</td><td>255.255.255.252</td><td>_</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 0/0</td><td>15.15.8.1</td><td>255.255.255.252</td><td>_</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 1/0</td><td>10.10.8.1</td><td>255.255.255.240</td><td>_</td>
+			</tr>
+			</table>
+			</p>
+                                 <p>Разместить два компьютера и коммутатор, настроить между ними адресацию.</p>
+				 <p><img src="assets/css/images/PC0 and PC1.png" width="100%" height="100%" /></p>
+				 <p>Добавить еще один коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</p>
+				 <p><img src="assets/css/images/All.png" width="100%" height="100%" /></p>
+				 <p>Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
+				 <p>Установить баннер на сетевое оборудование: banner motd [баннер]</p>
 	     <br><input type="button" value="Свернуть" class="btn" a onclick="javascript:document.getElementById('subMenuTip3').style.display='none'" href="javascript:void(0)"/></p>
 	     </div>
             </li>
