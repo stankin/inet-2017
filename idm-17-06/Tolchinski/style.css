@@ -1,8 +1,8 @@
 body
 {
     margin: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
 .head
@@ -18,7 +18,7 @@ body
 .containes
 {
     background: #DDF;
-    padding: 15px;
+    padding: 20px;
     border: solid 4px #CCD;
     font-family: "Courier";
     font-size: 14pt;
@@ -32,4 +32,10 @@ blockquote
 {
     text-align: right;
     font-style: oblique;
+}
+
+img
+{
+    width: 500px;
+    border: solid 2px #CCD;
 }
