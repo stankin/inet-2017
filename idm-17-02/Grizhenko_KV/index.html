@@ -61,37 +61,37 @@ document.body.className='fade';
             <br>Настройка коммутаторов и маршрутизаторов</a>
 	     <div id="subMenuTip3" class="msg" style="display:none;">
              Цель данной работы – ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.
-		        <b><p>Расчет диапазонов подсетей.</p></b>
+		        <b><p><center>Расчет диапазонов подсетей.</center></p></b>
 			<p>
-			<table border="3">
+			<table border="3" align="center">
 			<tr>
-				<center><td></td><td>LAN A</td><td>LAN B</td><td>LAN C</td></center>
+				<td rowspan="2"></td><td><b>LAN A</b></td><td><b>LAN B</b></td><td><b>LAN C</b></td>
 			</tr>
 			<tr>
-				<center><td></td><td>323</td><td>13</td><td>11</td></center>
+				<td>323</td><td>13</td><td>11</td>
 			</tr>
 			<tr>
-				<center><td>Префиксная маска</td><td>–</td><td>–</td><td>–</td></center>
+				<td><b>Префиксная маска</b></td><td>–</td><td>–</td><td>–</td>
 			</tr>
 			<tr>
-				<center><td>Адрес подсети</td><td>–</td><td>–</td><td>–</td></center>
+				<td><b>Адрес подсети</b></td><td>–</td><td>–</td><td>–</td>
 			</tr>
 			<tr>
-				<center><td>Минимальный адрес</td><td>–</td><td>–</td><td>–</td></center>
+				<td><b>Минимальный адрес</b></td><td>–</td><td>–</td><td>–</td>
 			</tr>
 			<tr>
-				<center><td>Максимальный адрес</td><td>–</td><td>–</td><td>–</td></center>
+				<td><b>Максимальный адрес</b></td><td>–</td><td>–</td><td>–</td>
 			</tr>
 			<tr>
-				<center><td>Broadcast</td><td>–</td><td>–</td><td>–</td></center>
+				<td><b>Broadcast</b></td><td>–</td><td>–</td><td>–</td>
 			</tr>
 	                </table>
 			</p>
-		        <b><p>Адреса устройств.</p></b>
+		        <b><p><center>Адреса устройств.</center></p></b>
 			<p>
-		        <table border="3">
+		        <table border="3" align="center">
 			<tr>
-				<td>Устройство</td><td>IP</td><td>Маска</td><td>Шлюз по умолчанию</td>
+				<td><b>Устройство</b></td><td><b>IP</b></td><td><b>Маска</b></td><td><b>Шлюз по умолчанию</b></td>
 			</tr>
 			<tr>
 				<td>PC0</td><td>192.168.9.253</td><td>255.255.254.0</td><td>192.168.8.1</td>
@@ -126,9 +126,9 @@ document.body.className='fade';
 			</table>
 			</p>
                                  <p>1. Разместить два компьютера и коммутатор, настроить между ними адресацию.</p>
-				 <p><img src="images/PC0 and PC1.png" width="100%" height="100%" /></p>
+				 <p align="center"><img src="images/PC0 and PC1.png" width="75%" height="75%" /></p>
 				 <p>2. Добавить еще один коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</p>
-				 <p><img src="images/All.png" width="100%" height="100%" /></p>
+				 <p align="center"><img src="images/All.png" width="75%" height="75%" /></p>
 				 <p>3. Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
 				 <p>4. Установить баннер на сетевое оборудование: banner motd [баннер]</p>
 	     <br><input type="button" value="Свернуть" class="btn" a onclick="javascript:document.getElementById('subMenuTip3').style.display='none'" href="javascript:void(0)"/></p>
