@@ -240,6 +240,9 @@ div.msg, ul li i:before, ul li i:after {
 	border: solid 1px black;
     border-collapse: collapse;
 }
+#question_tab td {
+            border: solid 1px black;
+        }
 
 
 
