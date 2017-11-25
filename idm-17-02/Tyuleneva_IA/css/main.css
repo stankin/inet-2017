@@ -242,6 +242,7 @@ div.msg, ul li i:before, ul li i:after {
 }
 #question_tab td {
             border: solid 1px black;
+			padding: 8px;
         }
 
 
