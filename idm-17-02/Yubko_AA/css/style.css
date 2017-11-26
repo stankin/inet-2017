@@ -120,20 +120,6 @@ body.is-loading #main
 	z-index: 2;
 }
 
-.avatar 
-{
-	position: relative;
-	display: block;
-	margin-bottom: 1.5em;
-}
-
-.avatar img 
-{
-	display: block;
-	margin: 0 auto;
-	box-shadow: 0 0 10px 1.5em #eaead6;
-}
-
 #wrapper > * 
 {
 	z-index: 1;
