@@ -232,3 +232,15 @@ body.is-loading #main
     margin-top: 10px;
 }
 
+#LR3 
+{
+	box-shadow: 0 0 1px black;
+    	background-color: #3e97c3;
+	padding: 10px;
+}
+
+#LR3 p
+{
+	margin-bottom: 10px;
+   	margin-top: 10px;
+}
