@@ -26,29 +26,33 @@
 #lab1 {
 	background:#E70000;
 	text-align:center;
-	height: 200px;
+	height: 180px;
 	margin:10px;
 }
 
 #lab2 {
 	background:#A30000;
 	text-align:center;
-	height: 200px;
+	height: 180px;
 	margin:10px;
 }
 
 #lab3 {
 	background:#A30000;
 	text-align:center;
-	height: 200px;
+	height: 250px;
 	margin:10px;
 }
 
 #lab4 {
 	background:#E70000;
 	text-align:center;
-	height: 200px;
+	height: 250px;
 	margin:10px;
+}
+
+#rightAnswer {
+	color: black;
 }
 
 LI {
