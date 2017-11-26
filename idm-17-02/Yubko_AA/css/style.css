@@ -97,7 +97,7 @@ h2
 	display: block;
 	margin: 0 auto;
 	border-radius: 50% 50%;
-	box-shadow: 0 0 20px 1.5em #eaead6;
+	box-shadow: 0 0 10px 1.5em #eaead6;
 }
 
 
@@ -120,14 +120,14 @@ body.is-loading #main
 	z-index: 2;
 }
 
-#wrapper .avatar 
+.avatar 
 {
 	position: relative;
 	display: block;
 	margin-bottom: 1.5em;
 }
 
-#wrapper .avatar img 
+.avatar img 
 {
 	display: block;
 	margin: 0 auto;
