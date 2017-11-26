@@ -260,14 +260,6 @@ display: block;
     	text-align: -webkit-center;
     width: 800px;
     margin-bottom: 10px;
-
-	width: 100%;
-    max-width: 900px;
-    min-height: 0;
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden
 }
 
 .LR3 p
