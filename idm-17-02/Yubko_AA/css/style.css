@@ -100,6 +100,8 @@ h2
 	box-shadow: 0 0 20px 1.5em #eaead6;
 }
 
+
+
 body.is-loading #main 
 {
 	opacity: 0;
@@ -117,6 +119,21 @@ body.is-loading #main
 	padding: 1.5em;
 	z-index: 2;
 }
+
+#wrapper .avatar 
+{
+	position: relative;
+	display: block;
+	margin-bottom: 1.5em;
+}
+
+#wrapper .avatar img 
+{
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0 0 10px 1.5em #eaead6;
+}
+
 #wrapper > * 
 {
 	z-index: 1;
