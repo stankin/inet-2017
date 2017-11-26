@@ -248,6 +248,13 @@ display: block;
 	box-shadow: 0 0 3px #347781;
     	padding: 15px;
     	text-align: -webkit-center;
+	width: 100%;
+    max-width: 900px;
+    min-height: 0;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden
 }
 
 .LR3 p
