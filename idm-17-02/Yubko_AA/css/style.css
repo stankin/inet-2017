@@ -256,10 +256,10 @@ display: block;
 .LR3 
 {
 	box-shadow: 0 0 3px #347781;
-    	padding: 15px;
+    	padding: 0px;
     	text-align: -webkit-center;
     width: 800px;
-    margin-bottom: 10px;
+    margin: 20px;
 }
 
 .LR3 p
