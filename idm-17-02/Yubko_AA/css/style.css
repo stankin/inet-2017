@@ -16,7 +16,7 @@ body
 body, input, select, textarea 
 {
 	color: #055967;
-    	font-family: cursive, 'Marck Script';
+    	font-family: cursive;
    	font-weight: 200;
     	line-height: 1.5;
 }
@@ -234,13 +234,14 @@ body.is-loading #main
 
 #LR3 
 {
-	box-shadow: 0 0 1px black;
+	box-shadow: 0 0 1px #3e97c3;
     	background-color: #3e97c3;
-	padding: 10px;
+	padding: 15px;
 }
 
 #LR3 p
 {
+	font-size: 13px;
 	margin-bottom: 10px;
    	margin-top: 10px;
 }
