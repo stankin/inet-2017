@@ -232,7 +232,7 @@ body.is-loading #main
     margin-top: 10px;
 }
 
-#LR3 
+.LR3 
 {
 	box-shadow: 0 0 3px #347781;
     	padding: 15px;
@@ -240,14 +240,14 @@ body.is-loading #main
 }
 }
 
-#LR3:p
+.LR3 p
 {
 	font-size: 20px;
 	margin-bottom: 10px;
    	margin-top: 10px;
 }
 
-#LR3:table
+.LR3 table
 {
 	text-align: center; 
 	display: table;
