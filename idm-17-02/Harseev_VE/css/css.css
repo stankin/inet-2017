@@ -20,17 +20,23 @@ H1 {
 	padding: 100px 150px 0px 100px;
 
 }
-.frame{
-	background-image: url('../pics/border-334674_960_720.png'); 	
+.frame{	
 	position: relative;
 	width: 960px;
-	height: 540px;
+	height: auto;
 	margin-left: auto;
 	margin-right: auto;
 	top:250px;
 	background-color: rgb(238,238,238); 
 	@include filter-gradient(#eeeeee, #cccccc, horizontal); // IE6-9 fallback on horizontal gradient
 	@include background-image(radial-gradient(center, ellipse cover, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%));
+	border-radius:50px;
+-moz-border-radius:50px;
+-webkit-border-radius:50px;
+padding-bottom: 40px;
+-webkit-box-shadow:0px 0px 81px 0px #000000 ;
+-moz-box-shadow:0px 0px 81px 0px #000000 ;
+box-shadow:0px 0px 81px 0px #000000 ;
 }
 
 .space{
@@ -46,6 +52,7 @@ H1 {
 	position: relative;	
 	width: 50%;	
 	left: 15%;
+	padding-bottom: 40px;
 }
 .st3{
     font-size: 120%; 
@@ -80,6 +87,11 @@ H1 {
 	width: 200px;
 	height: 116px;
 	padding-left: 250px;
+}
+
+.imgresult{
+	width: 480px;
+	height: 320px;
 }
 
 .menu{
