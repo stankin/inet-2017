@@ -13,6 +13,13 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	<style>
+.center-img {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 0 5px 2px black;
+}	
+</style>
 	</head>
 	<body>
 
@@ -96,9 +103,42 @@
 							<h1>Лабораторная работа #3</h1>
 							<p><h3>Настройка локальной сети передачи данных</h3></p>
 							<ul class="actions">
-								<b>Задачи:</b><br>
+								
 								Настройка коммутаторов и маршрутизаторов.<br>
-								<a href="#three">Отчет по лабораторной работе</a><br>
+								<h3>Вариант 5</h3><br>
+								Расчет диапазонов подсетей.
+								<table>
+								<tr><th> - </th><th>Lan A</th><th>Lan B</th><th>Lan C</th></tr>
+								<tr><th>Кол-во узлов</th><th>35</th><th>120</th><th>512</th></tr>
+								<tr><th>Subnet</th><th>192.168.5.0</th><th>172.16.5.0</th><th>10.10.5.0</th></tr>
+								<tr><th>Mask</th><th>255.255.255.192</th><th>255.255.255.128</th><th>255.255.252.0</th></tr>
+								<tr><th>Broadcast</th><th>192.168.5.63</th><th>172.16.5.127</th><th>10.10.8.254</th></tr>
+								</table>
+								ШАГ 1: Разместить на рабочем поле коммутатор и два компьютера и соединить их<br>
+								<img class="center-img" src ="scr1.png"><br>
+								ШАГ 2: Добавить на рабочее поле еще один коммутатор с двумя компьютерами и настроить адресацию из другой подсети<br>
+								<img class="center-img" src ="scr2.png"><br>
+								ШАГ 3: Соединить коммутаторы между собой и проверить работоспособность сети (Не работает)<br>
+								<img class="center-img" src ="scr0.png"><br>
+								ШАГ 4: Добавить маршрутизатор на рабочее поле<br>
+								<img class="center-img" src ="scr3.png"><br> 
+								ШАГ 5: Добавить на рабочее поле еще один маршрутизатор. Подключить к нему коммутатор и компьютер<br>
+								<img class="center-img" src ="scr4.png"><br>
+								<table>
+								<tr><th>Устройство</th><th>IP - адрес</th><th>Маска</th><th>Шлюз</th></tr>
+								<tr><th>PC0</th><th>192.168.5.62</th><th>255.255.255.192</th><th>192.168.5.1</th></tr>
+								<tr><th>PC1</th><th>192.168.5.61</th><th>255.255.255.192</th><th>192.168.5.1</th></tr>
+								<tr><th>PC2</th><th>172.16.5.126</th><th>255.255.255.128</th><th>172.16.5.1</th></tr>
+								<tr><th>PC3</th><th>172.16.5.125</th><th>255.255.255.128</th><th>172.16.5.1</th></tr>
+								<tr><th>PC4</th><th>10.10.8.253</th><th>255.255.252.0</th><th>10.10.5.1</th></tr>
+								<tr><th>R0 0/0</th><th>192.168.5.1</th><th>255.255.255.192</th><th> - </th></tr>
+								<tr><th>R0 0/1</th><th>172.16.5.1</th><th>255.255.255.128</th><th> - </th></tr>
+								<tr><th>R0 0/2</th><th>15.15.5.2</th><th>255.255.255.252</th><th> - </th></tr>
+								<tr><th>R1 0/1</th><th>10.10.5.1</th><th>255.255.252.0</th><th> - </th></tr>
+								<tr><th>R1 0/2</th><th>15.15.5.1</th><th>255.255.255.252</th><th> - </th></tr>
+								</table>
+								Настройка статической маршрутизации производится при помощи команды: ip route [сеть назначения] [маска] [маршрут]<br>
+								Установить банер на сетевое оборудование: banner motd [баннер]<br>
 							</ul>
 						</div>
 					</section>
