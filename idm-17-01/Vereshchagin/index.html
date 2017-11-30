@@ -19,6 +19,9 @@
   margin: 0 auto;
   box-shadow: 0 0 5px 2px black;
 }	
+#tab50 {
+	display: none;
+}
 </style>
 	</head>
 	<body>
@@ -84,11 +87,11 @@
 							<ul class="actions">
 								<b>Задачи:</b><br>
 								1. Собрать команду для разработки веб-приложения (SPA) и распределить роли.<br>
-								<a href="#">Страница команд.</a><br>
+								<a href="https://stankin.github.io/inet-2017/idm-17-01/index.xml">Страница команд.</a><br>
 								2. Разработать макет страницы веб-приложения.<br>
 								<a href="#">Макет страницы.</a><br>
 								3. Прописать стили страницы<br>
-								<a href="#">SCSS</a><br>
+								<a href="#">CSS</a><br>
 								4. Прописать js функционал и реализовать возможность чтения json.<br>
 								<a href="#">JS</a>, <a href="#">JSON</a><br>
 								<b>Результат:</b><br>
@@ -141,6 +144,7 @@
 								Установить банер на сетевое оборудование: banner motd [баннер]<br>
 								<h3>Проверка работоспособности сети:</h3><br>
 								<img class="center-img" src ="successful.jpg"><br>
+								<center>Пакеты успешно отправляются!</center>
 							</ul>
 						</div>
 					</section>
@@ -150,6 +154,39 @@
 							<h1>Подготовка к экзамену</h1>
 							<ul class="actions">
 								Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)<br>
+								<h2>Установите соответствие</h2>
+								<table >
+									<tr><th><u>Уровень OSI</u></th><th><u>Устройство</u></th></tr>
+									<tr><th>Прикладной</th><th>Шлюз</th></tr>
+									<tr><th>Представительский</th><th>Шлюз</th></tr>
+									<tr><th>Сеансовый</th><th>Коммутатор</th></tr>
+									<tr><th>Транспортный</th><th>Маршрутизатор</th></tr>
+									<tr><th>Сетевой</th><th>Хаб, повторитель</th></tr>
+									<tr><th>Канальный</th><th>Шлюз</th></tr>
+									<tr><th>Физический</th><th>Шлюз</th></tr>
+								</table>
+								<script>
+									function show_otv()
+									{
+										if (document.getElementById('tab50').style.display=="inline")
+											document.getElementById('tab50').style.display="none";
+										else
+										document.getElementById('tab50').style.display = "inline";
+									}
+								</script>
+								<u><h2 onclick="show_otv()">Показать правильный ответ</h2></u>
+								<div id = "tab50">
+								<table >
+									<tr ><th><u>Уровень OSI</u></th><th><u>Устройство</u></th></tr>
+									<tr ><th>Прикладной</th><th>Шлюз</th></tr>
+									<tr ><th>Представительский</th><th>Шлюз</th></tr>
+									<tr ><th>Сеансовый</th><th>Шлюз</th></tr>
+									<tr ><th>Транспортный</th><th>Шлюз</th></tr>
+									<tr ><th>Сетевой</th><th>Маршрутизатор</th></tr>
+									<tr ><th>Канальный</th><th>Коммутатор</th></tr>
+									<tr ><th>Физический</th><th>Хаб, повторитель</th></tr>
+								</table>
+							    </div>
 							</ul>
 						</div>
 					</section>
