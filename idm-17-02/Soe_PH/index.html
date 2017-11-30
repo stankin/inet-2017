@@ -1,8 +1,8 @@
  <html>
    <head>
          <title>Со Пьей Хейн</title>
-         <link rel="stylesheet" type="text/css" href="css/style.css">
-		 <script type="text/javascript" src="JS/clock.js"></script>
+         <link rel="stylesheet" type="text/css" href="style.css">
+		 <script type="text/javascript" src="clock.js"></script>
 	</head>
 	<body class="gradient" onload="digitalWatch()">
 	<p id="digital_watch" style="float:right; font-size: 32px; font-weight: bold;"></p>
@@ -86,7 +86,79 @@
 				<a onclick="javascript:document.getElementById('subMenuTip4').style.display='block'" href="javascript:void(0)">
 				<p>Настройка коммутаторов и маршрутизаторов</p></a>
 				<div id="subMenuTip4" class="msg" style="display:none;">
-				<p><a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Soe_PH">Отчет по лабараторной работе №3</a></p>
+				
+				<p>Цель данной работы - ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрузитацией.</p>
+											<p>Расчет диапазонов подсетей.</p>
+											<p>
+											<table>
+												<tr>
+													<td>_</td><td>LAN A</td><td>LAN B</td><td>LAN C</td>
+												</tr>
+												<tr>
+													<td>_</td><td>20</td><td>201</td><td>200</td>
+												</tr>
+												<tr>
+													<td>Префиксная маска</td><td>/20</td><td>/25</td><td>/32</td>
+												</tr>
+												<tr>
+													<td>Адрес подсети</td><td>192.168.4.0</td><td>172.16.4.0</td><td>10.10.4.0</td>
+												</tr>
+												<tr>
+													<td>Минимальный адрес</td><td>192.168.4.29</td><td>172.16.4.2</td><td>10.10.4.1</td>
+												</tr>
+												<tr>
+													<td>Максимальный адрес</td><td>192.168.4.30</td><td>172.16.4.3</td><td>10.10.4.2</td>
+												</tr>
+												<tr>
+													<td>Broadcast</td><td>192.168.4.255</td><td>172.16.4.255</td><td>10.10.4.255</td>
+												</tr>
+											</table>
+											</p>
+											<p>Адреса устройств.</p>
+											<p>
+											<table>
+												<tr>
+													<td>Устройство</td><td>IP</td><td>Маска</td><td>Шлюз по умолчанию</td>
+												</tr>
+												<tr>
+													<td>PC0</td><td>192.168.4.29</td><td>255.255.255.224</td><td>192.168.4.1</td>
+												</tr>
+												<tr>
+													<td>PC1</td><td>192.168.4.30</td><td>255.255.2555.224</td><td>192.168.4.1</td>
+												</tr>
+												<tr>
+													<td>PC2</td><td>172.16.4.2</td><td>255.255.0.0</td><td>172.16.4.1</td>
+												</tr>
+												<tr>
+													<td>PC3</td><td>172.16.4.3</td><td>255.255.0.0</td><td>172.16.4.1</td>
+												</tr>
+												<tr>
+													<td>PC4</td><td>10.10.4.1</td><td>255.255.255.0</td><td>10.10.4.1</td>
+												</tr>
+												<tr>
+													<td>Router1 GigabitEthernet0/0</td><td>15.15.4.1</td><td>255.255.255.252</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router1 GigabitEthernet0/1</td><td>10.10.4.1</td><td>255.255.255.0</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router2 FastEthernet0/0</td><td>192.168.4.1</td><td>255.255.255.224</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router2 GigabitEthernet6/0</td><td>15.15.4.2</td><td>255.255.255.252</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router2 FastEthernet1/0</td><td>172.16.4.1</td><td>255.255.0.0</td><td>_</td>
+												</tr>
+												
+											</table>
+										</p>
+							<p>Разместить два компьютера и коммутатор, настроить между ними адресацию.</p>
+											<p><img src="css/lab31.jpg" width="100%" height="100%" /></p>
+											<p>Добавить еще коммутатор с двумя компьютерами и маршрутизаторы</p>
+											<p><img src="css/lab32.jpg" width="100%" height="100%" /></p>
+											<p>Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
+											<p>Установить банер на сетевое оборудование: banner motd [баннер]</p>			
 			    <a onclick="javascript:document.getElementById('subMenuTip4').style.display='none'" href="javascript:void(0)"></li><p style="text-align: right;">Свернуть</p></a>
 			</div>
 			</div>
