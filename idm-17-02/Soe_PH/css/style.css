@@ -151,7 +151,15 @@ p{
  border-color:#000000;
  background-color: #E6E6E6;
  }
-table {
-		width: 100%;
-	}
+table{
+	font-family:arial,sans-serif;
+	border-collapse:collapse;
+	width:100%;
+	background-color:#E0ECF8;
+}
+td,th{
+	border:1px solid #FF0040;
+	text-align:left;
+	padding:5px;
+}
 
