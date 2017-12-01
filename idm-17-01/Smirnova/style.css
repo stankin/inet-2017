@@ -187,3 +187,26 @@ canvas{
 .title_sl3{
   font-size: 15px;
 }
+.otvet{
+  text-decoration: none;
+}
+.otv_show{
+    font-style: italic;
+    display: inline;
+
+    position: absolute;    
+    margin-top: -40px;
+    margin-left: 420px;
+
+}
+.otv_show:hover{
+    font-style: italic;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.otv_show:hover ~ .otvet{
+  color: green;
+}
+li{
+  list-style-type: decimal;
+}
