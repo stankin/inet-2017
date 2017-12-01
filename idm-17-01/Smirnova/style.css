@@ -177,3 +177,13 @@ canvas{
 *{
   overflow: visible;
 }
+
+.content-4 ol{
+  margin-top: -15px;
+}
+.title_sl2{
+    margin-top: -15px;
+}
+.title_sl3{
+  font-size: 15px;
+}
