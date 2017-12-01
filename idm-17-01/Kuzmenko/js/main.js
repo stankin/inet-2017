@@ -35,7 +35,25 @@
 				'height': $('.fh5co-tab-content.active').height() + extraHeight
 			});
 		}, 200);
+		setTimeout(function(){
+			$('#fh5co-main-lab3').stop().animate({
+				'height': $('.fh5co-tab-content.active').height() + extraHeight
+			});
+		}, 200);
 	};
+
+/*	var getWidth = function() {
+		var extraWidth = 0;
+
+		if ( isMobile.any() ) extraWidth = 50;
+		
+		setTimeout(function(){
+			$('#fh5co-main').stop().animate({
+				'Width': $('.fh5co-tab-content.active').Width() + extraWidth
+			});
+		}, 200);
+	};
+*/
 
 	var pieChart = function() {
 		$('.chart').easyPieChart({
@@ -54,6 +72,10 @@
 		$(window).resize(function(){
 			getHeight();
 		})
+		/*getWidth();
+			$(window).resize(function(){
+				getWidth();
+			})*/
 	};
 
 	var tabClickTrigger = function() {
@@ -73,6 +95,7 @@
 				$('.fh5co-tab-content.active').removeClass('active animated fadeOutDown fadeInUp');
 				$('.fh5co-tab-content[data-content="'+data+'"]').addClass('animated fadeInUp active');
 				getHeight();
+				/*getWidth();*/
 			}, 500);
 
 			if ( pie === 'yes' ) {
