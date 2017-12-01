@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Personal Web Page for Labs for GitHub. IDM 17 &ndash; 01 . 2017</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body style="background-image: url(images/bg_img.jpg);">
+	
+	<div id="fh5co-main-lab3">
+		<div class="fh5co-tab-wrap">
+			<ul class="fh5co-tab-menu">
+				<li class="active"><a href="#" data-tab="1"><img src="images/gears.png" width="90" height="50" alt="work:"><span class="menu-text">Посмотреть отчет</span></a></li>
+			</ul>
+			<!-- <div class="fh5co-tab-contentlab3" data-content="1">	 -->		
+			<div class="fh5co-tab-content" data-content="1">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Лабораторная работа №3<br>
+							   Настройка локальной сети передачи данных
+							</p>
+							<div class="fh5co-feature">
+								<!-- <div class="fh5co-text">	 -->						
+										<h2>Отчет по Настройке локальной сети передачи данных.</h2>
+										<p>Вариант 4.</p>
+										<p>
+											Расчет диапазонов подсетей.
+											<table class="fh5co-table-lab3">
+											<tr><th> - </th><th>Lan A</th><th>Lan B</th><th>Lan C</th></tr>
+											<tr><th>Кол-во узлов</th><td>20</td><td>201</td><td>200</td></tr>
+											<tr><th>Subnet</th><td>192.168.4.0</td><td>172.16.4.0</td><td>10.10.4.0</td></tr>
+											<tr><th>Mask</th><td>255.255.255.224</td><td>255.255.255.0</td><td>255.255.255.0</td></tr>
+											<tr><th>Broadcast</th><td>192.168.4.31</td><td>172.16.4.255</td><td>10.10.4.255</td></tr>
+											</table>
+											ШАГ 1: Разместить на рабочем поле коммутатор и два компьютера и соединить их<br>
+											<img src ="images/scr1.jpg"><br>
+											ШАГ 2: Добавить на рабочее поле еще один коммутатор с двумя компьютерами и настроить адресацию из другой подсети<br>
+											<img src ="images/scr2.jpg"><br>
+											ШАГ 3: Соединить коммутаторы между собой и проверить работоспособность сети (Не работает, так как коммутаторы подсоединяются только к маршрутизаторам)<br>
+											<img src ="images/scr0.jpg"><br>
+											ШАГ 4: Добавить маршрутизатор на рабочее поле<br>
+											<img src ="images/scr3.jpg"><br> 
+											ШАГ 5: Добавить на рабочее поле еще один маршрутизатор. Подключить к нему коммутатор и компьютер<br>
+											<img src ="images/scr4.jpg"><br>
+											<table class="fh5co-table-lab3">
+											<tr><th>Устройство</th><th>IP - адрес</th><th>Маска</th><th>Шлюз</th></tr>
+											<tr><th>PC0</th><td>192.168.4.30</td><td>255.255.255.224</td><td>192.168.4.1</td></tr>
+											<tr><th>PC1</th><td>192.168.4.29</td><td>255.255.255.224</td><td>192.168.4.1</td></tr>
+											<tr><th>PC2</th><td>172.16.4.254</td><td>255.255.255.0</td><td>172.16.4.1</td></tr>
+											<tr><th>PC3</th><td>172.16.4.253</td><td>255.255.255.0</td><td>172.16.4.1</td></tr>
+											<tr><th>PC4</th><td>10.10.4.254</td><td>255.255.255.0</td><td>10.10.4.1</td></tr>
+											<tr><th>R0 0/0</th><td>192.168.4.1</td><td>255.255.255.224</td><td> - </td></tr>
+											<tr><th>R0 0/1</th><td>172.16.4.1</td><td>255.255.255.0</td><td> - </td></tr>
+											<tr><th>R0 0/2</th><td>15.15.4.2</td><td>255.255.255.252</td><td> - </td></tr>
+											<tr><th>R1 0/1</th><td>10.10.4.1</td><td>255.255.255.0</td><td> - </td></tr>
+											<tr><th>R1 0/2</th><td>15.15.4.1</td><td>255.255.255.252</td><td> - </td></tr>
+											</table>
+											Настройка статической маршрутизации производится при помощи команды: ip route [сеть назначения] [маска] [маршрут]<br>
+											Установить банер на сетевое оборудование: banner motd [баннер]<br>
+											<h3>Проверка работоспособности сети:</h3><br>
+											<img src ="images/successful.jpg"><br>
+											<center>Пакеты успешно отправляются!</center>
+										</p>
+								<!-- </div> -->
+							</div>
+						</div>					
+					</div>
+				</div>
+			</div>			
+		</div>
+		<footer id="fh5co-footer">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<small>
+						Personal Web Page for Labs for GitHub. <br> IDM 17&dash;01<br>2017
+					</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
+</html>
+
