@@ -473,9 +473,37 @@ figure {
 }
 
 .fh5co-table-lab3 th, .fh5co-table-lab3 td {
-  align: justify;
+  text-align: justify;
   width: 30%;
   height: 35%;
 }
+.fh5co-table-question{
+  margin: 2em;
+  table-layout: auto;
+  padding: 5px;
+  width: 600px;
+}
 
+.fh5co-table-question th, .fh5co-table-question td{
+  margin-top: 20px;
+  padding: 8px;
+}
+
+.fh5co-table-question th{
+  column-width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+.fh5co-table-question td{
+  column-width: 75%;
+  text-align: left;
+}
+.fh5co-table-question li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.fh5co-quesction-p p{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 /*# sourceMappingURL=style.css.map */
