@@ -531,6 +531,53 @@
 	
 	<question>
 		<author>
+			Селин Николай Сергеевич
+		</author>		
+		
+		
+		<qtext>
+			Какая реальная битовая скорость Fast Ethernet? Почему так?
+		</qtext>
+		
+		
+		<ranswer>
+			125
+		</ranswer>
+		
+		
+		<answer>
+			100	
+		</answer>
+		
+		
+		<answer>
+			110
+		</answer>
+		
+		
+		<answer>
+			92
+		</answer>
+		
+		
+		<proofrlink>
+			http://citforum.ru/nets/lvs/glava_5.shtml
+		</proofrlink>
+		
+		<acomment>
+			Ethernet заимствует у FDDI метод кодирования 4B/5B, когда любые четыре бита MAC-подуровня представляются пятью физическими битами с чередующимися нулями и единицами. Для чего это делается — уже глубокая физика. 
+При этом исходные данные должны передаваться со скоростью 100 Мб/с согласно стандарту Ethernet. Из-за этого избыточного бита действительная скорость на 25% больше (5 больше 4 на 25%), что составляет, разумеется, 125 Мб/c.
+		</acomment>
+		
+		
+		<plink>
+			https://stankin.github.io/inet-2017/idm-17-01/Smirnova/index.html
+		</plink>
+		
+	</question>
+	
+	<question>
+		<author>
 			Смирнова Ирина Александровна
 		</author>		
 		
