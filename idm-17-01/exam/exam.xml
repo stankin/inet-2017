@@ -419,6 +419,42 @@
 	
 	<question>
 		<author>
+			Мирскова Елизавета Сергеевна
+		</author>		
+		
+		
+		<qtext>
+			Для каждого из уровней OSI выберите соответствующую ему единицу данных:
+			<table border="1">
+                        <tbody><tr><th>Уровень OSI</th><th>Единица данных</th></tr>
+                        <tr><td>1. Прикладной</td><td>A. Биты</td></tr>
+                        <tr><td>2. Представительский</td><td>B. Сегменты</td></tr>
+                        <tr><td>3. Сеансовый</td><td>C. Данные</td></tr>
+                        <tr><td>4. Транспортный</td><td>D. Пакеты</td></tr>
+			<tr><td>5. Сетевой</td><td>E. Кадры</td></tr>
+			<tr><td>6. Канальный</td></tr>
+			<tr><td>7. Физический</td></tr>
+                    </tbody></table>
+		</qtext>
+		
+		
+		<ranswer>
+			1 - C, 2 - C, 3 - C, 4 - B, 5 - D, 6 - E, 7 - A
+		</ranswer>
+		
+		
+		<proofrlink>
+			https://ru.wikipedia.org/wiki/Сетевая_модель_OSI
+		</proofrlink>
+		
+		
+		<plink>
+			https://stankin.github.io/inet-2017/idm-17-01/Mirskova/index.html
+		</plink>
+	</question>
+	
+	<question>
+		<author>
 			Мурзайкина Олеся Анатольевна
 		</author>		
 		
