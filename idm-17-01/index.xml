@@ -4,7 +4,7 @@
 	<user>
 		<name>Бедретдинова Анна Юрьевна</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Bedretdinova/index.html</page>
 		<team>1701-A</team>
 		<role>РП</role>
@@ -13,7 +13,7 @@
 	<user>
 		<name>Бирюков Сергей Сергеевич</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Biryukov/index.html</page>
 		<team>1701-Б</team>
 		<role>РП, СП</role>
@@ -22,7 +22,7 @@
 	<user>
 		<name>Брагин Дмитрий Александрович</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Bragin/mypage.html</page>
 		<team>TEAM C</team>
 		<role>АД,СП</role>
@@ -31,7 +31,7 @@
 	<user>
 		<name>Верещагин Владимир Геннадьевич</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Vereshchagin/index.html</page>
 		<team>1701-A</team>
 		<role>АД</role>
@@ -40,7 +40,7 @@
 	<user>
 		<name>Зайцев Александр Сергеевич</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Zaytsev/index.html</page>
 		<team>1701-Д</team>
 		<role>РП,СП,БА</role>
@@ -49,7 +49,7 @@
 	<user>
 		<name>Зудилов Андрей Александрович</name>
 		<m1>40</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>zudilov/index.html</page>
 		<team>TEAM C</team>
 		<role>РП,КО</role>
@@ -85,7 +85,7 @@
 	<user>
 		<name>Кузьменко Иван Алексеевич</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Kuzmenko/index.html</page>
 		<team>1701-A</team>
 		<role>БА</role>
@@ -103,7 +103,7 @@
 	<user>
 		<name>Махмутов Илья Шамилевич</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Mahmutov/HTML/index.html</page>
 		<team>1701-A</team>
 		<role>НИ, ВН</role>
@@ -112,7 +112,7 @@
 	<user>
 		<name>Мещеряков Никита Сергеевич</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Meshcheryakov/index.html</page>
 		<team>1701-Д</team>
 		<role>НИ, АД, КО</role>
@@ -121,7 +121,7 @@
 	<user>
 		<name>Мирскова Елизавета Сергеевна</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Mirskova/index.html</page>
 		<team>TEAM C</team>
 		<role>АД,БА</role>
@@ -130,7 +130,7 @@
 	<user>
 		<name>Мурзайкина Олеся Анатольевна</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Murzaykina/index.html</page>
 		<team>1701-A</team>
 		<role>СП, КО</role>
@@ -139,7 +139,7 @@
 	<user>
 		<name>Порфирьев Александр Юрьевич</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Porfirev/index.html</page>
 		<team>1701-Д</team>
 		<role>ПП,ВН</role>
@@ -166,7 +166,7 @@
 	<user>
 		<name>Смирнова Ирина Александровна</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Smirnova/index.html</page>
 		<team>1701-A</team>
 		<role>ПП</role>
@@ -184,7 +184,7 @@
 	<user>
 		<name>Штыков Александр Александрович</name>
 		<m1>50</m1>
-		<m2>0</m2>
+		<m2>50</m2>
 		<page>Shtykov/index.html</page>
 		<team>1701-Б</team>
 		<role>ПП, КО</role>
