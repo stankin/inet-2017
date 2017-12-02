@@ -133,7 +133,7 @@
 		<qtext>
 			Установите соответствие
 			
-			<table align="left">
+			<table>
 				<tbody>
 					<tr><th>Мост</th></tr>
 					<tr><th>Маршрутизатор</th></tr>
