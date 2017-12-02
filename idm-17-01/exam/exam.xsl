@@ -16,7 +16,7 @@
 					<div class = "aname">
 						Автор:<br></br> 
 						<a>
-							<xsl:attribute name="href"><xsl:value-of select="plink" /></xsl:attribute>
+							<xsl:attribute name="href"><xsl:value-of select="normalize-space(plink)" /></xsl:attribute>
 							<xsl:value-of select="author" />
 						</a>
 					</div>
@@ -41,7 +41,7 @@
 					<hr></hr>
 					<div class = "proofrlink">
 						<a>
-							<xsl:attribute name="href"><xsl:value-of select="proofrlink" /></xsl:attribute>
+							<xsl:attribute name="href"><xsl:value-of select="normalize-space(proofrlink)" /></xsl:attribute>
 							Ссылка на пруф
 						</a>
 					</div>
