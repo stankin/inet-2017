@@ -52,7 +52,7 @@ html, body {
     font-size:100%;
 	margin:0;
 	padding:0;
-	background:url(./images/bg.jpg);
+	background:url(images/bg.jpg);
 	background-repeat:repeat;
 }
 ::selection{
@@ -140,7 +140,7 @@ a:hover{
     position: absolute;
     top:0;
 	width:100%;
-	background:url(./images/bg.jpg);
+	background:url(images/bg.jpg);
 	background-repeat: repeat;
 	border-right:1px solid rgba(249,217,156,0.1);
 	-moz-box-shadow:0 20px 20px #000;
@@ -154,7 +154,7 @@ a:hover{
 	float:left;
 	width:1260px;
 	height:100%;
-	background:url(./images/bg.jpg);
+	background:url(images/bg.jpg);
 	background-repeat: repeat;
 	border-right:1px solid rgba(249,217,156,0.1);
 	-moz-box-shadow:0 20px 20px #000;
@@ -373,7 +373,7 @@ a.activelink{
     width: 160px;
     height: 160px;
     margin: 0 auto;
-    background: url(./images/clock.png);
+    background: url(images/clock.png);
     list-style: none;
 	float:left;
 }
@@ -385,17 +385,17 @@ a.activelink{
      left: 76px;
 }
 #sec{
-    background: url(./images/sechand.png);
+    background: url(images/sechand.png);
     background-repeat:no-repeat;
     z-index: 3;
 }
 #min{
-    background: url(./images/minhand.png);
+    background: url(images/minhand.png);
    background-repeat:no-repeat;
     z-index: 2;
 }
 #hour{
-   background: url(./images/hourhand.png);
+   background: url(images/hourhand.png);
    background-repeat:no-repeat;
    z-index: 1;
 }
@@ -513,7 +513,7 @@ p.big{
 	height:300px;
 	margin:0 40px 0 0;
 	position:relative;
-	background:url(./images/newsblock-img.png);
+	background:url(images/newsblock-img.png);
 	background-repeat:no-repeat;
 }
 .newsblock-left p{
@@ -650,7 +650,7 @@ a.view{
 }
 .tip ul{
 	float:left;
-	list-style-image:url(./images/list.png);
+	list-style-image:url(images/list.png);
 	list-style-position:inside;
 	width:270px;
 	margin:20px 0;
@@ -727,7 +727,7 @@ a.view{
 }
 #open{
 	float:left;
-	background:#f0f0f0 url(./images/plus.png) no-repeat;
+	background:#f0f0f0 url(images/plus.png) no-repeat;
 	height:40px;
 	width:40px;
 	cursor:pointer;
@@ -795,7 +795,7 @@ img.cover{
 	position:absolute;
 	top:0;
 	left:0;
-	background:url(./images/info-icon.png) no-repeat;
+	background:url(images/info-icon.png) no-repeat;
 	width:40px;
 	height:40px;
 }
@@ -821,7 +821,7 @@ img.cover{
 }
 .info-inside .features li{
 	width:100%;
-	list-style-image:url(./images/list.png);
+	list-style-image:url(images/list.png);
 	list-style-position:inside;
 	background:#eaeaea;
 	padding:5px;
@@ -1122,7 +1122,7 @@ figure.zoom{
 }
 .features li{
 	width:100%;
-	list-style-image:url(./images/list.png);
+	list-style-image:url(images/list.png);
 	list-style-position:inside;
 	background:#eaeaea;
 	padding:5px;
