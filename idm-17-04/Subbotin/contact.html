@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="description" content ="place your well-thought description here. It is important!"/>
+<meta name="author" content="Virtuti-Design" />
+<!-- define the width of the page as no wider than the width of the viewport --> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+<link href='http://fonts.googleapis.com/css?family=Habibi&amp;subset=latin,latin-ext' rel='stylesheet'>
+<link href="./modal.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE ]><link rel="stylesheet" href="ie.css" media="all"/><![endif]--> 
+<title>Down The Times. Small content block.</title>
+	<meta charset="UTF-8"></head>
+
+	<meta charset="UTF-8"></head>
+	<body onload="initialize()">
+		<div id="modal-wrapper">
+		<div id="contact-inner">
+			<div class="contact-entry">
+			
+			<div id="contact-block">
+			<h2>Contact us</h2>
+            <!--opening panel-->
+		    <section id="contact-form">
+		    <div class="panel">		
+<div id="forma">
+<script>var submitted=false;</script>
+<iframe name="hidden_iframe" id="hidden_iframe"
+style="display:none;" onload="if(submitted)
+{window.location='./thankyou.html';}"></iframe>
+
+<form action="https://spreadsheets.google.com/formResponse?formkey=dGpzSnN5WHVnWVV2NUVOVXlYanp1SVE6MQ" 
+method="post" target="hidden_iframe" id="score" onsubmit="submitted=true;">
+<fieldset>
+	
+<div class="errorbox-good"> 
+<div class="ss-item  ss-text">
+<div class="ss-form-entry">
+<label class="ss-q-title" for="entry_0">Your name<span class="ss-required-asterisk">*</span></label> 
+<input type="text" name="entry.0.single" value="" class="ss-q-short" placeholder="e.g. John Smith" id="entry_0" required>
+</div><!--ss-item ss-item ss-text ends here-->
+</div><!--ss-form-entry ends here-->
+</div> <!--errorbox-good ends here-->
+
+<div class="errorbox-good"> 
+<div class="ss-item  ss-text">
+<div class="ss-form-entry">
+<label class="ss-q-title" for="entry_1">Your email address<span class="ss-required-asterisk">*</span></label> 
+<input type="text" name="entry.1.single" value="" class="ss-q-short" placeholder="e.g. example@domain.com"  id="entry_1" required>
+</div><!--ss-item ss-item ss-text ends here-->
+</div><!--ss-form-entry ends here-->
+</div> <!--errorbox-good ends here-->
+
+<div class="errorbox-good"> 
+<div class="ss-item  ss-paragraph-text"
+><div class="ss-form-entry">
+<label class="ss-q-title" for="entry_2">Your message</label> 
+<textarea name="entry.2.single" class="ss-q-long" rows=7 cols=10 placeholder="Hello, I would like to ask..." id="entry_2"></textarea>
+</div><!--ss-item ss-item ss-paragraph-text ends here-->
+</div><!--ss-form-entry ends here-->
+</div> <!--errorbox-good ends here-->
+
+<input type="hidden" name="pageNumber" value="0"> 
+<input type="hidden" name="backupCache" value=""> 
+
+<div class="ss-item ss-navigate">
+<div class="ss-form-entry"> 
+			<fieldset>
+			<button type=submit class="buttonsubmit" value="send">Send away</button>
+			</fieldset>
+</div><!--ss-form entry ends here-->
+</div><!--ss-item ss-navigate ends here-->
+			</fieldset>
+</form>
+
+    <div id="vcard">
+    <h3>our address:</h3>
+    <p class="last">
+    <a class="fn org url" href="http://www.yourwebsite.com" title="Contact Information for Your Website">
+    <span class="organization-name">Down The Times</span>/<span class="organization-unit">Trapani</span></a><br>
+    <span class="adr"><a class="extended-address" href="http://www.yourwebsite.com">Trapani Local Strategies</a><br>
+    <span class="street-address">5386 Siracusa</span>, <span class="locality">Trapani city</span>,<br>
+    <span class="region">Sicily prefecture</span> <span class="postal-code">252-8520</span> <b class="country">Italy</b><br>
+    <span class="tel">Telephone: <span class="value">+81-466-49-1170</span></span><br>
+    <span class="tel"><span class="type">Fax</span>: <span class="value">+81-466-49-1171</span></span></span><br>
+    <span class="email"><span class="email">Email</span>: <span class="value">youremail@email.com</span></span></span>
+    </p>
+    </div><!--vcard ends here--> 
+    </div><!--forma ends here-->
+            </div><!--panel ends here-->
+			<a class="trigger" href="">contact / show map</a>
+		    </section><!--contact-form ends here-->
+
+		    
+			<div id="map_canvas"></div>			
+		    </div><!--contact-block ends here-->
+			</div><!--contact-entry ends here-->
+		    </div><!--contact-inner ends here-->
+		    </div><!--modal-wrapper ends here-->
+		<!--markup ends here-->
+
+<!--scripts-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+
+<!--map-->
+<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script src="./js/googlemap.js"></script>
+
+<!--opening panel-->
+<script>
+$(document).ready(function(){
+	$(".trigger").click(function(){
+		$(".panel").toggle("fast");
+		$(this).toggleClass("active");
+		return false;
+	});
+});
+</script>
+	</body>
+</html>
