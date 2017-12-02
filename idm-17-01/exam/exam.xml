@@ -133,11 +133,11 @@
 		<qtext>
 			Установите соответствие
 			
-			<table align="left">
+			<table >
 				<tbody>
-					<tr><th>Мост</th></tr>
-					<tr><th>Маршрутизатор</th></tr>
-					<tr><th>Шлюз</th></tr>
+					<tr><th align="left">Мост</th></tr>
+					<tr><th align="left">Маршрутизатор</th></tr>
+					<tr><th align="left">Шлюз</th></tr>
 				</tbody>
 			</table>
 			<table>
