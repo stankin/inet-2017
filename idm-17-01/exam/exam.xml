@@ -528,7 +528,47 @@
 		</plink>
 		
 	</question>
-	
+	<question>
+		<author>
+			Прокопьев Максим Эдуардович
+		</author>		
+		
+		
+		<qtext>
+			Выберете вариант в котором указаны особенности относящиеся к протоколу TCP и не относящиеся к протоколу UDP
+		</qtext>
+		
+		
+		<ranswer>
+			Решает проблемы с надежностью, дублированием, порядком пакетов
+		</ranswer>
+		
+		
+		<answer>
+			Не требует заранее установленного соединения
+		</answer>
+		
+		
+		<answer>
+			Является протоколом транспортного уровня
+		</answer>
+		
+		
+		<answer>
+			Выгодно использовать для серверов, отвечающих на небольшие запросы от огромного числа клиентов
+		</answer>
+		
+		
+		<proofrlink>
+			https://ru.wikipedia.org/wiki/Transmission_Control_Protocol
+		</proofrlink>
+		
+		
+		<plink>
+			https://stankin.github.io/inet-2017/idm-17-01/Prokopiev/index.html
+		</plink>
+	</question>
+
 	<question>
 		<author>
 			Селин Николай Сергеевич
