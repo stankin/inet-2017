@@ -70,7 +70,7 @@
 		"role": "",
 		"articleLink": "https://github.com/stankin/inet-2017/wiki/Redmine-%E2%80%93-bug-tracking-system",
 		"module1": "35",
-		"module2": ""
+		"module2": "45"
 	}, {
 		"studentName": "Воейков",
 		"studentLink": "https://stankin.github.io/inet-2017/idm-17-04/Voeikov",
@@ -120,10 +120,10 @@
 		"role": "Творец",
 		"articleLink": "https://github.com/stankin/inet-2017/wiki/%D0%A2%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D0%B8-%D0%B1%D0%B5%D1%81%D0%BF%D1%80%D0%BE%D0%B2%D0%BE%D0%B4%D0%BD%D0%BE%D0%B9-%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%D1%87%D0%B8-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85",
 		"module1": "40",
-		"module2": ""
+		"module2": "40"
 	}, {
 		"studentName": "Леонтьев",
-		"studentLink": "https://stankin.github.io/inet-2017/idm-17-04/Leontev",
+		"studentLink": "https://stankin.github.io/inet-2017/idm-17-04/leontev",
 		"team": "dreamteamstankin",
 		"projectName": "DREAM_BOT_STANKIN",
 		"projectLink": "https://github.com/dreamteamstankin/project",
@@ -220,7 +220,7 @@
 		"role": "Координатор",
 		"articleLink": "https://github.com/stankin/inet-2017/wiki/%D0%94%D0%BE%D0%BC%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B8%D0%BC%D1%8F",
 		"module1": "50",
-		"module2": ""
+		"module2": "50"
 	}, {
 		"studentName": "Сычева",
 		"studentLink": "https://stankin.github.io/inet-2017/idm-17-04/Sycheva",
