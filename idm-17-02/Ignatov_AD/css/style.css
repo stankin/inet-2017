@@ -120,7 +120,7 @@ h3{text-align: center;
 	border-top-right-radius:3px;
 }
 .simple-little-table tr{
-	text-align: center;
+	text-align: left;
 	padding-left:20px;
 }
 .simple-little-table tr td:first-child{
