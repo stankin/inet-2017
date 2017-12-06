@@ -34,13 +34,22 @@ top: 0px;
 	background: linear-gradient(to left, PeachPuff, Thistle);
 }
 
-#AAC{
+
+.AAC{
 	font-size: 20px;
 	font-weight: normal;
 	text-align: left;
 	color: black;
 }
 
+#ADD{
+	font-size: 20px;
+	font-weight: normal;
+	text-align: left;
+	color: black;
+	background: linear-gradient(to left, GreenYellow, DeepSkyBlue);
+	text-decoration: none;
+}
 
 .menu>a{
 
@@ -213,7 +222,33 @@ background:linear-gradient(to top left, White, LightBlue);
  border-style: solid;
  border-width: 1px; 
  }
+ 
+ 
+ #main_3>.lab>ul>.knopka{
+ font-family: Haettenschweiler;
+ font-size: 20px;
+ position: relative;
+ left: 710px;
+ right: 0px;
+ bottom: -15px;
+ height: 30px;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 5px;
+ background: MediumAquamarine;
+ cursor: pointer;
+ }
+ #main_3>.lab>ul>.knopka:active
+ {
+ background: Violet;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px; 
+ }
 
+ 
+ 
  #digital_watch{
  position: relative;
  text-align: right;
@@ -226,4 +261,8 @@ background:linear-gradient(to top left, White, LightBlue);
 #digital_watch:hover{
 color: red;
 transition-duration:2s;	 
+ }
+ 
+ #digital_watch:after{
+	 transition-duration:2s;
  }
