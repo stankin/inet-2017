@@ -5,6 +5,18 @@
 
 Ссылка на песочницу: https://stankin.github.io/inet-2017/
 
+# Проекты этого семестра:
+
+##ИДМ-17-01:
+
+1. Игры: https://github.com/stankin/inet-2017/tree/master/idm-17-01/idb1701-d
+
+2. Чат: https://github.com/pindos11/2017_17-01_project
+
+3. Корзина: https://github.com/shtbik/product-cart
+
+4. Библиотека: https://github.com/jhupanen/jhupanen.github.io
+
 Примерный образ результата:
 1. Список по группам (коллективная работа):
 
