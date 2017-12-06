@@ -9,7 +9,7 @@
 
 ##ИДМ-17-01:
 
-1. Игры: https://github.com/stankin/inet-2017/tree/master/idm-17-01/idb1701-d
+1. Игры: https://github.com/Th3Kolbask1n/idb1701d
 
 2. Чат: https://github.com/pindos11/2017_17-01_project
 
