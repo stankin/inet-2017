@@ -66,11 +66,142 @@
 		<p id="pass"> Настройка коммутаторов и маршрутизаторов</p>
 		<a onclick="return show('subMenuTip3');">	
 			<p id="pasd"> Отчет по лабораторной работе</p></a>
+					<div id="subMenuTip3" style="display:none;">
+					<p> Цель данной работы - ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрузитацией.</p>
+					  <p> Расчет диапозонов сетей: </p>
+						<table align="center"> 
+								<tbody>
+								<tr>
+										<th> </th>
+										<th> Lan A </th>
+										<th> Lan B </th>
+										<th> Lan C </th>								
+								</tr>
+								<tr>
+										<td> Hosts </td>
+										<td> 12 </td>
+										<td> 457 </td>
+										<td> 78 </td>
+								</tr>
+								<tr>
+										<td> Префиксная маска </td>
+										<td> /28 </td>
+										<td> /23 </td>
+										<td> /25 </td>
+																	
+								</tr>
+								<tr>
+										<td> Адрес подсети </td>
+										<td> 192.168.3.0 </td>
+										<td> 172.16.2.0 </td>
+										<td> 10.10.3.0 </td>
+										
+								</tr>
+								<tr>
+										<td> Минимальный адрес </td>
+										<td> 192.168.3.1 </td>
+										<td> 172.16.2.1 </td>
+										<td> 10.10.3.1 </td>
+																	
+								</tr>
+								<tr>
+										<td> Максимальный адрес </td>
+										<td> 192.168.3.14 </td>
+										<td> 172.16.3.254 </td>
+										<td> 10.10.3.126 </td>
+																		
+								</tr>
+								<tr>
+										<td> Broadcast </td>
+										<td> 192.168.3.15 </td>
+										<td> 172.16.3.255 </td>
+										<td> 10.10.3.127 </td>
+								</tr>
+				</tbody>			   
+						   
+						</table>
+					<p> Адреса устройств: </p>
+					<table align="center"> 
+						<tbody>
+							<tr>
+								<th> Устройство </th>
+								<th> IP </th>
+								<th> Mask </th>
+								<th> Default gateway </th>
+							</tr>
+							<tr> 
+								<td> PC0 </td>
+								<td> 172.16.3.125 </td>
+								<td> 255.255.254.0 </td>
+								<td> 172.16.2.1 </td>
+							</tr>
+							<tr>
+								<td> PC1 </td>
+								<td> 172.16.3.126 </td>
+								<td> 255.255.254.0 </td>
+								<td> 172.16.2.1 </td>
+							</tr>
+							<tr> 	
+								<td> PC2 </td> 
+								<td> 192.168.3.13 </td>
+								<td> 255.255.255.240 </td>
+								<td> 192.168.3.1 </td>
+							</tr>
+							<tr> 	
+								<td> PC3 </td> 
+								<td> 192.168.3.14 </td>
+								<td> 255.255.255.240 </td>
+								<td> 192.168.3.1 </td>
+							</tr>
+							<tr> 	
+								<td> PC4 </td> 
+								<td> 10.10.3.123 </td>
+								<td> 255.255.255.128 </td>
+								<td> 10.10.3.1 </td>
+							</tr>
+							<tr>
+								<td> Router1 FastEthernet 1/0 </td>
+								<td> 172.16.2.1 </td>
+								<td> 255.255.254.0 </td>
+								<td> ---- </td>
+							</tr>
+							<tr>
+								<td> Router1 FastEthernet 0/0 </td>
+								<td> 192.168.3.1 </td>
+								<td> 255.255.255.240 </td>
+								<td> ---- </td>
+							</tr>
+							<tr>
+								<td> Router1 FastEthernet 2/0 </td>
+								<td> 15.15.3.1 </td>
+								<td> 255.255.255.252 </td>
+								<td> ---- </td>
+							</tr>
+							<tr>
+								<td> Router2 FastEthernet 0/0 </td>
+								<td> 10.10.3.1 </td>
+								<td> 255.255.255.128 </td>
+								<td> ---- </td>
+							</tr>
+							<tr>
+								<td> Router1 FastEthernet 1/0 </td>
+								<td> 15.15.3.2 </td>
+								<td> 255.255.255.252 </td>
+								<td> ---- </td>
+							</tr>
+						</tbody>
+					
+					</table >
+					<p> Разместить два компьютера и коммутатор, настроить между ними адресацию. </p>
+					<p> <img src="https://raw.githubusercontent.com/stankin/inet-2017/master/idm-17-02/Astahov_IA/img/1xfcnm.jpg"> </p>
+					<p> Добавить еще коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку. </p>
+					<p> <img src="https://raw.githubusercontent.com/stankin/inet-2017/master/idm-17-02/Astahov_IA/img/2xfcnm.jpg"> </p>
+					<p> Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут] </p>
+					<p> Установить банер на сетевое оборудование: banner motd [баннер] </p>
 
 
 
-
-
+		</div>
 
 	</div>		
 	<div class="ha"> <p id="par"> Подготовка к экзамену:</p>
