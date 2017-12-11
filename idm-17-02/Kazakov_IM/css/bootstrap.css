@@ -3790,7 +3790,7 @@ tbody.collapse.in {
 .btn-group-justified {
   display: table;
   width: 100%;
-  table-layout: fixed;
+  table-layout: auto;
   border-collapse: separate;
 }
 .btn-group-justified > .btn,
