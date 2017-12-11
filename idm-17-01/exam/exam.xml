@@ -82,12 +82,12 @@
 		
 		
 		<qtext>
-			Выберите средства веб-разработки в среде MS Visual Studio
+			Какое средство из нижеперечисленных можно использовать в среде Microsoft Visual Studio для создания веб-приложений?
 		</qtext>
 		
 		
 		<ranswer>
-			ASP.NET
+			ASP.NET (Active Server Pages .NET)
 		</ranswer>
 		
 		
@@ -97,12 +97,12 @@
 		
 		
 		<answer>
-			TFS
+			ASP.NET (Active Server Pages .NET)
 		</answer>
 		
 		
 		<answer>
-			LINQ
+			ASP.NET (Active Server Pages .NET)
 		</answer>
 		
 		
@@ -117,10 +117,10 @@
 		
 		
 		<acomment>
-			Xamarin - средства кроссплатформенной разработки в VS.
-			TFS - Team Foundation Server - комплексное решение для удобной работы с проектами нескольких пользователей.
-			LINQ - Language Integrated Query - технология по добавлению синтаксиса языка запросов, напоминающего SQL, в языки программирования платформы .NET Framework, на языках C# и VB.NET
-			ASP.NET - технология создания веб-приложений и веб-сервисов от компании Майкрософт
+			Xamarin - средства кроссплатформенной разработки в VS. 
+TFS - Team Foundation Server - комплексное решение для удобной работы с проектами нескольких пользователей. 
+LINQ - Language Integrated Query - технология по добавлению синтаксиса языка запросов, напоминающего SQL, в языки программирования платформы .NET Framework, на языках C# и VB.NET 
+ASP.NET - технология создания веб-приложений и веб-сервисов от компании Майкрософт. Visual Studio поддерживает возможность создания веб приложений с помощью фреймворков ASP.NET 4 или более современного ASP.NET Core.
 		</acomment>
 	</question>
 	
