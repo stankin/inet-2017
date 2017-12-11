@@ -2262,6 +2262,7 @@ th {
 }
 td {
  text-align: center; 
+  width: 45px;
 }
 .table {
 /*  width: 100%;
