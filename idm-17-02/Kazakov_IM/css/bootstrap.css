@@ -185,7 +185,7 @@ table {
 }
 td,
 th {
-  padding: 0;
+  /*padding: 0;*/
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -2330,7 +2330,7 @@ table col[class*="col-"] {
 }
 table td[class*="col-"],
 table th[class*="col-"] {
-  position: static;
+/*  position: static;*/
   display: table-cell;
   float: none;
 }
@@ -5526,9 +5526,9 @@ button.list-group-item-danger.active:focus {
 .panel > .table caption,
 .panel > .table-responsive > .table caption,
 .panel > .panel-collapse > .table caption {
-  padding-right: 15px;
+ /* padding-right: 15px;
   padding-left: 15px;
-}
+*/}
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
   border-top-left-radius: 3px;
@@ -6579,7 +6579,7 @@ button.close {
   }
   th.visible-xs,
   td.visible-xs {
-    display: table-cell !important;
+   /* display: table-cell !important;*/
   }
 }
 @media (max-width: 767px) {
@@ -6609,7 +6609,7 @@ button.close {
   }
   th.visible-sm,
   td.visible-sm {
-    display: table-cell !important;
+ /*   display: table-cell !important;*/
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -6639,7 +6639,7 @@ button.close {
   }
   th.visible-md,
   td.visible-md {
-    display: table-cell !important;
+   /* display: table-cell !important;*/
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -6669,7 +6669,7 @@ button.close {
   }
   th.visible-lg,
   td.visible-lg {
-    display: table-cell !important;
+    /*display: table-cell !important;*/
   }
 }
 @media (min-width: 1200px) {
@@ -6722,7 +6722,7 @@ button.close {
   }
   th.visible-print,
   td.visible-print {
-    display: table-cell !important;
+  /*  display: table-cell !important;*/
   }
 }
 .visible-print-block {
