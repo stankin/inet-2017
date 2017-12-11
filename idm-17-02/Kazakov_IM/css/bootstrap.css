@@ -185,7 +185,7 @@ table {
 }
 td,
 th {
-  /*padding: 0;*/
+  padding: 0;
 }
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 @media print {
@@ -255,10 +255,10 @@ th {
   .table th {
     background-color: #fff !important;
   }
- /* .table-bordered th,
+  .table-bordered th,
   .table-bordered td {
     border: 1px solid #ddd !important;
-  }*/
+  }
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
@@ -2259,6 +2259,9 @@ caption {
 }
 th {
 /*  text-align: left;*/
+}
+td {
+ text-align: center; 
 }
 .table {
 /*  width: 100%;
