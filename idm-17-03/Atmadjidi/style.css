@@ -22,7 +22,6 @@ font-weight: bold;
 }
 
 img {
-text-align: center;
 width: 300px;
 height: 250px;
 display: block;
@@ -42,7 +41,9 @@ background: white;
 max-width: 938px;
 margin: 0 auto;
 }
-
+.fars{
+ text-align: left; 
+}
 li {
 color: white;
 list-style-type: none;
