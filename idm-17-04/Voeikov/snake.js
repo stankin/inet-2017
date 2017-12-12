@@ -178,7 +178,7 @@ function snakeMotion() {
 		currentCell.style.background = "";
 	} else {
 		window.setInterval = null;
-		var newGame = confirm("Ваш результат " + points.textContent + " очков!\nНачать заново?");
+		var newGame = confirm("Р’Р°С€ СЂРµР·СѓР»СЊС‚Р°С‚ " + points.textContent + " РћС‡РєРѕРІ!\nРќР°С‡Р°С‚СЊ Р·Р°РЅРѕРІРѕ");
 		if (newGame) {
 			document.getElementsByTagName("div")[1].removeChild(field);
 			startGame();
