@@ -12,13 +12,14 @@ border: 1px solid black;
 padding: 4px 2px;
 }
 
+th{
+ border: 1px solid black;
+padding: 4px 2px;
+}
+
 span {
 font-weight: bold;
 color: white;
-}
-
-tr:first-child {
-font-weight: bold;
 }
 
 img {
@@ -37,6 +38,10 @@ tr {
 background: white;
 }
 
+#td
+{
+ width: 50px;
+}
 .centr {
 max-width: 938px;
 margin: 0 auto;
