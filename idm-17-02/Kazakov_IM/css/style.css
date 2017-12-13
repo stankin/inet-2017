@@ -96,9 +96,12 @@ svg {
 .svag {
   width: auto;
 }
+
 .tab {
- broder: 50px groove black; 
-  text-align: center;
+ broder: 5px groove black !important; 
+ text-align: center !important;
+ border-collapse: separate !important;
+ 
 }
 
 
