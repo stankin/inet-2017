@@ -2262,12 +2262,15 @@ th {
 }
 td {
  text-align: center; 
-  width: 100px;
+  width: 130px;
 }
 .table {
 /*  width: 100%;
   max-width: 100%;
   margin-bottom: 20px;*/
+  border-collapse: collapse;
+  border: 1px solid grey;
+  
 }
 .table > thead > tr > th,
 .table > tbody > tr > th,
