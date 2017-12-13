@@ -65,7 +65,9 @@ color: white;
 h2 {
 color: white;
 }
-
+h3 {
+ color: white;
+}
 ol li {
 list-style-type: decimal;
 }
