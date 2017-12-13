@@ -37,10 +37,10 @@ background-size:cover;
 tr {
 background: white;
 }
-
 #td
 {
  width: 50px;
+ text-align: center;
 }
 .centr {
 max-width: 938px;
