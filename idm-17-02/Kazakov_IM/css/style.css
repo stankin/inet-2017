@@ -115,10 +115,9 @@ background: #D8E6F3;
 th:first-child, td:first-child {
 text-align: left;
 }
-/*.svag {
+.svag {
   width: auto;
-  border-collapse: collapse;
-  border: 1px solid #000; 
+
   
 }
 
