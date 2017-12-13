@@ -2262,7 +2262,7 @@ th {
 }
 td {
  text-align: center; 
-  width: 150px;
+  width: auto;
 }
 .table {
 /*  width: 100%;
