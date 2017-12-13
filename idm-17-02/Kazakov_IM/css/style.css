@@ -95,6 +95,7 @@ svg {
 
 .svag {
   width: auto;
+  border: 1px solid #000; 
 }
 
 /*.tab {
