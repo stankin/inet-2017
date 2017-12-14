@@ -50,10 +50,80 @@
         <div>
             <button class="accordion"><img src="images/fire.png" width="33px">Лабораторная работа №3: Настройка локальной сети передачи данных. </button>
             <div class="panel">
-                <h3> Задачи: </h3>
-                <ul type="circle">
-                    <li>Настройка коммутаторов и маршрутизаторов</a></li>
-                    <li><a href="https://github.com/">Отчет по лабораторной работе №3</a></li>
+                				<h2> Настройка коммутаторов и маршрутизаторов. </h2> </a>
+				<div id="AAC" class="lab" style="display:none;">
+					<ul>
+						 Цель данной работы – ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.
+		        <b><p><center class="lab">Расчет диапазонов подсетей.</center></p></b>
+			<p>
+			<table border="3" align="center">
+			<tr>
+				<td rowspan="2"></td><td><b>LAN A</b></td><td><b>LAN B</b></td><td><b>LAN C</b></td>
+			</tr>
+			<tr>
+				<td>35</td><td>120</td><td>512</td>
+			</tr>
+			<tr>
+				<td><b>Префиксная маска</b></td><td>/26</td><td>/25</td><td>/22</td>
+			</tr>
+			<tr>
+				<td><b>Адрес подсети</b></td><td>192.168.5.0</td><td>172.16.5.0</td><td>10.10.5.0</td>
+			</tr>
+			<tr>
+				<td><b>Минимальный адрес</b></td><td>192.168.5.1</td><td>172.16.5.1</td><td>10.10.4.1</td>
+			</tr>
+			<tr>
+				<td><b>Максимальный адрес</b></td><td>192.168.5.62</td><td>172.16.5.126</td><td>10.10.7.254</td>
+			</tr>
+			<tr>
+				<td><b>Broadcast</b></td><td>192.168.5.63</td><td>172.16.5.127</td><td>10.10.7.255</td>
+			</tr>
+	                </table>
+			</p>
+		        <b><p><center>Адреса устройств.</center></p></b>
+			<p>
+		        <table border="3" align="center">
+			<tr>
+				<td><b>Устройство</b></td><td><b>IP</b></td><td><b>Маска</b></td><td><b>Шлюз по умолчанию</b></td>
+			</tr>
+			<tr>
+				<td>PC0</td><td>192.168.5.62/td><td>255.255.255.192</td><td>192.168.5.1</td>
+			</tr>
+			<tr>
+				<td>PC1</td><td>192.168.5.61</td><td>255.255.255.192</td><td>192.168.5.1</td>
+			</tr>
+			<tr>
+				<td>PC2</td><td>172.16.5.126</td><td>255.255.255.128</td><td>172.16.5.1</td>
+			</tr>
+			<tr>
+				<td>PC3</td><td>172.16.5.125</td><td>255.255.255.128</td><td>172.16.5.1</td>
+			</tr>
+			<tr>
+				<td>PC4</td><td>10.10.7.254</td><td>255.255.252.0</td><td>10.10.4.1</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 0/0</td><td>192.168.5.1</td><td>255.255.255.192</td><td>–</td>
+			</tr>
+			<tr>
+			        <td>Router0 FastEthernet 1/0</td><td>172.16.5.1</td><td>255.255.255.128</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 6/0</td><td>15.15.5.1</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 0/0</td><td>15.15.5.2</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 1/0</td><td>10.10.4.1</td><td>255.255.252.0</td><td>–</td>
+			</tr>
+			</table>
+			</p>
+                                 <p>1. Разместить два компьютера и коммутатор, настроить между ними адресацию.</p>
+				 <p align="center"><img src="images/PK0PK1.png" width="100%" height="50%" /></p>
+				 <p>2. Добавить еще один коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</p>
+				 <p align="center"><img src="images/Vse.png" width="100%" height="20%" /></p>
+				 <p>3. Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
+				 <p>4. Установить баннер на сетевое оборудование: banner motd [баннер]</p>
                 </ul>
             </div>
         </div>
