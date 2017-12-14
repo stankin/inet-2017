@@ -1,11 +1,13 @@
 html 
 { 
+  background: url(images/fon3.png);
   height: 100%;
 }
 body 
 {
+  background: url(images/0_a6a10_600f8786_orig.gif);
   background-attachment: fixed;
-  background-size: cover;	
+  background-size: cover;
 }
 .hit-the-floor 
 {
