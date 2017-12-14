@@ -61,6 +61,11 @@ background-size: cover;
 	text-align: center;font-size: 32px;
 	font-weight: bold;
 }
+#que{
+	text-align: center;
+	font-size: 22px;
+	line-height: 1.5;
+}
 a {
 	border-bottom: 2px solid black;
 	color: black;
@@ -110,5 +115,89 @@ a {
 	margin-bottom: -15px; 
 	 
  }
+
+.datagrid table { 
+border-collapse: collapse; 
+text-align: left; 
+width: 100%; } 
+.datagrid {
+	font: normal 12px/150% Georgia, Times New Roman, Times, serif; 
+	background: #fff; 
+	overflow: hidden; 
+	border: 2px solid #000000; 
+	-webkit-border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	border-radius: 15px; }
+.datagrid table td, 
+.datagrid table th { 
+padding: 6px 10px; 
+}
+.datagrid table tbody td { 
+color: #FF0000;
+border-top: 1px solid #FF0000;
+border-left: 1px solid #FF0000;
+font-size: 15px;
+border-bottom: 1px solid #FF0000;
+font-weight: normal; }
+.datagrid table tbody 
+.alt td { 
+background: #EDEDF4; 
+color: #000000; }
+.datagrid table tbody td:first-child { 
+border-left: none; 
+}
+.datagrid table tbody tr:last-child td { 
+border-bottom: 1px solid #FF0000; 
+}
+
+
+.data table { 
+border-collapse: collapse;
+ text-align: center-left; 
+ width: 100%; 
+ } 
+ .data {
+	 font: normal 12px/150% Georgia, Times New Roman, Times, serif; 
+	 background: #fff; 
+	 overflow: hidden; 
+	 border: 2px solid #000000; 
+	 -webkit-border-radius: 15px; 
+	 -moz-border-radius: 15px; 
+	 border-radius: 15px; }
+.data table td, 
+.data table th { 
+padding: 6px 10px; 
+}
+.data table thead th {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF0000), color-stop(1, #FCFCFC) );
+	background:-moz-linear-gradient( center top, #FF0000 5%, #FCFCFC 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0000', endColorstr='#FCFCFC');
+	background-color:#FF0000; 
+	color:#000000; 
+	font-size: 16px; 
+	font-weight: normal; 
+	border-left: /*2px solid #FF0000;*/none; } 
+.data table thead th:first-child 
+{ 
+border: none; 
+}
+.data table tbody td { 
+color: #FF0000; 
+border-left: 1px solid #FF0000;
+font-size: 15px;
+border-bottom: 1px solid #FF0000;
+font-weight: normal; 
+}
+.data table tbody 
+.alt td { 
+background: #EDEDF4; 
+color: #000000; 
+}
+.data table tbody td:first-child { 
+border-left: 1px solid #FF0000; 
+}
+.data table tbody tr:last-child td { 
+border-bottom: 1px solid #000000; 
+}
 
 
