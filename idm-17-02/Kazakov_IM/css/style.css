@@ -101,7 +101,7 @@ text-align: center;
 }
 th, td:first-child {
 background: #AFCDE7;
-color: white;
+color: black;
 padding: 10px 20px;
 }
 th, td {
@@ -116,15 +116,4 @@ th:first-child, td:first-child {
 text-align: left;
 }
 .svag {
-  width: auto;
-
-  
-}
-
-/*.tab {
- broder: 5px groove black !important; 
- text-align: center !important;
- 
-}*/
-
-
+  width: auto;}
