@@ -1,11 +1,11 @@
 html 
 { 
-  background: url(images/fon3.png);
+  background: url(images/0_a6a10_600f8786_orig.gif);
   height: 100%;
 }
 body 
 {
-  background: url(images/0_a6a10_600f8786_orig.gif);
+  background: url(images/fon3.png);
   background-attachment: fixed;
   background-size: cover;
 }
