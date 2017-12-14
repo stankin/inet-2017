@@ -70,9 +70,83 @@
   </div>
   
 <div class="right-column">
-  <h2 align="center";>  <p class="text" onClick="toggle_show('hidden text2')" style="font-size: 20px"> <u  style="font-size: 43px";> Лабораторная работа №3 <br> "Настройка локальной сети передачи данных"</u>  <hr align="center" size="5" width="65%" color="#3399ff">  </p>  </h2> 
-  <div class="subblock" id="hidden text2" style="display: none"> 
-     <span style="color: darkblue; font-size: 16px" > <h2 > <strong> <ol type="1"> <li style="font-size: 33px";> Настройка коммутаторов и маршрутизаторов. </li>  </ol>  </h2>
+  <h2 align="center" ;="">  <p class="text" onclick="toggle_show('hidden text2')" style="font-size: 20px"> <u style="font-size: 43px" ;=""> Лабораторная работа №3 <br> "Настройка локальной сети передачи данных"</u>  </p><hr align="center" size="5" width="65%" color="#3399ff">  <p></p>  </h2> 
+  <div class="subblock" id="hidden text2" style="display: block;"> 
+     <span style="color: darkblue; font-size: 16px"> <h2> <strong> <ol type="1"> <li style="font-size: 33px" ;=""> Настройка коммутаторов и маршрутизаторов. </li>  </ol><div style="font-size: 20px" id="subMenuTip3" class="msg">
+											<p style="font-size: 23px">Цель данной работы - ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрузитацией.</p>
+											<p style="font-size: 23px">Расчет диапазонов подсетей.</p>
+											<p>
+											</p><table>
+												<tbody><tr>
+													<td>_</td><td>LAN A</td><td>LAN B</td><td>LAN C</td>
+												</tr>
+												<tr>
+													<td>_</td><td>67</td><td>13</td><td>675</td>
+												</tr>
+												<tr>
+													<td>Префиксная маска</td><td>/25</td><td>/28</td><td>/22</td>
+												</tr>
+												<tr>
+													<td>Адрес подсети</td><td>192.168.6.0</td><td>172.16.6.0</td><td>10.10.4.0</td>
+												</tr>
+												<tr>
+													<td>Минимальный адрес</td><td>192.168.6.1</td><td>172.16.6.1</td><td>10.10.4.1</td>
+												</tr>
+												<tr>
+													<td>Максимальный адрес</td><td>192.168.6.126</td><td>172.16.6.14</td><td>10.10.7.254</td>
+												</tr>
+												<tr>
+													<td>Broadcast</td><td>192.168.6.127</td><td>172.16.6.15</td><td>10.10.7.255</td>
+												</tr>
+											</tbody></table>
+											<p></p>
+											<p style="font-size: 23px">Адреса устройств.</p>
+											<p>
+											</p><table>
+												<tbody><tr>
+													<td>Устройство</td><td>IP</td><td>Маска</td><td>Шлюз по умолчанию</td>
+												</tr>
+												<tr>
+													<td>PC0</td><td>192.168.6.126</td><td>255.255.255.128</td><td>192.168.6.1</td>
+												</tr>
+												<tr>
+													<td>PC1</td><td>192.168.6.125</td><td>255.255.255.128</td><td>192.168.6.1</td>
+												</tr>
+												<tr>
+													<td>PC2</td><td>172.16.6.14</td><td>255.255.255.240</td><td>172.16.6.1</td>
+												</tr>
+												<tr>
+													<td>PC3</td><td>172.16.6.13</td><td>255.255.255.240</td><td>172.16.6.1</td>
+												</tr>
+												<tr>
+													<td>PC4</td><td>10.10.7.254</td><td>255.255.252.0</td><td>10.10.4.1</td>
+												</tr>
+												<tr>
+													<td>Router0 FastEthernet 0/0</td><td>192.168.6.1</td><td>255.255.255.128</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router0 FastEthernet 0/1</td><td>172.16.6.1</td><td>255.255.255.240</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router0 FastEthernet 0/2</td><td>15.15.6.2</td><td>255.255.255.252</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router1 FastEthernet 0/1</td><td>10.10.4.1</td><td>255.255.252.0</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router1 FastEthernet 0/2</td><td>15.15.6.1</td><td>255.255.255.252</td><td>_</td>
+												</tr>
+											</tbody></table>
+											<p></p>
+                                            <p style="font-size: 23px">Разместить два компьютера и коммутатор, настроить между ними адресацию.</p>
+											<p><img src="images/laba31.bmp" width="100%" height="100%"></p>
+											<p style="font-size: 23px">Добавить еще коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</p>
+											<p><img src="images/laba32.bmp" width="100%" height="100%"></p>
+											
+											
+                                        <a onclick="javascript:document.getElementById('subMenuTip3').style.display='none'" href="javascript:void(0)"></a>
+                                        </div>
+  </strong></h2><strong>
      </strong></span> 
   </div> </div>
   
