@@ -113,7 +113,7 @@ td {
 background: #D8E6F3;
 }
 th:first-child, td:first-child {
-text-align: left;
+text-align: center-left;
 }
 .svag {
   width: auto;}
