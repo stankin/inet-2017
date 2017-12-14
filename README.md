@@ -17,6 +17,11 @@
 
 4. Библиотека: https://github.com/jhupanen/jhupanen.github.io
 
+
+##ИДМ-17-02:
+
+1. Клеточный автомат: https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-C
+
 Примерный образ результата:
 1. Список по группам (коллективная работа):
 
