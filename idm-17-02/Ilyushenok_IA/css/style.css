@@ -28,11 +28,12 @@ body {
 }
 
 table {
-    border-collapse: collapse;
+	border-collapse: collapse;
+	margin: auto;
 }
 
 table, th, td {
-    border: 1px solid black;
+	border: 1px solid black;
 }
 
 div#avatar {
