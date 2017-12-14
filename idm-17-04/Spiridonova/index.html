@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 
     <head>
@@ -6,6 +7,7 @@
         <title></title>
     <link rel="stylesheet" href="css/style.css">
    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     </head>
     <body link="#FA58AC" vlink="#BE81F7" alink="#ff0000" bgcolor="black">
 <style> 
@@ -55,7 +57,32 @@ ul{
   0% {background-position: 0 0;}
   100% {background-position: 50px 0;}
 }
+ #dv {
+ border: 1px solid #000;
+ width: 200px;
+ height: 100px;
+ display: none;
+ }
+
+ #text{
+ 	font-family: 'PT Sans', sans-serif;
+ }
  </style>
+ 	<script>
+function show(nodeId)
+{
+var node = document.getElementById(nodeId);
+if (node)
+{
+if (node.style.display=='none')
+{  node.style.display = 'block'; }
+else
+{  node.style.display = 'none';  }
+}
+}
+
+</script>
+
         <section id="service">
             <div class="container">
                 <div class="row">
@@ -80,6 +107,23 @@ ul{
                                     <li id="active"><a href="http://it.ansee.su/taskmanager" id="button">
                                     Веб-приложение
                                     </a></li>
+                                    <li id="active"><a href="#" onclick="show('div_id')" id="button">
+                                    Лабораторная 3:</a>	
+                                     <div id="div_id" style="display:none">
+                                     <a id="text">Настройка локальной сети передачи данных: Настройка коммутаторов и маршрутизаторов</a>
+                                    <img  width="700" src="1.JPG" alt="1"> 
+                                    <img  width="700" src="2.JPG" alt="1">
+                                    </div>
+                                    </li>
+                                     <li id="active"><a href="#" onclick="show('div_id1')" id="button">
+                                    Вопрос по теме "Интернет-технологии"
+                                    </a>
+                                     <div id="div_id1" style="display:none">
+                                    <a id="text">Что такое IIS?</a><br/>
+                                    <a id="text"> <font size="1">Правильный ответ: проприетарный набор серверов для нескольких служб Интернета от компании Майкрософт.</font></a>
+                                     
+                                    </div>
+                                    </li>
 								  </ul>
 
 								  </div>
