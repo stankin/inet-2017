@@ -296,26 +296,101 @@ function animate()
   <div class="right-column">
   
   
-  <h1><p  onClick="toggle_show('hidden text')";>  <u> Лабораторная работа №1 </u> </p> </h1>
-  <div class="subblock" id="hidden text"  style="display: none" > 
-     <span style="color: #f64a8a; font-size: 25px" > <strong><ul type="disc"> <li style="font-size: 33px";> <a class="hr" href="https://github.com/hellomen1995" target="_blank">Зарегистрироваться</a> на GitHub; </li> <li style="font-size: 33px";> Создать персональную веб страницу-отчет с использованием <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Samko_PE/index.html" target="_blank">html</a>, <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Samko_PE/css" target="_blank">сss</a>, js; </li> <li style="font-size: 33px";> Загрузить персональную веб страницу-отчет в <a class="hr" href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Samko_PE"target="_blank">репозиторий ИДМ-17-02</a> по курсу "Интернет-технологии" на GitHub. </li> </ul> 
+  <h1><p onclick="toggle_show('hidden text')" ;="">  <u> Лабораторная работа №1 </u> </p> </h1>
+  <div class="subblock" id="hidden text" style="display: none"> 
+     <span style="color: #f64a8a; font-size: 25px"> <strong><ul type="disc"> <li style="font-size: 33px" ;=""> <a class="hr" href="https://github.com/hellomen1995" target="_blank">Зарегистрироваться</a> на GitHub; </li> <li style="font-size: 33px" ;=""> Создать персональную веб страницу-отчет с использованием <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Samko_PE/index.html" target="_blank">html</a>, <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Samko_PE/css" target="_blank">сss</a>, js; </li> <li style="font-size: 33px" ;=""> Загрузить персональную веб страницу-отчет в <a class="hr" href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Samko_PE" target="_blank">репозиторий ИДМ-17-02</a> по курсу "Интернет-технологии" на GitHub. </li> </ul> 
      </strong></span> 
   </div> 
   
-	<h1><p onClick="toggle_show('hidden text2')" > <u> Лабораторная работа №2 </u></p> </h1>
+	<h1><p onclick="toggle_show('hidden text2')"> <u> Лабораторная работа №2 </u></p> </h1>
 		<div class="subblock" id="hidden text2" style="display: none"> 
-     <span style="color: #f64a8a; font-size: 25px" > <strong> <ul type="disc"> <li style="font-size: 33px";> Собрать команду для разработки веб-приложения (SPA) и распределить роли; </li> <li style="font-size: 33px">Сделать разметку страницы по макету; </li> <li style="font-size: 33px"> Прописать стили страницы; </li> <li style="font-size: 33px">Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML.</li> </ul>
+     <span style="color: #f64a8a; font-size: 25px"> <strong> <ul type="disc"> <li style="font-size: 33px" ;=""> Собрать команду для разработки веб-приложения (SPA) и распределить роли; </li> <li style="font-size: 33px">Сделать разметку страницы по макету; </li> <li style="font-size: 33px"> Прописать стили страницы; </li> <li style="font-size: 33px">Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML.</li> </ul>
      </strong></span> 
 	</div> 
 	
-	<h1><p onClick="toggle_show('hidden text3')"> <u>Лабораторная работа №3 </u></p> </h1>
-		<div class="subblock" id="hidden text3" style="display: none"> 
-     <span style="color: #f64a8a; font-size: 25px" > <strong><ul type="disc"> <li style="font-size: 33px";> Настройка коммутаторов и маршрутизаторов </li> </ul>
+	<h1><p onclick="toggle_show('hidden text3')"> <u>Лабораторная работа №3 </u></p> </h1>
+		<div class="subblock" id="hidden text3" style="display: block;"> 
+     <span style="color: #f64a8a; font-size: 50px"> <strong><ul type="disc"> <li style="font-size: 33px" ;=""> <article class="container box style3">
+				<header>
+					<h2 style="font-size: 35px">Лабораторная работа №3 "Настройка локальной сети передачи данных"</h2>
+					<p>Цель данной работы - ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрузитацией.</p>
+											<p>Расчет диапазонов подсетей.</p>
+											<p>
+											</p><table>
+												<tbody><tr>
+													<td>_</td><td>LAN A</td><td>LAN B</td><td>LAN C</td>
+												</tr>
+												<tr>
+													<td>_</td><td>400</td><td>900</td><td>3000</td>
+												</tr>
+												<tr>
+													<td>Префиксная маска</td><td>/23</td><td>/22</td><td>/20</td>
+												</tr>
+												<tr>
+													<td>Адрес подсети</td><td>192.168.12.0</td><td>172.16.12.0</td><td>10.10.0.0</td>
+												</tr>
+												<tr>
+													<td>Минимальный адрес</td><td>192.168.12.1</td><td>172.16.12.1</td><td>10.10.0.1</td>
+												</tr>
+												<tr>
+													<td>Максимальный адрес</td><td>192.168.13.254</td><td>172.16.15.254</td><td>10.10.15.254</td>
+												</tr>
+												<tr>
+													<td>Broadcast</td><td>192.168.13.255</td><td>172.16.15.255</td><td>10.10.15.255</td>
+												</tr>
+											</tbody></table>
+											<p></p>
+											<p>Адреса устройств.</p>
+											<p>
+											</p><table>
+												<tbody><tr>
+													<td>Устройство</td><td>IP</td><td>Маска</td><td>Шлюз по умолчанию</td>
+												</tr>
+												<tr>
+													<td>PC0</td><td>192.168.13.254</td><td>255.255.254.0</td><td>192.168.12.1</td>
+												</tr>
+												<tr>
+													<td>PC1</td><td>192.168.13.253</td><td>255.255.254.0</td><td>192.168.12.1</td>
+												</tr>
+												<tr>
+													<td>PC2</td><td>172.16.15.254</td><td>255.255.252.0</td><td>172.16.12.1</td>
+												</tr>
+												<tr>
+													<td>PC3</td><td>172.16.15.253</td><td>255.255.252.0</td><td>172.16.12.1</td>
+												</tr>
+												<tr>
+													<td>PC4</td><td>10.10.15.254</td><td>255.255.240.0</td><td>10.10.0.1</td>
+												</tr>
+												<tr>
+													<td>Router0 FastEthernet 0/0</td><td>192.168.12.1</td><td>255.255.254.0</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router0 FastEthernet 0/1</td><td>172.16.12.1</td><td>255.255.252.0</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router0 FastEthernet 0/2</td><td>15.15.12.2</td><td>255.255.255.252</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router1 FastEthernet 0/1</td><td>10.10.0.1</td><td>255.255.240.0</td><td>_</td>
+												</tr>
+												<tr>
+													<td>Router1 FastEthernet 0/2</td><td>15.15.12.1</td><td>255.255.255.252</td><td>_</td>
+												</tr>
+											</tbody></table>
+											<p></p>
+                                            <p>Разместить два компьютера и коммутатор, настроить между ними адресацию.</p>
+											<p><img src="assets/css/images/laba31.bmp" width="100%" height="100%"></p>
+											<p>Добавить еще коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</p>
+											<p><img src="assets/css/images/laba32.bmp" width="100%" height="100%"></p>
+											
+											
+				</header>
+			</article></li> </ul>
      </strong></span> 
 	</div> 
-	<h1><p onClick="toggle_show('hidden text4')" > <u>Подготовка к экзамену </u></p> </h1>
+	<h1><p onclick="toggle_show('hidden text4')"> <u>Подготовка к экзамену </u></p> </h1>
 		<div class="subblock" id="hidden text4" style="display: none"> 
-     <span style="color: #f64a8a; font-size: 25px" > <strong> <ul type="disc"> <li style="font-size: 33px";> Самооценка прохождения теста по инновациям; </li> <li style="font-size: 33px";> Формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте. </li>  </ul>
+     <span style="color: #f64a8a; font-size: 25px"> <strong> <ul type="disc"> <li style="font-size: 33px" ;=""> Самооценка прохождения теста по инновациям; </li> <li style="font-size: 33px" ;=""> Формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте. </li>  </ul>
      </strong></span> 
 	</div> 
   </div>
