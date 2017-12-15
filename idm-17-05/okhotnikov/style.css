@@ -19,7 +19,7 @@ h1 {
   font-weight: normal; 
   border-bottom: 1px solid #999; 
   padding-bottom: 10px;
-   	
+  text-align: center;
   }
   h3 {
   color: #333; 
@@ -33,7 +33,7 @@ h1 {
 p {
   text-align: justify; 
   font-size: 14pt;
-  margin-left: 60px; 
+  margin-left: 20px; 
   margin-right: 10px; 
   }
 a {
@@ -43,4 +43,10 @@ li {
   text-align: justify; 
   font-size: 14pt;  
   
+   }
+   iframe {
+     height: 400px;
+     width: 600px;
+     border: solid;
+     margin-left: 20px;
    }
