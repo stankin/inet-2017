@@ -47,6 +47,11 @@ p {
   color: #007FFF;
 }
 
+ map {
+        height: 400px;
+        width: 100%;
+ }
+
 .Submenu {
   position: absolute;
   top: 100%;
