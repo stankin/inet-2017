@@ -2,8 +2,7 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="style.css">
-		<style>
-	<!-- убрать на**й в CSS-->		
+    <style>		
        #map {
         height: 400px;
         width: 100%;
@@ -42,12 +41,18 @@
 	</div>
 	<div id="map"></div>
    	<script>
-         function initMap() {
-          var uluru = {lat: -25.363, lng: 131.044};
-          var map = new google.maps.Map(document.getElementById('map'),{zoom: 4,center: uluru});
-          var marker = new google.maps.Marker({position: uluru,map: map});
-        }
-        </script>
+      function initMap() {
+        var stankin = {lat: 55.789745, lng: 37.595052};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: stankin
+        });
+        var marker = new google.maps.Marker({
+          position: stankin,
+          map: map
+        });
+      }
+    </script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap"></script>
 	</body>
 </html>
