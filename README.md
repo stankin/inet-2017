@@ -7,7 +7,7 @@
 
 # Проекты этого семестра:
 
-##ИДМ-17-01:
+## ИДМ-17-01:
 
 1. Игры: https://github.com/Th3Kolbask1n/idb1701d
 
@@ -18,9 +18,12 @@
 4. Библиотека: https://github.com/jhupanen/jhupanen.github.io
 
 
-##ИДМ-17-02:
+## ИДМ-17-02:
 
-1. Клеточный автомат: https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-C
+1. Книга рецептов блюд со всего мира: https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-A
+
+2. Клеточный автомат: https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-C
+
 
 Примерный образ результата:
 1. Список по группам (коллективная работа):
