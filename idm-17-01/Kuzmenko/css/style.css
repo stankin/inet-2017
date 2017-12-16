@@ -233,7 +233,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 4em .5em 5em .5em;
   }
 }
-
 figure {
   margin-bottom: 1.5em;
 }
@@ -362,7 +361,6 @@ figure {
   font-weight: bold;
   text-transform: uppercase;
 }
-
 .chart {
   width: 160px;
   height: 160px;
@@ -447,4 +445,65 @@ figure {
   }
 }
 
+#fh5co-main-lab3 {
+  max-width: 1260px;
+  min-height: 600px;
+  margin: 5em auto 5em auto;
+  position: relative;
+  background: rgba(0, 0, 0, 0.85);
+  overflow: hidden;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-main-lab3 {
+    margin: 2em .5em 5em .5em;
+  }
+}
+
+.fh5co-table-lab3 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  table-layout: auto;
+}
+
+.fh5co-table-lab3 th, .fh5co-table-lab3 td {
+  text-align: justify;
+  width: 30%;
+  height: 35%;
+}
+.fh5co-table-question{
+  margin: 2em;
+  table-layout: auto;
+  padding: 5px;
+  width: 600px;
+}
+
+.fh5co-table-question th, .fh5co-table-question td{
+  margin-top: 20px;
+  padding: 8px;
+}
+
+.fh5co-table-question th{
+  column-width: 25%;
+  text-align: left;
+  vertical-align: top;
+}
+.fh5co-table-question td{
+  column-width: 75%;
+  text-align: left;
+}
+.fh5co-table-question li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.fh5co-quesction-p p{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 /*# sourceMappingURL=style.css.map */

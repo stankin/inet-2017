@@ -1,0 +1,21 @@
+{
+  "name": "react-app",
+  "version": "0.0.0",
+  "description": "Прогноз погоды на 5 дней",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.4.3",
+    "express": "^4.4.5",
+    "node-sass-middleware": "^0.9.8"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "postinstall": "./node_modules/.bin/bower install && ./node_modules/.bin/grunt"
+  },
+  "main": "server.js",
+  "engines": {
+    "node": "4.2.6",
+    "npm": "3.5.2"
+  }
+}

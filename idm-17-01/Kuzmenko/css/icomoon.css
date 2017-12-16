@@ -87,9 +87,6 @@
 .icon-cog:before {
     content: "\f013";
 }
-.icon-gear:before {
-    content: "\f013";
-}
 .icon-trash-o:before {
     content: "\f014";
 }
@@ -1308,6 +1305,9 @@
 .icon-graduation-cap:before {
     content: "\f19d";
 }
+.icon-gears:before {
+    content: "\f19d1";
+}
 .icon-mortar-board:before {
     content: "\f19d";
 }
@@ -2514,4 +2514,3 @@
 .icon-dribbble2:before {
     content: "\e063";
 }
-

@@ -1,0 +1,52 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	
+	<body background="Images/maxresdefault.jpg">
+		<nav>
+			<ul class="Menu">
+				<li><a href=""> Главная	 </a></li>
+				<li><a href=""> Интерактивные карты частей света	 </a>
+					<ul class="Submenu">
+						<li><a href="">Европа</a></li>
+						<li><a href="">Азия</a></li>
+						<li><a href="">Африка</a></li>
+						<li><a href="">Австралия</a></li>
+						<li><a href="">Южная Америка</a></li>
+						<li><a href="">Северная Америка</a></li>
+					</ul>
+				</li>
+				<li><a href="Viktorina.html"> Викторина </a></li>
+				<li><a href=""> О проекте </a></li>
+			</ul>
+		</nav>
+	<div class="checkbox">
+	<form>
+		<p><b>Части света, выделенные на карте</b></p>
+		<p><input type="checkbox" name="EU" value="EU1" checked>Европа<Br>
+		<input type="checkbox" name="AS" value="AS1" checked>Азия<Br>
+		<input type="checkbox" name="AF" value="AF1" checked>Африка<Br> 
+		<input type="checkbox" name="AU" value="AU1" checked>Австралия<Br> 
+		<input type="checkbox" name="SA" value="SA1" checked>Южная Америка<Br>
+		<input type="checkbox" name="NA" value="NA1" checked>Северная Америка</p>
+	</form>
+	</div>
+	<div id="map"></div>
+   	<script>
+      function initMap() {
+        var stankin = {lat: 55.789745, lng: 37.595052};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: stankin
+        });
+        var marker = new google.maps.Marker({
+          position: stankin,
+          map: map
+        });
+      }
+    </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap"></script>
+	</body>
+</html>

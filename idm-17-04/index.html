@@ -35,11 +35,16 @@
 		td, th {
 			vertical-align: top;
 			padding-right: 20px;
-			padding-bottom: 8px;
+			padding-top: 4px;
+			padding-bottom: 4px;
 		}
-
 		th {
 			padding-bottom: 10px;
+			white-space: nowrap;
+		}
+		.automatically td,
+		.automatically a {
+			color: green;
 		}
 		a {
 			color: #007de1;
@@ -86,7 +91,8 @@
 			</td>
 			<td>
 				<h3>Статья</h3>
-				<p>Небольшая статья, прямо или косвенно связанная с интернет-технологиями. </p>
+				<p>Небольшая статья, прямо или косвенно связанная с интернет-технологиями.</p>
+				<p>Прошлогодние статьи не принимаются</p>
 			</td>
 			<td>
 				<h3>Проект (командный / индивидуальный)</h3>
@@ -105,7 +111,7 @@
 				<th>Статья</th>
 				<th>Команда</th>
 				<th>Проект</th>
-				<th>Модуль 1</th>
+				<th>Модуль</th>
 				<th>Модуль 2</th>
 			</tr>
 		</thead>
@@ -127,12 +133,17 @@
 		const createStudents = ({students}) =>
 			students.reduce((all, student) => {
 				const row = document.createElement("tr")
+				if (student.automatically) row.className = "automatically"
 				row.innerHTML = `
-					<td>
-						<a href="${student.studentLink}">${student.studentName}</a>
+					<td>${student.studentName}</td>
+					<td>${!!student.studentLink
+						? `<a href="${student.studentLink}">+</a>`
+						: ""}
 					</td>
-					<td>${student.hasReport ? "+" : ""}</td>
-					<td>${student.hasArticle ? "+" : ""}</td>
+					<td>${student.articleLink
+						? `<a href="${student.articleLink}">+</a>`
+						: ""}
+					</td>
 					<td>
 						${student.team}
 						${student.role ? " (" + student.role +")" : "" }

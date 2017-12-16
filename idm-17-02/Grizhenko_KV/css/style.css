@@ -1,10 +1,11 @@
 html 
-{ 
+{
   height: 100%;
 }
 body 
 {
-  height: 100%;	
+  background-attachment: fixed;
+  background-size: cover;
 }
 .hit-the-floor 
 {
@@ -24,7 +25,7 @@ body
   letter-spacing: normal;
   font-weight: 700;
   text-transform: none;
-  animation: blur .75s ease-out infinite;
+  animation: blur 1s linear infinite;
   text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
 }
 @keyframes blur 
@@ -56,7 +57,8 @@ body
   max-width: 100%;
   min-width: 27em;
   padding: 0em 0em 0em 0em;
-  background: linear-gradient(to top right, #C41E3A, #772953);
+  background: linear-gradient(to top right, #C41E3A, #772953),
+              url(images/0_a6a10_600f8786_orig.gif) 50% 50%;
   border-radius: 4px;
   cursor: default;
   opacity: 0.85;

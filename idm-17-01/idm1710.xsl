@@ -37,6 +37,9 @@
 			</tr>
 			</xsl:for-each>
 		</table>
+		<a href="exam/exam.xml">
+			Вопросы к экзамену
+		</a>
 		</body>
 		</html>
 	</xsl:template>
