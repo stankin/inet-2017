@@ -25,7 +25,7 @@
 2. Клеточный автомат: https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-C
 
 
-Примерный образ результата:
+# Примерный образ результата:
 1. Список по группам (коллективная работа):
 
 http://paul.1gb.ru/stankin/oop/sandbox/
