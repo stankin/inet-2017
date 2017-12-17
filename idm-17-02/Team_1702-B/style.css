@@ -82,3 +82,54 @@ p {
 background-color: #00008B;
 color: white;
 }
+
+!--> Блок для нарнии
+.wrapper {
+	background: url('1.jpg') no-repeat center;
+	margin: 0 auto;
+	height: 600px;
+	width: 400px;
+	border: 2px solid #666;
+	position: relative;
+}
+.door {
+	background: url('2.jpg');
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: right 0.3s linear 0s;
+	border: 2px solid #666;
+}
+.door:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #422d15;
+	top: 50%;
+	right: 10px;
+}
+label {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	-moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+input:checked ~ .door {
+	right: 80%;
+}
+input {
+    margin-top: 180px;
+}
+!--> конец нарнии
