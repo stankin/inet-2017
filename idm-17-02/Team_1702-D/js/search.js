@@ -1,5 +1,5 @@
 $(function(){
-    $.getJSON('https://cejow.github.io/Git_Project/toursinfo.json', function(data) {
+    $.getJSON('https://stankin.github.io/inet-2017/idm-17-02/Team_1702-D/toursinfo.json', function(data) {
             for(var i=0;i<data.countries.length;i++){
                 $('#countries').append('<option value="' + data.countries[i].country + '">' + data.countries[i].country + 
                 '</option>');
@@ -8,7 +8,7 @@ $(function(){
 });
 
 $(function(){
-    $.getJSON('https://cejow.github.io/Git_Project/toursinfo.json', function(data) {
+    $.getJSON('https://stankin.github.io/inet-2017/idm-17-02/Team_1702-D/toursinfo.json', function(data) {
             for(var i=0;i<data.nights.length;i++){
                 $('#nights').append('<option value="' + data.nights[i].night + '">' + data.nights[i].night + 
                 '</option>');
@@ -20,7 +20,7 @@ $(function(){
 function Search() {
 for (var i = document.getElementById('result').getElementsByTagName('tr').length -1; i; i--) {
 	document.getElementById('result').deleteRow(i);}
-	$.getJSON('https://cejow.github.io/Git_Project/toursinfo.json', function(data) {
+	$.getJSON('https://stankin.github.io/inet-2017/idm-17-02/Team_1702-D/toursinfo.json', function(data) {
             for(var i=0;i<data.tours.length;i++){
 			if(data.tours[i].country == $("#countries").val() && data.tours[i].nights == $("#nights").val()){
                 $('#result').append('<tr><td>' + data.tours[i].arrival + '</td><td>' + data.tours[i].tour + 
