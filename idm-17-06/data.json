@@ -12,33 +12,33 @@
             "name" : "Дёмин Степан Евгеньевич",
             "module1" : "0",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Dyomin/index.html",
             "team" : "write your team",
             "role" : "write your role"
         },
         {
             "name" : "Иванников Дмитрий Владимирович",
-            "module1" : "0",
+            "module1" : "45",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
-            "team" : "write your team",
-            "role" : "write your role"
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Ivannikov/index.html",
+            "team" : "Хранители Секретов",
+            "role" : "АД и ПП"
         },
         {
             "name" : "Иванов Алексей Алексеевич",
-            "module1" : "0",
+            "module1" : "50",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
-            "team" : "write your team",
-            "role" : "write your role"
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Ivanov/index.html",
+            "team" : "Mirry",
+            "role" : "ПП и КО"
         },
         {
             "name" : "Карев Илья Вадимович",
-            "module1" : "0",
+            "module1" : "50",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
-            "team" : "write your team",
-            "role" : "write your role"
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Karev/index.html",
+            "team" : "Null team",
+            "role" : "All"
         },
         {
             "name" : "Копий Анна Александровна",
@@ -58,11 +58,11 @@
         },
         {
             "name" : "Куковинец Дмитрий Валерьевич",
-            "module1" : "0",
+            "module1" : "45",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
-            "team" : "write your team",
-            "role" : "write your role"
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Kukovinets/index.html",
+            "team" : "Mirry",
+            "role" : "ГИ и пр."
         },
         {
             "name" : "Ласковый Никита Алексеевич",
@@ -74,11 +74,11 @@
         },
         {
             "name" : "Маслова Вероника Олеговна",
-            "module1" : "0",
+            "module1" : "50",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
-            "team" : "write your team",
-            "role" : "write your role"
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Maslova/index.html",
+            "team" : "Хранители Секретов",
+            "role" : "КО и РП"
         },
         {
             "name" : "Минкашев Дамир Маратович",
@@ -108,7 +108,7 @@
             "name" : "Салоид Владимир Дмитриевич",
             "module1" : "0",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Soloid/index.html",
             "team" : "write your team",
             "role" : "write your role"
         },
@@ -122,11 +122,11 @@
         },
         {
             "name" : "Солодко Алексей Андреевич",
-            "module1" : "0",
+            "module1" : "50",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
-            "team" : "write your team",
-            "role" : "write your role"
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Solodko/index.html",
+            "team" : "Хранители Секретов",
+            "role" : "СП и НИ"
         },
         {
             "name" : "Солодуев Игорь Алексеевич",
@@ -138,11 +138,11 @@
         },
         {
             "name" : "Толчинский Алексей Юрьевич",
-            "module1" : "0",
+            "module1" : "50",
             "module2" : "0",
-            "project" : "https://stankin.github.io/inet-2017/idm-17-06/index.html",
-            "team" : "write your team",
-            "role" : "write your role"
+            "project" : "https://stankin.github.io/inet-2017/idm-17-06/Tolchinski/index.html",
+            "team" : "Хранители Секретов",
+            "role" : "ВН и БА"
         },
         {
             "name" : "Яковлев Андрей Борисович",

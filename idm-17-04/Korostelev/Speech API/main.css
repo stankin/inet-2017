@@ -1,0 +1,14 @@
+#parent {
+	display: table;
+	width: 100%;
+	margin-top: 30vh;
+	height: 60px;
+}
+#child {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+}
+.strong{
+	margin-top: 90px;
+}

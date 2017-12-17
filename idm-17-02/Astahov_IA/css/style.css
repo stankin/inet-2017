@@ -1,0 +1,203 @@
+.numm { 
+    list-style-type: none;
+   }
+   .numm li::before {
+    margin-right: 5px;
+    width: 1em;
+    text-align: right;
+    display: inline-block;
+   }
+   .numm li:nth-child(1)::before { content: '1).'; }
+   .numm li:nth-child(2)::before { content: '2).'; }
+   .numm li:nth-child(3)::before { content: '3).'; }
+   .numm li:nth-child(4)::before { content: '4).'; }
+   .numm li:nth-child(5)::before { content: '5).'; }
+   .numm li:nth-child(6)::before { content: '6).'; }
+   .numm li:nth-child(7)::before { content: '7).'; }
+   .numm li:nth-child(8)::before { content: '8).'; }
+   .numm li:nth-child(9)::before { content: '9).'; }
+   .numm li:nth-child(10)::before { content: '10).';}
+   
+html{
+background:url(https://img2.goodfon.ru/original/1400x1050/e/77/tekstura-tochki-panel.jpg);
+background-repeat:no-repeat;
+background-position: center;
+background-size: cover;
+
+   }
+ .ha{
+  
+  background-image: url(https://p5b4y2t6.ssl.hwcdn.net/game-thumbnail/500/133878-pw2u3xub-v3.jpg);
+  
+  background-size: cover;
+  border-style: inset;
+  border: 5px  double #112;
+  border-radius: 35px;
+  font-size: 20px;
+  text-align: center;
+  margin: auto;
+  width: 1000px;
+
+	 
+ }
+ #pasd
+ {
+	 text-align: center;
+	font-size: 27px;
+	color: black;
+	text-decoration:underline;
+ }
+#pass
+{
+	text-align: center;
+	font-size: 27px;
+}
+#pas
+{
+	text-align: justify;
+	font-size: 27px;
+}
+#par{
+	text-align: center;font-size: 32px;
+	font-weight: bold;
+}
+#que{
+	text-align: center;
+	font-size: 22px;
+	line-height: 1.5;
+}
+a {
+	border-bottom: 2px solid black;
+	color: black;
+	text-decoration: none;
+
+}
+ h1 {
+	 font-family: 'Times New Roman', Times; 
+	 font-style: italic;
+	 font-weight: bold;
+	 font-size: 80px;
+	 text-align: center;
+	 margin-left: auto;
+    margin-right: auto;
+	letter-spacing: 12px;
+	text-shadow: 8px 5px 10px #A9A9A9;
+    width: 18em;
+ }
+ 
+ h2 {
+	 font-family: 'Times New Roman', Times; 
+	 font-style: italic;
+	 font-weight: bold;
+	 font-size: 55px;
+	 text-align: center;
+	  margin-left: auto;
+    margin-right: auto;
+    width: 14em;
+ }
+ 
+ h3 {
+	 font-family: 'Times New Roman', Times; 
+	 font-style: italic;
+	 font-weight: bold;
+	 font-size: 45px;
+	 text-align: center;
+	margin-left: auto;
+    margin-right: auto;
+    width: 805px;
+	
+ }
+ 
+ h4 {
+	text-align: center;
+	font-size: 27px;
+	color: black; 
+	margin-bottom: -15px; 
+	 
+ }
+
+.datagrid table { 
+border-collapse: collapse; 
+text-align: left; 
+width: 100%; } 
+.datagrid {
+	font: normal 12px/150% Georgia, Times New Roman, Times, serif; 
+	background: #fff; 
+	overflow: hidden; 
+	border: 2px solid #000000; 
+	-webkit-border-radius: 15px; 
+	-moz-border-radius: 15px; 
+	border-radius: 15px; }
+.datagrid table td, 
+.datagrid table th { 
+padding: 6px 10px; 
+}
+.datagrid table tbody td { 
+color: #FF0000;
+border-top: 1px solid #FF0000;
+border-left: 1px solid #FF0000;
+font-size: 15px;
+border-bottom: 1px solid #FF0000;
+font-weight: normal; }
+.datagrid table tbody 
+.alt td { 
+background: #EDEDF4; 
+color: #000000; }
+.datagrid table tbody td:first-child { 
+border-left: none; 
+}
+.datagrid table tbody tr:last-child td { 
+border-bottom: 1px solid #FF0000; 
+}
+
+
+.data table { 
+border-collapse: collapse;
+ text-align: center-left; 
+ width: 100%; 
+ } 
+ .data {
+	 font: normal 12px/150% Georgia, Times New Roman, Times, serif; 
+	 background: #fff; 
+	 overflow: hidden; 
+	 border: 2px solid #000000; 
+	 -webkit-border-radius: 15px; 
+	 -moz-border-radius: 15px; 
+	 border-radius: 15px; }
+.data table td, 
+.data table th { 
+padding: 6px 10px; 
+}
+.data table thead th {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #FF0000), color-stop(1, #FCFCFC) );
+	background:-moz-linear-gradient( center top, #FF0000 5%, #FCFCFC 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF0000', endColorstr='#FCFCFC');
+	background-color:#FF0000; 
+	color:#000000; 
+	font-size: 16px; 
+	font-weight: normal; 
+	border-left: /*2px solid #FF0000;*/none; } 
+.data table thead th:first-child 
+{ 
+border: none; 
+}
+.data table tbody td { 
+color: #FF0000; 
+border-left: 1px solid #FF0000;
+font-size: 15px;
+border-bottom: 1px solid #FF0000;
+font-weight: normal; 
+}
+.data table tbody 
+.alt td { 
+background: #EDEDF4; 
+color: #000000; 
+}
+.data table tbody td:first-child { 
+border-left: 1px solid #FF0000; 
+}
+.data table tbody tr:last-child td { 
+border-bottom: 1px solid #000000; 
+}
+
+

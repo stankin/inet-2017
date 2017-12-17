@@ -1,0 +1,44 @@
+﻿table { 
+border: 1px solid black;
+border-collapse: collapse;
+}
+
+td { border: 1px solid black;
+border-collapse;
+}
+th { border: 1px solid black;
+border-collapse;
+}
+
+img { 
+width: 100px; 
+height: 111px;
+display: block;
+left: 570px;
+}
+
+
+h1 { 
+    font-family: Arial, Helvetica, Verdana, sans-serif; /* Гарнитура шрифта */ 
+    font-size: 230%; /* Размер текста */ 
+    font-weight: lighter; /* Светлое начертание */ 
+text-decoration: underline;
+text-align: center;
+   }
+
+h2 {
+text-align: center;
+color: #330000;
+}
+
+h3 {
+color: #330000;
+}
+
+p {
+color: #330000;
+}
+
+ol {
+color: #330000;
+}

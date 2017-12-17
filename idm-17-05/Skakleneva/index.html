@@ -1,24 +1,157 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Тег CITE</title>
-<style> 
-.hide{
-display:none;
-} 
-</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.m…"> </script>
-</head>
-<body> 
-<h3> Бабенко Е.В.</h3>
-<div id="toggle" class="hide"> Персональная страница </div>
-<button onclick="show_div('toggle')">Нажми на кнопку </button>
-<script>
-function show_div(id){
-console.log("test")
-$("#" +id).show()
-}
-</script>
-</body>
+<html title="Личная страница">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<head>
+		<title>Личная страница</title>
+		<script scr="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"> </script>
+		<link rel="stylesheet" type="text/css" href="animate.min.css">
+		<script src="game.js" defer></script>
+		<!-- Main CSS -->
+    	<link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body vlink="#800080" alink="#7777FF">
+		<div class="container">
+			<div class="row">
+                <div class="footer-area footer-white-style">
+					<h4>Лабораторные работы по интернет-технологиям</h4>
+				</div>
+				<h3>Cкакленева Алина</h3>
+				<h3>Студентка группы ИДМ-17-05</h3>	
+			</div>
+		</div>
+		<nav>
+    	<ul>
+     		<li><a href="#lab1">Лабораторная работа №1</a></li>
+      		<li><a href="#lab2">Лабораторная работа №2</a></li>
+      		<li><a href="#lab3">Лабораторная работа №3</a></li>
+      		<li><a href="https://github.com/stankin/inet-2017/tree/master/idm-17-05/Skakleneva">Исходники</a></li>
+      		<li><a href="https://github.com/stankin/inet-2017/wiki">Wiki</a></li>
+   		</ul>
+		</nav>
+		<hr><hr>
+		<div class="content-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div id="lab1" class="wow fadeInUp">
+                        <h3>Лабораторная работа №1 "Экосистема разработки программ с открытым кодом"</h3>
+                        <b>Требования:</b>
+                        <p>Создание персональной страницы-отчета на github и работа с git</p>
+                        <b>Выполнено:</b>
+                        <p>1. Создана персональная страница</p>
+                        <p>2. Создан локальный клон общего репозитория с github</p>
+                        <p>3. На персональную страницу добавлены js и css</p>
+                        <b>Пример JS</b><br>
+                        <code>$(function(){<br>
+						&nbsp;&nbsp;$('.view-source .hide').hide();<br>
+						&nbsp;&nbsp;$a = $('.view-source a');<br>
+						&nbsp;&nbsp;$a.on('click', function(event) {<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;event.preventDefault();<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;$a.not(this).next().slideUp(500);<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;$(this).next().slideToggle(500);<br>
+						&nbsp;&nbsp;});<br>
+						});	<br>
+						</code>
+						<b>Пример CSS</b><br>
+						<code>
+						body,<br>
+						.cta-style-3 h4,<br>
+						.section-heading.startup-heading {<br>
+    					&nbsp;&nbsp;font-family: 'Merriweather', serif;<br>
+						}<br>
+						.hide {<br>
+						&nbsp;&nbsp;font-size: 14;<br>
+						}<br>
+						</code>
+                    </div>
+                </div>
+                <br>
+                <div class="col-sm-4">
+			<div id="lab2" class="wow fadeInUp" data-wow-delay="1.1s">
+			<h3>Лабораторная работа №2 "Разработка простого веб-приложения"</h3>
+			<b>Требования:</b>
+			<p>Проектирование и разработка индивидуального или коллективного веб-приложения с использованием html,css,js + json,xml</p>
+			<b>Выполнено:</b><br>
+			<canvas id="strike" align="center" width="480" height="320">wtf?!</canvas>
+			<script>init()</script>
+			<br>
+			<a href="https://github.com/stankin/inet-2017/blob/master/idm-17-05/Skakleneva/game.js">Ссылка на js-код</a>
+                    </div>
+                </div>
+                <br>
+                <div class="col-sm-4">
+                    <div id="lab3" class="wow fadeInUp" data-wow-delay="1.2s">
+                        <h3>Лабораторная работа №3 "Настройка локальной сети передачи данных"</h3>
+                        <b>Требования:</b>
+                        <p>Настройка коммутаторов и маршрутизаторов</p>
+			    <script type="text/javascript">
+			$(document).ready(function(){
+				$('.view-source .hide').hide();
+				$a = $('.view-source a');
+				$a.on('click', function(event) {
+					event.preventDefault();
+					$a.not(this).next().slideUp(500);
+					$(this).next().slideToggle(500);
+				});
+			});
+		</script>
+                        <div class="view-source">Задание <a href="#">(раскрыть)</a>
+                        	<div class="hide">
+                        		1. Разместить на рабочем поле коммутатор и два компьютера и соединить их <br>
+                        		2. Подключить консольный кабель для настройки оборудования<br>
+                        		3. Настроить адресацию на добавленных компьютерах согласно таблице ниже без шлюза по умолчанию<br>
+                        		4. Выполнить проверку работоспособности сети<br>
+                        		5. Добавить на рабочее поле еще один коммутатор с двумя компьютерами и настроить адресацию из другой подсети<br>
+                        		6. Соединить коммутаторы между собой и проверить работоспособность сети<br>
+                        		7. В случае неработоспособности сети объяснить причины<br>
+                        		8. Добавить маршрутизатор на рабочее поле<br>
+                        		9. Настроить интерфейсы маршрутизатора для существующих подсетей<br>
+                        		10. Проверить работоспособность сети<br>
+                        		11. В случае неработоспособности сети объяснить причины<br>
+                        		12. Указать шлюз по умолчанию и отправить сообщение<br>
+                        		13. Добавить на рабочее поле еще один маршрутизатор<br>
+                        		14. Подключить к нему коммутатор и компьютер<br>
+                        		15. Настроить сетевые настройки согласно таблице ниже<br>
+                        		16. Соединить между маршрутизаторы и настроить между ними сеть с префиксом /30<br>
+                        		17. Проверить работоспособность сети, отправив сообщение сети A в сеть С и из сети В в сеть С<br>
+                        		18. В случае неработоспособности сети объяснить причины<br>
+                        		19. Настроить статическую маршрутизацию между сетями<br>
+                        		20. Настроить на сетевых устройствах пароли для привилегированного режима<br>
+                        		21. Настроить пароли на сетевых устройствах пароли на подключение через консоль и telnet<br>
+                        		22. Установить баннер на сетевое оборудование<br>
+                        		23. Проверить работу удаленного подключения<br>
+                        	</div>
+                        </div>
+			<b>Выполнено:</b><br>
+                        1. На рабочем поле размещены и соединены коммутатор и два компьютера, настроена адресация на добавленных компьюетрах и выполнена проверка работоспособности сети.<br>
+                        <img src="1.PNG"></img><br>
+                        2. Добавлены еще коммутатор с двумя компьютерами, соединены две подсети и настроена адресация.<br>
+                        <img src="2.PNG"></img><br>
+                        3. Добавлен и соединен маршрутизатор, проверена работоспособность сети.<br>
+                        <img src="3.PNG"></img><br>
+                        4. Добавлена и подключена третья подсеть с компьютером, коммутатором и маршрутизатором. Проверена работоспособность всей сети.<br>
+                        <img src="4.PNG"></img><br>
+                    </div>
+                </div>
+                <br>
+                <div class="col-sm-4">
+                    <div id="lab2" class="wow fadeInUp" data-wow-delay="1.4s">
+                        <h3>Подготовка к экзамену</h3>
+                        <b>Требования:</b>
+                        <p>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    	</div>
+    	<div class="footer-area footer-solid-style">
+                    <div class="footer-copyright">© Stankin 2017</div>
+            </div>
+        </div>
+        <script src="wow.min.js"></script>
+		<script>
+    		new WOW().init();
+		</script>
+	</body>
 </html>

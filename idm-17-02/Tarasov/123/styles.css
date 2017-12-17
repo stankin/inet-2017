@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import url("../webfonts/Flow/stylesheet.css");
+@import url("../webfonts/Flow_Bold/stylesheet.css");
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Flow Bold" !important;
+	font-size: 2em;
+}
+.theorypractice {
+	font-family: "Flow Bold" !important;
+	font-size: 1.2em;
+}
+body{
+	font-family: Tahoma, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+}
+
+.tasksquarestyle {
+	list-style:square
+}
+
+h1.title {
+	text-align: center;
+	font-family: "Flow Bold" !important;
+}
+h2.subtitle {
+	text-align: center;
+	font-family: "Flow Bold" !important;
+}
+
+.underheadtext {
+	text-align: center;
+	font-family: "Flow" !important;
+	font-size: medium;
+}
+
+#accordion h3 {
+	font-family: "Flow" !important;
+	font-size: large;
+	margin:0px;
+}
+
+.menulist li
+{
+	list-style-type: none;
+}
+.mainblocktext {
+	font-family: Tahoma, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	text-indent: 1.9em;
+	font-size: 1.2em;
+	text-align:justify;
+}
+
+kbd{
+	font-size:1.5 em;
+}
+
+.back-to-top {
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display:none;
+}
+
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+}
+.needtoknow {
+	font-size: 1.5em;
+	font-weight: bold;
+	font-family: Flow Bold;
+}

@@ -15,59 +15,160 @@
 			font-size: 22px;
 		}
 		h2 {
-			font-size: 18px;
+			font-size: 20px;
 			margin-top: 30px;
+			margin-bottom: 8px;
 		}
-		ul {
-			list-style-type: none;
-			padding-left: 0px;
+		h3 {
+			font-size: 16px;
+			margin: 8px 0;
 		}
-		li:not(:last-child) {
-			margin-bottom: 10px;
+		p {
+			margin: 5px 0;
+			padding: 0;
+		}
+		table {
+			text-align: left;
+			border: none;
+			border-spacing: 0;
+		}
+		td, th {
+			vertical-align: top;
+			padding-right: 20px;
+			padding-top: 4px;
+			padding-bottom: 4px;
+		}
+		th {
+			padding-bottom: 10px;
+			white-space: nowrap;
+		}
+		.automatically td,
+		.automatically a {
+			color: green;
 		}
 		a {
 			color: #007de1;
 			text-decoration: none;
 			border-bottom: 1px solid #cbe6f2;
 		}
+		.tasks {
+			width: 100%;
+			table-layout: fixed;
+		}
+		.table {
+			margin-top: 25px;
+		}
+		.table td:nth-child(2),
+		.table td:nth-child(3),
+		.table td:nth-child(6),
+		.table td:nth-child(7) {
+			text-align: center;
+		}
+		[href=""] {
+			color: #000;
+		}
 		a:hover {
 			color: crimson;
 			border-bottom-color: inherit;
 		}
+
+		@media (max-width: 600px) {
+			.tasks td {
+				display: block;
+			}
+		}
 	</style>
 </head>
 <body>
-	<h1>Список студентов ИДМ-17-04</h1>
-	
-	<h2>Подгруппа 1</h2>
-	<ul>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov">Антипов</a>
-		</li>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov">Блохин</a>
-		</li>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov">Лагутенко</a>
-		</li>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov">Морожевич</a>
-		</li>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov">Печников</a>
-		</li>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov">Саутин</a>
-		</li>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov">Спиридонова</a>
-		</li>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov"></a>
-		</li>
-		<li>
-			<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-04/Antipov">Халиулин</a>
-		</li>
-	</ul>
+	<h1>ИДМ-17-04</h1>
+
+	<h2>Задание</h2>
+	<table class="tasks">
+		<tr>
+			<td>
+				<h3>Личный отчет</h3>
+				<p>index.html в своей папке. В верстке должно быть ФИО, группа, дисциплина и ссылки на новые и прошлогодние проекты и статьи</p>
+			</td>
+			<td>
+				<h3>Статья</h3>
+				<p>Небольшая статья, прямо или косвенно связанная с интернет-технологиями.</p>
+				<p>Прошлогодние статьи не принимаются</p>
+			</td>
+			<td>
+				<h3>Проект (командный / индивидуальный)</h3>
+				<p>Приложение, которое будет выводить данные из публичного источница на страницу.</p>
+				<p>Можно, взамен этого, показать любое сложное приложение, в котором вы разбираетесь.</p>
+			</td>
+		</tr>
+	</table>
+
+	<h2>Сводка</h2>
+	<table class="table">
+		<thead class="table__header">
+			<tr>
+				<th>Студент</th>
+				<th>Отчет</th>
+				<th>Статья</th>
+				<th>Команда</th>
+				<th>Проект</th>
+				<th>Модуль</th>
+				<th>Модуль 2</th>
+			</tr>
+		</thead>
+		<tbody class="table__list">
+		</tbody>
+	</table>
+
+	<script>
+		const loadStudents = () => new Promise((resolve, reject) => {
+			return fetch('results.json')
+				.then(res => res.json())
+				.then(resolve)
+				.catch(err => {
+					console.error(err)
+					reject(reject)
+				})
+		})
+
+		const createStudents = ({students}) =>
+			students.reduce((all, student) => {
+				const row = document.createElement("tr")
+				if (student.automatically) row.className = "automatically"
+				row.innerHTML = `
+					<td>${student.studentName}</td>
+					<td>${!!student.studentLink
+						? `<a href="${student.studentLink}">+</a>`
+						: ""}
+					</td>
+					<td>${student.articleLink
+						? `<a href="${student.articleLink}">+</a>`
+						: ""}
+					</td>
+					<td>
+						${student.team}
+						${student.role ? " (" + student.role +")" : "" }
+					</td>
+					<td>
+						<a href="${student.projectLink}">${student.projectName}</a>
+					</td>
+					<td>${student.module1}</td>
+					<td>${student.module2}</td>
+				`
+				return all.concat(row)
+			}, [])
+
+		const renderStudents = nodes => {
+			const list = document.querySelector(".table__list")
+			nodes.forEach(item => {
+				list.appendChild(item)
+			})
+		}
+
+		loadStudents()
+			.then(createStudents)
+			.then(renderStudents)
+			.catch(console.error)
+
+	</script>
 </body>
 </html>
