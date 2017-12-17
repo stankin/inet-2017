@@ -35,33 +35,18 @@ body {
         background: linear-gradient(to bottom, rgba(125,185,232,0.7) 13%,rgba(125,185,232,0.71) 16%,rgba(41,137,216,0.84) 55%,rgba(41,137,216,0.85) 57%,rgba(32,124,202,0.85) 58%,rgba(30,87,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b37db9e8', endColorstr='#1e5799',GradientType=0 ); /* IE6-9 */
       }
-        tr:nth-child(2n ) {
+        tr:nth-child(2n+1) {
           background: #eee;
         }
         th {
           text-align: left;
         }
           th div{
-            cursor: pointer;
             padding: 20px 0;
             font-weight: bold;
             color: #fff;
             padding-left: 20px;
           }
-
-            .sorting_asc div{
-              background: url(../source/images/sort_asc.png) no-repeat;
-              background-position-y: center;
-            }
-            .sorting div{
-                background: url(../source/images/sort_both.png)no-repeat;
-                background-position-y: center;
-            }
-
-            .sorting_desc div{
-                background: url(../source//images/sort_desc.png)no-repeat;
-                background-position-y: center;
-            }
 
         td {
           padding: 10px
