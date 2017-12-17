@@ -18,7 +18,7 @@
             <script>
                 $.getJSON('data.json', function(data) {
                     $(data.users).each(function(index, item) {
-                      $('#table').append('<tr><td>' + item.firstName + '</td><td>' + item.groupname + '</td><td>' + item.role + '</td><td><a href="' + item.linkForPage + '">личная страниц</a></td><td>' + item.markFirstModule + '</td><td><a href="' + item.linkProject + '">проект</a></td><td>' + item.markSecondModule + '</td></tr>');
+                      $('#table').append('<tr><td>' + item.firstName + '</td><td>' + item.groupname + '</td><td>' + item.role + '</td><td><a href="' + item.linkForPage + '">личная страница</a></td><td>' + item.markFirstModule + '</td><td><a href="' + item.linkProject + '">проект</a></td><td>' + item.markSecondModule + '</td></tr>');
                     });
                 });
             </script>
