@@ -38,7 +38,17 @@ function scroll() {
 // -->
 </script>
 	<body background="Images/maxresdefault.jpg" onLoad="scroll()">
-		
+		<a href='#none' onclick='slide_dox()'>открыть див</a>
+ 
+<div id='box' style='padding:10px; display:none;'>
+текст
+</div>
+ 
+<script type="text/javascript" language="javascript">
+function slide_dox(){
+    $('#box').slideToggle(300);
+}
+</script>
 		<nav>
 			<ul class="Menu">
 				<li><a href=""> Главная	 </a></li>
