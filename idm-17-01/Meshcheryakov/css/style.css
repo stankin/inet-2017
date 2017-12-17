@@ -1,0 +1,110 @@
+#ris {
+	width: 100%;
+	height: 100px;
+	background: url(../images/ris.jpg) no-repeat center top
+}
+
+#fon2 {
+	width: 800px;
+	height: 490px;
+	margin: 0 auto;
+	padding: 30px 10px;
+	background: url(../images/fon2.png) no-repeat center center;
+}
+
+#content {
+	float: left;
+	width: 630px;
+	height: 410px;
+	padding: 40px 20px;
+}
+
+#sidebar {
+	float: right;
+	width: 130px;
+	height: 490px;
+}
+
+#menu {
+	clear: both;
+	width:  59px;
+	height: 485px;
+	margin: 5px 7px 0 4px;
+}
+
+#ris2 {
+	width: 100%;
+	height: 80px;
+	background: url(../images/ris2.jpg) no-repeat
+}
+
+#age {
+	clear: both;
+	width: 800px;
+	height: 80px;
+	padding: 20px 10px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.scroll {
+    width: 630px;
+    height: 410px;
+    overflow: auto;
+    /* overflow-x: hidden; */
+    position: relative;
+    clear: left;
+}
+
+.scrollContainer div.panel {
+    width: 630px;
+    height: 410px;
+	overflow: hidden;
+}
+
+ul.navigation {
+    list-style: none;
+    margin: 0 12px 0 0;
+    padding: 15px 0;
+}
+
+ul.navigation li {
+    margin: 0;
+	padding: 0;
+}
+
+ul.navigation a {
+	display: block;
+	width: 90px;
+	height: 38px;
+	padding-left: 28px;
+	line-height: 38px;
+	margin-bottom: 10px;
+    text-decoration: none;
+	color: #333;
+	font-weight: 700;
+	background: url(../images/menu.png) no-repeat left center
+}
+
+ul.navigation a:hover, ul.navigation a.selected { background:url(../images/menu_hover.png) no-repeat left center }
+ul.navigation a:focus {
+    outline: none;
+}
+
+.scrollButtons {
+    position: absolute;
+    top: 300px;
+    cursor: pointer;
+}
+
+.scrollButtons.left {
+    left: 0
+}
+
+.scrollButtons.right {
+    right: 0
+}
+
+.hide {
+    display: none;
+}

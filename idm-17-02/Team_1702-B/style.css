@@ -1,0 +1,79 @@
+html { 
+height: 100%; 
+}
+
+body {
+background-attachment: fixed;
+background-size: cover;
+}
+
+nav {
+  width: 621px;
+  margin: 0 auto 30px;
+}
+
+.menu {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.Menu > li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+
+a {
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: -5px 3px 25px #0095B6;
+  border-radius: 10px;
+  background-color: #0047AB;
+  outline: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+}
+
+li {
+  text-shadow: 3px 3px 10px red, -3px -3px 10px yellow;
+  color: #007FFF;
+  font-size: 15px;
+}
+
+p {
+  color: #007FFF;
+}
+
+ map {
+        height: 400px;
+        width: 100%;
+ }
+
+.Submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: -5px 3px 25px #00008B;
+  border-radius: 10px;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  display: none;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.Menu li:hover .Submenu {
+	display: block;
+	}
+
+.Submenu > li > a {
+background-color: #00008B;
+color: white;
+}

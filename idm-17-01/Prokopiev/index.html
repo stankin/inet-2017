@@ -1,0 +1,335 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Личная страница</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+<body>
+    <div id="main">
+        <section id="top" class="one dark cover">
+            <div class="container">
+                <h2 class="alt">Личная страница</h2>
+                <p>Прокопьев Максим, ИДМ 17-01</p>
+                <a href="#portfolio" class="button scrolly">Отчет по лабораторной</a>
+            </div>
+        </section>
+        <section id="portfolio" class="two">
+            <div class="container">
+                <h2 class="highlight">Задачи</h2>
+                <div class="textmain">
+                    <ol>
+                        <li>
+                            <p>Лабораторная работа №1 <a href="#lab1" class="scrolly">Экосистема разработки программ с открытым кодом":</a></p>
+                            <p>Создание персональной страницы-отчета на github и работа с git</p>
+                        </li>
+                        <li>
+                            <p>Лабораторная работа №2 <a href="#lab2" class="scrolly">"Разработка простого веб-приложения":</a></p> 
+                            <p>Проектирование и разработка индивидуального или коллективного веб-приложения</p>
+                        </li>
+                        <li>
+                            <p>Лабораторная работа №3 <a href="#lab3" class="scrolly">"Настройка локальной сети передачи данных":</a></p> 
+                            <p>Настройка коммутаторов и маршрутизаторов</p>
+                        </li>
+                        <li>
+                            <p><a href="#lab4" class="scrolly">Подготовка к экзамену</a>:</p>
+                            <p>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab1" class="three">
+            <div class="container">
+                <h2>Лабораторная работа #1</h2>
+                <h3>Работа с Github</h3>
+                <div class="textmain">
+                    <p class="highlight">Задачи:</p>
+                    <ol>
+                        <li>
+                            <p>Регистрация на GitHub.</p>
+                            <p><a href="https://github.com/Premor">Страница пользователя</a></p>
+                        </li>
+                        <li>
+                            <p>Создать персональную веб страницу-отчет с использованием html, css, js.</p>
+                            <p><a href="https://stankin.github.io/inet-2017/idm-17-01/Prokopiev/index.html">Персональная страница-отчет</a>.</p>
+                            <p>Чутка js'a ниже, вводить цифры больше 0 и меньше 1.000.000:
+                                <ul>ввод
+    <input type="text" id="bleat"> 
+    <script>
+    var input = document.getElementById('bleat')//.body.children[1].children[0].children[0];
+    //var output = document.body.ul.li.children[1];
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', 'number.json', false);
+    xhr.send();
+    if (xhr.status != 200) {
+    alert( xhr.status + ': ' + xhr.statusText ); 
+    } else {
+    var data = JSON.parse(xhr.responseText); // responseText -- текст ответа.
+    }
+    /*var data = {
+    "number":[0,1,2,3,4,5,6,7,8,9],
+    "length":[1,2,3,4],
+    "name_n":["zero","one","two","three","four","five","six","seven","eight","nine"],
+    "name_n2":["ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eightteen","nineteen"],
+    "name_l":["name_n","ten","hundred","thousand"],
+    "name_l2":["undefeined","ten","twenty","thirty","forty","fifty","sixty","seventy","eighty","ninety"]
+}*/
+
+    //document.getElementById('test').innerHTML =JSON.stringify(xhr.response);
+    input.oninput = function() {
+        var output=document.getElementById('result');
+        output.innerHTML="";
+        var length=input.value.length;
+        if (parseInt(input.value)){
+            outp(parseInt(input.value),data,output)
+                    }
+        else
+            output.innerHTML="noup"
+        
+    };
+    function outp(input,data,output){
+            next=-1;
+            var buf_o="";
+            var nextt=1;
+            for (buf_input=input;nextt!=0 ;buf_input=nextt,next=-2 ) {
+                nextt=0;
+                
+                if (buf_input>=1000&&buf_input<1000000){
+                    if(Math.floor(buf_input/1000)!=0){
+                        nextt=Math.floor(buf_input/1000);
+                        next=1;
+                    }
+
+                    if (next==-2)
+                        buf_o+=data.name_l[3]+" ";
+                    else
+                    output.innerHTML+=data.name_l[3]+" ";
+                    buf_input=buf_input%1000;
+                    
+
+                    
+                }
+                if ( buf_input >=100 && buf_input<1000){
+                    
+                    if (next==-2){
+                        buf_o+=data.name_n[Math.floor(buf_input/100)]+" "
+                        buf_o+=data.name_l[2]+" ";
+                    }
+                    else{
+                    output.innerHTML+=data.name_n[Math.floor(buf_input/100)]+" ";
+                    output.innerHTML+=data.name_l[2]+" ";}
+                    buf_input=buf_input%100;
+                    
+            }
+                if (buf_input >=20 && buf_input<100){
+                    if (next==-2){
+                        
+                        buf_o+=data.name_l2[Math.floor(buf_input/10)];
+                    
+                    }
+                    else
+                    output.innerHTML+=data.name_l2[Math.floor(buf_input/10)];
+                    buf_input=buf_input%10;
+                    if (buf_input!=0)
+                        if (next==-2)
+                            buf_o+="-"
+                        else
+                        output.innerHTML+="-";
+                    
+                }
+                if (buf_input >=10 && buf_input<20){
+                    if (next==-2)
+                        buf_o+=data.name_n2[buf_input%10]+" ";
+                    else 
+                    output.innerHTML+=data.name_n2[buf_input%10]+" ";
+                    if (next!=-1&&next!=-2)
+                        continue;
+                    else
+                        break;
+                }
+                if (buf_input >0 && buf_input<10&&length!=1){
+                    if (next==-2)
+                        buf_o+=data.name_n[buf_input]+" ";
+                    else 
+                    output.innerHTML+=data.name_n[buf_input]+" ";
+                    if (next!=-1&&next!=-2)
+                        continue;
+                    else
+                        break;
+                }
+                if (buf_input ==0&&length!=1){
+                    
+                    if (next!=-1&&next!=-2)
+                        continue;
+                    else
+                        break;
+                }
+                if (buf_input >=0 && buf_input<10&&length==1){
+                    if (next==-2)
+                        buf_o+=data.name_n[buf_input]+" ";
+                    else 
+                    output.innerHTML+=data.name_n[buf_input]+" ";
+                    if (next!=-1&&next!=-2)
+                        continue;
+                    else
+                        break;
+                }
+                
+                
+        }
+        
+        output.innerHTML=buf_o+output.innerHTML;
+    }
+    </script></ul>
+    <ul>результат:
+    <span id="result"></span></ul>
+                            </p>
+                        </li>
+                        <li>
+                            <p>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.</p>
+                            <p><a href="https://github.com/stankin/inet-2017/tree/master/idm-17-01/Prokopiev">Папка с исходными кодами в репозитории</a>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab2" class="five">
+            <div class="container">
+                <h2>Лабораторная работа #2</h2>
+                <h3>Разработка простого веб-приложения</h3>
+                <div class="textmain">
+                    <p class="highlight">Задачи:</p>
+                    <ol>
+                        <li>
+                            <p>Собрать команду для разработки приложения и распределить роли.</p>
+                            <p><a href="https://stankin.github.io/inet-2017/idm-17-01/index.xml">Страница команд</a>.</p>
+                        </li>
+                        <li>
+                            <p> Прописать функционал и реализовать возможность работы с приложением в <a href=https://github.com/pindos11/2017_17-01_project>проекте</p>
+                        </li>
+                        <li>
+                            <p>Прописать стили страницы</p>
+                            <a></a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab3" class="four">
+            <div class="container">
+				<h2>Лабораторная работа #3</h2>
+				<h3>Настройка локальной сети передачи данных</h3>
+				<div class="textmain">
+					<p class="highlight">Задачи:</p>
+					<p>Настройка коммутаторов и маршрутизаторов.</p>
+					<h3>Отчет по лабораторной работе</h3>
+					<p>Цель лабораторной работы: ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.</p>
+					<p>Исходные данные:</p>
+					 <table border="1">
+                        <tr><th></th><th>LAN A</th><th>LAN B</th><th>LAN C</th></tr>
+                        <tr><td>Количество хостов в сети</td><td>5</td><td>965</td><td>1024</td></tr>
+                        <tr><td>Маска</td><td>/29</td><td>/22</td><td>/21</td></tr>
+                        <tr><td>Subnet</td><td>192.168.2.0</td><td>172.16.0.0</td><td>10.10.0.0</td></tr>
+                        <tr><td>IP адрес первого хоста:</td><td>192.168.2.1</td><td>172.16.0.1</td><td> 10.10.0.1</td></tr>
+                        <tr><td>IP адрес последнего хоста</td><td>192.168.2.6</td><td>172.16.3.254</td><td>10.10.7.254</td></tr>
+                        <tr><td>Broadcast</td><td>192.168.2.7</td><td>172.16.3.255</td><td>10.10.7.255</td></tr>
+                    </table>
+
+                    <ol>
+                    	<li>Разместить на рабочем поле коммутатор и два компьютера и соединить их</li>
+                    	<img src="images/Screenshot_1.png">
+                    	<li>Настроить адресацию на добавленных компьютерах</li>
+                    	<p>PC0:</p>
+                    	<img src="images/Screenshot_2.png">
+                    	<p>PC1:</p>
+                    	<img src="images/Screenshot_3.png">
+                    	<li>Выполнить проверку работоспособности сети</li>
+                    	<img src="images/Screenshot_4.png">
+                    	<li>Добавить на рабочее поле еще один коммутатор с двумя компьютерами и настроить адресацию из другой подсети</li>
+                    	<img src="images/Screenshot_5.png">
+                    	<p>PC2:</p>
+                    	<img src="images/Screenshot_6.png">
+                    	<p>PC3:</p>
+                    	<img src="images/Screenshot_7.png">
+                    	<li>Соединить коммутаторы между собой и проверить работоспособность сети</li>
+                    	<li>В случае неработоспособности сети объяснить причины</li>
+                    	<p>В сети А и сети B разная адресация, поэтому необходимо использовать маршрутизатор - устройство, предназначенное для объединения сегментов сети.</p>
+                    	<li>Добавить маршрутизатор на рабочее поле</li>
+                    	<img src="images/Screenshot_8.png">
+                    	<li>Настроить интерфейсы маршрутизатора для существующих подсетей</li>
+                    	<img src="images/Screenshot_9.png">
+                    	<img src="images/Screenshot_10.png">
+                    	<li>Проверить работоспособность сети</li>
+                    	<img src="images/Screenshot_11.png">
+                    	<li>В случае неработоспособности сети объяснить причины</li>
+                    	<p>На компьютерах одной сети отсутствует информация о маршрутах к другой сети, поэтому необходимо указать шлюз по умолчанию.</p>
+                    	<li>Указать шлюз по умолчанию и отправить сообщение</li>
+                    	<img src="images/Screenshot_12.png">
+                    	<li>Добавить на рабочее поле еще один маршрутизатор</li>
+                    	<li>Подключить к нему коммутатор и компьютер</li>
+                    	<li>Настроить сетевые настройки согласно таблице ниже</li>
+                    	<li>Соединить между маршрутизаторы и настроить между ними сеть с префиксом /30</li>
+                    	<img src="images/Screenshot_13.png">
+                    	<img src="images/Screenshot_14.png">
+                    	<li>Проверить работоспособность сети, отправив сообщение сети A в сеть С и из сети В в сеть С</li>
+                    	<img src="images/Screenshot_15.png">
+                    	<li>В случае неработоспособности сети объяснить причины</li>
+                    	<p>На маршрутизаторах не настроена статическая маршрутизация.</p>
+                    	<li>Настроить статическую маршрутизацию между сетями</li>
+                    	<p>От Router1 к Lan C:</p>
+                    	<img src="images/Screenshot_16.png">
+                    	<p>От Router0 к Lan A, от Router0 к Lan B:</p>
+                    	<img src="images/Screenshot_17.png">
+                    	<img src="images/Screenshot_18.png">
+                    	<li>Настроить на сетевых устройствах пароли для привилегированного режима</li>
+                    	<p>enable password mypassword</p>
+                    	<li>Настроить пароли на сетевых устройствах пароли на подключение через консоль и telnet</li>
+                    	<p>Пароль на подключение через консоль</p>
+                    	<img src="images/Screenshot_19.jpg">
+                    	<p>Пароль на подключение через telnet:</p>
+                    	<img src="images/Screenshot_20.jpg">
+                    	<li>Установить баннер на сетевое оборудование</li>
+                    	<img src="images/Screenshot_21.jpg">
+                    	<li>Проверить работу удаленного подключения</li>
+                    	<img src="images/Screenshot_22.jpg">
+                    </ol>
+
+				</div>
+			</div>
+        </section>
+
+        <section id="lab4" class="two">
+            <div class="container">
+                <h2>Подготовка к экзамену</h2>
+                <div class="textmain">
+                    <p>Выберете вариант в котором указаны особенности относящиеся к протоколу TCP и не относящиеся к протоколу UDP:</p>
+                    <ol>
+                        <li>Не требует заранее установленного соединения</li>
+                        <li>Решает проблемы с надежностью, дублированием, порядком пакетов</li>
+                        <li>Является протоколом транспортного уровня</li>
+                        <li>Выгодно использовать для серверов, отвечающих на небольшие запросы от огромного числа клиентов</li>
+                    </ol>
+                    <p>Правильный вариант 2
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer">
+        <ul class="copyright">
+            <li>2017</li>
+        </ul>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+

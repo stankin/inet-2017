@@ -1,0 +1,107 @@
+/* Default CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+body {
+    font-weight: 300;
+    line-height: 2;
+}
+body,
+.cta-style-3 h4,
+.section-heading.startup-heading {
+    font-family: 'Merriweather', serif;
+}
+input:focus {outline: none}
+.logo,
+.mainmenu,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button[type="submit"],
+input[type="submit"],
+.bordered-btn,
+.boxed-btn.cta-btn,
+.boxed-btn.cta-btn-style-2,
+.ticker,
+.section-heading,
+.single-service-item.no-padding-right .readmore-btn,
+.service-box-style-4,
+.service-box-style-5 .readmore-btn,
+.login-form-style-1 button,
+.login-form-style-2 button,
+.coming-soon p,
+.coming-soon p span {
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+a {
+    transition: .2s
+}
+img {
+    max-width: 100%;
+    height: auto
+}
+a:hover,
+a:focus {
+    text-decoration: none
+}
+h3 {
+    line-height: 35px;
+}
+
+.content-block {
+    padding: 80px 0;
+    position: relative;
+}
+.content-block.gray-bg {
+    background-color: #f8fafd;
+}
+.content-block.no-padding {
+    padding: 0;
+}
+.hide
+{
+    font-size: 14;
+}
+
+/* Backgrounds CSS */
+
+.footer-area {
+    background-image: url(footer-bg.jpg)
+}
+
+/* Footer CSS */
+.footer-area.footer-solid-style:after {
+    display: none;
+}
+.footer-area.footer-solid-style {
+    background: #333333 none repeat scroll 0 0;
+}
+.footer-area.footer-solid-style,
+.footer-area.footer-solid-style a {
+    color: #ccc;
+}
+.footer-area.footer-solid-style h3,
+.footer-area.footer-solid-style h4 {
+    color: #fff;
+}
+
+.footer-area.footer-white-style:after {
+    display: none;
+}
+.footer-area.footer-white-style {
+    background: #222222 none repeat scroll 0 0;
+}
+.footer-area.footer-white-style h3,
+.footer-area.footer-white-style h4 {
+    color: #fff;
+}

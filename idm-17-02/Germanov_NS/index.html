@@ -1,0 +1,171 @@
+<html>
+
+<head>
+    <title>Германов Н.С.</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">
+            <img src="images/stankin_rus_om_col.jpg" width="100px">
+            <h1 style="margin: 0px;">Личная страница Германова Никиты</h1>
+        </div>
+
+        <div>
+            <p> "Лабораторные работы" </p>
+            
+            <button class="accordion"><img src="images/fire.png" width="33px">Лабораторная работа №1: Экосистема разработки программ с открытым кодом.
+            </button>
+            <div class="panel">
+                <h3> Задачи: </h3>
+                <ul type="circle">
+                    <li>Зарегистрироваться на <a href="https://github.com/">github.com</a></li>
+                    <li>Создать персональную веб страницу-отчет с использованием <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Germanov_NS/index.html">html</a>, <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Germanov_NS/css">css</a>. <a href="https://stankin.github.io/inet-2017/idm-17-02/Germanov_NS/index.html">Личная страница</a></li>
+                    <li>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.(Папка с исходными кодами в репозитории)<a href="https://stankin.github.io/inet-2017/idm-17-02/Germanov_NS/index.html">Личная страница</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div>
+            <button class="accordion"><img src="images/fire.png" width="33px">Лабораторная работа №2: Разработка простого веб-приложения.</button>
+            <div class="panel">
+                <h3> Требования к приложению: </h3>
+                <ul type="circle">
+                    <li>Приложение должно представлять из себя клеточный автомат, вариацию игры "Жизнь", но с несколькими видами клеток, каждый со своими уникальными правилами.</li>
+                    <li>Приложение должно обеспечивать динамическую загрузку файлов конфигураций в формате JSON с помощью асинхронных запросов в серверу.</a></li>
+                    <li>Приложение должно быть локализовано на русский и бирманский (мьянманский) языки.</a></li>
+                </ul>
+                <h3> Задачи: </h3>
+                <ul type="circle">
+                    <li>Собрать команду для разработки веб-приложения (SPA) и распределить роли <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-C">Страница команды</a></li>
+                    <li>Создать персональную страницу по макету. Исходный код для html: <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Team_1702-C/index.html">html code</a></li>
+                    <li>Прописать стили страницы. Исходный код для css<a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Team_1702-C/css/style.css">css code</a></li>
+                    <li>Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML. Исходный код на <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Team_1702-C/js/script.js">JavaScript</a> и JSON (<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-C/config">конфигурации</a>, <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-C/language">переводы</a>).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <button class="accordion"><img src="images/fire.png" width="33px">Лабораторная работа №3: Настройка локальной сети передачи данных. </button>
+            <div class="panel">
+                				<h2> Настройка коммутаторов и маршрутизаторов. </h2> </a>
+				
+					<ul>
+						 Цель данной работы – ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.
+		        <b><p><center class="lab">Расчет диапазонов подсетей.</center></p></b>
+			<p>
+			<table border="3" align="center">
+			<tr>
+				<td rowspan="2"></td><td><b>LAN A</b></td><td><b>LAN B</b></td><td><b>LAN C</b></td>
+			</tr>
+			<tr>
+				<td>137</td><td>30</td><td>37</td>
+			</tr>
+			<tr>
+				<td><b>Префиксная маска</b></td><td>/26</td><td>/25</td><td>/22</td>
+			</tr>
+			<tr>
+				<td><b>Адрес подсети</b></td><td>192.168.7.0</td><td>172.16.5.0</td><td>10.10.7.0</td>
+			</tr>
+			<tr>
+				<td><b>Минимальный адрес</b></td><td>192.168.7.1</td><td>172.16.5.1</td><td>10.10.5.1</td>
+			</tr>
+			<tr>
+				<td><b>Максимальный адрес</b></td><td>192.168.7.62</td><td>172.16.5.126</td><td>10.10.9.254</td>
+			</tr>
+			<tr>
+				<td><b>Broadcast</b></td><td>192.168.7.63</td><td>172.16.5.127</td><td>10.10.9.255</td>
+			</tr>
+	                </table>
+			</p>
+		        <b><p><center>Адреса устройств.</center></p></b>
+			<p>
+		        <table border="3" align="center">
+			<tr>
+				<td><b>Устройство</b></td><td><b>IP</b></td><td><b>Маска</b></td><td><b>Шлюз по умолчанию</b></td>
+			</tr>
+			<tr>
+				<td>PC0</td><td>192.168.7.12/td><td>255.255.255.192</td><td>192.168.7.1</td>
+			</tr>
+			<tr>
+				<td>PC1</td><td>192.168.7.11</td><td>255.255.255.192</td><td>192.168.7.1</td>
+			</tr>
+			<tr>
+				<td>PC2</td><td>172.16.7.126</td><td>255.255.255.128</td><td>172.16.7.1</td>
+			</tr>
+			<tr>
+				<td>PC3</td><td>172.16.7.125</td><td>255.255.255.128</td><td>172.16.7.1</td>
+			</tr>
+			<tr>
+				<td>PC4</td><td>10.10.7.254</td><td>255.255.252.0</td><td>10.10.7.1</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 0/0</td><td>192.168.7.1</td><td>255.255.255.192</td><td>–</td>
+			</tr>
+			<tr>
+			        <td>Router0 FastEthernet 1/0</td><td>172.16.7.1</td><td>255.255.255.128</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 6/0</td><td>15.15.7.1</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 0/0</td><td>15.15.7.2</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 1/0</td><td>10.10.7.1</td><td>255.255.252.0</td><td>–</td>
+			</tr>
+			</table>
+			</p>
+                                 <b><p><center>1. Разместить два компьютера и коммутатор, настроить между ними адресацию.</center></p><b>
+				 <p align="center"><img src="images/1.png" width="70%" height="70%" /></p>
+				 <b><p><center>2. Добавить еще один коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</center></p><b>
+				 <p align="center"><img src="images/2.png" width="70%" height="70%" /></p>
+				 <b><p><center>3. Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</center></p><b>
+				 <b><p><center>4. Установить баннер на сетевое оборудование: banner motd [баннер]</center></p><b>
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <button class="accordion"><img src="images/fire.png" width="33px">Подготовка к экзамену. </button>
+            <div class="panel">
+                <h3> Задачи: </h3>
+                <ul type="circle">
+                    <li>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие).</a></li>
+		<h2> Вопрос: </h2> 
+		<h3>Какой уровень модели OSI надежно и точно отвечает за регулирование потока информации от источника к получателю?</h3>
+		<li> Прикладной</li>
+					<li> Представительский </li>
+					<li> Сеансовый </li>
+					<li> Транспортный </li>
+					<li> Сетевой</li>
+					<li> Канальный </li>
+					<li> Физический </li>
+		<h2> Ответ: Транспортный </h2> 
+		<h3>Информация взята из книги "Cisco CCNA. Учебная программа 1 и 2. Вспомогательное руководство".</h3>
+		<h3>Подробное описание транспортного уровня было приведено в указанной книге: Транспортный уровень (transport layer) сегментирует данные передающей станции и вновь собирает их в одно целое на принимающей стороне. Границу между транспортным уровнем и уровнем сеанса связи можно рассматривать как границу междупротоколами приложений и протоколами передачи данных. В то время как уровни приложений, представления данных и сеанса связи занимаются аспектами коммуникаций, которые связаны с работой приложений, нижние четыре уровня решают вопросы транспортировки данных по сети. Транспортный уровень пытается обеспечить службу передачи данных таким образом, чтобы скрыть от верхних уровней детали процесса передачи данных. В частности, задачей транспортного уровня является обеспечение надежности передачи данных между двумя рабочими станциями.</h3>
+		<h3> Исходя из вышенаписанного, именно транспортный уровень надёжно и точно отвечает за регулирование потока информации от источника к получателю. </h3>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() { 
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -3,25 +3,26 @@
   <head>   
     <meta charset="UTF-8">      
     <meta name="viewport" content="width=device-width, initial-scale=1" />      
-    <link rel="stylesheet" type="text/css" href="css/style.css">   
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/clock.js"></script>
     <title>Гриженко К. В.</title>     
   </head>
-  <body class="is-loading" background="images/fon2.png">	  
+  <body background="images/fon3.png" OnLoad="show3()">
 <script> 
-document.body.className='fade'; 
+document.body.className='fade';
 </script>
-      <div id="main">              
-        <header>
+      <div id="main">     
+        <header>	
+  <p align="right"><img src="images/cb.gif" name="a"><img src="images/cb.gif" name="b"><img src="images/colon.png" name="c"><img src="images/cb.gif" name="d"><img src="images/cb.gif" name="e"><img src="images/colon.png" name="f"><img src="images/cb.gif" name="g"><img src="images/cb.gif" name="h"><img src="images/cam.png" name="j"></p>
 	<div class="hit-the-floor">ГРИЖЕНКО КИРИЛЛ ВАДИМОВИЧ</div>	
 		<h2>ИДМ-17-02</h2>
 		<center><img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif">&nbsp;&nbsp;&nbsp;<img src="images/zvezda-animatsionnaya-kartinka-0148.gif"></center>
-		<br /><br />
-		<div class="area">Лабораторные работы:</div>
+		 <img src="http://img-fotki.yandex.ru/get/4104/ivanpobeda.4f/0_186c6_de2ef37f_orig.jpg" hspace="50" align="left"><img src="http://img-fotki.yandex.ru/get/4006/ivanpobeda.4f/0_186c4_2f4d8157_orig.jpg" hspace="50" align="right"><p vertical-align:bottom><div class="area">Лабораторные работы:</div></p>
 	      </header>
-	      <br />
-	      <div class="accordion">      
-	   <li>	      
-		  <b>ЛАБОРАТОРНАЯ РАБОТА №1: ЭКОСИСТЕМА РАЗРАБОТКИ ПРОГРАММ С ОТКРЫТЫМ КОДОМ</b>
+	      <br /><br />
+	      <div class="accordion"> 
+		 <li>     
+		  <font size="5"><b>ЛАБОРАТОРНАЯ РАБОТА №1: ЭКОСИСТЕМА РАЗРАБОТКИ ПРОГРАММ С ОТКРЫТЫМ КОДОМ</b></font>
 		  <a onclick="javascript:document.getElementById('subMenuTip1').style.display='block'" href="javascript:void(0)">
 		  <br>Создание персональной страницы-отчёта на github и работа с git</a>
 	      <div id="subMenuTip1" class="msg" style="display:none;">
@@ -31,13 +32,14 @@ document.body.className='fade';
                  <br>3. Загрузить персональную веб страницу-отчёт в <a class="hr" href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Grizhenko_KV" target="_blank">репозиторий</a> ИДМ-17 по курсу «Интернет-технологии» на GitHub.
                  <br><input type="button" value="Свернуть" class="btn" a onclick="javascript:document.getElementById('subMenuTip1').style.display='none'" href="javascript:void(0)"/></p>
 		 </div>
-          </li>
+	        </li>
 	  <nobr><img src="images/liniya-animatsionnaya-kartinka-0533.gif"><img src="images/liniya-animatsionnaya-kartinka-0533.gif"></nobr>
 	         <li>
-		   <b>ЛАБОРАТОРНАЯ РАБОТА №2: РАЗРАБОТКА ПРОСТОГО ВЕБ-ПРИЛОЖЕНИЯ</b>
-		  <a onclick="javascript:document.getElementById('subMenuTip2').style.display='block'" href="javascript:void(0)">   
-                 <br>Проектирование и разработка индивидуального или коллективного веб-приложения (SPA) с использованием html, css, js + json, xml</a>
+                 <font size="5"><b>ЛАБОРАТОРНАЯ РАБОТА №2: РАЗРАБОТКА ПРОСТОГО ВЕБ-ПРИЛОЖЕНИЯ</b></font>
+		  <a onclick="javascript:document.getElementById('subMenuTip2').style.display='block'" href="javascript:void(0)">
+                 <br>Проектирование и разработка индивидуального или коллективного веб-приложения (SPA) с использованием html, css, js+json, xml</a>
 	         <div id="subMenuTip2" class="msg" style="display:none;">
+	         <div style="position:absolute; right:0%; top:0px;"><img src="http://webo4ka.ru/Ucoz5/animirovannaja_vetochka_na_sajt.gif" border="0" /></div>
                  Требования к приложению:
                  <br>1.
                  <br>2.
@@ -47,33 +49,125 @@ document.body.className='fade';
                  <br>1. <a class="hr" href="https://stankin.github.io/inet-2017/idm-17-02/index.html" target="_blank">Собрать</a> команду для разработки веб-приложения (SPA) и распределить роли;
                  <br>2. <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Grizhenko_KV" target="_blank">Сделать</a> разметку страницы по макету. <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Grizhenko_KV/index.html" target="_blank">Исходный код</a>;
                  <br>3. <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Grizhenko_KV/css/style.css" target="_blank">Прописать</a> стили страницы;
-                 <br>4. Прописать JavaScript-функционал и реализовать возможность чтения JSON/XML.
+                 <br>4. <a class="hr" href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Grizhenko_KV/js/clock.js" target="_blank">Прописать</a> JavaScript-функционал и реализовать возможность чтения JSON/XML.
                <br>Результат: <a class="hr" href="https://stankin.github.io/inet-2017/idm-17-02/index.html">SPA-приложение</a>
 		<br><input type="button" value="Свернуть" class="btn" a onclick="javascript:document.getElementById('subMenuTip2').style.display='none'" href="javascript:void(0)"/></p>
 		   </div>  
             </li>
            <nobr><img src="images/liniya-animatsionnaya-kartinka-0533.gif"><img src="images/liniya-animatsionnaya-kartinka-0533.gif"></nobr>
 	    <li>   
-	    <b>ЛАБОРАТОРНАЯ РАБОТА №3: НАСТРОЙКА ЛОКАЛЬНОЙ СЕТИ ПЕРЕДАЧИ ДАННЫХ</b>
+		 <font size="5"><b>ЛАБОРАТОРНАЯ РАБОТА №3: НАСТРОЙКА ЛОКАЛЬНОЙ СЕТИ ПЕРЕДАЧИ ДАННЫХ</b></font>
 		 <a onclick="javascript:document.getElementById('subMenuTip3').style.display='block'" href="javascript:void(0)">
             <br>Настройка коммутаторов и маршрутизаторов</a>
 	     <div id="subMenuTip3" class="msg" style="display:none;">
-             Отчёт по лабораторной работе
+             Цель данной работы – ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.
+		        <b><p><center>Расчет диапазонов подсетей.</center></p></b>
+			<p>
+			<table border="3" align="center">
+			<tr>
+				<td rowspan="2"></td><td><b>LAN A</b></td><td><b>LAN B</b></td><td><b>LAN C</b></td>
+			</tr>
+			<tr>
+				<td>323</td><td>13</td><td>11</td>
+			</tr>
+			<tr>
+				<td><b>Префиксная маска</b></td><td>/23</td><td>/28</td><td>/28</td>
+			</tr>
+			<tr>
+				<td><b>Адрес подсети</b></td><td>192.168.8.0</td><td>172.16.8.0</td><td>10.10.8.0</td>
+			</tr>
+			<tr>
+				<td><b>Минимальный адрес</b></td><td>192.168.8.1</td><td>172.16.8.1</td><td>10.10.8.1</td>
+			</tr>
+			<tr>
+				<td><b>Максимальный адрес</b></td><td>192.168.9.254</td><td>172.16.8.14</td><td>10.10.8.14</td>
+			</tr>
+			<tr>
+				<td><b>Broadcast</b></td><td>192.168.9.255</td><td>172.16.8.15</td><td>10.10.8.15</td>
+			</tr>
+	                </table>
+			</p>
+		        <b><p><center>Адреса устройств.</center></p></b>
+			<p>
+		        <table border="3" align="center">
+			<tr>
+				<td><b>Устройство</b></td><td><b>IP</b></td><td><b>Маска</b></td><td><b>Шлюз по умолчанию</b></td>
+			</tr>
+			<tr>
+				<td>PC0</td><td>192.168.9.253</td><td>255.255.254.0</td><td>192.168.8.1</td>
+			</tr>
+			<tr>
+				<td>PC1</td><td>192.168.9.252</td><td>255.255.254.0</td><td>192.168.8.1</td>
+			</tr>
+			<tr>
+				<td>PC2</td><td>172.16.8.13</td><td>255.255.255.240</td><td>172.16.8.1</td>
+			</tr>
+			<tr>
+				<td>PC3</td><td>172.16.8.14</td><td>255.255.255.240</td><td>172.16.8.1</td>
+			</tr>
+			<tr>
+				<td>PC4</td><td>10.10.8.14</td><td>255.255.255.240</td><td>10.10.8.1</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 0/0</td><td>192.168.8.1</td><td>255.255.254.0</td><td>–</td>
+			</tr>
+			<tr>
+			        <td>Router0 FastEthernet 1/0</td><td>172.16.8.1</td><td>255.255.255.240</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 6/0</td><td>15.15.8.2</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 0/0</td><td>15.15.8.1</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 1/0</td><td>10.10.8.1</td><td>255.255.255.240</td><td>–</td>
+			</tr>
+			</table>
+			</p>
+                                 <p>1. Разместить два компьютера и коммутатор, настроить между ними адресацию.</p>
+				 <p align="center"><img src="images/PC0 and PC1.png" width="75%" height="75%" /></p>
+				 <p>2. Добавить еще один коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</p>
+				 <p align="center"><img src="images/All.png" width="75%" height="75%" /></p>
+				 <p>3. Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
+				 <p>4. Установить баннер на сетевое оборудование: banner motd [баннер]</p>
 	     <br><input type="button" value="Свернуть" class="btn" a onclick="javascript:document.getElementById('subMenuTip3').style.display='none'" href="javascript:void(0)"/></p>
 	     </div>
             </li>
             <nobr><img src="images/liniya-animatsionnaya-kartinka-0533.gif"><img src="images/liniya-animatsionnaya-kartinka-0533.gif"></nobr>
            <li>
-	    <b>ПОДГОТОВКА К ЭКЗАМЕНУ:</b>
+	   <font size="5"><b>ПОДГОТОВКА К ЭКЗАМЕНУ:</b></font>
             <br>1. Самооценка прохождения теста по инновациям;
-            <br>2. Формулировка одного вопроса по теме «Интернет-технологии» в одной из форм, встречающихся в тесте.
+	    <a onclick="javascript:document.getElementById('subMenuTip4').style.display='block'" href="javascript:void(0)">
+            <br>2. Формулировка одного вопроса по теме «Интернет-технологии» в одной из форм, встречающихся в тесте.</a>
+            <div id="subMenuTip4" class="msg" style="display:none;">
+	    <div style="position:absolute; right:0%; top:0px;"><img src="images/fb59a40079d0.gif"></div>
+	    Какой атрибут тега ВОDY позволяет изменять цвет «активных» гиперссылок?
+            <br>а. CОLОR
+            <br>б. VLINK
+            <br>в. АLINK
+            <br>г. ТEXТ
+	    <br><a onclick="javascript:document.getElementById('subMenuTip5').style.display='block'" href="javascript:void(0)"><b>Ответ:</b></a>
+	    <div id="subMenuTip5" class="msg" style="display:none;">в. ALINK
+	    <br><br><input type="button" value="Свернуть" class="btn" a onclick="javascript:document.getElementById('subMenuTip5').style.display='none'" href="javascript:void(0)"/></div>
+	    <br>Данный вопрос взят с сайта <a href=http://www.intuitu.net/taxonomy/term/1/0?page=6>http://www.intuitu.net/</a>.<br>Формирование вопроса позволяет проверить знания по основным понятиям языка HTML, необходимые для дальнейшего изучения и работы с ним.<br>Вопрос сформулирован в форме «выбор одного» для проверки знаний учащегося об основных понятиях данной темы.
+	    <br><br><input type="button" value="Свернуть" class="btn" a onclick="javascript:document.getElementById('subMenuTip4').style.display='none'" href="javascript:void(0)"/>    
             </li>
-  </div>
- <script>  
-setTimeout(function()
+            <img src="images/10.gif" align="left"><img src="http://bestgif.su/_ph/8/2/652541867.gif" align="center" width="200" border="0"></a><img alt="sani 3 350х120 (350x120, 29Kb)" align="right" height="120" src="http://img0.liveinternet.ru/images/attach/c/7/95/372/95372908_sani_3_350h120.gif" width="350" />	   
+  </div> 
+	</div>
+	 </div>
+<script> 
+ setTimeout(function()
 { 
  document.body.className='appear'; 
 }, 0); 
-</script> 
+</script>
+<script>
+if ('addEventListener' in window) {
+    					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+    					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    				}
+</script>
   </body> 
  </html>

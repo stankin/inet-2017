@@ -1,0 +1,113 @@
+.container {
+	width:91.666%;
+	margin:auto;
+	background:#FFDEAD;
+	height:"768";
+}
+
+#name {
+	text-align:center;
+	background:#C50000;
+	border-radius:25px;
+	margin-top:20px;
+	margin-bottom: 30px;
+}
+
+#nameText {
+	color: #FFFDEF;
+	font-family: Dusha v5;
+}
+
+
+#labs {
+	border-radius:25px;
+}
+
+#lab1 {
+	background:#E70000;
+	text-align:center;
+	height: 250px;
+	margin:10px;
+}
+
+#lab2 {
+	background:#A30000;
+	text-align:center;
+	height: 250px;
+	margin:10px;
+}
+
+#lab3 {
+	background:#A30000;
+	text-align:center;
+	height: 250px;
+	margin:10px;
+}
+
+#lab4 {
+	background:#E70000;
+	text-align:center;
+	height: 250px;
+	margin:10px;
+}
+
+#rightAnswer {
+	color: black;
+}
+
+LI {
+	color: #F1F1F1;
+	font-family: Dusha v5;
+}
+
+.cols {
+	float:left;
+}
+
+.col-12 {
+	width:100%;
+}
+
+.col-11 {
+	width:91.666%;
+}
+
+.col-10 {
+	width:83.333%;
+}
+
+.col-9 {
+	width:75%;
+}
+
+.col-8 {
+	width:66.666%;
+}
+
+.col-7 {
+	width:58.333%;
+}
+
+.col-6 {
+	width:50%;
+}
+
+.col-5 {
+	width:41.666%;
+}
+
+.col-4 {
+	width:33.333%;
+}
+
+.col-3 {
+	width:25%;
+}
+
+.col-2 {
+	width:16.666%;
+}
+
+.col-1 {
+	width:8.333%;
+}
