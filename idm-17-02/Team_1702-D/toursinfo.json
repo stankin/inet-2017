@@ -1,0 +1,54 @@
+{
+"tours":[
+    {"arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"arrival":"24.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"arrival":"25.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"arrival":"26.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"arrival":"27.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"arrival":"28.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"arrival":"29.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Santa Sophia Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"arrival":"24.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
+":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"43819"}
+]
+}
+
+{
+    "users": [{
+        "id" : 1,
+        "name": "Bill Gates",
+        "age": 43
+    }, {
+        "id" : 2,
+        "name": "Sergey Brin",
+        "age": 33
+    }, {
+        "id" : 3,
+        "name": "Larry Page",
+        "age": 34
+    }]
+}
+
+
+{
+    "cities": [{
+        "id" : 1,
+        "city": "Великобритания"
+    }, {
+        "id" : 2,
+        "city": "Китай"
+    }, {
+        "id" : 3,
+        "city": "Россия"
+    }]
+}
