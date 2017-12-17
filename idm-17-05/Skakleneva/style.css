@@ -68,9 +68,8 @@ h3 {
 }
 
 img {
-    display: block;
-    margin: auto;
-    width: 40%;
+    max-width: 100%;
+    height: auto
 }
 
 /* Backgrounds CSS */
