@@ -71,6 +71,19 @@
             <div class="reports_left__description">
               Справа расоложены отчеты по каждой лабораторной работе, выбрав нужную просто щелкните по ней и откроется отчет.
             </div>
+            <div class="reports_left__title">
+              Вопрос к экзамену
+            </div>
+            <div class="reports_left__description">
+              <ol>
+                Сколько параметров можно передать функции?
+                <li>1</li>
+                <li>2</li>
+                <li>сколько угодно</li>
+                <li>а зачем что-то передаватьв функцию?</li>
+                <li>максимум 1023</li>
+              </ol>
+            </div>
         </div>
         <div class="reports_right" id="reports">
           <div class="reports__description_list">
@@ -128,6 +141,7 @@
                   <ul>
                   <li>Пройти тесты</li>
                   <li>Придумать вопросы</li>
+                  <li>Ответ на вопрос - 3</li>
                 </ul>
                 </div>
             </div>
@@ -135,8 +149,145 @@
         </div>
         </div>
       </div>
+        <div id="container">
+    
+    <!-- start SlidesJS slideshow -->
+    <div id="slides">
+        <img src="img/set.png" alt="Slide 1">
+        <img src="img/ping1.png" alt="Slide 1">
+        <img src="img/characters.png" alt="Slide 1">
+        <table class="description_PC"> 
+            <tbody>
+              <tr>
+                <th> Устройство </th>
+                <th> IP </th>
+                <th> Mask </th>
+                <th> Default gateway </th>
+              </tr>
+              <tr> 
+                <td> PC0 </td>
+                <td> 192.168.4.35 </td>
+                <td> 255.255.255.224 </td>
+                <td> 192.138.1.33 </td>
+              </tr>
+              <tr>
+                <td> PC1 </td>
+                <td> 192.168.4.34 </td>
+                <td> 255.255.255.224</td>
+                <td> 192.168.4.33 </td>
+              </tr>
+              <tr>  
+                <td> PC2 </td> 
+                <td> 172.16.4.3 </td>
+                <td> 255.255.255.0 </td>
+                <td> 172.16.4.1 </td>
+              </tr>
+              <tr>  
+                <td> PC3 </td> 
+                <td> 172.16.4.2 </td>
+                <td> 255.255.255.240 </td>
+                <td> 172.16.4.1 </td>
+              </tr>
+              <tr>  
+                <td> PC4 </td> 
+                <td> 10.10.4.2 </td>
+                <td> 255.255.255.0 </td>
+                <td> 10.10.1.1 </td>
+              </tr>
+              <tr>
+                <td> Router0 FastEthernet 0/0 </td>
+                <td> 172.16.4.1 </td>
+                <td> 255.255.255.0 </td>
+                <td> ---- </td>
+              </tr>
+              <tr>
+                <td> Router0 FastEthernet 1/0 </td>
+                <td> 192.168.4.33 </td>
+                <td> 255.255.255.224 </td>
+                <td> ---- </td>
+              </tr>
+              <tr>
+                <td> Router0 Serial2/0 </td>
+                <td> 15.15.4.2 </td>
+                <td> 255.255.255.252 </td>
+                <td> ---- </td>
+              </tr>
+              <tr>
+                <td> Router1 FastEthernet 0/0 </td>
+                <td> 10.10.4.1 </td>
+                <td> 255.255.255.0 </td>
+                <td> ---- </td>
+              </tr>
+              <tr>
+                <td> Router1 Serial 2/0 </td>
+                <td> 15.15.4.1 </td>
+                <td> 255.255.255.252 </td>
+                <td> ---- </td>
+              </tr>
+            </tbody>
+          
+          </table>
+    </div>
+    <!-- end SlidesJS  slideshow -->
+    
+    <!-- Example play/stop controls -->
+    <a href="#" class="controls">Play</a>
+    
+    <!-- Example slide count -->
+    <p class="current_slide"></p>
+  </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/slides.js"></script>
+
+  <script>
+    /*
+      Get the curent slide
+    */
+    function currentSlide( current ) {
+      $(".current_slide").text(current + " of " + $("#slides").slides("status","total") );
+    }
+    
+    $(function(){
+      /*
+        Initialize SlidesJS
+      */
+      $("#slides").slides({
+        navigateEnd: function( current ) {
+          currentSlide( current );
+        },
+        loaded: function(){
+          currentSlide( 1 );
+        }
+      });
+      
+      /*
+        Play/stop button
+      */
+      $(".controls").click(function(e) {
+        e.preventDefault();
+        
+        // Example status method usage
+        var slidesStatus = $("#slides").slides("status","state");
+        
+        if (!slidesStatus || slidesStatus === "stopped") {
+
+          // Example play method usage
+          $("#slides").slides("play");
+
+          // Change text
+          $(this).text("Stop");
+        } else {
+          
+          // Example stop method usage
+          $("#slides").slides("stop");
+          
+          // Change text
+          $(this).text("Play");
+        }
+      });
+    });
+  </script>
     <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
     <script type="text/javascript" src="js/wow.js"></script>
     <script type="text/javascript" src="js/owl.carousel.js"></script>
