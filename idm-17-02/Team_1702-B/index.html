@@ -77,7 +77,19 @@ function scroll() {
         <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap">
         </script>
-			
+		
+
+<a href='#none' onclick='slide_dox()'>открыть див</a>
+ 
+<div id='box' style='padding:10px; display:none;'>
+текст
+</div>
+ 
+<script type="text/javascript" language="javascript">
+function slide_dox(){
+    $('#box').slideToggle(300);
+}
+</script>	
    </div> 
 
      </body>
