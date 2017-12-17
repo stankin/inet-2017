@@ -29,10 +29,6 @@ h6 {
 a {
     transition: .2s
 }
-img {
-    max-width: 100%;
-    height: auto
-}
 a:hover,
 a:focus {
     text-decoration: none
