@@ -41,9 +41,16 @@
 		<li><a href="https://kereat.github.io/Cowboys-games/">Опубликовать проект</a> на каком-либо ресурсе</li>
 		<li>Подготовить презентацию проекта</li>
 		</ol>
-		<p id="par1"></p>
+		<body> 	
+		<p id="par1">После нажатия на кнопку в данном поле будет отображено содержимое файла testfile.txt.</p>
+		<input id="but1" type="button" value="Запросить файл" />
 		<script type="text/javascript">   
-     		$("#par1").load("prewiew.html");
+			$(document).ready(function(){
+
+   			$("#but1").click(function(){
+     		$("#par1").load("testfile.txt");
+   			})
+			});
 		</script>
 		<br>
 		<br>
