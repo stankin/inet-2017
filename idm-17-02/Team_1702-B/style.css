@@ -130,6 +130,6 @@ input:checked ~ .door {
 	right: 80%;
 }
 input {
-    margin-top: 500px;
+    margin-top: 0px;
 }
 
