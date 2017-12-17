@@ -254,14 +254,28 @@ function slide_dox(){
 </div>
 
 <script type="text/javascript" language="javascript">
-function slide_dox(){
+function slide_door(){
     $('#box').slideToggle(300);
 }
 </script>
 		
 	</form>
 	</div>
-
+<a href='#none' onclick='slide_door()'>Отправиться в нарнию</a>
+ 
+<div id='box' style='padding:10px; display:none;'>
+<div class="wrapper">
+	<input type="checkbox" id="check">
+	<div class="door"></div>
+	<label for="check"></label>
+</div>
+</div>
+ 
+<script type="text/javascript" language="javascript">
+function slide_door(){
+    $('#box').slideToggle(300);
+}
+</script>
 
      </body>
 </html>
