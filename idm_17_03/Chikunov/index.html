@@ -1,67 +1,86 @@
 <html>
 	<head>
-		<title>111</title>
-		 <script></script>
-		 <link rel="stylesheet" href="css/fon.css">
-     <link rel="stylesheet" href="css/table.css">
+		<title>Отчёт по курсу «Интернет-технологии»</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/fon.css">
+     	<link rel="stylesheet" href="css/table.css">
 	</head>
 
 	<body>
-<div class="layer1">
-<div class="layer2">
-<br>
-<br>
-<br>
-<p>Чикунов Никита Сергеевич</p>
-<p>ИДМ-17-03</p></div>
+		<div class="layer1">
+		<div class="layer2">
+		<br>
+		<br>
+		<br>
+		<p>Чикунов Никита Сергеевич</p>
+		<p>ИДМ-17-03</p></div>
 
-<div class="center"><h2>Лабораторная работа №1</h2>
-<p>ЭКОСИСТЕМА РАЗРАБОТКИ ПРОГРАММ С ОТКРЫТЫМ КОДОМ</p>  
-<p>Создание персональной страницы-отчета на GitHub и работа с git.</p></div> 
+		<div class="center"><h2>Лабораторная работа №1</h2>
+		<p>ЭКОСИСТЕМА РАЗРАБОТКИ ПРОГРАММ С ОТКРЫТЫМ КОДОМ</p>  
+		<p>Создание персональной страницы-отчета на GitHub и работа с git</p></div> 
 
-<ol><span>Задачи:</span>
-<li>Зарегистрироваться на GitHub. <a href="https://github.com/Kereat">Страница пользователя</a></li>
-<li>Создать персональную <a href="">веб страницу-отчет</a> с использованием html, css, js. Исходный код на <a href="https://github.com/Kereat/inet-2017/blob/master/idm_17_03/Chikunov/index.html">index.html</a> и <a href="https://github.com/Kereat/inet-2017/tree/master/idm_17_03/Chikunov/css">css</a>.</li>
-<li>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub. <a href="https://github.com/Kereat/inet-2017/tree/master/idm_17_03/Chikunov">Папка с исходными кодами</a> в репозитории.</li>
-</ol>
+		<ol><span>Задачи:</span>
+		<li>Зарегистрироваться на GitHub. <a href="https://github.com/Kereat">Страница пользователя</a></li>
+		<li>Создать персональную веб страницу-отчет с использованием html и css. Исходный код <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-03/Chikunov/index.html">index.html</a> и <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-03/Chikunov/css">css</a>.</li>
+		<li>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub. <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-03/Chikunov">Папка с исходными кодами</a> в репозитории.</li>
+		</ol>
 
-<br>
-<br>
-<br>
+		<br>
+		<br>
+		<br>
 
-<div class="center"><h2>Лабораторная работа №2</h2>
-<p>РАЗРАБОТКА ПРОСТОГО ВЕБ-ПРИЛОЖЕНИЯ</p>
-<p>Проектирование и разработка индивидуального или коллективного веб-приложения (SPA) <br> с использованием HTML, CSS, JavaScript + JSON/XML.</p></div> 
+		<div class="center"><h2>Лабораторная работа №2</h2>
+		<p>РАЗРАБОТКА ПРОСТОГО ВЕБ-ПРИЛОЖЕНИЯ</p>
+		<p>Проектирование и разработка индивидуального или коллективного веб-приложения (SPA) <br> с использованием HTML, CSS, JavaScript</p></div> 
 
-<ol><span>Требования к приложению:</span>
-<li></li>
-<li></li>
-<li></li>
-</ol>
+		<ol><span>Задачи:</span>
+		<li>Собрать команду для разработки веб-приложения (SPA) и распределить роли.</li>
+		<li>Прописать стили страницы. <a href="https://github.com/Kereat/Cowboys-games/tree/master/css">Исходный код</a> на CSS.</li>
+		<li>Прописать <a href="https://github.com/Kereat/Cowboys-games/tree/master/js">JavaScript-функционал.</a></li>
+		<li>Выложить <a href="https://github.com/Kereat/Cowboys-games">исходники кода</a> проекта в репозиторий</li>
+		<li><a href="https://kereat.github.io/Cowboys-games/">Опубликовать проект</a> на каком-либо ресурсе</li>
+		<li>Подготовить презентацию проекта</li>
+		</ol>
+		<p id="par1">После нажатия на кнопку в данном поле будет показана презентация</p>
+		<input id="but1" type="button" value="Показать презентацию" />
+		<script type="text/javascript">   
+			$(document).ready(function(){
 
-<ol><span>Задачи:</span>
-<li>Собрать команду для разработки веб-приложения (SPA) и распределить роли.</li>
-<li>Прописать стили страницы. Исходный код на CSS.</li>
-<li>Прописать JavaScript-функционал.</li>
-</ol>
+   			$("#but1").click(function(){
+     		$("#par1").load("prewiew.html");
+   			})
+		});
+		</script>
 
-<br>
-<br>
-<br>
+		<br>
+		<br>
+		<br>
 
-<div class="center"><h2>Лабораторная работа №3</h2>
-<p>НАСТРОЙКА ЛОКАЛЬНОЙ СЕТИ ПЕРЕДАЧИ ДАННЫХ</p>
-<p>Настройка коммутаторов и маршрутизаторов</p></div>
+		<div class="center"><h2>Лабораторная работа №3</h2>
+		<p>НАСТРОЙКА ЛОКАЛЬНОЙ СЕТИ ПЕРЕДАЧИ ДАННЫХ</p>
+		<p>Настройка коммутаторов и маршрутизаторов</p></div>
+		<ol><span>Задачи:</span>
+		<li>Соединить коммутаторы между собой и проверить работоспособность сети</li>
+		<li>Настроить интерфейсы маршрутизатора для существующих подсетей</li>
+		<li>Соединить маршрутизаторы и настроить между ними сеть </li>
+		<li>Настроить статическую маршрутизацию между сетями</li>
+		</ol>
 
-<p>Отчет по лабараторной работе №3</p>
+		<br>
+		<br>
+		<br>
 
-<br>
-<br>
-<br>
+		<div class="center"><h2>Подготовка в экзамену</h2></div>
+		<ol><span>В каком пункте заданный цвет отличен от красного или допущена ошибка?</span>
+		<li>color: red</li>
+		<li>color: #ff0000</li>
+		<li>color: #f00</li>
+		<li>color: hsl( 300, 0%, 0%)</li>
+		<li>color: hsla(0, 100%, 50%, 0.5)</li>
+		<li>color: rgb(255, 0, 0)</li>
+		<li>color: rgba(255, 0, 0, 1)</li>
+		</ol>
 
-<div class="center"><h2>Подготовка в экзамену</h2></div>
-<p>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</p>
-
-   </div>
+		</div>
 	</body>
 </html>
