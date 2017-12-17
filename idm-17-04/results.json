@@ -8,7 +8,7 @@
 		"role": "",
 		"articleLink": false,
 		"module1": "40",
-		"module2": ""
+		"module2": "50"
 	}, {
 		"studentName": "Анисимов",
 		"studentLink": "https://stankin.github.io/inet-2017/idm-17-04/Anisimov",
@@ -78,8 +78,8 @@
 		"studentName": "Воейков",
 		"studentLink": "https://stankin.github.io/inet-2017/idm-17-04/Voeikov",
 		"team": "",
-		"projectName": "",
-		"projectLink": "",
+		"projectName": "Змейка",
+		"projectLink": "https://stankin.github.io/inet-2017/idm-17-04/Voeikov/snake.html",
 		"role": "",
 		"articleLink": false,
 		"module1": "30",
@@ -175,8 +175,9 @@
 		"projectLink": "https://github.com/saygutina/Internet-Technology",
 		"role": "IT-консультант и эксперт",
 		"articleLink": false,
+		"automatically": true,
 		"module1": "40",
-		"module2": ""
+		"module2": "50"
 	}, {
 		"studentName": "Саутин",
 		"studentLink": "https://stankin.github.io/inet-2017/idm-17-04/Sautin",
@@ -206,8 +207,9 @@
 		"projectLink": "https://github.com/saygutina/Internet-Technology",
 		"role": "Backend-разработчик и реализатор",
 		"articleLink": false,
+		"automatically": true,
 		"module1": "40",
-		"module2": ""
+		"module2": "50"
 	}, {
 		"studentName": "Старостин",
 		"studentLink": "",
@@ -269,6 +271,6 @@
 		"role": "",
 		"articleLink": false,
 		"module1": "26",
-		"module2": ""
+		"module2": "25"
 	}]
 }
