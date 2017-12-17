@@ -12,6 +12,11 @@ nav {
   margin: 0 auto 30px;
 }
 
+#map {
+        height: 400px;
+        width: 100%;
+ }
+
 .menu {
   list-style: none; 
   margin: 0;
