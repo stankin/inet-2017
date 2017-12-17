@@ -83,7 +83,7 @@ background-color: #00008B;
 color: white;
 }
 
-!--> Блок для нарнии
+
 .wrapper {
 	background: url('1.jpg') no-repeat center;
 	margin: 0 auto;
@@ -132,4 +132,4 @@ input:checked ~ .door {
 input {
     margin-top: 180px;
 }
-!--> конец нарнии
+
