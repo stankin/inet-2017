@@ -1,29 +1,175 @@
-{
-"tours":[
-    {"arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
-    {"arrival":"24.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
-    {"arrival":"25.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
-    {"arrival":"26.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
-    {"arrival":"27.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
-    {"arrival":"28.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
-    {"arrival":"29.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"40884"}, 
-    {"arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"43819"}, 
-    {"arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Santa Sophia Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"43819"}, 
-    {"arrival":"24.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul), "food
-":"BB (Breakfast)", "room/accommodation":"Standard / 2 ADL", "price":"43819"}
-]
-}
+
 
 {
+    "cities": [{
+        "id" : 1,
+        "city": "Москва"
+    }, {
+        "id" : 2,
+        "city": "Казань"
+    }, {
+        "id" : 3,
+        "city": "Краснодар"
+    }],
+    
+    "countries": [{
+        "id" : 1,
+        "country": "ОАЭ"
+    }, {
+        "id" : 2,
+        "country": "Турция"
+    }, {
+        "id" : 3,
+        "country": "Китай"
+    }, {
+        "id" : 4,
+        "country": "Италия"    
+    }],
+    
+     "nights": [{
+        "id" : 1,
+        "night": "3"
+    }, {
+        "id" : 2,
+        "night": "4"
+    }, {
+        "id" : 3,
+        "night": "5"
+    }, {
+        "id" : 4,
+        "night": "7"    
+    }],  
+    
+"tours":[
+    {"country":"Турция", "arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"24.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"25.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"26.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"27.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"28.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"29.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"country":"Турция", "arrival":"23.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Santa Sophia Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"country":"Турция", "arrival":"24.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"},
+    {"country":"Турция", "arrival":"24.11.2017", "tour":"Турция: NEW Стамбул", "nights":"7", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"38000"},
+    
+    
+    {"country":"Турция", "arrival":"26.11.2017", "tour":"Турция: OLD Стамбул", "nights":"3", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"27.11.2017", "tour":"Турция: OLD Анкара", "nights":"3", "hotel":"lost Hotel 3* (Ankara)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"28.11.2017", "tour":"Турция: OLD Анкара", "nights":"3", "hotel":"Fors Hotel 3* (Ankara)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"29.11.2017", "tour":"Турция: OLD Анкара", "nights":"3", "hotel":"lost Hotel 3* (Ankara)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"23.11.2017", "tour":"Турция: OLD Стамбул", "nights":"3", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"},
+    
+    {"country":"Турция", "arrival":"26.11.2017", "tour":"Турция: MID Стамбул", "nights":"4", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"27.11.2017", "tour":"Турция: MID Ankara", "nights":"4", "hotel":"Fors Hotel 3* (Ankara)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"28.11.2017", "tour":"Турция: MID Стамбул", "nights":"4", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"29.11.2017", "tour":"Турция: MID Ankara", "nights":"4", "hotel":"Fors Hotel 3* (Ankara)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"23.11.2017", "tour":"Турция: MID Стамбул", "nights":"4", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"},
+    
+    {"country":"Турция", "arrival":"26.11.2017", "tour":"Турция: NIGHT Стамбул", "nights":"5", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"27.11.2017", "tour":"Турция: NIGHT Ankara", "nights":"5", "hotel":"Fors Hotel 3* (Ankara)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"28.11.2017", "tour":"Турция: NIGHT Стамбул", "nights":"5", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"29.11.2017", "tour":"Турция: NIGHT Стамбул", "nights":"5", "hotel":"Fors Hotel 3* (Istanbul)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Турция", "arrival":"23.11.2017", "tour":"Турция: NIGHT Ankara", "nights":"5", "hotel":"Fors Hotel 3* (Ankara)", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"},
+    
+    
+    
+
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"Dubai Marina", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"24.11.2017", "tour":"Dubai Marina", "nights":"7", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"25.11.2017", "tour":"Dubai Marina", "nights":"7", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"26.11.2017", "tour":"Dubai Marina", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"27.11.2017", "tour":"Dubai Marina", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"28.11.2017", "tour":"Dubai Marina", "nights":"7", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"29.11.2017", "tour":"Dubai Marina", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"The Oberoi", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"The Oberoi", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"country":"ОАЭ", "arrival":"24.11.2017", "tour":"The Oberoi", "nights":"7", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"},
+    {"country":"ОАЭ", "arrival":"24.11.2017", "tour":"The Oberoi", "nights":"7", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"38000"},
+    
+    
+    {"country":"ОАЭ", "arrival":"27.11.2017", "tour":"Dubai Marina", "nights":"3", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"28.11.2017", "tour":"Dubai Marina", "nights":"3", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"29.11.2017", "tour":"Dubai Marina", "nights":"3", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"The Oberoi", "nights":"3", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"The Oberoi", "nights":"3", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    
+    {"country":"ОАЭ", "arrival":"27.11.2017", "tour":"Dubai Marina", "nights":"4", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"28.11.2017", "tour":"Dubai Marina", "nights":"4", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"29.11.2017", "tour":"Dubai Marina", "nights":"4", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"The Oberoi", "nights":"4", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"The Oberoi", "nights":"4", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    
+    {"country":"ОАЭ", "arrival":"27.11.2017", "tour":"Dubai Marina", "nights":"5", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"28.11.2017", "tour":"Dubai Marina", "nights":"5", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"29.11.2017", "tour":"Dubai Marina", "nights":"5", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"The Oberoi", "nights":"5", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"}, 
+    {"country":"ОАЭ", "arrival":"23.11.2017", "tour":"The Oberoi", "nights":"5", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"43819"},
+    
+    
+    
+    
+    {"country":"Китай", "arrival":"23.11.2017", "tour":"Huangshan Cheng Jin Hotel", "nights":"7", "hotel":"Legacy Hostel_fo4 X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"24.11.2017", "tour":"Huangshan Cheng Jin Hotel", "nights":"7", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"25.11.2017", "tour":"Huangshan Cheng Jin Hotel", "nights":"7", "hotel":"Legacy Hostel_fo4 V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"26.11.2017", "tour":"Huangshan Cheng Jin Hotel", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"27.11.2017", "tour":"Huangshan Cheng Jin Hotel", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"28.11.2017", "tour":"Huangshan Cheng Jin Hotel", "nights":"7", "hotel":"Legacy Hostel_fo4 V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"},
+    
+    {"country":"Китай", "arrival":"23.11.2017", "tour":"Qing He Yue Hostel", "nights":"3", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"24.11.2017", "tour":"Qing He Yue Hostel", "nights":"3", "hotel":"Legacy Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"25.11.2017", "tour":"Qing He Yue Hostel", "nights":"3", "hotel":"Legacy Hostel_fo4 V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"26.11.2017", "tour":"Qing He Yue Hostel", "nights":"3", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"27.11.2017", "tour":"Qing He Yue Hostel", "nights":"3", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"28.11.2017", "tour":"Qing He Yue Hostel", "nights":"3", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"},
+    
+    {"country":"Китай", "arrival":"23.11.2017", "tour":"Huangshan Yishan Academy Inn", "nights":"4", "hotel":"Legacy Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"24.11.2017", "tour":"Huangshan Yishan Academy Inn", "nights":"4", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"25.11.2017", "tour":"Huangshan Yishan Academy Inn", "nights":"4", "hotel":"Legacy Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"26.11.2017", "tour":"Huangshan Yishan Academy Inn", "nights":"4", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"27.11.2017", "tour":"Huangshan Yishan Academy Inn", "nights":"4", "hotel":"Legacy Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"28.11.2017", "tour":"Huangshan Yishan Academy Inn", "nights":"4", "hotel":"Legacy Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"},
+    
+    {"country":"Китай", "arrival":"23.11.2017", "tour":"Imperial Guard Boutique Hotel", "nights":"5", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"24.11.2017", "tour":"Imperial Guard Boutique Hotel", "nights":"5", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"25.11.2017", "tour":"Imperial Guard Boutique Hotel", "nights":"5", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"26.11.2017", "tour":"Imperial Guard Boutique Hotel", "nights":"5", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"27.11.2017", "tour":"Imperial Guard Boutique Hotel", "nights":"5", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Китай", "arrival":"28.11.2017", "tour":"Imperial Guard Boutique Hotel", "nights":"5", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"},
+    
+    
+    
+    
+    {"country":"Италия", "arrival":"23.11.2017", "tour":"San_Geremia", "nights":"7", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"24.11.2017", "tour":"San_Geremia", "nights":"7", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"25.11.2017", "tour":"San_Geremia", "nights":"7", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"26.11.2017", "tour":"San_Geremia", "nights":"7", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"27.11.2017", "tour":"San_Geremia", "nights":"7", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"28.11.2017", "tour":"San_Geremia", "nights":"7", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"},
+    
+    {"country":"Италия", "arrival":"23.11.2017", "tour":"Saint_Doria", "nights":"5", "hotel":"Saint Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"24.11.2017", "tour":"Saint_Doria", "nights":"5", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"25.11.2017", "tour":"Saint_Doria", "nights":"5", "hotel":"Saint Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"26.11.2017", "tour":"Saint_Doria", "nights":"5", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"27.11.2017", "tour":"Saint_Doria", "nights":"5", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"28.11.2017", "tour":"Saint_Doria", "nights":"5", "hotel":"Saint Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"},
+    
+    
+    {"country":"Италия", "arrival":"23.11.2017", "tour":"Pallazo_deela", "nights":"4", "hotel":"Legacy Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"24.11.2017", "tour":"Pallazo_deela", "nights":"4", "hotel":"Palazo", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"25.11.2017", "tour":"Pallazo_deela", "nights":"4", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"26.11.2017", "tour":"Pallazo_deela", "nights":"4", "hotel":"Mekazo", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"27.11.2017", "tour":"Pallazo_deela", "nights":"4", "hotel":"Hostel_fo4", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"28.11.2017", "tour":"Pallazo_deela", "nights":"4", "hotel":"Legacy Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"},
+    
+    {"country":"Италия", "arrival":"23.11.2017", "tour":"Accore_hotels", "nights":"3", "hotel":"Versto Hotel X", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"24.11.2017", "tour":"Accore_hotels", "nights":"3", "hotel":"Hostel_Miaoretto", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"25.11.2017", "tour":"Accore_hotels", "nights":"3", "hotel":"Saint Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"26.11.2017", "tour":"Accore_hotels", "nights":"3", "hotel":"Hostel_Fiore", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"27.11.2017", "tour":"Accore_hotels", "nights":"3", "hotel":"Hostel_Accorde", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}, 
+    {"country":"Италия", "arrival":"28.11.2017", "tour":"Accore_hotels", "nights":"3", "hotel":"Saint Hotel V", "food":"BB (Breakfast)", "accommodation":"Standard / 2 ADL", "price":"40884"}
+],
+    
     "users": [{
         "id" : 1,
         "name": "Bill Gates",
@@ -36,19 +182,5 @@
         "id" : 3,
         "name": "Larry Page",
         "age": 34
-    }]
-}
-
-
-{
-    "cities": [{
-        "id" : 1,
-        "city": "Великобритания"
-    }, {
-        "id" : 2,
-        "city": "Китай"
-    }, {
-        "id" : 3,
-        "city": "Россия"
     }]
 }
