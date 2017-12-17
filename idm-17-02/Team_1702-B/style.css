@@ -120,7 +120,7 @@ label {
 	position: relative;
 	top: 0;
 	bottom: 0;
-	left: 0;
+	left: 20;
 	right: 0;
 	-moz-user-select: -moz-none;
     -webkit-user-select: none;
