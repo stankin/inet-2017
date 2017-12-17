@@ -2,7 +2,6 @@
 	<head>
 		<title>Отчёт по курсу «Интернет-технологии»</title>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-		<script type="text/javascript" src="js/ajax.js"></script>
 		<link rel="stylesheet" href="css/fon.css">
      	<link rel="stylesheet" href="css/table.css">
 	</head>
@@ -41,10 +40,14 @@
 		<li>Выложить <a href="https://github.com/Kereat/Cowboys-games">исходники кода</a> проекта в репозиторий</li>
 		<li><a href="https://kereat.github.io/Cowboys-games/">Опубликовать проект</a> на каком-либо ресурсе</li>
 		<li>Подготовить презентацию проекта</li>
+		<li>Реализовать функции библиотеки <a href="https://ru.wikipedia.org/wiki/JQuery">jQuery</a> и подход<a href="https://ru.wikipedia.org/wiki/AJAX">AJAX</a> на странице отчёта</li>
 		</ol>
 		<details>
 		<summary>Показать презентацию</summary>
 		<p id="area"></p></details>
+		<script type="text/javascript">   
+			$("#area").load("preview.html");
+		</script>
 		<br>
 		<br>
 		<br>
