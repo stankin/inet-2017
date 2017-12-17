@@ -1,1 +1,0 @@
-$("#area").load("preview.html");
