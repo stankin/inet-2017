@@ -26,6 +26,11 @@
 
 3. Сайт тур агенства: https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-D
 
+
+## ИДМ-17-03:
+
+1. Фрактальное дерево: https://yourleg.github.io/Fractal_tree/
+
 # Примерный образ результата:
 1. Список по группам (коллективная работа):
 
