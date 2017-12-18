@@ -1,0 +1,229 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Личная страница</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+	<script>
+	function clock() {
+  var now = new Date();
+  var ctx = document.getElementById('canvas').getContext('2d');
+  ctx.save();
+  ctx.clearRect(0, 0, 150, 150);
+  ctx.translate(75, 75);
+  ctx.scale(0.4, 0.4);
+  ctx.rotate(-Math.PI / 2);
+  ctx.strokeStyle = 'black';
+  ctx.fillStyle = 'white';
+  ctx.lineWidth = 8;
+  ctx.lineCap = 'round';
+
+  // Hour marks
+  ctx.save();
+  for (var i = 0; i < 12; i++) {
+    ctx.beginPath();
+    ctx.rotate(Math.PI / 6);
+    ctx.moveTo(100, 0);
+    ctx.lineTo(120, 0);
+    ctx.stroke();
+  }
+  ctx.restore();
+
+  // Minute marks
+  ctx.save();
+  ctx.lineWidth = 5;
+  for (i = 0; i < 60; i++) {
+    if (i % 5!= 0) {
+      ctx.beginPath();
+      ctx.moveTo(117, 0);
+      ctx.lineTo(120, 0);
+      ctx.stroke();
+    }
+    ctx.rotate(Math.PI / 30);
+  }
+  ctx.restore();
+ 
+  var sec = now.getSeconds();
+  var min = now.getMinutes();
+  var hr  = now.getHours();
+  hr = hr >= 12 ? hr - 12 : hr;
+
+  ctx.fillStyle = 'black';
+
+  // write Hours
+  ctx.save();
+  ctx.rotate(hr * (Math.PI / 6) + (Math.PI / 360) * min + (Math.PI / 21600) *sec);
+  ctx.lineWidth = 14;
+  ctx.beginPath();
+  ctx.moveTo(-20, 0);
+  ctx.lineTo(80, 0);
+  ctx.stroke();
+  ctx.restore();
+
+  // write Minutes
+  ctx.save();
+  ctx.rotate((Math.PI / 30) * min + (Math.PI / 1800) * sec);
+  ctx.lineWidth = 10;
+  ctx.beginPath();
+  ctx.moveTo(-28, 0);
+  ctx.lineTo(112, 0);
+  ctx.stroke();
+  ctx.restore();
+ 
+  // Write seconds
+  ctx.save();
+  ctx.rotate(sec * Math.PI / 30);
+  ctx.strokeStyle = '#D40000';
+  ctx.fillStyle = '#D40000';
+  ctx.lineWidth = 6;
+  ctx.beginPath();
+  ctx.moveTo(-30, 0);
+  ctx.lineTo(83, 0);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(0, 0, 10, 0, Math.PI * 2, true);
+  ctx.fill();
+  ctx.beginPath();
+  ctx.arc(95, 0, 10, 0, Math.PI * 2, true);
+  ctx.stroke();
+  ctx.fillStyle = 'rgba(0, 0, 0, 0)';
+  ctx.arc(0, 0, 3, 0, Math.PI * 2, true);
+  ctx.fill();
+  ctx.restore();
+
+  ctx.beginPath();
+  ctx.lineWidth = 14;
+  ctx.strokeStyle = '#325FA2';
+  ctx.arc(0, 0, 142, 0, Math.PI * 2, true);
+  ctx.stroke();
+
+  ctx.restore();
+
+  window.requestAnimationFrame(clock);
+}
+
+window.requestAnimationFrame(clock);
+	</script>
+</head>
+<body>
+    <div id="main">
+        <section id="top" class="one dark cover">
+            <div class="container">
+                <h2 class="alt">Личная страница</h2>
+                <p>Чащин Георгий, ИДМ 17-01</p>
+                <a href="#portfolio" class="button scrolly">Отчет по лабораторной</a>
+            </div>
+        </section>
+        <section id="portfolio" class="two">
+            <div class="container">
+                <h2 class="highlight">Задачи</h2>
+                <div class="textmain">
+                    <ol>
+                        <li>
+                            <p>Лабораторная работа №1 <a href="#lab1" class="scrolly">Экосистема разработки программ с открытым кодом":</a></p>
+                            <p>Создание персональной страницы-отчета на github и работа с git</p>
+                        </li>
+                        <li>
+                            <p>Лабораторная работа №2 <a href="#lab2" class="scrolly">"Разработка простого веб-приложения":</a></p> 
+                            <p>Проектирование и разработка индивидуального или коллективного веб-приложения</p>
+                        </li>
+                        <li>
+                            <p>Лабораторная работа №3 <a href="#lab3" class="scrolly">"Настройка локальной сети передачи данных":</a></p> 
+                            <p>Настройка коммутаторов и маршрутизаторов</p>
+                        </li>
+                        <li>
+                            <p><a href="#lab4" class="scrolly">Подготовка к экзамену</a>:</p>
+                            <p>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab1" class="three">
+            <div class="container">
+                <h2>Лабораторная работа #1</h2>
+                <h3>Работа с Github</h3>
+                <div class="textmain">
+                    <p class="highlight">Задачи:</p>
+                    <ol>
+                        <li>
+                            <p>Регистрация на GitHub.</p>
+                            <p><a href="https://github.com/dart-chiker">Страница пользователя</a></p>
+                        </li>
+                        <li>
+                            <p>Создать персональную веб страницу-отчет с использованием html, css, js.</p>
+                            <p><a href="https://stankin.github.io/inet-2017/idm-17-01/Chashchin/index.html">Персональная страница-отчет</a>.</p>
+                            <p>Чутка js'a
+							<canvas id="canvas" width="150" height="150"></canvas>
+							
+                        </li>
+                        <li>
+                            <p>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.</p>
+                            <p><a href="https://github.com/stankin/inet-2017/tree/master/idm-17-01/Chashchin">Папка с исходными кодами в репозитории</a>.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab2" class="four">
+            <div class="container">
+                <h2>Лабораторная работа #2</h2>
+                <h3>Разработка простого веб-приложения</h3>
+                <div class="textmain">
+                    <p class="highlight">Задачи:</p>
+                    <ol>
+                        <li>
+                            <p>Собрать команду для разработки приложения и распределить роли.</p>
+                            <p><a href="https://stankin.github.io/inet-2017/idm-17-01/index.xml">Страница команд</a>.</p>
+                        </li>
+                        <li>
+                            <p> Прописать функционал и реализовать возможность работы с приложением в <a href=https://github.com/pindos11/2017_17-01_project>проекте</p>
+                        </li>
+                        <li>
+                            <p>Прописать стили страницы</p>
+                            <a></a>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab3" class="five">
+            <div class="container">
+                <h2>Лабораторная работа #3</h2>
+                <h3>Настройка локальной сети передачи данных</h3>
+                <div class="textmain">
+                    <p class="highlight">Задачи:</p>
+                    <p>Настройка коммутаторов и маршрутизаторов.</p>
+                    <p>Отчет по лабораторной работе</p>
+					<p><a href=https://stankin.github.io/inet-2017/idm-17-01/Chashchin/assets/Report3.html>Отчет</a><p>
+                </div>
+            </div>
+        </section>
+
+        <section id="lab4" class="six">
+            <div class="container">
+                <h2>Подготовка к экзамену</h2>
+                <div class="textmain">
+                    <p>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer">
+        <ul class="copyright">
+            <li>2017</li>
+        </ul>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+

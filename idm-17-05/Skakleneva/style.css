@@ -1,0 +1,121 @@
+/* Default CSS */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i|Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+body {
+    font-weight: 300;
+    line-height: 2;
+    font-family: 'Merriweather', serif;
+}
+input:focus {outline: none}
+.logo,
+.mainmenu,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+}
+a {
+    transition: .2s
+}
+a:hover,
+a:focus {
+    text-decoration: none
+}
+h3 {
+    line-height: 35px;
+}
+
+.header1 {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 40px;
+    font-size: 16;
+    color: #333;
+}
+.header2 {
+    font-size: 20;
+}
+.content-block {
+    padding: 20px;
+    position: relative;
+    background-color: #f6f6f6;
+}
+.hide
+{
+    font-size: 14;
+    background-color: #f6f6f6;
+}
+.linkbutton
+{
+    background-color: #ddd;
+    color: #333;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto
+}
+
+/* Backgrounds CSS */
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Горизонтальное меню */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+#maket {
+    width: 100%; /* Ширина всей таблицы в процентах */
+   }
+#leftcol {
+    width: 550px; /* Ширина левой колонки в пикселах */
+   }
+#rightcol {
+    width: 450px; /* Ширина левой колонки в пикселах */
+    text-align: justify;
+   }

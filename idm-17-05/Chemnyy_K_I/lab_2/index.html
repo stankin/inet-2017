@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Кактус в дырке</title>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<p class="storeGem">Store of gem</p>
+	</header>
+
+	<div id="productsGem">
+
+	</div>
+
+
+<script type="text/javascript">
+//функция, которая читает наш json файл	
+function getData(ready){
+	//переменная с запросом 
+	var request = new XMLHttpRequest();
+	//открываем наш запрос. Метод GET, путь к файлу.
+	request.open('GET', 'product.json', true);
+	//как только наш запрос готов запускаем функцию. 
+	request.onreadystatechange = function() {
+		//если запрос топчик и страница не вернула ошибку 404, то
+    	if (this.readyState == 4 && this.status !== 404) {
+    		//в функцию ready передаем ответ. В нашем случае это текст JSON файла. 
+    			ready(this.responseText);
+        	}
+    }
+    //и после всего отправляем наш запрос. 
+	request.send();
+}
+
+//переменная. Где мы храним наш JSON
+var product;
+
+//тут мы вызываем вышесозданную функцию 
+//а внутри ещё одна функция. Которая творит магию. 
+getData(function(jsonData){
+	// в нашу переменную закидываем преобразованные в JSON ранее полученные данные 
+	product = JSON.parse(jsonData);
+	//и пока есть данные, мы ходим по циклу
+	for(var i = 0; i < product.gem.length; i++){
+
+		//вот это вот всё нужно для создания страницы средства js
+		//сначала создадим объект
+		var parentDiv = document.createElement('div');
+		//потом зададим ему свойства
+		parentDiv.className = "gemBlock"
+		//впихнём в него данные взятые из JSON
+		parentDiv.innerHTML = "<p class='gemName'>" + product.gem[i].name + "</p>";
+
+		//и добавим на страницу. 
+		productsGem.appendChild(parentDiv);
+
+
+		//то же самое
+		var img = document.createElement('img');
+		img.src = product.gem[i].img;
+		img.className = "gemImg";
+
+		parentDiv.appendChild(img);
+
+		var div = document.createElement('div');
+		div.className = "Kostil";
+		//тут мы ещё и кнопку создали. И функцию её задали. 
+		div.innerHTML = "Цена: " + product.gem[i].price + " &#163"+ "<br>" + product.gem[i].description + "<br>" + "На складе: " + product.gem[i].count + " шт. <br> <button class = 'basketButton'  onclick='goBasket()'> Купить </button>";
+
+		parentDiv.appendChild(div);
+
+	};
+});
+
+//а это вот функция, которую мы задали кнопки
+function goBasket(){
+	//вывести вот штуку 
+	alert("WOOOP WOOP, THAT'S A SOUND OF DA POLICE");
+}
+
+</script>
+</body>
+</html>

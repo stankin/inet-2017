@@ -1,0 +1,19 @@
+body{margin: 0;}
+a{text-decoration: none;color: #1a1926}
+.wrapper{margin: 0 auto;margin-top: 10%;width: 80%;font-family: "Ubuntu";font-size: 24px;max-width: 1920px}
+
+.top{height: 50px;background: #ccc;}
+.group{float: left;margin: 1% 3% 3% 3%;}
+.name{float: right;margin: 1% 3% 3% 3%;}
+.discipline{text-align: center;padding: 1%;background: #1a1926;color: #FFF}
+
+
+.title{text-align: left;margin-left: 5%;margin-bottom: 2%;}
+.title span{padding: 1%}
+
+.project{height: 500px;}
+
+.menu span{margin: 5px; text-align: center;}
+
+
+

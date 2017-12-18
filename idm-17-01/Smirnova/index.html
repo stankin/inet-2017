@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>И.А.Смирнова</title>
+
+        <script src="rainyday.js"></script>
+        <script>
+            function run() {
+                var image = document.getElementById('background');
+                image.onload = function() {
+                    var engine = new RainyDay({
+                        image: this
+                    });
+					engine.rain([ [3, 2, 2] ], 100);
+				};
+                image.crossOrigin = 'anonymous';
+                image.src = 'http://i.imgur.com/U1Tqqdw.jpg';
+            }
+        </script>
+    </head>
+    <body onload="run();">
+        <img id="background" src="" />
+        <div id="container">
+            <div id="title">Личная страница</div>
+            <div id="foto"></div>
+
+            <div id="laba">
+                    <div id="vert">Лабораторные занятия</div>
+                    <section class="tabs">
+                      <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+                      <label for="tab-1" class="tab-label-1">№1</label>
+
+                      <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+                      <label for="tab-2" class="tab-label-2">№2</label>
+
+                      <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+                      <label for="tab-3" class="tab-label-3">№3</label>
+                      
+                      <input id="tab-4" type="radio" name="radio-set" class="tab-selector-4" />
+                      <label for="tab-4" class="tab-label-4">№4</label>
+
+                      <div class="content">
+                        <div class="content-1">
+                            <p class="title_sl">Задачи лабораторной работы №1</p>
+                            <p class="_sl">
+                                1. Регистрация на GitHub: <a href="https://github.com/s-irina-alexandrovna" target="_blank">Страница пользователя</a><br>
+                                2. Загрузить <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-01/Smirnova/index.html" target="_blank" >персональную веб-страницу-отчет</a> в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.<br>
+                                3. <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-01/Smirnova" target="_blank">Папка</a> с исходными кодами в репозитории.
+
+                            </p>
+                        </div>
+                        <div class="content-2">
+                            <p class="title_sl">Задачи лабораторной работы №2</p>
+                            <p class="_sl">
+                                  1. Собрать команду для разработки веб-приложения (SPA) и распределить роли. <a href="https://github.com/jhupanen/jhupanen.github.io" target="_blank">Ссылка на страницу команд</a><br>
+                                  2. Разработать макет страницы веб-приложения. <a href="https://jhupanen.github.io/index.html" target="_blank">Ссылка на макет</a><br>
+                                  3. Прописать стили страницы<br>
+                                  4. Прописать js функционал и реализовать возможность чтения json.
+                                  Результат: <a href="https://jhupanen.github.io/index.html" target="_blank"> Работающий прототип</a>
+
+                            </p>
+                        </div>
+                        <div class="content-3">
+                            <p class="title_sl">Задачи лабораторной работы №3</p>
+                            <p class="_sl">
+                                Настройка коммутаторов и маршрутизаторов.<br>
+                                <a href="laba3/laba3.html" target="_blank" >Отчет по лабораторной работе</a>
+                            </p>
+                        </div>
+                        <div class="content-4">
+                            <p class="title_sl">Подготовка к экзамену
+                              <h4 class="title_sl2">Методология разработки TDD:</h4><a class="otv_show">Показать ответ</a>
+                            
+                            
+                             <li  class="otvet" >Техника разработки программного обеспечения, которая основывается на повторении очень коротких циклов разработки: сначала пишется тест, покрывающий желаемое изменение, затем пишется код, который позволит пройти тест, и под конец проводится рефакторинг нового кода к соответствующим стандартам. </li>
+                             <li>Представляет собой попытку объединить наиболее признанные в индустрии разработки программного обеспечения методики, принимающие за основу важную для заказчика функциональность (свойства) разрабатываемого программного обеспечения. Основной целью данной методологии является разработка реального, работающего программного обеспечения систематически, в поставленные сроки.</li>
+                             <li>Это стиль разработки программного обеспечения, когда модели становятся артефактами разработки, из которых генерируется код и другие артефакты.</li>
+                             <li>Техника разработки, при которой рассматривается не результат выполнения какого-либо модуля, а та работа, которую он выполняет.</li>                                                       
+                            
+                            </p>
+
+
+
+
+                        </div>
+                      </div>
+                    </section>
+            </div>   
+            <div id="name">
+                И.А.Смирнова<br>
+                ИДМ-17-01
+            </div>                 
+
+
+
+        </div>
+        
+    </body>
+</html>

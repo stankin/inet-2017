@@ -1,0 +1,23 @@
+table{
+  margin-top: 5px;
+}
+th {
+  font-size: 13px;
+  font-weight: bold;
+  background: #cadafd;
+  border-top: 4px solid #aabcfe;
+  border-bottom: 1px solid #fff;
+  color: #121258;
+  padding: 8px;
+}
+td {
+  background: #e8edff;
+  border-bottom: 2px solid #fff;
+  color: #121258;
+  border-top: 1px solid transparent;
+  padding: 4px;
+  padding-left: 15px;padding-right: 45px;
+}
+tr:hover td {
+  background: #cacafc;
+}

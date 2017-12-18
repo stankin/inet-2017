@@ -35,11 +35,16 @@
 		td, th {
 			vertical-align: top;
 			padding-right: 20px;
-			padding-bottom: 8px;
+			padding-top: 4px;
+			padding-bottom: 4px;
 		}
-
 		th {
 			padding-bottom: 10px;
+			white-space: nowrap;
+		}
+		.automatically td,
+		.automatically a {
+			color: green;
 		}
 		a {
 			color: #007de1;
@@ -76,27 +81,6 @@
 </head>
 <body>
 	<h1>ИДМ-17-04</h1>
-
-	<h2>Задание</h2>
-	<table class="tasks">
-		<tr>
-			<td>
-				<h3>Личный отчет</h3>
-				<p>index.html в своей папке. В верстке должно быть ФИО, группа, дисциплина и ссылки на новые и прошлогодние проекты и статьи</p>
-			</td>
-			<td>
-				<h3>Статья</h3>
-				<p>Небольшая статья, прямо или косвенно связанная с интернет-технологиями. </p>
-			</td>
-			<td>
-				<h3>Проект (командный / индивидуальный)</h3>
-				<p>Приложение, которое будет выводить данные из публичного источница на страницу.</p>
-				<p>Можно, взамен этого, показать любое сложное приложение, в котором вы разбираетесь.</p>
-			</td>
-		</tr>
-	</table>
-
-	<h2>Сводка</h2>
 	<table class="table">
 		<thead class="table__header">
 			<tr>
@@ -105,7 +89,7 @@
 				<th>Статья</th>
 				<th>Команда</th>
 				<th>Проект</th>
-				<th>Модуль 1</th>
+				<th>Модуль</th>
 				<th>Модуль 2</th>
 			</tr>
 		</thead>
@@ -127,12 +111,17 @@
 		const createStudents = ({students}) =>
 			students.reduce((all, student) => {
 				const row = document.createElement("tr")
+				if (student.automatically) row.className = "automatically"
 				row.innerHTML = `
-					<td>
-						<a href="${student.studentLink}">${student.studentName}</a>
+					<td>${student.studentName}</td>
+					<td>${!!student.studentLink
+						? `<a href="${student.studentLink}">+</a>`
+						: ""}
 					</td>
-					<td>${student.hasReport ? "+" : ""}</td>
-					<td>${student.hasArticle ? "+" : ""}</td>
+					<td>${student.articleLink
+						? `<a href="${student.articleLink}">+</a>`
+						: ""}
+					</td>
 					<td>
 						${student.team}
 						${student.role ? " (" + student.role +")" : "" }
