@@ -92,6 +92,40 @@ color: white;
 	border: 2px solid #666;
 	position: relative;
 }
+
+.wrapper1 {
+  background: url('4.jpg') no-repeat center;
+  margin: 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #666;
+  position: relative;
+}
+.wrapper2 {
+  background: url('5.jpg') no-repeat center;
+  margin: 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #666;
+  position: relative;
+}
+.wrapper3 {
+  background: url('6.jpg') no-repeat center;
+  margin: 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #666;
+  position: relative;
+}
+.wrapper4 {
+  background: url('7.jpg') no-repeat center;
+  margin: 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #666;
+  position: relative;
+}
+
 .door {
 	background: url('2.jpg');
 	display: block;
