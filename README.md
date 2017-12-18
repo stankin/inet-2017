@@ -31,6 +31,8 @@
 
 1. Фрактальное дерево: https://yourleg.github.io/Fractal_tree/
 
+2. Игра "Ковбойская дуэль": https://kereat.github.io/Cowboys-games/
+
 ## ИДМ-17-04:
 
 1. Бот в telegram: https://github.com/dreamteamstankin/project
