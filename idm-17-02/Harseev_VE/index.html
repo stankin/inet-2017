@@ -158,24 +158,69 @@
 <li>Добавить на рабочее поле еще одну подсеть с двумя компьютерами и проверить работоспособность сети</li>
 <li>Добавить еще один маршрутизатор, компьютер и коммутатор. Проверить работоспособность сети</li><ul><br>
 </div>
-  <table border="1">
-   <caption>Таблица исходных данных</caption>
-   <tr>
-    <th rowspan="2">Номер варианта</th>
-    <th colspan="3">Количество узлов</th>
-   </tr>
-    <tr>
-    <th>LAN A</th>
-    <th>LAN B</th>
-    <th>LAN C</th>
-   </tr>
-    <tr>
-	<th>7</th>
-    <th>137</th>
-    <th>30</th>
-    <th>37</th>
-   </tr>
-   </table><br>
+   			<p>
+			<table border="3" align="center">
+			<tr>
+				<td rowspan="2"></td><td><b>LAN A</b></td><td><b>LAN B</b></td><td><b>LAN C</b></td>
+			</tr>
+			<tr>
+				<td>137</td><td>30</td><td>37</td>
+			</tr>
+			<tr>
+				<td><b>Префиксная маска</b></td><td>/26</td><td>/25</td><td>/22</td>
+			</tr>
+			<tr>
+				<td><b>Адрес подсети</b></td><td>192.168.7.0</td><td>172.16.7.0</td><td>10.10.7.0</td>
+			</tr>
+			<tr>
+				<td><b>Минимальный адрес</b></td><td>192.168.7.1</td><td>172.16.7.1</td><td>10.10.7.1</td>
+			</tr>
+			<tr>
+				<td><b>Максимальный адрес</b></td><td>192.168.7.62</td><td>172.16.7.126</td><td>10.10.7.254</td>
+			</tr>
+			<tr>
+				<td><b>Broadcast</b></td><td>192.168.7.63</td><td>172.16.7.127</td><td>10.10.7.255</td>
+			</tr>
+	                </table>
+			</p>
+		        <b><p><center>Адреса устройств.</center></p></b>
+			<p>
+		        <table border="3" align="center">
+			<tr>
+				<td><b>Устройство</b></td><td><b>IP</b></td><td><b>Маска</b></td><td><b>Шлюз по умолчанию</b></td>
+			</tr>
+			<tr>
+				<td>PC0</td><td>192.168.7.137/td><td>255.255.255.0</td><td>192.168.7.1</td>
+			</tr>
+			<tr>
+				<td>PC1</td><td>192.168.7.254</td><td>255.255.255.0</td><td>192.168.7.1</td>
+			</tr>
+			<tr>
+				<td>PC2</td><td>172.16.7.27</td><td>255.255.255.0</td><td>172.16.7.1</td>
+			</tr>
+			<tr>
+				<td>PC3</td><td>172.16.7.254</td><td>255.255.255.0</td><td>172.16.7.1</td>
+			</tr>
+			<tr>
+				<td>PC4</td><td>10.10.7.2</td><td>255.255.255.192</td><td>10.10.7.1</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 0/0</td><td>192.168.7.1</td><td>255.255.255.0</td><td>–</td>
+			</tr>
+			<tr>
+			        <td>Router0 FastEthernet 1/0</td><td>172.16.7.1</td><td>255.255.0.0</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 6/0</td><td>15.15.7.1</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 0/0</td><td>15.15.7.2</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 1/0</td><td>10.10.7.1</td><td>255.0.0.0</td><td>–</td>
+			</tr>
+			</table>
+			</p><br>
 Итоговая схема сети:<br>
 <img src="pics/0333614b64b54d3042144ea23bff1903.png" class="imgresult">
 </div></section>
