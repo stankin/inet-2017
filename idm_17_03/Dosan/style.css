@@ -1,13 +1,13 @@
 .laba1
 {
-    width: 400px;   
+    width: 45%;   
     border: 4px double black;
     padding: 5px;
     padding-right: 20px;    
     float: left;;}
 .laba2
 { 
-    width: 400px;   
+    width: 45%;   
     border: 4px double black; 
     padding: 5px;
     padding-right: 20px;    
@@ -15,9 +15,133 @@
    }
 .laba3
 { 
-    width: 400px; 
+    width: 92.5%; 
     border: 4px double black;  
     padding: 5px;
     padding-right: 20px;     
     float: left;
    }
+.demo {
+    max-width: 1024px;
+    padding: 0 20px;
+    margin: 5% 10%;
+}
+/* скрываем чекбоксы и блоки с содержанием */
+.hide,
+.hide + label ~ div {
+    display: none;
+}
+/* вид текста label */
+.hide + label {
+    margin: 0;
+    padding: 0;
+    color: black;
+    cursor: pointer;
+    display: inline-block;
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    margin-left: 20px;
+    padding: 10px;
+    /* чуточку анимации при появлении */
+     -webkit-animation:fade ease-in 0.5s; 
+     -moz-animation:fade ease-in 0.5s;
+     animation:fade ease-in 0.5s; 
+}
+/* анимация при появлении скрытых блоков */
+@-moz-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@-webkit-keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }
+}
+@keyframes fade {
+    from { opacity: 0; }
+to { opacity: 1 }   
+}
+.hide + label:before {
+    background-color: #1e90ff;
+    color: #fff;
+    content: "\002B";
+    display: block;
+    float: left;
+    font-size: 14px; 
+    font-weight: bold;
+    height: 16px;
+    line-height: 16px;
+    margin: 3px 5px;
+    text-align: center;
+    width: 16px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.hide:checked + label:before {
+    content: "\2212";
+}
+
+#img6{
+   width: 490px;
+   margin-top: -8px; 
+}
+
+table{
+  margin-top: 5px;
+}
+th {
+  font-size: 13px;
+  font-weight: bold;
+  background: #FFD3BB;
+  border-top: 4px solid #aabcfe;
+  border-bottom: 1px solid #fff;
+  color: #121258;
+  padding: 8px;
+}
+td {
+  background: #FFDEDE;
+  border-bottom: 2px solid #fff;
+  color: #112222;
+  border-top: 1px solid transparent;
+  padding: 4px;
+  padding-left: 15px;padding-right: 45px;
+}
+tr:hover td {
+  background: #FFBEFF;
+}
+#title{
+    width: 100%
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+    color: black;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+.text_laba{
+  color: black;
+  margin-left: 20px;
+  max-width: 700px;
+
+}
+#laba{
+    position: relative;
+    margin-left: 275px;
+    margin-top: -258px;
+    width: 657px;
+    height: 400px;
+    background: #999;
+    z-index: 100;
+}

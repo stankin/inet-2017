@@ -32,6 +32,17 @@ body {background-color: #66A2D1;}
 
 <h3><div align="center">Выполнил: студент группы ИДМ-17-03 Досан Р.С.</div></h3>
 
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="image.jpg" height="150" onclick="changeSizeImage(this)" />
+      <br />
+      <b>Станкин</b>
+    </td>
+
+  </tr>
+</table>
+
 <div class="laba1">
 <h2><div align="center">Лабораторная работа 1</div></h2>
 
@@ -41,6 +52,7 @@ body {background-color: #66A2D1;}
 
 <h4><div align="left">Задачи:</div></h4>
 <ol>
+<li>Познакомиться с html.</li>
 <li>Научится создавть простейшую html страницу.</li>
 <li>Сделать html страницу в виде отчета по лабораторным работам.</li>
 <li>Залить получившуюся страницу на github.</li>
@@ -57,8 +69,9 @@ body {background-color: #66A2D1;}
 <h4><div align="left">Вывод:</div></h4>
 
 В ходе проделанной работы, я научился создавать простейшие html страницы и заливать их на github.
-<p><a href="https://github.com/stankin/inet-2017/tree/master/idm_17_03/Dosan">Ссылка на папку с сайтом</a></p>
+<p><a href="https://github.com/stankin/inet-2017/tree/master/idm-17-03/Dosan">Ссылка на папку с сайтом</a></p>
 <p><a href="https://github.com/RomanDosan">Ссылка на мой профиль</a></p>
+<p><a>. </a></p>
 </div>
 
 
@@ -86,35 +99,109 @@ body {background-color: #66A2D1;}
 </ol>
 <h4><div align="left">Вывод:</div></h4>
 В ходе проделанной работы научились создавать простейшее веб-приложение работая в команде.
-<p><a href="https://github.com/Femax/FinFirst-React">Ссылка на папку с приложением</a></p>
+<p><a href="https://github.com/Newbieexplorer/INETServerSide">Ссылка на серверную часть</a></p>
+<p><a href="https://github.com/Femax/internet-tech-front">Ссылка на клиентскую часть</a></p>
+<p><a href="https://github.com/deadcorg/zzz/wiki">Ссылка на Wiki</a></p>
 </div>
 
 
 <div class="laba3">
-<h2><div align="center">Лабораторная работа 3</div></h2>
+<h2>Лабораторная работа №3</h2>
+<h3>Задачи:</h3>
+<h4>1.Настроить коммутаторы и маршрутизаторы.</h4>
+<h4>2.Отчет по лабораторной работе.</h4>
+<div class="demo">
+    <input class="hide" id="hd-1" type="checkbox">
+    <label for="hd-1">Нажмите здесь, чтобы посмотреть отчет!</label>
+    <div>
+        <div id="container">
+            <div id="title">Лабораторная работа №3.</div>
+            <div class="text_laba">
+              Расчет диапазонов подсетей.
+            </div>   
+            <div class="table_var">
+              <table>
+                <tr><th></th><th>A</th><th>B</th><th>C</th></tr>
+                <tr><td>Кол-во узлов</td><td>5</td><td>965</td><td>1024</td></tr>
+                <tr><td>subnet</td><td>192.168.2.0</td><td>172.16.2.0</td><td>10.10.2.0</td></tr>
+                <tr><td>mask</td><td>255.255.255.248</td><td>255.255.252.0</td><td>255.255.248.0</td></tr>
+                <tr><td>broadcast</td><td>192.168.2.7</td><td>172.16.5.255</td><td>10.10.9.255</td></tr>
+              </table>
+            </div>
+            <div class="text_laba">
+              <br>ШАГ 1: Разместить на рабочем поле коммутатор и два компьютера и соединить их
+              <p><img src="images/01.jpg" id="img">
+            </div> 
+            <div class="text_laba">
+              <br>ШАГ 2: Добавить на рабочее поле еще один коммутатор с двумя компьютерами и настроить адресацию из другой подсети
+              <p><img src="images/02.jpg" id="img">
+            </div> 
+            <div class="text_laba">
+              <br>ШАГ 3: Соединить коммутаторы между собой и проверить работоспособность сети (Не работает, так как коммутаторы подсоединяются только к маршрутизаторам)
+              <p><img src="images/03.jpg" id="img">
+            </div> 
+            <div class="text_laba">
+              <br>ШАГ 4: Добавить маршрутизатор на рабочее поле
+              <p><img src="images/04.jpg" id="img">
+            </div> 
+            <div class="text_laba">
+              <br>ШАГ 5: Добавить на рабочее поле еще один маршрутизатор. Подключить к нему коммутатор и компьютер
+              <p><img src="images/05.jpg" id="img5">
+            </div>
+            <div class="table_var">
+              <table>
+                <tr><th>Устройство</th><th>IP - адрес</th>      <th>Маска</th>              <th>Шлюз</th>           </tr>
+                <tr>    <td>PC0</td>      <td>192.168.2.6</td>   <td>255.255.255.248</td>    <td>192.168.2.1</td>  </tr>
+                <tr>    <td>PC1</td>      <td>192.168.2.5</td>   <td>255.255.255.248</td>    <td>192.168.2.1</td>  </tr>
+                <tr>    <td>PC2</td>      <td>172.16.5.254</td>   <td>255.255.252.0</td>      <td>172.16.2.1</td>   </tr>
+                <tr>    <td>PC3</td>      <td>172.16.5.253</td>   <td>255.255.252.0</td>      <td>172.16.2.1</td>   </tr>
+                <tr>    <td>PC4</td>      <td>10.10.9.254</td>    <td>255.255.248.0</td>      <td>10.10.2.1</td>    </tr>
+                <tr>    <td>R0 0/0</td>   <td>192.168.2.1</td>    <td>255.255.255.248</td>    <td></td>             </tr>
+                <tr>    <td>R0 0/1</td>   <td>172.16.2.1</td>     <td>255.255.252.0</td>      <td></td>             </tr>
+                <tr>    <td>R0 0/2</td>   <td>15.15.2.2</td>      <td>255.255.255.252</td>    <td></td>             </tr>
+                <tr>    <td>R1 0/1</td>   <td>10.10.2.1</td>      <td>255.255.248.0</td>      <td></td>             </tr>
+                <tr>    <td>R1 0/2</td>   <td>15.15.2.1</td>      <td>255.255.255.252</td>    <td></td>             </tr> 
+              </table>
+            </div>
+            <div class="text_laba">
+              <br>Настройка статической маршрутизации производится при помощи команды: ip route [сеть назначения] [маска] [маршрут]
+              <br>Установить банер на сетевое оборудование: banner motd [баннер]
+              <br><br>Проверка работоспособности сети:
+              <p><img src="images/06.jpg" id="img6">
+              <br>Пакеты успешно отправляются!
+            </div>
+
+
+
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="laba3">
+<h2><div align="center">Подготовка к экзамену</div></h2>
 
 <h4><div align="left">Цель:</div></h4>
 
-Создать и настроить компьютерную сеть
+Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)
 
-<h4><div align="left">Задачи:</div></h4>
+<h4><div align="left">Вопрос:</div></h4>
+<h3><div align="left">HTML (от англ. HyperText Markup Language) - это</div></h3>
 <ol>
-<li>Создать сеть.</li>
-<li>Настроить созданную сеть.</li>
+<li>Компилируемый, статически типизированный язык программирования общего назначения.
+Поддерживает такие парадигмы программирования, как процедурное программирование, объектно-ориентированное программирование, обобщённое программирование.</li>
+<li>Стандартизированный язык разметки документов во Всемирной паутине. Язык интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.</li>
+<li>Текстовый формат обмена данными, основанный на JavaScript. Как и многие другие текстовые форматы, HTML легко читается людьми.</li>
 </ol>
-
-<table align="center">
-  <tr>
-    <td align="center">
-      <img src="image.jpg" height="150" onclick="changeSizeImage(this)" />
-      <br />
-      <b>Станкин</b>
-    </td>
-
-  </tr>
-</table>
-
-</div>
+<div class="demo">
+    <input class="hide" id="hd-2" type="checkbox">
+    <label for="hd-2">Нажмите здесь, чтобы посмотреть ответ</label>
+    <div>
+    	HTML (от англ. HyperText Markup Language — «язык гипертекстовой разметки») — стандартизированный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами; полученный в результате интерпретации форматированный текст отображается на экране монитора компьютера или мобильного устройства.
+    	<a href="https://ru.wikipedia.org/wiki/HTML">Источник</a> 
+    </div>
+ </div>
 
 </body>
 </html>
