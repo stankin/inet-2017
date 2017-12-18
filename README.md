@@ -40,6 +40,17 @@
 3. Змейка: https://stankin.github.io/inet-2017/idm-17-04/Voeikov/snake.html
 
 
+## ИДМ-17-05:
+
+1. Приложение представляющее собой список группы:  https://stankin.github.io/inet-2017/idm-17-05/members.html
+
+2. Сайт компании, на котором размещены ссылки на работы и игра камень-ножницы-бумага: https://unocorn.github.io/unocorn.github.io/ng/index.html
+
+
+## ИДМ-17-06:
+
+1. Игра «Жизнь»: https://github.com/keepers-of-secrets/life-for-inet2017
+
 # Примерный образ результата:
 1. Список по группам (коллективная работа):
 
