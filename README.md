@@ -31,6 +31,15 @@
 
 1. Фрактальное дерево: https://yourleg.github.io/Fractal_tree/
 
+## ИДМ-17-04:
+
+1. Бот в telegram: https://github.com/dreamteamstankin/project
+
+2. Приложение-задачник: https://github.com/saygutina/Internet-Technology
+
+3. Змейка: https://stankin.github.io/inet-2017/idm-17-04/Voeikov/snake.html
+
+
 # Примерный образ результата:
 1. Список по группам (коллективная работа):
 
