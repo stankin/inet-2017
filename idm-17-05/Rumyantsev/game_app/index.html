@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<body style="background-color: black;">
+    <canvas id="canvasID" width="500" height="500" style="background-color: white;"></canvas>
+    <script>
+
+        var can = document.getElementById("canvasID");
+        var ctx = can.getContext("2d");
+        var mouseX=0;
+        var mouseY=0;
+        var c=0;
+        var mouseClick=false;
+        var points=0;
+        var timer=0;
+        
+        function clearCan(){
+            can.width = 500;
+            can.height = 500;
+        }
+        can.onmousemove = function(evt){
+            mouseX = evt.pageX - can.offsetTop;
+            mouseY = evt.pageY - can.offsetLeft;
+        }
+
+        var target = {
+            x: 100,
+            y: 100,
+            fS: 'rgba(127,0,110,0.5)',
+            draw: function(){
+                ctx.beginPath();
+                ctx.fillStyle = this.fS;
+                    ctx.arc(this.x,this.y,20,0,Math.PI * 2);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+            } 
+
+        }
+        var cursor = {
+            x: 0,
+            y: 0,
+            fS: 'rgba(0,255,0,0.5)',
+            draw: function(){
+                ctx.beginPath();
+                ctx.fillStyle = this.fS;
+                    ctx.arc(this.x,this.y,5,0,Math.PI * 2);
+                ctx.fill();
+                ctx.stroke();
+                ctx.closePath();
+            } 
+        }
+
+        function pifagor(a,b){
+           c = (a * a) + (b * b);
+           c = Math.sqrt(c);
+        }
+
+        function randomInt(max, min){
+            return Math.floor(Math.random() * (max -min +1)) +min;
+        }
+        
+        function drawText(points,x,y){
+            ctx.beginPath();
+                ctx.font = '20px Arial';
+                ctx.strokeText(points,x,y);
+            ctx.closePath();
+        }
+
+        function drawTextTimer(timer,x,y){
+            ctx.beginPath();
+                ctx.font = '20px Arial';
+                ctx.strokeText(timer,x,y);
+            ctx.closePath();
+        }
+
+        can.onmousedown = function(){
+            mouseClick = true;
+        }
+
+        can.onmouseup = function(){
+            mouseClick = false;
+        }
+
+        function endGame(){
+            drawText('You LOSE', 200,250);
+        }
+
+        function winGame(){
+            drawText('You WIN', 200,250);
+        }
+
+        function nullPoints(){
+            points = 0;
+        }
+        setInterval(function(){
+            clearCan();
+
+            timer++;
+            if(timer >= 500){
+                points--;
+                timer = 0;
+            }
+
+            pifagor(mouseX-target.x,mouseY-target.y);
+            if(c <= 20){
+                target.fS = 'rgba(255,0,255,0.5)';
+                if(mouseClick){
+                    points++;
+                    target.x = randomInt(20, 480);
+                    target.y = randomInt(20, 480);
+                    mouseClick = false;
+                }
+            }
+            else{
+                target.fS = 'rgba(255,0,0,0.5)'; 
+                if(mouseClick){
+                    points--;
+                    target.x = randomInt(20, 480);
+                    target.y = randomInt(20, 480);
+                    mouseClick = false;
+                }
+            }
+            target.draw();                                                                                  
+            // Points
+            drawText(points,5,20);
+            drawTextTimer(timer,460,20);
+            // Cursor
+            cursor.x = mouseX;
+            cursor.y = mouseY;
+            cursor.draw();
+            // Cursor debug log
+            //console.log(mouseX, mouseY);
+            if(points <= -1){
+                endGame();
+                setTimeout(nullPoints, 5000);
+            }
+            if(points == 20){
+                winGame();
+                setTimeout(nullPoints, 5000);
+            }
+        },5);
+
+    </script>
+</body>
