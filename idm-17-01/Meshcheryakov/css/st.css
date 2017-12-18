@@ -1,0 +1,16 @@
+body
+{
+	background-color: rgba(10, 123, 121, 0.75);
+}
+div
+{
+	background-color: white;
+}
+
+.counter{color:#AFB8B8; font-size: 16px;font-family: 'Raleway', sans-serif; font-weight: 400; line-height: 24px;margin: 0px;}
+.row2 h1{color: #636C6C; font-size: 24px; font-family: 'Raleway', sans-serif; font-weight: 700; margin: 0px;margin-top: 50px;padding-bottom: 30px; text-align: center; }
+.row2 h2{color: #636C6C; font-size: 20px; font-family: 'Raleway', sans-serif; font-weight: 700; margin: 0px;margin: 0px;padding-bottom: 30px; text-align: center; }
+#contant-1{margin-bottom:50px;margin-top: 10px;}
+
+.screen{ text-align: center;}
+.screenSite{text-align: center; }

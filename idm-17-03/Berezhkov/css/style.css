@@ -86,3 +86,14 @@ a{
   width: 33%;
   min-width: 320;
 }
+
+td{
+  min-width: 200px;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}

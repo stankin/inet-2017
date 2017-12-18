@@ -1,14 +1,16 @@
 
 $(function() {
-
       setInterval( function() {
+            /*Получаем секнуды на текущий момент времени из объекта Date */
       var seconds = new Date().getSeconds();
+      /*Вычисляем на сколько градусов нужно повернуть секнудную стрелку*/
       var sdegree = seconds * 6;
+      /*Записываем в переменную свойство CSS rotate()*/
       var srotate = "rotate(" + sdegree + "deg)";
-
+          /*Используя jQuery записываем в свойствах css в id #sec знаечние полученное в перемнной srotate*/
       $("#sec").css({ "transform": srotate });
-
-      }, 1000 );
+          /*Пример полученного значения CSS transform:rotate(60 deg)*/
+      }, 0 );
 
       setInterval( function() {
       var hours = new Date().getHours();
@@ -18,7 +20,7 @@ $(function() {
 
       $("#hour").css({ "transform": hrotate});
 
-      }, 1000 );
+      }, 0 );
 
       setInterval( function() {
       var mins = new Date().getMinutes();
@@ -27,12 +29,18 @@ $(function() {
 
       $("#min").css({ "transform" : mrotate });
 
-      }, 1000 );
+      },0 );
 
 });
 
 function show(Element){
-    document.getElementById(Element).style.display='block';
-};
+    var display =document.getElementById(Element).style.display;
 
+    if(display==="block"){
+        document.getElementById(Element).style.display='none';
+    }else{
+        document.getElementById(Element).style.display='block';
+    }
+
+};
 

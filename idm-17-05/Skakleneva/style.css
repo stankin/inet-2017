@@ -4,10 +4,6 @@
 body {
     font-weight: 300;
     line-height: 2;
-}
-body,
-.cta-style-3 h4,
-.section-heading.startup-heading {
     font-family: 'Merriweather', serif;
 }
 input:focus {outline: none}
@@ -18,21 +14,8 @@ h2,
 h3,
 h4,
 h5,
-h6,
-button[type="submit"],
-input[type="submit"],
-.bordered-btn,
-.boxed-btn.cta-btn,
-.boxed-btn.cta-btn-style-2,
-.ticker,
-.section-heading,
-.single-service-item.no-padding-right .readmore-btn,
-.service-box-style-4,
-.service-box-style-5 .readmore-btn,
-.login-form-style-1 button,
-.login-form-style-2 button,
-.coming-soon p,
-.coming-soon p span {
+h6
+{
     font-family: 'Roboto', sans-serif;
 }
 h1,
@@ -46,10 +29,6 @@ h6 {
 a {
     transition: .2s
 }
-img {
-    max-width: 100%;
-    height: auto
-}
 a:hover,
 a:focus {
     text-decoration: none
@@ -58,50 +37,85 @@ h3 {
     line-height: 35px;
 }
 
+.header1 {
+    background-color: #dddddd;
+    text-align: center;
+    padding: 40px;
+    font-size: 16;
+    color: #333;
+}
+.header2 {
+    font-size: 20;
+}
 .content-block {
-    padding: 80px 0;
+    padding: 20px;
     position: relative;
-}
-.content-block.gray-bg {
-    background-color: #f8fafd;
-}
-.content-block.no-padding {
-    padding: 0;
+    background-color: #f6f6f6;
 }
 .hide
 {
     font-size: 14;
+    background-color: #f6f6f6;
+}
+.linkbutton
+{
+    background-color: #ddd;
+    color: #333;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    height: auto
 }
 
 /* Backgrounds CSS */
 
-.footer-area {
-    background-image: url(footer-bg.jpg)
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+/* Горизонтальное меню */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-/* Footer CSS */
-.footer-area.footer-solid-style:after {
-    display: none;
-}
-.footer-area.footer-solid-style {
-    background: #333333 none repeat scroll 0 0;
-}
-.footer-area.footer-solid-style,
-.footer-area.footer-solid-style a {
-    color: #ccc;
-}
-.footer-area.footer-solid-style h3,
-.footer-area.footer-solid-style h4 {
-    color: #fff;
+li {
+    float: left;
 }
 
-.footer-area.footer-white-style:after {
-    display: none;
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-.footer-area.footer-white-style {
-    background: #222222 none repeat scroll 0 0;
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
 }
-.footer-area.footer-white-style h3,
-.footer-area.footer-white-style h4 {
-    color: #fff;
+.active {
+    background-color: #4CAF50;
 }
+
+#maket {
+    width: 100%; /* Ширина всей таблицы в процентах */
+   }
+#leftcol {
+    width: 550px; /* Ширина левой колонки в пикселах */
+   }
+#rightcol {
+    width: 450px; /* Ширина левой колонки в пикселах */
+    text-align: justify;
+   }

@@ -32,7 +32,7 @@ body, html {
     margin: 0 auto;
 }
 
-.content h1 {
+.content h2 {
     text-align: center;
     font-size: 60px;
     color: white;
@@ -125,7 +125,7 @@ body, html {
     opacity: 0.4;
 }
 
-.trade h1 {
+.trade h2 {
     text-align: center;
     margin-top: 50px;
     font-size: 36px;
@@ -178,7 +178,7 @@ body, html {
     border-bottom: 1px solid rgba(0,0,0,.2)
 }
 
-.market h1 {
+.market h2 {
     text-align: center;
     margin-top: 50px;
     font-size: 36px;
@@ -194,14 +194,15 @@ body, html {
 }
 
 .bull {
-    width: 55%;
+    width: 60%;
     font-size: 18px;
     line-height: 24px;
     display: inline-block;
     float: left;
+    margin-bottom: 50px;
 }
 
-.bull h2 {
+.bull h3 {
     margin-top: 30px;
     text-transform: uppercase;
     display: inline-block;
@@ -215,6 +216,10 @@ body, html {
 
 .bull .stars {
   text-align: center;
+}
+
+.bull ol li {
+    list-style: decimal;
 }
 
 .spisok {
@@ -249,7 +254,7 @@ body, html {
 
 }
 
-.lamp h1 {
+.lamp h2 {
     text-align: center;
     font-size: 36px;
     color: #66cccc;
@@ -335,7 +340,7 @@ body, html {
     background-color: rgb( 248, 248, 248 );
 }
 
-.final h1 {
+.final h2 {
     text-align: center;
     font-size: 36px;
     color: #66cccc;
@@ -374,6 +379,19 @@ body, html {
     background-image: -webkit-linear-gradient( 90deg, rgb(27,181,207) 0%, rgb(140,209,195) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(27,181,207) 0%, rgb(140,209,195) 100%);
     margin-bottom: 15px;
+}
+
+.report h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #66cccc;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.report li {
+    list-style: decimal;
+    margin-bottom: 5px;
 }
 
 .footer {

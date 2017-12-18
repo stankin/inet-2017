@@ -12,20 +12,21 @@ border: 1px solid black;
 padding: 4px 2px;
 }
 
+th{
+ border: 1px solid black;
+padding: 4px 2px;
+}
+
 span {
 font-weight: bold;
 color: white;
 }
 
-tr:first-child {
-font-weight: bold;
-}
-
 img {
-width: 200px;
-height: 150px;
-display: block;
-margin: 0 auto;
+width: 300px;
+height: 250px;
+/*display: block;
+margin: 0 auto;*/
 }
 
 body {
@@ -36,12 +37,18 @@ background-size:cover;
 tr {
 background: white;
 }
-
+#td
+{
+ width: 50px;
+ text-align: center;
+}
 .centr {
 max-width: 938px;
 margin: 0 auto;
 }
-
+.fars{
+ text-align: left; 
+}
 li {
 color: white;
 list-style-type: none;
@@ -58,7 +65,9 @@ color: white;
 h2 {
 color: white;
 }
-
+h3 {
+ color: white;
+}
 ol li {
 list-style-type: decimal;
 }
