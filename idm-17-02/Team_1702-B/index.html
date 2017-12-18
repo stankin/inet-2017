@@ -4,24 +4,22 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js2/js2.js"></script>
 	</head>
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <link rel="stylesheet" type="text/css" href="Style1.css">
 <script language="JavaScript">
 <!-- hide
-
 var scrtxt = "Тесты по информатике и информационным технологиям" ; 
 var length = scrtxt.length;
 var width = 100;
 var pos = -(width + 2);
-
 function scroll() {
   pos++;
   var scroller = "";
   if (pos == length) {
     pos = -(width + 2);
   }
-
   if (pos < 0) {
     for (var i = 1; i <= Math.abs(pos); i++) {
       scroller = scroller+" ";}
@@ -30,11 +28,9 @@ function scroll() {
   else {
     scroller = scroller + scrtxt.substring(pos, width + pos);
   }
-
   window.status = scroller;
   setTimeout("scroll()", 100);
 }
-
 // -->
 </script>
 	<body background="Images/maxresdefault.jpg" onLoad="scroll()">
@@ -83,9 +79,7 @@ function scroll() {
 	<a href='#none' onclick='slide_dox()'>Пройти тест</a>
  <Script Language="JavaScript">
 <!--Начало сценария
-
 var res="2413242413"
-
 function check_me()
 {
 	var count=0
@@ -105,7 +99,6 @@ function check_me()
 		else answer()
 	}
 }
-
 function control(k,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10)
 {
 	if (k==1&&f1.checked) return true;
@@ -120,7 +113,6 @@ function control(k,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10)
 	if (k==10&&f10.checked) return true;
 	return false;
 }
-
 function answer()
 {
 	answ="";
@@ -139,7 +131,6 @@ function answer()
 		showResult();
 	}
 }
-
 function showResult()
 {
 	var nok=0;
@@ -166,7 +157,6 @@ function showResult()
 		if (answ.charAt(9)=="1") {T10.value=" +"} else {T10.value=" -"};
 	}
 }
-
 </script>
 </head>
 <script type="text/javascript" language="javascript">
@@ -263,11 +253,22 @@ function slide_door(){
 	</div>
 <a href='#none' onclick='slide_door()'>Отправиться в нарнию</a>
  
+
+
 <div  id='box1' class="wrapper" style='padding:10px; display:none;'>
 	<input type="checkbox" id="check">
 	<div class="door"></div>
 	<label for="check"></label>
 </div>
+
+<script>
+$('#check').on('click',function(){
+	if($(this).prop('checked')){	
+	    $('#box1').removeClass();	
+        $('#box1').addClass(showPictures());
+}
+});
+</script>
  
 <script type="text/javascript" language="javascript">
 function slide_door(){
@@ -277,3 +278,28 @@ function slide_door(){
 
      </body>
 </html>
+
+<!-- <a href='#none' onclick='slide_door()'>Отправиться в нарнию</a>
+
+<script>
+$('#check').on('click',function(){
+	if($(this).prop('checked')){	
+	    $('#box1').removeClass();	
+        $('#box1').addClass(showPictures());
+}
+});
+</script>
+
+<div  id='box1' style='padding:10px; display:none;'>
+	<input type="checkbox" id="check">
+	<div class="door"></div>
+	<label for="check"></label>
+</div>
+
+
+
+<script>
+function slide_door(){
+    $('#box1').slideToggle(300)
+}
+</script> -->
