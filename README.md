@@ -46,6 +46,8 @@
 
 2. Сайт компании, на котором размещены ссылки на работы и игра камень-ножницы-бумага: https://unocorn.github.io/unocorn.github.io/ng/index.html
 
+3. Краевая задача для уравнения теплопроводности: https://zh-igor.github.io/term/index.html
+
 
 ## ИДМ-17-06:
 
