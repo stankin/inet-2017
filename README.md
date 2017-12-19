@@ -52,6 +52,8 @@
 
 4. Приложение "Список дел": https://stankin.github.io/inet-2017/idm-17-05/okhotnikov/index.html
 
+5. Strike game 2.0: https://stankin.github.io/inet-2017/idm-17-05/Skakleneva/index.html#lab2
+
 
 ## ИДМ-17-06:
 
