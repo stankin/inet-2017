@@ -11,6 +11,9 @@
 
 	Posted <http://xdan.ru/project/xdretroclock/index.html>
 */
+ $(function(){
+	$('#retroclockbox1').xdretroclock();
+})
 (function($){
 jQuery.fn.xdRetroClock = jQuery.fn.xdretroclock = function(options){
 	var settings = {
