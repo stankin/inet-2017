@@ -631,7 +631,7 @@ for (var i = 0; i < questions.length; i++) {
 $("#form-questions .question").each(function(index) {
   var questionOptions = questions[index].options;
   for (var i = 0; i < questionOptions.length; i++) {
-    $(this).find('.question-body').append('<input type="radio" id="option-' + (i * 1 + 1) + '-' + +(index + 1) + '" name="option-' + +(index + 1) + '" value="' + questionOptions[i].name + '"><label for="option-' + (i * 1 + 1) + '-' + +(index + 1) + '">' + questionOptions[i].name + '</label>');
+    $(this).find('.question-body').append('<div><input type="radio" id="option-' + (i * 1 + 1) + '-' + +(index + 1) + '" name="option-' + +(index + 1) + '" value="' + questionOptions[i].name + '"><label for="option-' + (i * 1 + 1) + '-' + +(index + 1) + '">' + questionOptions[i].name + '</label></div>');
   }
 });
 
