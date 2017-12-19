@@ -2,6 +2,9 @@
   <head>
     <title> Личная страница Князева Кирилла </title>
     <link rel="stylesheet" href="index.css">
+	   <script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.xdretroclock.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.xdretroclock.css" />
   </head>
   <body>
         <center><p> <font size="5" color="magenta" face="Arial">  Князев Кирилл ИДМ-17-05
@@ -17,111 +20,6 @@
             <input type="radio" name="wrong" value="wrong"> Вы сможете быстро и безопасно получить доступ к вашим базам 1С из любой точки мира, где есть Интернет. Все привычные вам настройки и доработки программ 1С сохраняются.<Br>
             <p>Правильным вариантом ответа является первый. Сложность данного вопроса заключается в том, что сервисы 1C Fresh и 1С Линк (3 вариант) схожи. Но 1С Fresh - это полноценный облачный сервис, а Линк это размещение базы клиента в интернете</p>
           </p>
-    <div id="main">
-	<header>
-		<h1>jquery.xdRetroClock Плагин</h1>
-		<p><a href="http://xdan.ru/retro-clock-on-jquery.html">Страница проекта</a>&nbsp;|&nbsp;<a href="http://xdan.ru/down/file/31">Скачать</a></p>
-		<p> Необычные ретро часы плагин для JQuery</p>
-		<div id="langbox"><a href="index-ru.html">ru</a>&nbsp;|&nbsp;<a href="index.html">eng</a></div>
-	</header>
-	<h2>Быстрый старт</h2>
-	<p>Добавим в страницу</p><pre style="width:535px;">
-&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.min.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;jquery.xdretroclock.js&quot;&gt;&lt;/script&gt;
-&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;jquery.xdretroclock.css&quot; /&gt;</pre>
-	<p>и div элемент</p>
-<pre style="width:535px;">&lt;div id=&quot;retroclockbox1&quot;&gt;&lt;/div&gt;</pre>
-	<p>инициализируем xdretroclock</p>
-	<pre >$(function(){
-	$('#retroclockbox1').xdretroclock();
-})</pre>
-<p>В результате получаем</p>
-<div id="retroclockbox1"></div>
-<h2>Настройки</h2>
-<p>- Убираем часы, минуты или секунды</p>
-<pre >$(function(){
-	$('#retroclockbox1').xdretroclock({showHour:false,showMinute:false,showSecond:true});
-})</pre>
-<div id="retroclockbox2"></div>
-<p>- смещение по часам</p>
-<pre >$(function(){
-	$('#retroclockbox3').xdretroclock({tzoneOffset:3,showSecond:false});
-})</pre>
-<div id="retroclockbox3"></div>
-<p>- am,pm форматы, до полудня/после полудня (12-ти часовой формат)</p>
-<pre >$(function(){
-	$('#retroclockbox4').xdretroclock({am:true});
-})</pre>
-<div id="retroclockbox4"></div>
-<p>- скорость анимации смены цифры (умножив на 6 должно быть меньше, чем на 1000) по умолчанию 100</p>
-<pre >$(function(){
-	$('#retroclockbox5').xdretroclock({speedFlip:50});
-})</pre>
-<div id="retroclockbox5"></div>
-<p>- установить свое время</p>
-<pre >$(function(){
-	$('#retroclockbox6').xdretroclock({time:function(){
-		return new Date('5.10.2012 12:34:23');
-	}});
-})</pre>
-<div id="retroclockbox6"></div>
-<footer>
-	<p>Licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GPL v3</a> Проект <a href="http://xdan.ru/project/xdRetroClock/index.html">Link</a> 
-	Автор: <a href="http://xdan.ru/user/profile/leroy/">Chupurnov Valeriy</a> (leroy@xdan.ru)</p>
-</footer>
-<style>
-body{margin:0px; padding:0px;}
-#main{margin:0px auto; padding:0px; width:900px;position:relative;}
-pre{
-	background:#F7F7F9;padding:10px;
-	border: 1px solid #E1E1E8;
-	border-radius: 3px;
-	color: #222222;
-}
-#ads1{
-	position:absolute;
-	right:0px;
-	top:35px;
-	/*border: 1px solid #E1E1E8;*/
-}
-#ads2{
-	position:absolute;
-	left:-180px;
-	top:0px;
-	/*border: 1px solid #E1E1E8;*/
-}
-#langbox{
-	position:absolute;
-	top:10px;
-	right:10px;
-}
-</style>
-<div id="ads1">
-	<script type="text/javascript"><!--
-google_ad_client = "ca-pub-1093220006396549";
-/* for-demo-xdCloudtags */
-google_ad_slot = "8735386465";
-google_ad_width = 336;
-google_ad_height = 280;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</div>
-<div id="ads2">
-<script type="text/javascript"><!--
-google_ad_client = "ca-pub-1093220006396549";
-/* for-demo-xdCloudtags1 */
-google_ad_slot = "9451449747";
-google_ad_width = 160;
-google_ad_height = 600;
-//-->
-</script>
-<script type="text/javascript"
-src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
-</script>
-</div>
-</div>
+   			<div id="retroclockbox1"></div>
             </body>
 </html>
