@@ -11,7 +11,6 @@
         var mouseClick=false;
         var points=0;
         var timer=0;
-        var flag=false;
 
         function clearCan(){
             can.width = 500;
@@ -124,8 +123,6 @@
             cursor.x = mouseX;
             cursor.y = mouseY;
             cursor.draw();
-            // Cursor debug log
-            //console.log(mouseX, mouseY);
 
             timer++;
             if(timer >= 600){
@@ -142,6 +139,5 @@
                 nullPoints();
             }
         },5);
-
     </script>
 </body>
