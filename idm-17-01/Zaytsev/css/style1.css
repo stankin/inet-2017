@@ -8,7 +8,8 @@ a {
 }
 
 li {
-	list-style-type: none;
+	list-style-type: upper-alpha;
+	list-style-position:inside;
 }
 
 
@@ -345,8 +346,7 @@ hr {
 	
 #main ol {
 	margin: 10px 0 10px 50px;
-	color: #0FC;
-	font-style: italic;
+	color: white;
 	font-family: georgia,times,serif;
 	}
 	
@@ -455,4 +455,16 @@ label {
 	color: #F70;
 	}
 .nw {text-align: center;}
+
+.repimg {
+	min-height:300px;
+	min-width:500px;              
+}
+.repimgroute{
+	min-height:200px;
+	min-width:550px;
+}
+.quottest{
+	quotes: "\00ab" "\00bb";
+}
 	

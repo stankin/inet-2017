@@ -1,5 +1,80 @@
+    
+// КОНТРОЛЛЕР - Основная функция
+function init() {
+    start = false;
+    count = 0;
+    // объект который задаёт игровое поле
+    array = [];
+    array_v = [];
+    game = new rect("#000", 0, 0, 480, 400);
+    game.total = 0;
+    // Ракетки-игроки
+    player = new rect("#aaa", game.width/2 - 30, game.height - 10, 10, 10);
+    // количество очков
+    player.scores = 0;
+    player.lose = 0;
+    canvas = document.getElementById("strike");
+    canvas.width = game.width;
+    canvas.height = game.height;
+    context = canvas.getContext("2d");
+    canvas.onmousemove = playerMove;
+    canvas.onclick = startGame;
+    setInterval(play, 1000 / 50);
+}
+// КОНТРОЛЛЕР - Вспомогательная функция
+ function play() 
+{
+    draw(); // отрисовываем всё на холсте
+    update(); // обновляем координаты
+}
+
+// отрисовка игры - ВИД
+function draw() { 
+    game.draw(); // рисуем игровое поле
+    // рисуем на поле счёт
+    context.font = 'bold 64px courier';
+    context.textAlign = 'center';
+    context.textBaseline = 'top';
+    context.fillStyle = '#cbc';
+    context.fillText(player.scores+":"+player.lose, 80, 20);
+    player.draw();
+    for (var i = 0; i < array.length; i ++)
+    {
+        array[i].draw();
+    }
+    for (var i = 0; i < array_v.length; i ++)
+    {
+        array_v[i].draw();
+    }
+    if (!start) {
+        for (var i=0; i<13; i++)
+        {
+            for (var j=0; j<20; j++)
+            {
+                context.globalAlpha = 0.9;
+                context.fillStyle = 'rgb(' +Math.floor(220-23.5*i) + ','+Math.floor(220-23.5*i)+','+Math.floor(220-23.5*i)+')';
+                context.fillRect(j*25, i*45, 25,45);
+            }
+        }
+        context.font = 'bold 30px courier';
+        context.textBaseline = 'top';
+        context.fillStyle = '#000';
+        context.fillText("Total: " + game.total, game.width / 2, 0);
+        context.font = 'bold 50px courier';
+        context.textBaseline = 'top';
+        context.fillStyle = '#000';
+        context.fillText("Strike Game 2.0", game.width / 2, game.height / 2 - 50)
+        context.font = 'bold 16px courier';
+        context.textBaseline = 'top';
+        context.fillStyle = '#000';
+        context.fillText("click on me", game.width / 2, game.height / 2 + 25);
+        context.textBaseline = 'bottom';
+        context.fillText("Stankin @ 2017", game.width / 2, game.height);
+    }
+}
+
 // класс определяющий параметры игрового прямоугольника и метод для его отрисовки
-function rect(color, x, y, width, height) {
+function rect(color, x, y, width, height) { //ВИД - рисует прямоугольник
     this.color = color;
     this.x = x;
     this.y = y;
@@ -11,68 +86,8 @@ function rect(color, x, y, width, height) {
         context.fillRect(this.x, this.y, this.width, this.height);
     };
 }
-
-// движение игрока
-function playerMove(e) {
-    if (start) {
-        var x = e.pageX;
-        if (player.width / 2 + 10 < x && x < game.width - player.width / 2 - 10) 
-        {
-            player.x = x - player.width / 2;
-        }
-    }
-}
     
-// отрисовка игры
-function draw() {
-    game.draw(); // рисуем игровое поле
-    // рисуем на поле счёт
-    context.font = 'bold 64px courier';
-    context.textAlign = 'center';
-    context.textBaseline = 'top';
-    context.fillStyle = '#cbc';
-    context.fillText(player.scores+":"+player.lose, 80, 20);
-    player.draw(); // правого игрока
-    for (var i = 0; i < array.length; i ++)
-    {
-        array[i].draw();
-    }
-    for (var i = 0; i < array_v.length; i ++)
-    {
-        array_v[i].draw();
-    }
-    if (!start) {
-        // вывод статстики
-        //context.fillStyle = "#c9c";
-        //context.globalAlpha = 0.9;
-       // context.fillRect(0, 0, game.width, game.height);
-        for (var i=0; i<13; i++)
-        {
-            for (var j=0; j<20; j++)
-            {
-                context.globalAlpha = 0.9;
-                context.fillStyle = 'rgb(' +Math.floor(220-23.5*i) + ',130,220)';
-                context.fillRect(j*25, i*25, 25,25);
-            }
-        }
-        context.font = 'bold 16px courier';
-        context.textBaseline = 'top';
-        context.fillStyle = '#000';
-        context.fillText("Total: " + game.total, game.width / 2, 0);
-        context.font = 'bold 70px courier';
-        context.textBaseline = 'top';
-        context.fillStyle = '#000';
-        context.fillText("Strike Game", game.width / 2, game.height / 2 - 50)
-        context.font = 'bold 16px courier';
-        context.textBaseline = 'top';
-        context.fillStyle = '#000';
-        context.fillText("click on me", game.width / 2, game.height / 2 + 25);
-        context.textBaseline = 'bottom';
-        context.fillText("Stankin @ 2017", game.width / 2, game.height);
-    }
-}
-    
-// Изменения которые нужно произвести
+// Изменения которые нужно произвести --МОДЕЛЬ
 function update() {
 
     // Если счёт равен десяти то завершаем партию
@@ -115,38 +130,19 @@ function update() {
 
     }
 }
-    
-function play() 
-{
-    draw(); // отрисовываем всё на холсте
-    update(); // обновляем координаты
+
+// движение игрока
+function playerMove(e) { //--МОДЕЛЬ
+    if (start) {
+        var x = e.pageX;
+        if (player.width / 2 + 10 < x && x < game.width - player.width / 2 - 10) 
+        {
+            player.x = x - player.width / 2;
+        }
+    }
 }
     
-// Инициализация переменных
-function init() {
-    start = false;
-    count = 0;
-    // объект который задаёт игровое поле
-    array = [];
-    array_v = [];
-    game = new rect("#000", 0, 0, 480, 320);
-    game.total = 0;
-    // Ракетки-игроки
-    player = new rect("#a0a", game.width/2 - 30, game.height - 10, 10, 10);
-    // количество очков
-    player.scores = 0;
-    player.lose = 0;
-    canvas = document.getElementById("strike");
-    canvas.width = game.width;
-    canvas.height = game.height;
-    context = canvas.getContext("2d");
-    canvas.onmousemove = playerMove;
-    canvas.onclick = startGame;
-    setInterval(play, 1000 / 50);
-
-}
-
-function collision(objA, objB) {
+function collision(objA, objB) { //Вычисление столкновений
     if (objA.x+objA.width  > objB.x &&
         objA.x             < objB.x+objB.width &&
         objA.y+objA.height > objB.y &&
@@ -167,9 +163,8 @@ function startGame() {
     }
     else 
     {
-        array.push(new rect("#70f", player.x, game.height, 10, 10));
+        array.push(new rect("#555", player.x, game.height, 10, 10));
     }
 }
-
 
 init();

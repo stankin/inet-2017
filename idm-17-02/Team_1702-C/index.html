@@ -1,0 +1,94 @@
+﻿	<html>
+		<head>
+            <meta charset="utf-8">
+			<title>Клеточный автомат</title>
+			<link rel="stylesheet" type="text/css" href="css/style.css">
+			<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+			<script type="text/javascript" src="js/jss.min.js"></script>
+			<script type="text/javascript" src="js/script.js"></script>
+		</head>
+		<body>
+			<div id="panel">
+				<div id="settings">
+					<div class="default">
+						<div class="param">
+							<p>
+								<input type="checkbox" name="wrap"><text id="wrap_text">Сшить края</text>
+							</p>
+						</div>
+						<div class="param">
+							<p id="field_size">Размерность поля:</p>
+							<p>
+								<text id="width_text">Ширина:</text><input type="number" name="width" min="10" max="100">
+							</p>
+						</div>
+						<div class="param">
+							<p>
+								<text id="height_text">Высота:</text><input type="number" name="height" min="10" max="100">
+							</p>
+						</div>
+						<div class="param">
+							<select id="config">
+								<option value="glider"><text id="glider_text">Планер</text></option>
+								<option value="spaceship"><text id="spaceship_text">Космический корабль</text></option>
+								<option value="gun"><text id="gun_text">Ружьё</text></option>
+								<option value="eater"><text id="eater_text">Пожиратель</text></option>
+								<option value="reflector"><text id="reflector_text">Отражатель</text></option>
+								<option value="hive"><text id="hive_text">Улий</text></option>
+								<option value="honey_farm"><text id="honey_farm_text">Пасека</text></option>
+								<option value="ship_tie"><text id="ship_tie_text">Карабельный бант</text></option>
+								<option value="boat_tie"><text id="boat_tie_text">Лодочный бант</text></option>
+							</select>
+							<button id="select_config"><text id="select_config_text">Выбрать</text></button>
+						</div>
+						<div class="param">
+							<button id="save_config"><text id="save_config_text">Сохранить</text></button>
+							
+						</div>
+						<div class="param"></div>
+						<div class="param"></div>
+					</div>
+					<div class="controls">
+						<button id="start_button">Start</button>
+						<button id="pause_button">Pause</button>
+						<button id="stop_button">Stop</button>
+					</div>
+					<div id="sets-settings">
+						<h4 id="sets_text">Наборы</h4>
+						<div id="sets">
+			  
+						</div>
+						<button id="add_set"><span>+</span></button>
+						<button id="zem_set"><span>−</span></button>
+					</div>
+				</div>
+				<div id="collapse">
+			
+				</div>
+			</div>
+			<div id="board">
+		  
+			</div>
+			
+			<div id="info_button">
+				<button id="button_info"><span>i</span></button>
+			</div>
+			
+			<div id="info">
+				<div id="info_general" class="info">
+			
+				</div>
+				<div id="info_about" class="info">
+			
+				</div>
+				<div id="info_dev" class="info">
+			
+				</div>
+			</div>
+			<div id="lang">
+				<button id="ru"><span>RU</span></button>
+				<button id="my"><span>MY</span></button>
+			</div>
+			
+		</body>
+	</html>

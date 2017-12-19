@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Список с оценками группы ИДМ-17-03</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+    <header class="header">
+      <h1>ИДМ-17-03</h1>
+    </header>
+      <div class="container">
+        <table class="table" id="table">
+          <thead><tr><th><div>ФИО</div></th><th><div>Подгруппа</div></th><th><div>Роль</div></th><th><div>Личная страница</div></th><th><div>Модуль 1</div></th><th><div>Проект</div></th><th><div>Модуль 2</div></th></tr></thead>
+          <tbody id="#table">
+            <script>
+                $.getJSON('data.json', function(data) {
+                    $(data.users).each(function(index, item) {
+                      $('#table').append('<tr><td>' + item.firstName + '</td><td>' + item.groupname + '</td><td>' + item.role + '</td><td><a href="' + item.linkForPage + '">личная страница</a></td><td>' + item.markFirstModule + '</td><td><a href="' + item.linkProject + '">проект</a></td><td>' + item.markSecondModule + '</td></tr>');
+                    });
+                });
+            </script>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <footer class="footer"></footer>
+  </body>
+</html>

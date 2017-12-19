@@ -1,0 +1,388 @@
+<p>
+    <strong>
+        Отчет по лабораторной работе: «Настройка локальной сети передачи
+        данных»
+    </strong>
+</p>
+<p>
+    <strong>
+        Цель лабораторной работы: ознакомиться с принципами работы компьютерных
+        сетей, базовой настройкой сетевого оборудования и статической
+        маршрутизацией.
+    </strong>
+</p>
+<p align="center">
+    <strong></strong>
+</p>
+<p>
+    Исходные данные:
+</p>
+<table border="1" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td width="156" valign="top">
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    LAN A
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    LAN B
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    LAN C
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="156" valign="top">
+                <p align="center">
+                    Количество хостов
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    400
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    900
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    3000
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="156" valign="top">
+                <p align="center">
+                    Маска
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    /23
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    /22
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    /20
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="156" valign="top">
+                <p align="center">
+                    Subnet
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    192.168.12.0
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    172.16.12.0
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    10.10.0.0
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="156" valign="top">
+                <p align="center">
+                    IP адрес первого хоста
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    192.168.12.1
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    172.16.12.1
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    10.10.0.1
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="156" valign="top">
+                <p align="center">
+                    IP адрес последнего хоста
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    192.168.13.254
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    172.16.15.254
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    10.10.15.254
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="156" valign="top">
+                <p align="center">
+                    Broadcast
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    192.168.13.255
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    172.16.15.255
+                </p>
+            </td>
+            <td width="156" valign="top">
+                <p align="center">
+                    10.10.15.255
+                </p>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<p>
+    1) Разместить на рабочем поле коммутатор и два компьютера и соединить их.
+</p>
+<p align="center">
+    <img
+        width="440"
+        height="120"
+        src="https://github.com/stankin/inet-2017/blob/master/idm-17-01/Selin/lab3.files/image001.png?raw=true"
+    />
+</p>
+<p>
+    2) Настроить адресацию на добавленных компьютерах без шлюза по умолчанию.
+</p>
+<p align="center">
+    <img
+        width="482"
+        height="387"
+        src="https://raw.githubusercontent.com/stankin/inet-2017/master/idm-17-01/Selin/lab3.files/image002.jpg"
+    />
+</p>
+<p align="center">
+    <img
+        width="482"
+        height="387"
+        src="https://raw.githubusercontent.com/stankin/inet-2017/master/idm-17-01/Selin/lab3.files/image003.jpg"
+    />
+</p>
+<p>
+    3) Добавить на рабочее поле еще один коммутатор с двумя компьютерами и
+    настроить адресацию из другой подсети
+</p>
+<p align="center">
+    <img
+        width="446"
+        height="298"
+        src="https://github.com/stankin/inet-2017/blob/master/idm-17-01/Selin/lab3.files/image004.png?raw=true"
+    />
+</p>
+<p align="center">
+    <img
+        width="482"
+        height="387"
+        src="https://raw.githubusercontent.com/stankin/inet-2017/master/idm-17-01/Selin/lab3.files/image005.jpg"
+    />
+</p>
+<p align="center">
+    <img
+        width="482"
+        height="387"
+        src="https://raw.githubusercontent.com/stankin/inet-2017/master/idm-17-01/Selin/lab3.files/image006.jpg"
+    />
+</p>
+<p>
+    4) Соединить коммутаторы между собой и проверить работоспособность сети
+</p>
+<p>
+    Сеть неработоспособна, так как в сетях А и В разная адресация. Для
+    правильной работы необходимо использовать маршрутизатор.
+</p>
+<p>
+    5) Добавить маршрутизатор на рабочее поле, настроить интерфейсы
+    маршрутизатора для существующих подсетей и проверить работоспособность.
+</p>
+<p align="center">
+    <img
+        width="460"
+        height="310"
+        src="https://github.com/stankin/inet-2017/blob/master/idm-17-01/Selin/lab3.files/image007.png?raw=true"
+    />
+</p>
+<p>
+    Сеть наработоспособна из-за отсутствия маршрутов по умолчанию.
+</p>
+<p>
+    6) Добавить на рабочее поле еще один маршрутизатор, подключить к нему
+    коммутатор и компьютер
+</p>
+<p>
+    7) Настроить сетевые настройки. Соединить между маршрутизаторы и настроить
+    между ними сеть с префиксом /30. Проверить работоспособность сети, отправив
+    сообщение сети A в сеть С и из сети В в сеть С
+</p>
+<p>
+    Сеть не работает, так как не настроена статическая маршрутизация.
+</p>
+<div align="center">
+    <table border="1" cellspacing="0" cellpadding="0">
+        <tbody>
+            <tr>
+                <td width="208" valign="top">
+                    <p align="center">
+                        Устройство
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        IP
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        Маска
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="208" valign="top">
+                    <p align="center">
+                        Router0 FastEthernet 0/0
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        192.168.12.1
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        255.255.254.0
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="208" valign="top">
+                    <p align="center">
+                        Router0 FastEthernet 0/1
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        172.16.12.1
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        255.255.252.0
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="208" valign="top">
+                    <p align="center">
+                        Router0 FastEthernet 0/2
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        15.15.12.2
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        255.255.255.252
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="208" valign="top">
+                    <p align="center">
+                        Router1 FastEthernet 0/1
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        10.10.0.1
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        255.255.40.0
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td width="208" valign="top">
+                    <p align="center">
+                        Router2 FastEthernet 0/2
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        15.15.12.1
+                    </p>
+                </td>
+                <td width="208" valign="top">
+                    <p align="center">
+                        255.255.255.252
+                    </p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<p align="center">
+    <img
+        width="673"
+        height="394"
+        src="https://github.com/stankin/inet-2017/blob/master/idm-17-01/Selin/lab3.files/image008.png?raw=true"
+    />
+</p>
+<p>
+    8) Установить пароли:
+</p>
+<p>
+    Для привилегированного режима: enable password selinsdalsosenushkina
+</p>
+<p>
+    На подключение через консоль: в режиме конфигурации терминала line console
+    0; password selinsdalsosenushkina
+</p>
+<p>
+    На подключение через telnet: в режиме конфигурации терминала line vty 0 4;
+    password selinsdalsosenushkina
+</p>

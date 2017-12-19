@@ -1,0 +1,47 @@
+body {
+  background: white;
+}
+
+h1, h3, h4 {
+  color: black;
+  text-align: center;
+}
+
+.field {
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 4px;
+  border-color: white;
+  width: 400px;
+  height: 400px;
+}
+
+.cell {
+  /* DEBUG */
+  /* 
+  background: gray;
+  */
+  display: inline-block;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  width: 18px;
+  height: 18px;
+}
+
+.snake-cell {
+  display: inline-block;
+  background: blue;
+  width: 20px;
+  height: 20px;
+}
+
+.row {
+  /* DEBUG */
+  /*
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  */
+  height: 20px;
+}

@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display+SC');
+
+ body {
+    background-color: #34495e; 
+    color: #c8c8c8;
+    font-family: 'Playfair Display SC', serif; 
+    font-size: 16px; размер шрифта
+    font-weight: 300; 
+    line-height: 28px;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-image: url(bg.jpg);
+    background-position: 50% 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 1300px; 
+    margin: 0 auto;
+}
+header .wrapper {
+    padding: 100px 15px 50px 50px;
+}
+
+#header-left {
+    float: left;
+    width: 60%;
+}
+#header-right {
+    float: left;
+    width: 40%;
+}
+
+#header-shadow {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+   margin-bottom: 30px;
+   font-size: 50px;
+   font-weight: 100;
+   line-height: 1.1;
+}
+
+h2 {
+   margin-bottom: 30px;
+   font-size: 20px;
+   font-weight: 100;
+   line-height: 1.1;
+   color: #FEC5ED;
+}
+#header-left h1 {
+	font-size: 50px;
+    margin-top: 50px;
+    line-height: 1.1;
+	color: #fff;
+}
+#header-left h1 strong {
+    font-weight: 400;
+	color: #fff;
+}
+#header-left h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.1;
+}
+
+#header-left p {
+    font-size: 18px;
+    margin-bottom: 70px;
+    letter-spacing: 1px; 
+}
+
+#header-left h1, #header-left h2, #header-left p {
+    margin-right: 40px;
+}
+
+header-right script {
+	padding-top: 30px;
+    max-width: 252px;
+}
+
+.button-download {
+    display: block-inline; 
+    color: #fff; 
+    border: 1px solid #fff; 
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 50px;
+    padding-right: 10px;
+    padding-left: 10px; 
+    text-decoration: none; 
+}
+
+#navbar-top {
+    min-height: 70px; 
+    background-color: #181b3d;
+    box-shadow: 0 0px 10px rgba(0,0,0,.2); 
+}
+
+#navbar-top .logo {
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px; 
+    font-weight: 700; 
+    padding: 15px 15px; 
+    display: block;
+    float: left;
+    text-decoration: none; 
+}
+
+#navbar-top menu {
+    list-style: none; 
+    float: right; 
+    margin: 0; 
+    padding: 0; 
+}
+#navbar-top menu li {
+    float: left; 
+    display: block; 
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#navbar-top menu li a {
+    color: #fff;
+    font-weight: 400;
+    text-decoration: none; 
+    line-height: 70px; 
+    display: block; 
+}
+#navbar-top menu li a:hover, #navbar-top menu li.active a {
+    color: #0099ff;
+}
+
+#lab1, #lab3 {
+    background: #fff; 
+    padding-top: 30px;
+	padding-bottom: 30px;
+}
+#lab2, #ekz {
+    background: #002137;
+    padding-top: 30px;
+	padding-bottom: 30px;
+}
+#lab1 h1 {
+    color: #112233; 
+	font-size: 30px;
+}
+#lab1 h2 {
+	color: #112233;
+}
+#lab2 h1 {
+	color: #fff; 
+	font-size: 30px;
+}
+#lab2 h2 {
+	color: #fff;
+}
+
+#lab3 h1 {
+    color: #112233; 
+	font-size: 30px;
+}
+
+#lab3 h2 {
+	color: #112233;
+}
+
+#ekz h1 {
+	color: #fff; 
+	font-size: 30px;
+}
+
+#ekz h2 {
+	color: #fff;
+}
+
+table.calendar {
+    width:200px;
+    margin: 0 auto;
+    border: 1px solid #ababab;
+    background: #f4f4f4;  
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-weight: normal; 
+    font-size: 12px;
+    padding: 3px;
+}
+
+td.in_month {
+    text-align: center; 
+    font-weight: normal; 
+    font-size: 12px; 
+    border: 1px solid #bababa;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    background: #ddd;
+    background: -moz-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);
+    background: -webkit-gradient(linear, 90deg, color-stop(0, BFBFBF), color-stop(100%, F6F0EA));
+    background: -webkit-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);
+    background: -o-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);
+    background: -ms-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);
+} 
+   
+table.calendar caption {
+    border: 1px solid #ababab;    
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: bold;
+    height: 28px;
+    line-height: 2.2; 
+    text-shadow: 0 1px 1px #fff;
+    background: -moz-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);
+    background: -webkit-gradient(linear, 90deg, color-stop(0, BFBFBF), color-stop(100%, F6F0EA));
+    background: -webkit-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);
+    background: -o-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);
+    background: -ms-linear-gradient(90deg, #BFBFBF 0, #F6F0EA 100%);
+}
+    
+table.calendar th{
+    color: green;
+}
+
+table.calendar td.selected { 
+    background: #00c400; 
+    background: -moz-linear-gradient(270deg, #16B831 0, #42FF94 100%);
+    background: -webkit-gradient(linear, 270deg, color-stop(0, 16B831), color-stop(100%, 42FF94));
+    background: -webkit-linear-gradient(270deg, #16B831 0, #42FF94 100%);
+    background: -o-linear-gradient(270deg, #16B831 0, #42FF94 100%);
+    background: -ms-linear-gradient(270deg, #16B831 0, #42FF94 100%);
+    font-weight: normal; 
+    font-size: 10px; 
+}
+
+table.calendar a {
+    display: block; 
+    font-weight: bold; 
+    text-decoration: none; 
+    color: #4e4ead;  
+    text-align: center; 
+    font-size: 10px; 
+}
+
+table.calendar caption a {
+    display: inline;
+    font-weight: bold;
+    font-size: 10px;
+    color: #898989;
+    text-shadow: 0 1px 1px #fff;
+}
+
+.footer
+{
+width:100%;
+text-align:center;
+margin-top:30px;
+}
+.footer p, .footer a
+{
+font: 14px Verdana, Arial, Helvetica, sans-serif;
+color:#ededed;
+}
+ 
+.footer a
+{
+text-decoration: none;
+border-bottom:1px dotted #444;
+}
+ 
+.footer a:hover
+{
+text-decoration: none;
+border:0px;
+}

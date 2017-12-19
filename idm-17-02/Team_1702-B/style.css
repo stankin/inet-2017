@@ -1,0 +1,169 @@
+html { 
+height: 100%; 
+}
+
+body {
+background-attachment: fixed;
+background-size: cover;
+}
+
+nav {
+  width: 621px;
+  margin: 0 auto 30px;
+}
+
+#map {
+        height: 500px;
+        width: 75%;
+ }
+
+.menu {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.Menu > li {
+  display: inline-block;
+  margin-right: 40px;
+  position: relative;
+}
+
+a {
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: -5px 3px 25px #0095B6;
+  border-radius: 10px;
+  background-color: #0047AB;
+  outline: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+}
+
+li {
+  text-shadow: 3px 3px 10px red, -3px -3px 10px yellow;
+  color: #007FFF;
+  font-size: 15px;
+}
+
+p {
+  color: #007FFF;
+}
+
+ map {
+        height: 400px;
+        width: 100%;
+ }
+
+.Submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: -5px 3px 25px #00008B;
+  border-radius: 10px;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  display: none;
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+
+.Menu li:hover .Submenu {
+	display: block;
+	}
+
+.Submenu > li > a {
+background-color: #00008B;
+color: white;
+}
+
+
+.wrapper {
+	background: url('3.jpg') no-repeat center;
+	margin: 0 auto;
+	height: 600px;
+	width: 400px;
+	border: 2px solid #666;
+	position: relative;
+}
+
+.wrapper1 {
+  background: url('4.jpg') no-repeat center;
+  margin: 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #666;
+  position: relative;
+}
+.wrapper2 {
+  background: url('5.jpg') no-repeat center;
+  margin: 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #666;
+  position: relative;
+}
+.wrapper3 {
+  background: url('6.jpg') no-repeat center;
+  margin: 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #666;
+  position: relative;
+}
+.wrapper4 {
+  background: url('7.jpg') no-repeat center;
+  margin: 0 auto;
+  height: 600px;
+  width: 400px;
+  border: 2px solid #666;
+  position: relative;
+}
+
+.door {
+	background: url('2.jpg');
+	display: block;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: right 0.3s linear 0s;
+	border: 2px solid #666;
+}
+.door:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #422d15;
+	top: 50%;
+	right: 10px;
+}
+label {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 20;
+	right: 0;
+	-moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+input:checked ~ .door {
+	right: 80%;
+}
+input {
+    margin-top: auto;
+}
+

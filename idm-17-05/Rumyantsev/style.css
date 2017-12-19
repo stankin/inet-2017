@@ -30,3 +30,8 @@ a {
 li {
     font-size: 13pt;
 }
+
+p {
+    font-size: 13pt;
+    text-indent: 7px;
+}
