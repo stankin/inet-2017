@@ -44,13 +44,13 @@
 
 ## ИДМ-17-05:
 
-1. Приложение представляющее собой список группы:  https://stankin.github.io/inet-2017/idm-17-05/members.html
+1. Сайт компании, на котором размещены ссылки на работы и игра камень-ножницы-бумага: https://unocorn.github.io/unocorn.github.io/ng/index.html
 
-2. Сайт компании, на котором размещены ссылки на работы и игра камень-ножницы-бумага: https://unocorn.github.io/unocorn.github.io/ng/index.html
+2. Краевая задача для уравнения теплопроводности: https://zh-igor.github.io/term/index.html
 
-3. Краевая задача для уравнения теплопроводности: https://zh-igor.github.io/term/index.html
+3. TrainingSpace: https://trainingspace.online
 
-4. TrainingSpace: https://trainingspace.online
+4. Приложение "Список дел": https://stankin.github.io/inet-2017/idm-17-05/okhotnikov/index.html
 
 
 ## ИДМ-17-06:
