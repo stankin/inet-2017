@@ -56,8 +56,7 @@
 
 5. Strike game 2.0: https://stankin.github.io/inet-2017/idm-17-05/Skakleneva/index.html#lab2
 
-6. Simple game: https://github.com/stankin/inet-2017/blob/master/idm-17-05/Rumyantsev/game_app/index.html
-
+6. Simple game: https://garus95.github.io/
 
 ## ИДМ-17-06:
 
