@@ -50,6 +50,8 @@
 
 3. Краевая задача для уравнения теплопроводности: https://zh-igor.github.io/term/index.html
 
+4. TrainingSpace: https://trainingspace.online
+
 
 ## ИДМ-17-06:
 
