@@ -59,7 +59,7 @@
 
 1. Игра «Жизнь»: https://github.com/keepers-of-secrets/life-for-inet2017
 
-[Оцениваем проекты здесь:](https://onedrive.live.com/survey?resid=7898162C7CE728BA!118&authkey=!AGZj9cvhuhtJnns)
+Не стесняемся, оцениваем проекты [здесь](https://onedrive.live.com/survey?resid=7898162C7CE728BA!118&authkey=!AGZj9cvhuhtJnns)!!!
 
 # Примерный образ результата:
 1. Список по группам (коллективная работа):
