@@ -11,7 +11,8 @@
         var mouseClick=false;
         var points=0;
         var timer=0;
-        
+        var flag=false;
+
         function clearCan(){
             can.width = 500;
             can.height = 500;
@@ -81,7 +82,7 @@
         }
 
         function endGame(){
-            alert('You LOSE');
+            drawText('You LOSE', 200,250);
         }
 
         function winGame(){
@@ -91,14 +92,9 @@
         function nullPoints(){
             points = 0;
         }
+
         setInterval(function(){
             clearCan();
-
-            timer++;
-            if(timer >= 600){
-                points--;
-                timer = 0;
-            }
 
             pifagor(mouseX-target.x,mouseY-target.y);
             if(c <= 20){
@@ -119,6 +115,7 @@
                     mouseClick = false;
                 }
             }
+            
             target.draw();                                                                                  
             // Points
             drawText(points,5,20);
@@ -129,7 +126,14 @@
             cursor.draw();
             // Cursor debug log
             //console.log(mouseX, mouseY);
-            if(points <= -1){
+
+            timer++;
+            if(timer >= 600){
+                points--;
+                timer = 0;
+            }
+
+            if(points <= 0){
                 endGame();
                 nullPoints();
             }
