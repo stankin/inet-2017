@@ -41,7 +41,7 @@
 
 3. Змейка: https://stankin.github.io/inet-2017/idm-17-04/Voeikov/snake.html
 
-4. Тетрис:https://stankin.github.io/inet-2017/idm-17-04/Orlova/project/game.html
+4. Тетрис: https://stankin.github.io/inet-2017/idm-17-04/Orlova/project/game.html
 
 
 ## ИДМ-17-05:
