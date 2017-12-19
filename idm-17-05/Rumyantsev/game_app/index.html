@@ -81,11 +81,11 @@
         }
 
         function endGame(){
-            drawText('You LOSE', 200,250);
+            alert('You LOSE');
         }
 
         function winGame(){
-            drawText('You WIN', 200,250);
+            alert('You WIN');
         }
 
         function nullPoints(){
@@ -95,7 +95,7 @@
             clearCan();
 
             timer++;
-            if(timer >= 500){
+            if(timer >= 600){
                 points--;
                 timer = 0;
             }
@@ -122,7 +122,7 @@
             target.draw();                                                                                  
             // Points
             drawText(points,5,20);
-            drawTextTimer(timer,460,20);
+            //drawTextTimer(timer,460,20);
             // Cursor
             cursor.x = mouseX;
             cursor.y = mouseY;
@@ -131,11 +131,11 @@
             //console.log(mouseX, mouseY);
             if(points <= -1){
                 endGame();
-                setTimeout(nullPoints, 5000);
+                nullPoints();
             }
             if(points == 20){
                 winGame();
-                setTimeout(nullPoints, 5000);
+                nullPoints();
             }
         },5);
 
