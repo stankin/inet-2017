@@ -52,6 +52,13 @@ h3 {
     position: relative;
     background-color: #f6f6f6;
 }
+.content-block-link {
+    padding: 2px;
+    position: relative;
+    background-color: #f6f6f6;
+    color: #777;
+    font-size: 14;
+}
 .hide
 {
     font-size: 14;
