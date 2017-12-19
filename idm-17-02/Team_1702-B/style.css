@@ -150,7 +150,7 @@ color: white;
 	top: 50%;
 	right: 10px;
 }
-label {
+.label-door {
 	position: absolute;
 	top: 0;
 	bottom: 0;
