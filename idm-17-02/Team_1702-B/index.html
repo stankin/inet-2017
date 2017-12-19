@@ -603,7 +603,7 @@ function showResult() {
   }
 
   console.log(persent);
-  $("#form-questions").append("<p>Ваш психологический рейтинг: " + rating + "</p>")
+  $("#form-questions").append("<p>Ваша оценка: " + rating + "</p>")
 
   var i = 0;
   $("#form-questions").append("<ul></ul>")
@@ -637,7 +637,7 @@ $("#form-questions .question").each(function(index) {
 
 $("input[type='radio']").on('change', function() {
   console.log($(this).attr("id").split("option-")[1].split('-')[0])
-  $(this).parent().parent().find('button').attr('disabled', false);
+  $(this).parent().parent().parent().find('button').attr('disabled', false);
 });
 
 
