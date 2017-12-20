@@ -1,6 +1,6 @@
 function initMap() {
     var KmlLayer = new google.maps.KmlLayer({
-        url: 'https://stankin.github.io/inet-2017/idm-17-02/Team_1702-B/kml/asia.kml',
+        url: 'https://stankin.github.io/inet-2017/idm-17-02/Team_1702-B/kml/Russia.kmz',
         map: map
     });
 /*  var map = new google.maps.Map(document.getElementById('map'), {
