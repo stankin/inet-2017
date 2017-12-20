@@ -310,14 +310,21 @@ function slide_door(){
 <!-- // Код для входа в нарнию ---------------->
 			
 <a href='#none' onclick='slide_door()'>Отправиться в нарнию</a>
+	
+	
 <div  id='box1' class="wrapper" style='padding:10px; display:none;'>
+	
+	
 	<input type="checkbox" id="check">
 	<div class="door"></div>
+	
 	<label class="label-door" for="check"></label>
+	
 </div>
 
 <script>
 $('#check').on('click',function(){
+	<
 	if($(this).prop('checked')){	
 	    $('#box1').removeClass();	
         $('#box1').addClass(showPictures());
