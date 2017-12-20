@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <link rel="stylesheet" type="text/css" href="css/style.css">
+                <title>Лабораторная работа №3</title>
+	</head>
+	<body class = " is-loading ">
+		<div id="wrapper">
+			<div id="main">
+				<header>
+                                        <p style="text-align: center;box-shadow: 0 0 13px 5px #d2d4c9;border-left: 1px solid #87CEEB;border-right: 1px solid #87CEEB;border-bottom: 1px solid #87CEEB;border-top: 1px solid #87CEEB;max-width: 250px;background-color: #f9f8db;position: absolute;top: 10px;left: 10px;" ><a href="https://stankin.github.io/inet-2017/idm-17-02/Yubko_AA/index.html">  Вернуться к личной странице  </a></p>
+                                        <div>
+                                                <h1>ЛАБОРАТОРНАЯ РАБОТА №3 "Настройка локальной сети передачи данных":</h1>
+                                                <h2>Настройка коммутаторов и маршрутизаторов</h2>
+                                        </div>
+                                </header>
+                        	<div class="LR3_0"><hr/>
+                        		<div >
+                                		<h3>ЦЕЛЬ РАБОТЫ - ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрузитацией.</h3>
+                        		</div><hr/>
+                        		<div class="LR3">
+                                		<div>
+                                			<p>Расчет диапазонов подсетей.</p>
+							<table border="2" style="width: 500px; height: 300px;">
+								<tbody>
+									<tr>
+								<td></td>
+								<td>LAN A</td>
+								<td>LAN B</td>
+								<td>LAN C</td>
+									</tr>
+									<tr>
+								<td></td>
+								<td>323</td>
+								<td>13</td>
+								<td>11</td>
+									</tr>
+									<tr>
+								<td>Префиксная маска</td>
+								<td>/23</td>
+								<td>/28</td>
+								<td>/28</td>
+									</tr>
+									<tr>
+								<td>Адрес подсети</td>
+								<td>192.168.8.0</td>
+								<td>172.16.8.0</td>
+								<td>10.10.8.0</td>
+									</tr>
+									<tr>
+								<td>Минимальный адрес</td>
+								<td>192.168.8.1</td>
+								<td>172.16.8.1</td>
+								<td>10.10.8.1</td>
+									</tr>
+									<tr>
+								<td>Максимальный адрес</td>
+								<td>192.168.9.254</td>
+								<td>172.16.8.14</td>
+								<td>10.10.8.14</td>
+									</tr>
+									<tr>
+								<td>Broadcast</td>
+								<td>192.168.9.255</td>
+								<td>172.16.8.15</td>
+								<td>10.10.8.15</td>
+									</tr>
+								</tbody>
+							</table>
+                        			</div>
+						<div>
+                                			<p>Адреса устройств.</p>
+							<table border="2" style="width: 700px; height: 450px;">
+								<tbody>
+									<tr>
+								<td>Устройство</td>
+								<td>IP</td>
+								<td>Маска</td>
+								<td>Шлюз по умолчанию</td>
+									</tr>
+									<tr>
+								<td>PC0</td>
+								<td>192.168.9.254</td>
+								<td>255.255.254.0</td>
+								<td>192.168.8.1</td>
+									</tr>
+									<tr>
+								<td>PC1</td>
+								<td>192.168.9.253</td>
+								<td>255.255.254.0</td>
+								<td>192.168.8.1</td>
+									</tr>
+									<tr>
+								<td>PC2</td>
+								<td>172.16.8.14</td>
+								<td>255.255.255.240</td>
+								<td>172.16.8.1</td>
+									</tr>
+									<tr>
+								<td>PC3</td>
+								<td>172.16.8.13</td>
+								<td>255.255.255.240</td>
+								<td>172.16.8.1</td>
+									</tr>
+									<tr>
+								<td>PC4</td>
+								<td>10.10.8.254</td>
+								<td>255.255.255.240</td>
+								<td>10.10.8.1</td>
+									</tr>
+									<tr>
+								<td>Router0 FastEthernet 0/0</td>
+								<td>192.168.8.1</td>
+								<td>255.255.254.0</td>
+								<td>_</td>
+									</tr>
+									<tr>
+								<td>Router0 FastEthernet 0/1</td>
+								<td>172.16.8.1</td>
+								<td>255.255.255.240</td>
+								<td>_</td>
+									</tr>
+									<tr>
+								<td>Router0 FastEthernet 0/2</td>
+								<td>15.15.8.2</td>
+								<td>255.255.255.252</td>
+								<td>_</td>
+									</tr>
+									<tr>
+								<td>Router1 FastEthernet 0/1</td>
+								<td>10.10.8.1</td>
+								<td>255.255.255.240</td>
+								<td>_</td>
+									</tr>
+									<tr>
+								<td>Router1 FastEthernet 0/2</td>
+								<td>15.15.8.1</td>
+								<td>255.255.255.252</td>
+								<td>_</td>
+									</tr>
+								</tbody>
+							</table>
+                        			</div><hr>
+						<div>
+                                			<p>Разместить два компьютера и коммутатор, настроить между ними адресацию.</p><span><img src=" image/IT_1.png "></span>
+                        			</div><hr>
+						<div>
+                                			<p>Добавить еще два компьютера и коммутатор, настроить адресацию.</p><span><img src=" image/IT_2.png "></span>
+                        			</div><hr>
+						<div>
+                                			<p>Разместить роутер и соединить две подсети через него, настроить адресацию.</p><span><img src=" image/IT_3.png "></span>
+                        			</div><hr>
+						<div>
+                                			<p>Добавить еще компьютер и коммутатор, настроить адресацию.</p><span><img src=" image/IT_4.png "></span>
+						</div><hr>
+						<div>
+                                			<p>Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</p>
+                        			</div><hr>
+						<div>
+                                			<p>Установить банер на сетевое оборудование: banner motd [баннер]</p>
+                        			</div>
+                        		</div>
+                		</div>
+			</div>
+		</div>
+		<script>
+   			if ('addEventListener' in window) 
+				{
+    					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+    					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+    				}
+		</script>  
+        </body>
+</html>

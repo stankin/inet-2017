@@ -1,0 +1,174 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Интернет-технологии</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon major fa-cloud"></span>
+					<h1>Интернет - технологии<br />
+					В данном курсе три лабораторные работы:</h1>
+					<p>1.Подготовка личной страницы для создания отчета<br />
+					2.Разработка простого веб-приложения<br />
+					3.Настройка локальной сети передачи данных</p>
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Нажмите</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Подготовка личной страницы для создания отчета</h2>
+							</header>
+							<p>Цель работы: Создание персональной страницы-отчета на github и работа с git.</p>
+							<p>Шаг 1. Форк репозитория<br />
+							Шаг 2. Клонирование репозитория<br />
+							Шаг 3. Создание базовой иерархии и личной страницы<br />
+							Шаг 4. Сохранение изменений в репозитории<br />
+							Шаг 5. Pull request<br />
+							Шаг 6. Проверка выполнения</p>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><img src="images/1.png" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<ul class="major-icons">
+								<li><span class="icon style1 major fa-code"></span></li>
+								<li><span class="icon style2 major fa-bolt"></span></li>
+								<li><span class="icon style3 major fa-camera-retro"></span></li>
+								<li><span class="icon style4 major fa-cog"></span></li>
+								<li><span class="icon style5 major fa-desktop"></span></li>
+								<li><span class="icon style6 major fa-calendar"></span></li>
+							</ul>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header class="major">
+								<h2>Разработка простого веб-приложения прогноза погоды</h2>
+							</header>
+							<p><strong>Цель:</strong> Проектирование и разработка веб-приложения. Приложение написано с помощью фреймворка <strong>React.JS</strong>. Город определеяется с помощью <strong>Yandex.Maps API</strong>, прогноз запрашивается с <strong>Yahoo! Weather API</strong>. <strong>Node.js</strong> и <strong>Express</strong> в роли сервера и <strong>node-sass-middleware</strong> препроцессор <strong>SASS</strong>.</p>
+							<p>Ссылка на приложение: <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-05/Dirsha/react-application">репозиторий</a></p>
+							<span class="image fit"><img src="images/pic111.png" alt="" /></span>
+							<p><strong>Состав команды:</strong> Дирша Алеся Николаевна и Резенова Юлия Романовна</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Настройка локальной сети передачи данных</h2>
+					</header>
+					<p><strong>Цель: настройка коммутаторов и маршрутизаторов.</strong> </p>
+					<div class="row 150%">
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/pic02.jpg" alt="" /></span>
+		
+						</div>
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/pic03.jpg" alt="" /></span>
+							
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+							
+						</div>
+						<p>1.Откроем программу, рассчитаем IP-адреса согласно выбранному варианту<br />
+						2.Разместим два компьютера и коммутатор,настроим между ними адресацию. Убедимся, что все работает<br />
+						3.Добавим еще коммутатор с двумя компьютерами и маршрутизаторы. Проведем необходимые настройки и проверим работоспособность<br />
+						4.Настроим статическую маршрутизацию при помощи следующих команд:<br />
+								<em>Команды привилегированного режима // router#</em><br />
+
+								show ip route – выводит таблицу маршрутизации;<br />
+								show ip protocols – выводит расширенную информацию об используемых протоколах маршрутизации.<br />
+<em>Команды режима глобального конфигурирования // router(config)#</em><br />
+
+ip route [сеть назначения] [маска] [маршрут] – добавляет в таблицу маршрутизации статический маршрут до указанной сети назначения. Маршрут может быть задан в виде исходящего интерфейса и/или (предпочтительно!) адреса next hop (IP-адреса входящего интерфейса следующего маршрутизатора на маршруте).<br />
+
+5.Установим банер на сетевое оборудование:<br />
+Banner motd [баннер] – определяет баннерное сообщение.<br />
+6.Все работает!</p>
+					</div>
+				</div>
+			</section>
+			
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header class="major">
+								<h2>Подготовка к экзамену</h2>
+								<p>Расположите в правильном порядке.Цикл Деминга.</p>
+								<ol>
+									<li>Разработать(Do)</li>
+									<li>Проверить(Check)</li>
+									<li>Поставить задачу(Plan)</li>
+									<li>Документировать(Do)</li>
+									<li>Проектировать(Do)</li>
+								</ol>
+								<p>Данный вопрос ориентирован на проверку знаний в области управления качеством пп, а именно цикла повторяющихся проверок. Ответ представляет собой верную последовательность действий по Демингу. Вопрос достаточно легкий и интуитивно понятный, проблем с ответом на него возникать не должно.</p>
+								<p>Цикл Деминга или PDCA (англ. «Plan-Do-Check-Act» - планирование-действие-проверка-корректировка) циклически повторяющийся процесс принятия решения, используемый в управлении качеством.</p>
+								<p>Методология PDCA представляет собой простейший алгоритм действий руководителя по управлению процессом и достижению его целей. Цикл управления начинается с планирования.</p>
+								<p><strong>Планирование</strong></p>
+								<p>установление целей и процессов, необходимых для достижения целей, планирование работ по достижению целей процесса и удовлетворения потребителя, планирование выделения и распределения необходимых ресурсов.</p>
+								<p><strong>Выполнение</strong></p>
+								<p>выполнение запланированных работ.</p>
+								<p><strong>Проверка</strong></p>
+								<p>сбор информации и контроль результата на основе ключевых показателей эффективности (KPI), получившегося в ходе выполнения процесса, выявление и анализ отклонений, установление причин отклонений.</p>
+								<p><strong>Воздействие (управление, корректировка)</strong></p>
+								<p>принятие мер по устранению причин отклонений от запланированного результата, изменения в планировании и распределении ресурсов.</p>
+								<p><strong>Ответ: 35142</strong></p>
+				
+							</header>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<!-- <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+					<li><a href="https://github.com/AlesyaDirsha1#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; DIRSHA ALESYA</li>
+			</section>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

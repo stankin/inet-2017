@@ -1,0 +1,279 @@
+html 
+{
+	height: 100%;
+}
+body 
+{
+	height: 100%;
+	background-color: #AAA;
+	background-image: url("images/overlay.png"), linear-gradient(30deg, rgba(6, 41, 210, 0.71) 5%, rgba(4, 206, 210, 0.61)), url("../../images/bg.jpg");
+	background-repeat: repeat, no-repeat, no-repeat;
+	background-size: 100px 100px, cover, cover;
+	background-position: top left, center center, bottom center;
+	background-attachment: fixed, fixed, fixed;
+}
+
+body, input, select, textarea 
+{
+	color: #055967;
+    	font-family: cursive;
+   	font-weight: 200;
+    	line-height: 1.5;
+}
+a 
+{
+	transition: color 0.2s ease, border-color 0.2s ease;
+	color: #347781;
+	text-decoration: none;
+}
+a:hover 
+{
+	color: #31ccbf;
+}
+strong, b 
+{
+	color: #055967;
+}
+em, i 
+{
+	font-style: italic;
+}
+p 
+{
+	margin: 0 0 1.5em 0;
+}
+li 
+{
+	text-align: left;
+}
+h1, h2 
+{
+	color: #055967;
+	line-height: 1.5;
+	margin: 0 0 0.75em 0;
+}
+h1 
+{
+	font-size: 1.85em;
+	letter-spacing: 0em;
+	margin: 0 0 0.525em 0;
+	text-transform: uppercase;
+	text-shadow: 2px -2px 5px #418399;
+}
+h2 
+{
+	font-size: 1.7em;
+	letter-spacing: 0.12em;
+	margin: 0 0 0.525em 0;
+	text-transform: uppercase;
+}
+
+#main 
+{
+	position: relative;
+	max-width: 100%;
+	min-width: 27em;
+	padding: 4.5em 3em 3em 3em ;
+	background: #FFF;
+	border-radius: 4px;
+	cursor: default;
+	opacity: 0.95;
+	text-align: center;
+	transform-origin: 50% 50%;
+	transform: rotateX(0deg);
+	transition: opacity 1s ease, transform 1s ease;
+	box-shadow: 0 0 5px 5px #085d6c;
+}
+
+#main .avatar 
+{
+	position: relative;
+	display: block;
+	margin-bottom: 1.5em;
+}
+
+#main .avatar img 
+{
+	display: block;
+	margin: 0 auto;
+	border-radius: 50% 50%;
+	box-shadow: 0 0 10px 5px #eaead6;
+}
+
+
+
+body.is-loading #main 
+{
+	opacity: 0;
+	transform: rotateY(310deg);
+}	
+#wrapper 
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	perspective: 1000px;
+	position: relative;
+	min-height: 100%;
+	padding: 1.5em;
+	z-index: 2;
+}
+
+#wrapper > * 
+{
+	z-index: 1;
+}	
+.accordion {
+    width: 100%;
+    max-width: 900px;
+    min-height: 0;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden
+}
+
+.accordion h2 {
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: block;
+    margin: 0;
+    padding: 10px 25px;
+    cursor: pointer;
+    color: black;
+    background: #87CEEB;
+    box-sizing: border-box;
+}
+
+.msg {
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  opacity: 1;
+  transform: translate(0, 0);
+  border-left: 1px solid #87CEEB;
+  border-right: 1px solid #87CEEB;
+  border-bottom: 1px solid #87CEEB;
+  border-top: 1px solid #87CEEB;
+  background-color: #f9f8db;
+}
+.msg .hr {
+    color: #409bc4;
+    font-size: 16px;
+}
+
+.msg p {
+  color: #288798;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  padding: 0 20px;
+}
+.clock{
+	font-size:20px;
+	font-weight:bold;	
+	top: 10px;
+    right: 10px;
+    width: 300px;
+    height: 250px;
+	position: absolute;
+	z-index: 1000;
+	border-radius: 50%;
+}
+
+
+.clock:hover 
+{
+	color: red;
+	font-size:20px;
+	font-weight:bold;	
+	top: 10px;
+    right: 10px;
+    width: 300px;
+    height: 250px;
+	position: absolute;
+	z-index: 1000;
+	border-radius: 50%;
+}
+
+.clock:active
+{
+	font-size:20px;
+	font-weight:bold;	
+	top: 30px;
+    left: 10px;
+    width: 300px;
+    height: 250px;
+	position: absolute;
+	z-index: 1000;
+	display: none;
+	 border-radius: 50%;
+}
+.submit
+{
+	background-color: #83cbe9;
+    padding: 5px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #355461;
+    border: none;
+    outline: none;
+    font-weight: bold;
+	margin: 15px 0px 0px 0px;
+	box-shadow: 0 0 4px 0px black;
+}
+.forma
+{
+	border: 2px dashed #83cbe9;
+	margin-right: 20px;
+    	margin-top: 10px;
+}
+.forma2
+{
+display: block;
+	border: 2px dashed#f5080c;
+    	margin-left: 30px;
+	margin-right: 20px;
+    	margin-top: 10px;
+    	width: 300px;
+    	height: 50px;
+    	margin-bottom: 10px;
+}
+
+.LR3_0 
+{
+	width: 100%;
+    max-width: 900px;
+    min-height: 0;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden
+}
+.LR3 
+{
+	box-shadow: 0 0 3px #347781;
+    	padding: 0px;
+    	text-align: -webkit-center;
+    width: 800px;
+    margin: 20px;
+}
+
+.LR3 p
+{
+	font-size: 20px;
+	margin-bottom: 10px;
+   	margin-top: 10px;
+}
+
+.LR3 table
+{
+	text-align: center; 
+	display: table;
+    	border-collapse: separate;
+    	border-spacing: 2px;
+    	border-color: #41a5c3;
+}

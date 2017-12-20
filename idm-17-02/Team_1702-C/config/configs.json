@@ -1,0 +1,11 @@
+{
+	"configs":[
+		{"name": "glider", "json": "glider.json"},
+		{"name": "eater_2", "json": "config/eater_2.json"},
+		{"name": "boat_tie", "json": "config/boat_tie.json"},
+		{"name": "ship_tie", "json": "config/ship_tie.json"},
+		{"name": "honey_farm", "json": "config/honey_farm.json"},
+		{"name": "hive", "json": "config/hive.json"},
+        {"name": "glider_x_glider", "json": "config/glider_x_glider.json"}
+	]
+}

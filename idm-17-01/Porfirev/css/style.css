@@ -1,0 +1,51 @@
+
+
+body
+{
+    background-color: rgba(112, 123, 121, 0.75);
+}
+div
+{
+    background-color: white;
+}
+
+
+
+#service{ padding: 96px 0px;}
+#service .service-header{text-align: center; margin-bottom: 20px;}
+#service .service-header h1{color:#636C6C; font-size: 36px; font-family: 'Raleway', sans-serif; font-weight: 700; }
+#service .service-header p{color:#AFB8B8; font-size: 16px; font-family: 'Raleway', sans-serif; font-weight: 400; line-height: 24px}
+
+#service .service-tab ul{float: left;list-style: outside none none;padding: 0;margin-right: 150px; padding-left: 30px;}
+#service .service-tab ul li{ border-right: 1px solid #DBE2E2;}
+#service .service-tab ul li a{color: #9FA9A9; padding-top: 23px; padding-bottom: 17px;font-size: 20px; font-family: 'Raleway', sans-serif; font-weight: 400;display: block; padding-right: 60px}
+#service .service-tab ul li a i{font-size: 45px; margin-right: 40px; position: relative;top: 10px;}
+#service .service-tab ul li a:hover{border-right: 10px solid #5DCA88;padding-right: 50px}
+#service .service-tab ul li a:hover i{color: #5DCA88}
+
+.edit-tab{overflow: hidden;}
+.edit-tab h1{color: #636C6C; font-size: 18px; font-family: 'Raleway', sans-serif; font-weight: 700; margin: 0px;margin: 0px;padding-bottom: 30px; }
+.edit-tab h2{color: #636C6C; font-size: 24px; font-family: 'Raleway', sans-serif; font-weight: 300; margin: 0px;margin: 0px;padding-bottom: 10px; }
+.edit-tab p{color:#AFB8B8; font-size: 16px;font-family: 'Raleway', sans-serif; font-weight: 400; line-height: 24px;margin: 0px;}
+
+.edit-tab-content{padding-top: 30px}
+#service {height: 100vh; }
+#firstContainer{height: 80vh; }
+.counter{color:#AFB8B8; font-size: 16px;font-family: 'Raleway', sans-serif; font-weight: 400; line-height: 24px;margin: 0px;}
+.row2 h1{color: #636C6C; font-size: 24px; font-family: 'Raleway', sans-serif; font-weight: 700; margin: 0px;margin-top: 50px;padding-bottom: 30px; text-align: center; }
+.row2 h2{color: #636C6C; font-size: 20px; font-family: 'Raleway', sans-serif; font-weight: 700; margin: 0px;margin: 0px;padding-bottom: 30px; text-align: center; }
+#contant-1{margin-bottom:50px;margin-top: 10px;}
+
+.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+.tftable tr {background-color:#ffffff;}
+.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+.tftable tr:hover {background-color:#ffff99;}
+.screen{ text-align: center;}
+.screenSite{text-align: center; }
+
+#role{ width: 300px;  padding: 10px;  margin: auto;color:#AFB8B8; font-size: 16px; font-family: 'Raleway', sans-serif;}
+ol {list-style-type: upper-alpha;}
+#demands { text-align: center;}
+
+#exam{max-width: 90%;}

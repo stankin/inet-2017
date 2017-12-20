@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta name="description" content ="place your well-thought description here. It is important!"/>
+<meta name="author" content="Virtuti-Design" />
+<!-- define the width of the page as no wider than the width of the viewport --> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" /> 
+<link href='https://fonts.googleapis.com/css?family=Habibi&amp;subset=latin,latin-ext' rel='stylesheet'>
+<link href="modal.css" rel="stylesheet" />
+<!--[if lt IE 9]>
+<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if IE ]><link rel="stylesheet" href="ie.css" media="all"/><![endif]--> 
+<title>Down The Times. Small content block.</title>
+	<meta charset="UTF-8"></head>
+
+	<meta charset="UTF-8"></head>
+	<body>
+		<div id="modal-wrapper">
+		<div id="modal-inner">
+			<div class="entry">
+			
+			<div id="block">
+	<div class="paginate">	
+	<input type='hidden' id='current_page' /> 
+	<input type='hidden' id='show_per_page' /> 
+	
+			<div id="paginate-place">
+            <div class="paginate-content">
+			<article>
+			
+			<h2>Подключение бота</h2>
+			<p>var TelegramBot = require('node-telegram-bot-api');<br>
+				var fs = require('fs');<br>
+				const osmosis = require('osmosis');<br>
+				var token = '447746908:AAFOv0sCAjOo8PwSBrvf8vdkGOnssFgkzd0';<br>
+				var bot = new TelegramBot(token, {polling: true});<br>
+
+				var notes = [];<br>
+				var mess = [];</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<h2>Регистрация команд</h2>
+			<p>var options = {
+				reply_markup: JSON.stringify(
+				inline_keyboard: [<br>
+				[{ text: '/напомни %заметка% в hh:mm', callback_data: '/напомни' }],<br>
+				[{ text: '/заметки', callback_data: '/заметки' }],<br>
+				[{ text: '/удалить', callback_data: '/удалить' }],<br>
+				[{ text: '/курс', callback_data: '/курс' }],<br>
+				[{ text: '/запомни', callback_data: '/запомни' }],<br>
+				[{ text: '/напоминания', callback_data: '/напоминания' }],<br>
+				[{ text: '/удалитьнапоминания', callback_data: '/удалитьнапоминания' }]
+				
+			
+		    </p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<b>Функциональная часть команды <em>"напомни"</em>: </b><br><br>
+			<p>bot.onText(/\/напомни (.+) в (.+)/, function (msg, match) <br>
+      var userId = msg.from.id;<br>
+      var text = match[1];<br>
+      var time = match[2];<br>
+    
+      notes.push( { 'uid':userId, 'time':time, 'text':text } );<br>
+      
+      bot.sendMessage(userId, 'Отлично! Жди, я за тобой приду');<br>
+      console.log(userId, text, time);<br>
+    });</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<b>Функциональная часть команды <em>"запомни"</em>: </b><br><br>
+			<p>bot.onText(/\/запомни (.+)/, function (msg, match) {<br>
+      var userId = msg.from.id;<br>
+      var text = match[1];<br>
+      // var time = match[2];<br>
+    
+      mess.push( { 'uid':userId, 'text':text } );<br>
+      
+      bot.sendMessage(userId, 'Отлично! Я запомнил, по команде /напомни, я напомню');<br>
+      console.log(userId, text);<br>
+    });</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<b>Функциональная часть команды <em>"заметки"</em>: </b><br><br>
+			<p>bot.onText(/\/заметки/, function (msg, match) {<br>
+  var userId = msg.from.id;<br>
+
+  console.log(userId);<br>
+
+  if (notes.length == 0) {<br>
+        bot.sendMessage(userId, 'У вас нет заметок');
+  }<br>
+for (var i = 0; i < notes.length; i++){<br>
+    bot.sendMessage(userId, 'Вы должны "' + notes[i]['text'] + ' в ' + notes[i]['time'] + "\" ");<br>
+}
+  
+});</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<b>Функциональная часть команды <em>"напоминания"</em>: </b><br><br>
+			<p>bot.onText(/\/напоминания/, function (msg, match) {<br>
+  var userId = msg.from.id;<br>
+  console.log(userId);<br>
+  if (mess.length == 0) {<br>
+        bot.sendMessage(userId, 'У вас нет заметок');<br>
+  }<br>
+  for (var i = 0; i < mess.length; i++){<br>
+      bot.sendMessage(userId, ''+ mess[i]['text']);
+  }
+  
+});</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<b>Функциональная часть команды <em>"удалить"</em>: </b><br><br>
+			<p>bot.onText(/\/удалить/, function (msg, match) {<br>
+        var userId = msg.from.id;<br>
+  for (var i = 0; i < notes.length; i++){    <br>
+    notes.splice(i,1);<br>
+
+  };<br>
+  bot.sendMessage(userId, 'Записи удалены');<br>
+});</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<b>Функциональная часть команды <em>"удалитьнапоминание"</em>: </b><br><br>
+			<p>bot.onText(/\/удалитьнапоминание/, function (msg, match) {<br>
+        var userId = msg.from.id;<br>
+  for (var i = 0; i < mess.length; i++){    <br>
+    mess.splice(i,1);<br>
+
+  };<br>
+  bot.sendMessage(userId, 'Записи удалены');<br>
+});</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<b>Функциональная часть команды <em>"хелп"</em>: </b><br>
+			<p>bot.onText(/\/хелп/, function (msg, match) {<br>
+    bot.sendMessage(msg.chat.id, 'Список команд:', options);<br>
+</p>
+<b>Функциональная часть процедуры напоминания: </b><br>
+			<p>setInterval(function(){<br>
+        for (var i = 0; i < notes.length; i++){<br>
+            var curDate = new Date().getHours() + ':' + new Date().getMinutes();<br>
+                if ( notes[i]['time'] == curDate ) {<br>
+                    bot.sendMessage(notes[i]['uid'], 'Напоминаю, что вы должны: '+ notes[i]['text'] + ' сейчас.');<br>
+                    notes.splice(i,1);
+                }
+            }
+    },1000);
+</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			<div class="paginate-content">
+			<article>
+			
+			<b>Функциональная часть команды <em>"курс"</em>: </b><br><br>
+			<p>bot.onText(/\/курс/, function (msg, match) {<br>
+  var userId = msg.from.id;<br>
+  osmosis<br>
+    .get('www.yandex.ru')<br>
+    .find('.inline-stocks')<br>
+    .set({
+      'kurs': 'span .inline-stocks__value_inner'
+    })<br>
+    .data(function(data) {
+      // console.log('Курс $: ' + data.kurs);<br>
+      bot.sendMessage(userId, 'Курс доллара: ' + data.kurs + ' рублей');
+   });
+});
+</p>
+			</article>
+	        </div><!--paginate-content ends here-->
+			
+			
+			
+	        </div><!--paginate-place ends here-->
+	        <div id="page_navigation"></div>
+	        </div><!--paginate ends here-->
+		    </div><!--block ends here-->
+		  
+			</div><!--entry ends here-->
+		</div><!--modal-inner ends here-->
+		</div><!--modal-wrapper ends here-->
+		<!--markup ends here-->
+
+<!--scripts-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js"></script>
+<!--pagination-->
+<script src="js/pagination.js"></script>
+	</body>
+</html>
