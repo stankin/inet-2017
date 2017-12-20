@@ -1,4 +1,8 @@
 function initMap() {
+    var KmlLayer = new google.maps.KmlLayer({
+        url: 'https://stankin.github.io/inet-2017/idm-17-02/Team_1702-B/kml/asia.kml',
+        map: map
+    });
 /*  var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 12,
     center: {lat: 37.06, lng: -95.68}
