@@ -1,5 +1,3 @@
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap">
-        
 function initMap() {
          var stankin = {lat: 55.789745, lng: 37.595052};
          var map = new google.maps.Map(document.getElementById('map'),{zoom: 4,center: stankin});
