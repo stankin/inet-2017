@@ -1,7 +1,7 @@
 {
 "employees":[
-    {"firstName":"John", "lastName":"Doe"}, 
-    {"firstName":"Anna", "lastName":"Smith"},
-    {"firstName":"Peter", "lastName":"Jones"}
+    {"customers":"John", "products":"Phone"}, 
+    {"customers":"Anna", "products":"Mobile"},
+    {"customers":"Peter", "products":"Cell"}
 ]
 }
