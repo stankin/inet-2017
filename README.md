@@ -33,6 +33,8 @@
 
 2. Игра "Ковбойская дуэль": https://kereat.github.io/Cowboys-games/
 
+3. Модель Лотки-Вольтерра: https://volodinaksenia.github.io/
+
 ## ИДМ-17-04:
 
 1. Бот в telegram: https://github.com/dreamteamstankin/project
