@@ -167,3 +167,11 @@ input {
     margin-top: auto;
 }
 
+.icon-excel {
+background-image: url("flagi/italy_small_flag.gif");
+padding-left : 32px;
+padding-top : 10px;
+padding-bottom : 10px;
+background-repeat : no-repeat;
+}
+
