@@ -298,6 +298,15 @@ function slide_door(){
 	</form>
 	</div>
 	
+<a onclick='schet()' src='flagi/albania_small_flag.gif'>Отправиться в нарнию</a>
+	function schet() {
+    var tSecs = 1
+    var iSecs = 2
+    document.getElementById("timer-counter").innerHTML = iSecs;
+    setTimeout('getSecs()', 1000); 
+    }  				
+<span id='timer-counter' style='color:darkblue;font-size:150%;font-weight:bold;'></span>
+   		
 <!-- // Код для входа в нарнию ---------------->
 			
 <a href='#none' onclick='slide_door()'>Отправиться в нарнию</a>
@@ -309,7 +318,7 @@ function slide_door(){
 <img src='flagi/antigua_and_barbuda_small_flag.gif'>
 <img src='flagi/argentina_small_flag.gif'>
 
-
+	
 	
 <div  id='box1' class="wrapper" style='padding:10px; display:none;'>
 
@@ -330,7 +339,8 @@ $('#check').on('click',function(){
 });
 </script>
  <!-- --------------------КОНЕЦ --------------------> 
-
+		
+		
 <script type="text/javascript" language="javascript">
 function slide_door(){
     $('#box1').slideToggle(300);
