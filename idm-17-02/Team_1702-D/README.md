@@ -2,12 +2,12 @@
 ![screnn_1](https://github.com/stankin/inet-2017/blob/master/idm-17-02/Team_1702-D/Screenshot_1.png)
 
 # Space Travel — ваш надёжный спутник
- [click me](http://example.com/ "click")
+ [сайт](https://stankin.github.io/inet-2017/idm-17-02/Team_1702-D/index.html "click")
  
 
 ## Состав команды:
-  1. Харсеев Владислав
-  2. Семенов Артур
+  1. Харсеев Владислав - СП, ПП
+  2. Семенов Артур - ВН, НИ, РП, БА
 
 ## Требования к приложению
  

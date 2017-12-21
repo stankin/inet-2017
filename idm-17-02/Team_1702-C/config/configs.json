@@ -1,6 +1,6 @@
 {
 	"configs":[
-		{"name": "glider", "json": "config/glider.json"},
+		{"name": "glider", "json": "glider.json"},
 		{"name": "eater_2", "json": "config/eater_2.json"},
 		{"name": "boat_tie", "json": "config/boat_tie.json"},
 		{"name": "ship_tie", "json": "config/ship_tie.json"},

@@ -126,7 +126,11 @@
 <div class="st1">  
 <a onclick="javascript:document.getElementById('st3').style.display='block'" href="javascript:void(0)">
 Лабораторная работа №2 "Разработка простого веб-приложения":
-Проектирование и разработка индивидуального или коллективного веб-приложения с использованием html,css,js + json,xml</div>
+Проектирование и разработка индивидуального или коллективного веб-приложения с использованием html,css,js + json,xml
+</br>
+<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Team_1702-D">Папка проекта</a>
+</br>
+<a href="https://stankin.github.io/inet-2017/idm-17-02/Team_1702-D/index.html">Проект</a></div>
 <div id="st3" class="st2" style="display:none"> 
 <a style="cursor:hand;cursor:pointer;" onclick="document.getElementById('st3').style.display='none'"><p>Цели:</p> 
 1. Собрать команду для разработки веб-приложения (SPA) и распределить роли; <br>
@@ -154,24 +158,69 @@
 <li>Добавить на рабочее поле еще одну подсеть с двумя компьютерами и проверить работоспособность сети</li>
 <li>Добавить еще один маршрутизатор, компьютер и коммутатор. Проверить работоспособность сети</li><ul><br>
 </div>
-  <table border="1">
-   <caption>Таблица исходных данных</caption>
-   <tr>
-    <th rowspan="2">Номер варианта</th>
-    <th colspan="3">Количество узлов</th>
-   </tr>
-    <tr>
-    <th>LAN A</th>
-    <th>LAN B</th>
-    <th>LAN C</th>
-   </tr>
-    <tr>
-	<th>7</th>
-    <th>137</th>
-    <th>30</th>
-    <th>37</th>
-   </tr>
-   </table><br>
+   			<p>
+			<table border="3" align="center">
+			<tr>
+				<td rowspan="2"></td><td><b>LAN A</b></td><td><b>LAN B</b></td><td><b>LAN C</b></td>
+			</tr>
+			<tr>
+				<td>137</td><td>30</td><td>37</td>
+			</tr>
+			<tr>
+				<td><b>Префиксная маска</b></td><td>/24</td><td>/27</td><td>/26</td>
+			</tr>
+			<tr>
+				<td><b>Адрес подсети</b></td><td>192.168.7.0</td><td>172.16.7.0</td><td>10.10.7.0</td>
+			</tr>
+			<tr>
+				<td><b>Минимальный адрес</b></td><td>192.168.7.1</td><td>172.16.7.1</td><td>10.10.7.1</td>
+			</tr>
+			<tr>
+				<td><b>Максимальный адрес</b></td><td>192.168.7.254</td><td>172.16.7.30</td><td>10.10.7.60</td>
+			</tr>
+			<tr>
+				<td><b>Broadcast</b></td><td>192.168.7.255</td><td>172.16.7.31</td><td>10.10.7.63</td>
+			</tr>
+	                </table>
+			</p>
+		        <b><p><center>Адреса устройств.</center></p></b>
+			<p>
+		        <table border="3" align="center">
+			<tr>
+				<td><b>Устройство</b></td><td><b>IP</b></td><td><b>Маска</b></td><td><b>Шлюз по умолчанию</b></td>
+			</tr>
+			<tr>
+				<td>PC0</td><td>192.168.7.137/td><td>255.255.255.0</td><td>192.168.7.1</td>
+			</tr>
+			<tr>
+				<td>PC1</td><td>192.168.7.254</td><td>255.255.255.0</td><td>192.168.7.1</td>
+			</tr>
+			<tr>
+				<td>PC2</td><td>172.16.7.27</td><td>255.255.255.0</td><td>172.16.7.1</td>
+			</tr>
+			<tr>
+				<td>PC3</td><td>172.16.7.254</td><td>255.255.255.0</td><td>172.16.7.1</td>
+			</tr>
+			<tr>
+				<td>PC4</td><td>10.10.7.2</td><td>255.255.255.192</td><td>10.10.7.1</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 0/0</td><td>192.168.7.1</td><td>255.255.255.0</td><td>–</td>
+			</tr>
+			<tr>
+			        <td>Router0 FastEthernet 1/0</td><td>172.16.7.1</td><td>255.255.0.0</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 6/0</td><td>15.15.7.1</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 0/0</td><td>15.15.7.2</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 1/0</td><td>10.10.7.1</td><td>255.0.0.0</td><td>–</td>
+			</tr>
+			</table>
+			</p><br>
 Итоговая схема сети:<br>
 <img src="pics/0333614b64b54d3042144ea23bff1903.png" class="imgresult">
 </div></section>
@@ -181,7 +230,19 @@
 <div class="frame">
 <div class="st1">Подготовка к экзамену:
 Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)
-Презентации лекций и тесты расположены на Яндекс-диск </div></div></section><br>
+Презентации лекций и тесты расположены на Яндекс-диск
+</br></br>
+<b>Вопрос</b></br>
+При создании сайтов часто используются css теги padding и margin, которые отвечают за:</br>
+1) устанавливают величину отступа от края элемента; </br>
+2) устанавливают значение поля вокруг содержимого элемента; </br>
+3) margin устанавливает величину отступа от края элемента, а padding - значение поля вокруг содержимого элемента; </br>
+4) margin устанавливает значение поля вокруг содержимого элемента, а padding - величину отступа от края элемента</br></br>
+</br> Правильный ответ: 3) <br>
+<b>Источники:</b>	</br><br>
+<a href="http://htmlbook.ru/css/margin">margin</a></br>
+<a href="http://htmlbook.ru/css/padding">padding</a>	</br>
+</div></div></section><br>
 
 <div class="space"></div>
 <div class="frame">
