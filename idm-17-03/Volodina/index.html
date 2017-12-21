@@ -73,28 +73,6 @@ $(document).ready(function(){
 	4) Прописать JavaScript-функционал  <a href="https://github.com/VolodinaKsenia/VolodinaKsenia.github.io"> Исходный код на JavaScript.</a><br/>
 	5)<a href="https://volodinaksenia.github.io/"> Действующий проект</a><br/>
 	</p>
-	<script>
-var obj, dbParam, xmlhttp, myObj, x, txt = "";
-obj = { "table":"employees", "limit":20 };
-dbParam = JSON.stringify(obj);
-xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        myObj = JSON.parse(this.responseText);
-        txt += "<table border='1'>"
-        for (x in myObj) {
-            txt += "<tr><td>" + myObj[x].name + "</td></tr>";
-        }
-        txt += "</table>"        
-        document.getElementById("demo").innerHTML = txt;
-    }
-};
-xmlhttp.open("POST", "json_demo_db_post.php", true);
-xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xmlhttp.send("x=" + dbParam);
-
-</script>
-	
 	
 	
 	<h3>Лабораторная работа №3</h3>
@@ -107,6 +85,10 @@ xmlhttp.send("x=" + dbParam);
 	Имеется три сети, в каджой из которых по одному коммутатору и два компьютера. <br/>
 	Кадждой сети соответствует свой маршрутизатор.<br/> Для всех сетей задан свой пул адресов с определенными масками сети в соответствии с вариантом. <br/>
 	Для всех устройств были установлены IP-адреса из заданного пула.<br/> Была настрона статическая маршрутизация к одной из сетей.
+	При добавлении в рабочее пространство двух коммутаторов с их компьютерами<br/>
+	и соединении этих коммутаторов кабелем, пакеты отправленные из одной сети  <br/>
+	не могли попасть в другую, поскольку для каждого из коммутаторов были настроены свои адреса и маски.<br/>
+		Для обеспечения взяимодействия  двух сетей используют маршрутизаторы.
 	</p>
 <h3>Подготовка к экзамену</h3>
 	<p>Вопрос:<br/>
