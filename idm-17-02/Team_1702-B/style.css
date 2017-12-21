@@ -169,9 +169,9 @@ input {
 
 .icon-excel {
 background-image: url("flagi/italy_small_flag.gif");
-padding-left : 32px;
-padding-top : 10px;
-padding-bottom : 10px;
+padding-left : auto;
+padding-top : auto;
+padding-bottom : auto;
 background-repeat : no-repeat;
 }
 
