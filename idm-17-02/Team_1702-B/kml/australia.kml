@@ -1,28 +1,118 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
-<Document><name>My document</name>
-<description>Content</description>
-<Style id="Lump">
-<LineStyle><color>CD0000FF</color><width>2</width></LineStyle>
-<PolyStyle><color>9AFF0000</color></PolyStyle>
-</Style>
-<Style id="Path">
-<LineStyle><color>FF0000FF</color><width>3</width></LineStyle>
-</Style>
-<Style id="markerstyle">
-<IconStyle><Icon><href>
-http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png
-</href></Icon></IconStyle>
-</Style>
-<Placemark><name>NAME</name>
-<description>YES</description>
-<styleUrl>#Lump</styleUrl>
-<Polygon>
-<tessellate>1</tessellate>
-<altitudeMode>clampToGround</altitudeMode>
-<outerBoundaryIs><LinearRing><coordinates>
-114.960938,-33.504759,0.0 
+  <Document>
+    <name>KML Asia</name>
+    <open>1</open>
+    <description>Unleash your creativity with the help of these examples!</description>
+    <Style id="transPurpleLineGreenPoly">
+      <LineStyle>
+        <color>7fff00ff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Style id="yellowLineGreenPoly">
+      <LineStyle>
+        <color>7f00ffff</color>
+        <width>4</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7f00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Style id="thickBlackLine">
+      <LineStyle>
+        <color>87000000</color>
+        <width>10</width>
+      </LineStyle>
+    </Style>
+    <Style id="redLineBluePoly">
+      <LineStyle>
+        <color>ff0000ff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>ffff0000</color>
+      </PolyStyle>
+    </Style>
+    <Style id="blueLineRedPoly">
+      <LineStyle>
+        <color>ffff0000</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>ff0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transRedPoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transBluePoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7dff0000</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transGreenPoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d00ff00</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transYellowPoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d00ffff</color>
+      </PolyStyle>
+    </Style>
+    <Style id="noDrivingDirections">
+      <BalloonStyle>
+        <text><![CDATA[
+          <b>$[name]</b>
+          <br /><br />
+          $[description]
+        ]]></text>
+      </BalloonStyle>
+    </Style>
+    <Folder>
+      <name>Polygons</name>
+      <visibility>0</visibility>
+      <description>Examples of polygon shapes</description>
+      <Folder>
+        <name>Asia</name>
+        <visibility>0</visibility>
+        <description>A collection showing how easy it is to create 3-dimensional
+          buildings</description>
+        <LookAt>
+          <longitude>-122.084120030116</longitude>
+          <latitude>37.42174011925477</latitude>
+          <altitude>0</altitude>
+          <heading>-34.82469740081282</heading>
+          <tilt>53.454348562403</tilt>
+          <range>276.7870053764046</range>
+        </LookAt>
+        <Placemark>
+          <name>Building 40</name>
+          <visibility>0</visibility>
+          <styleUrl>#transRedPoly</styleUrl>
+          <Polygon>
+            <extrude>1</extrude>
+            <altitudeMode>relativeToGround</altitudeMode>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates> 
+				114.960938,-33.504759,0.0 
 115.048828,-34.161818,0.0 
 115.004883,-34.279914,0.0 
 115.114746,-34.361576,0.0 
@@ -619,9 +709,13 @@ http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png
 115.312500,-33.660353,0.0 
 115.125732,-33.578015,0.0 
 114.982910,-33.504759,0.0 
-114.960938,-33.504759,0.0 
-</coordinates></LinearRing></outerBoundaryIs>
-</Polygon>
-</Placemark>
-</Document>
+114.960938,-33.504759,0.0
+				</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+    </Folder>
+  </Document>
 </kml>
