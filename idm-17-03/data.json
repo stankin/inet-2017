@@ -68,7 +68,7 @@
         "role": "КО ВН",
         "linkForPage":"Dosan",
         "markFirstModule":"40",
-        "linkProject":"",
+        "linkProject":"https://github.com/deadcorg/FinFirst/",
         "markSecondModule":""
     },
     {
@@ -119,10 +119,10 @@
     {
         "firstName":"Рассахан Никита Дмитриевич",
         "groupname":"команда '17-03-ПМ-2'",
-        "role": "ПМ БА",
+        "role": "РП БА",
         "linkForPage":"Rassahan",
         "markFirstModule":"50",
-        "linkProject":"",
+        "linkProject":"https://github.com/deadcorg/FinFirst/",
         "markSecondModule":""
     },
     {
@@ -131,7 +131,7 @@
         "role": "СП АД",
         "linkForPage":"Romanov",
         "markFirstModule":"",
-        "linkProject":"",
+        "linkProject":"https://github.com/deadcorg/FinFirst/",
         "markSecondModule":""
     },
     {
@@ -149,7 +149,7 @@
         "role": "ПП НИ",
         "linkForPage":"Fedosov",
         "markFirstModule":"50",
-        "linkProject":"",
+        "linkProject":"https://github.com/deadcorg/FinFirst/",
         "markSecondModule":""
     },
     {
