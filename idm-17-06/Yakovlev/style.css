@@ -1,0 +1,41 @@
+body
+{
+    margin: 15px;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.head
+{
+    background: #ZEF;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Monotype corsiva";
+    font-size: 20pt;
+}
+.containes
+{
+    background: #CEF;
+    padding: 20px;
+    border: solid 4px #CCD;
+    font-family: "Segoe print";
+    font-size: 14pt;
+}
+summary
+{    
+    padding: 12px;
+}
+
+blockquote
+{
+    text-align: right;
+    font-style: oblique;
+}
+
+img
+{
+    width: 500px;
+    border: solid 2px #CCD;
+}
