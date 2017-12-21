@@ -54,3 +54,8 @@ td
 	padding: 10px;
 	opacity: 1;
 }
+a:hover {
+  color: #333;
+  background-color: #D1A8A8;
+  text-decoration: none;
+}
