@@ -73,33 +73,17 @@ $(document).ready(function(){
 	4) Прописать JavaScript-функционал  <a href="https://github.com/VolodinaKsenia/VolodinaKsenia.github.io"> Исходный код на JavaScript.</a><br/>
 	5)<a href="https://volodinaksenia.github.io/"> Действующий проект</a><br/>
 	</p>
-		<script>
-var obj, dbParam, xmlhttp, myObj, x, txt = "";
-obj = { "table":"customers", "limit":20 };
-dbParam = JSON.stringify(obj);
-xmlhttp = new XMLHttpRequest();
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        myObj = JSON.parse(this.responseText);
-        txt += "<table border='1'>"
-        for (x in myObj) {
-            txt += "<tr><td>" + myObj[x].name + "</td></tr>";
-        }
-        txt += "</table>"        
-        document.getElementById("demo").innerHTML = txt;
-    }
-};
-xmlhttp.open("POST", "json_demo_db_post.php", true);
-xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-xmlhttp.send("x=" + dbParam);
-
-</script>
 	<h3>Лабораторная работа №3</h3>
 		<p> 
 			1) Ознакомиться с материалом лабораторной работы. <br/>
 			2) Настроить работу в сети на основе прочитанного материала.<br/>
 			3) <a href="https://docviewer.yandex.ru/view/0/?*=mXLhGaL1IbZtmH3hWyu9WSztAzp7InVybCI6InlhLWRpc2stcHVibGljOi8vVFVoUEFaNzRzY2hJcno1cEh2VFBRUXhwcGx1dXdjRFJmcjJvcE9KWm8rVT0iLCJ0aXRsZSI6ItCb0LDQsSAzLmRvY3giLCJ1aWQiOiIwIiwieXUiOiI5NDU5MjgyNDIxNTA3OTg5MTc3Iiwibm9pZnJhbWUiOmZhbHNlLCJ0cyI6MTUwOTgyNDcyODU4Nn0%3D">Ссыла на материал.</a>
-		<br/></p>
+		<br/></p> <br/>
+	<p>Данная лабораторная работа представляет собой настройку небольших сетей.<br/>
+	Имеется три сети, в каджой из которых по одному коммутатору и два компьютера. <br/>
+	Кадждой сети соответствует свой маршрутизатор. Для всех сетей задан свой пул адресов с определенными масками сети в соответствии с вариантом. <br/>
+	Для всех устройств были установлены IP-адреса из заданного пула. Была настрона статическая маршрутизация к одной из сетей.
+	</p>
 <h3>Подготовка к экзамену</h3>
 	<p>1)Прохождение теста.<br/>
 	2) Формирование вопросов</p>
