@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>KML Asia</name>
+    <name>KML North America</name>
     <open>1</open>
     <description>Unleash your creativity with the help of these examples!</description>
     <Style id="transPurpleLineGreenPoly">
@@ -90,7 +90,7 @@
       <visibility>0</visibility>
       <description>Examples of polygon shapes</description>
       <Folder>
-        <name>Asia</name>
+        <name>North America</name>
         <visibility>0</visibility>
         <description>A collection showing how easy it is to create 3-dimensional
           buildings</description>
