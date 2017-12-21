@@ -6,17 +6,17 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 	</head>
-		
+
 	<body>
 		<header>
-			<div class="heading"> 
+			<div class="heading">
 				<h1>Аветикян Артём Тигранович</h1>
 				<p>ИДМ-17-02</p>
 				<a href="#lab" class="goto">Посмотреть работы</a>
 		 	</div>
 		</header>
 		<main>
-			
+
 
 				<section class="lab-item" id="lab">
 				<div>
@@ -60,7 +60,39 @@
 					<h2>Лабораторная работа №3</h2>
 					<h3>Настройка локальной сети передачи данных</h3>
 				<p class="lab-description">Настройка коммутаторов и маршрутизаторов</p>
-				<a href="#">Отчет по лабараторной работе №3</a>
+
+				<a href="#id4-1" class="lab-heading" onClick="toggleVisability(event, this.getAttribute('href'));">Открыть отчет<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+			 <ol id="id4-1">
+				<h4>Цель данной работы – ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.</h4><br>
+				<h4>Расчет диапазонов подсетей.</h4>
+			  <table border="1">
+				  <tr><th></th><th>LAN A</th><th>LAN B</th><th>LAN C</th></tr>
+				  <tr><td>Количество хостов в сети</td><td>9</td><td>1765</td><td>190</td></tr>
+				  <tr><td>Префиксная маска</td><td>/28</td><td>/21</td><td>/24</td></tr>
+				  <tr><td>Адрес подсети:</td><td>192.168.1.0</td><td>172.16.1.0</td><td>10.10.1.0</td></tr>
+				  <tr><td>Адрес первого хоста:</td><td>192.168.1.1</td><td>172.16.1.0</td><td>10.10.1.1</td></tr>
+				  <tr><td>Адрес последнего хоста:</td><td>192.168.1.14</td><td>172.16.7.254</td><td>10.10.1.254</td></tr>
+				  <tr><td>Broadcast</td><td>192.168.1.15</td><td>172.16.7.255</td><td>10.10.1.255</td></tr>
+				</table><br>
+				<h4>Расчет адресов устройств.</h4>
+			  <table border="1">
+				  <tr><th>Устройство</th><th>IP</th><th>Маска</th><th>Шлюз по умолчанию</th></tr>
+					<tr><td>PC0</td><td>192.168.1.2</td><td>255.255.255.240</td><td>192.168.1.1</td></tr>
+					<tr><td>PC1</td><td>192.168.1.14</td><td>255.255.255.240</td><td>192.168.1.1</td></tr>
+					<tr><td>PC2</td><td>10.10.1.2</td><td>255.255.255.0</td><td>10.10.1.1</td></tr>
+					<tr><td>PC3</td><td>172.16.0.2</td><td>255.255.248.0</td><td>172.16.0.1</td></tr>
+					<tr><td>PC4</td><td>172.16.7.254</td><td>255.255.248.0</td><td>172.16.0.1</td></tr>
+		    </table><br>
+				  <h4>1. Разместить два компьютера и коммутатор, настроить между ними адресацию.</h4>
+        	  <p><img src="img/1.jpg" >
+        	 	  <br>
+								<br>
+					<h4>2. Добавить еще один коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</h4>
+						<p><img src="img/2.jpg" >
+							<br>
+								<br>
+							 <h4>3. Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут].</h4><br>
+							 <h4>4. Установить баннер на сетевое оборудование: banner motd [баннер].</h4>
 				</div>
 				</section>
 
@@ -92,7 +124,7 @@
   				:
  				<div class="sec"></div>
 			</div></section>
-			
+
 		</main>
 		<script src="clock.js"></script>
 		<script src="main.js"></script>
