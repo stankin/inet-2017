@@ -25,9 +25,8 @@ function initMap() {
     var text = "ЕВРОПА\n\nТерритория:\n10,18 млн км²\n\nВключает:\n50 государств\n\nПлотность:\n72,5 чел./км²"
     showInContentWindow(text);
   });*/
-  
-  function showInContentWindow(text) {
+} 
+function showInContentWindow(text) {
     var sidediv = document.getElementById('content-window');
     sidediv.innerHTML = text;
-  }
 }
