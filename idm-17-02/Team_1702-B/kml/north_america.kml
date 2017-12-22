@@ -77,13 +77,9 @@
       </PolyStyle>
     </Style>
     <Style id="noDrivingDirections">
-      <BalloonStyle>
-        <text><![CDATA[
-          <b>$[name]</b>
-          <br /><br />
-          $[description]
-        ]]></text>
-      </BalloonStyle>
+      
+	    
+	    
     </Style>
     <Folder>
       <name>Polygons</name>
