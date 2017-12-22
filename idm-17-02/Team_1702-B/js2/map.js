@@ -28,7 +28,7 @@ function initMap() {
     showInContentWindow("ЮЖНАЯ АМЕРИКА\n\nТерритория:\n17,84 млн км²\n\nВключает:\n12 государств\n\nПлотность:\n21,4 чел./км²");
   });
   function showInContentWindow(text) {
-    sidediv = document.getElementById('content-window');
+    var sidediv = document.getElementById('content-window');
     sidediv.innerHTML = text;
   }
 }
