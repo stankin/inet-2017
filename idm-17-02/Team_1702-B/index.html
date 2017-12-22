@@ -85,7 +85,7 @@ function slide_door(){
 			
 <br><br><br><a href='#none' onclick='slide_door()'>Отправиться в нарнию</a>
 
-<img src='flagi/afghanistan_small_flag.gif'>
+<!-- <img src='flagi/afghanistan_small_flag.gif'>
 <img src='flagi/albania_small_flag.gif'>
 <img src='flagi/algeria_small_flag.gif'>
 <img src='flagi/andorra_small_flag.gif'>
@@ -277,18 +277,82 @@ function slide_door(){
 <img src='flagi/vietnam_small_flag.gif'>
 <img src='flagi/yemen_small_flag.gif'>
 <img src='flagi/zambia_small_flag.gif'>
-<img src='flagi/zimbabwe_small_flag.gif'>
+<img src='flagi/zimbabwe_small_flag.gif'>-->
+			
 
 	
 	
-<div  id='box1' class="wrapper" style='padding:10px; display:none;'>
+<img id="f1" src="flags/france_small_flag.gif" >
+<script>
+  const el1 = document.getElementById("f1");       
+  el1.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper1")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper2")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper4")) 
+    	{ alert("Упс. Не повезло =(")}
+  });
 
-	<input type="checkbox" id="check">
-	<div class="door"></div>
-	
-	<label class="label-door" for="check"></label>
-	
-</div>
+</script>
+
+<!-- Италия -->
+<img id="f2" name=f2 src="flags/italy_small_flag.gif">
+<script>
+   const el2 = document.getElementById("f2");
+	el2.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper2") || $("#box1").hasClass("wrapper3")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper4")) 
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
+
+<!-- США -->
+<img id="f3" src="flags/united_states_small_flag.gif">
+<script>
+   const el3 = document.getElementById("f3");
+	el3.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper4")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper2")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3")) 
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
+
+<!-- Египет -->
+<img id="f4" src="flags/egypt_small_flag.gif">
+<script>
+   const el4 = document.getElementById("f4");
+	el4.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper4")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper2")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3")) 
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
 
 <script>
 $('#check').on('click',function(){
