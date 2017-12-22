@@ -18,6 +18,7 @@ nav {
  }
 
 #content-window {
+  color:red;
   float: left;
   font-family: 'Roboto','sans-serif';
   height: 100%;
