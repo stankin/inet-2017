@@ -9,24 +9,20 @@ function initMap() {
  	 var EuropeKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/europe.kml',map: map});
  	 var NorthAmericaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/north_america.kml',map: map});
  	 var SouthAmericaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/south_america.kml',map: map});
-  AfricaKml.addListener('click', function(kmlEvent) {
-    var text = "АФРИКА\n\nТерритория:\n30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²"
-    showInContentWindow(text);
+  AfricaKml.addListener('click', function(kmlEvent){
+    showInContentWindow("АФРИКА\n\nТерритория:\n 30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²");
   });
- /* AsiaKml.addListener('click', function(kmlEvent) {
-    var text = "АЗИЯ\n\nТерритория:\n44 579 000 км²\n\nВключает:\n49 государств\n\nПлотность:\n87 чел./км²"
-    showInContentWindow(text);
+  AsiaKml.addListener('click', function(kmlEvent) {
+    showInContentWindow("АЗИЯ\n\nТерритория:\n44 579 000 км²\n\nВключает:\n49 государств\n\nПлотность:\n87 чел./км²");
   });
   AustraliaKml.addListener('click', function(kmlEvent) {
-    var text = "АВСТРАЛИЯ\n\nТерритория:\n7 692 024 км²\n\nПлотность:\n2,8 чел./км²"
-    showInContentWindow(text);
+    showInContentWindow("АВСТРАЛИЯ\n\nТерритория:\n7 692 024 км²\n\nПлотность:\n2,8 чел./км²");
   });
   EuropeKml.addListener('click', function(kmlEvent) {
-    var text = "ЕВРОПА\n\nТерритория:\n10,18 млн км²\n\nВключает:\n50 государств\n\nПлотность:\n72,5 чел./км²"
-    showInContentWindow(text);
-  });*/
-} 
-function showInContentWindow(text) {
-    var sidediv = document.getElementById('content-window');
+    showInContentWindow("ЕВРОПА\n\nТерритория:\n10,18 млн км²\n\nВключает:\n50 государств\n\nПлотность:\n72,5 чел./км²");
+  });
+  function showInContentWindow(text) {
+    sidediv = document.getElementById('content-window');
     sidediv.innerHTML = text;
+  }
 }
