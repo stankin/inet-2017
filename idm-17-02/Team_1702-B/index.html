@@ -78,13 +78,13 @@ function scroll() {
 		<input type="checkbox" name="NA" value="NA1" checked>Северная Америка</p>
 </div>
 </section>
-
-
+			
+			
 	<div id="map" align="center"></div>
 	<div id="content-window"></div>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap"></script>
 
-
+			
 <!--<script type="text/javascript" language="javascript">
 function slide_door(){
     $('#box').slideToggle(300);
@@ -95,10 +95,10 @@ function slide_door(){
 	</div>
 
 
-<!-- // Код для входа в нарнию
+<!-- // Код для входа в нарнию 
 
 <a href='#none' onclick='slide_door()'>Отправиться в нарнию</a> -->
-
+	
 <!-- <img src='flagi/afghanistan_small_flag.gif'>
 <img src='flagi/albania_small_flag.gif'>
 <img src='flagi/algeria_small_flag.gif'>
@@ -331,16 +331,16 @@ function slide_door(){
 <!-- Франция -->
 <img id="f1" src="flagi/france_small_flag.gif" >
 <script>
-  const el1 = document.getElementById("f1");
+  const el1 = document.getElementById("f1");       
   el1.addEventListener("click", function() {
     if ($("#box1").hasClass("wrapper1")) {
     	alert("Вы угадали!");
     }
-    else if($("#box1").hasClass("wrapper2"))
+    else if($("#box1").hasClass("wrapper2")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper3"))
+    else if($("#box1").hasClass("wrapper3")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper4"))
+    else if($("#box1").hasClass("wrapper4")) 
     	{ alert("Упс. Не повезло =(")}
   });
 
@@ -354,11 +354,11 @@ function slide_door(){
     if ($("#box1").hasClass("wrapper2") || $("#box1").hasClass("wrapper3")) {
     	alert("Вы угадали!");
     }
-    else if($("#box1").hasClass("wrapper"))
+    else if($("#box1").hasClass("wrapper")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper1"))
+    else if($("#box1").hasClass("wrapper1")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper4"))
+    else if($("#box1").hasClass("wrapper4")) 
     	{ alert("Упс. Не повезло =(")}
   });
 </script>
@@ -371,13 +371,13 @@ function slide_door(){
     if ($("#box1").hasClass("wrapper4")) {
     	alert("Вы угадали!");
     }
-    else if($("#box1").hasClass("wrapper"))
+    else if($("#box1").hasClass("wrapper")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper1"))
+    else if($("#box1").hasClass("wrapper1")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper2"))
+    else if($("#box1").hasClass("wrapper2")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper3"))
+    else if($("#box1").hasClass("wrapper3")) 
     	{ alert("Упс. Не повезло =(")}
   });
 </script>
@@ -390,13 +390,13 @@ function slide_door(){
     if ($("#box1").hasClass("wrapper")) {
     	alert("Вы угадали!");
     }
-    else if($("#box1").hasClass("wrapper4"))
+    else if($("#box1").hasClass("wrapper4")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper1"))
+    else if($("#box1").hasClass("wrapper1")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper2"))
+    else if($("#box1").hasClass("wrapper2")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper3"))
+    else if($("#box1").hasClass("wrapper3")) 
     	{ alert("Упс. Не повезло =(")}
   });
 </script>
@@ -404,12 +404,12 @@ function slide_door(){
 <script>
 $("#narnia").on('click', () => {
 	slide_door();
-
+    
   })
-</script>
+</script> 
 
 
-<div  id='box1' class="wrapper" style='padding:10px; display:none;'>
+<div  id='box1' class="wrapper" style='padding:10px; display:none;'>	
 	<input type="checkbox" id="check">
 	<div class="door"></div>
 	<label for="check"></label>
@@ -423,8 +423,8 @@ function slide_door(){
 </script>
 <script>
 $('#check').on('click',function(){
-	if($(this).prop('checked')){
-	    $('#box1').removeClass();
+	if($(this).prop('checked')){	
+	    $('#box1').removeClass();	
         $('#box1').addClass(showPictures());
 }
 });
