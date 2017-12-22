@@ -3,7 +3,7 @@
   <Document>
     <name>KML Africa</name>
     <open>1</open>
-    <description>Unleash your creativity with the help of these examples!</description>
+    <description>Africa</description>
     <Style id="transPurpleLineGreenPoly">
       <LineStyle>
         <color>7fff00ff</color>
@@ -88,12 +88,11 @@
     <Folder>
       <name>Polygons</name>
       <visibility>0</visibility>
-      <description>Examples of polygon shapes</description>
+      <description>Africa</description>
       <Folder>
         <name>Africa</name>
         <visibility>0</visibility>
-        <description>A collection showing how easy it is to create 3-dimensional
-          buildings</description>
+        <description>Africa</description>
         <LookAt>
           <longitude>-122.084120030116</longitude>
           <latitude>37.42174011925477</latitude>
@@ -103,7 +102,7 @@
           <range>276.7870053764046</range>
         </LookAt>
         <Placemark>
-          <name>Building 40</name>
+          <name>Africa</name>
           <visibility>0</visibility>
           <styleUrl>#transRedPoly</styleUrl>
           <Polygon>
