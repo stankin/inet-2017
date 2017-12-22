@@ -21,6 +21,12 @@ function initMap() {
   EuropeKml.addListener('click', function(kmlEvent) {
     showInContentWindow("ЕВРОПА\n\nТерритория:\n10,18 млн км²\n\nВключает:\n50 государств\n\nПлотность:\n72,5 чел./км²");
   });
+  NorthAmericaKml.addListener('click', function(kmlEvent) {
+    showInContentWindow("СЕВЕРНАЯ АМЕРИКА\n\nТерритория:\n24,25 млн км²\n\nВключает:\n23 государств\n\nПлотность:\n22,9 чел./км²");
+  });
+  SouthAmericaKml.addListener('click', function(kmlEvent) {
+    showInContentWindow("ЮЖНАЯ АМЕРИКА\n\nТерритория:\n17,84 млн км²\n\nВключает:\n12 государств\n\nПлотность:\n21,4 чел./км²");
+  });
   function showInContentWindow(text) {
     sidediv = document.getElementById('content-window');
     sidediv.innerHTML = text;
