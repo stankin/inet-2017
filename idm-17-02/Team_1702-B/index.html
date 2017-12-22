@@ -75,8 +75,7 @@ function scroll() {
 	 
    		
 <!-- // Код для входа в нарнию ---------------->
-			
-<br><br><br><a id="narnia" href='#none' >Отправиться в нарнию</a>
+<a id="narnia" href='#none' >Отправиться в нарнию</a>
 
 <!-- <img src='flagi/afghanistan_small_flag.gif'>
 <img src='flagi/albania_small_flag.gif'>
@@ -369,11 +368,27 @@ $("#narnia").on('click', () => {
   })
 </script> 
 
-<div>  id='box1' class="wrapper" style='padding:10px; display:none;'>	
+
+<div  id='box1' class="wrapper" style='padding:10px; display:none;'>	
 	<input type="checkbox" id="check">
 	<div class="door"></div>
 	<label for="check"></label>
-</div>			
+</div>
+
+
+<script type="text/javascript" language="javascript">
+function slide_door(){
+    $('#box1').slideToggle(300);
+}
+</script>
+<script>
+$('#check').on('click',function(){
+	if($(this).prop('checked')){	
+	    $('#box1').removeClass();	
+        $('#box1').addClass(showPictures());
+}
+});
+</script>			
 			
 	  <div id="modal-test" class="modal">
     <div class="modal-body">
