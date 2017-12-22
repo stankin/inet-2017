@@ -76,7 +76,7 @@ function scroll() {
    		
 <!-- // Код для входа в нарнию ---------------->
 			
-<br><br><br><a id=narnia href='#none' >Отправиться в нарнию</a>
+<br><br><br><a id="narnia" href='#none' >Отправиться в нарнию</a>
 
 <!-- <img src='flagi/afghanistan_small_flag.gif'>
 <img src='flagi/albania_small_flag.gif'>
@@ -288,12 +288,14 @@ function scroll() {
     	{ alert("Упс. Не повезло =(")}
     else if($("#box1").hasClass("wrapper4")) 
     	{ alert("Упс. Не повезло =(")}
+	  else if($("#box1").hasClass("wrapper")) 
+    	{ alert("Упс. Не повезло =(")}
   });
 
 </script>
 
 <!-- Италия -->
-<img id="f2" name=f2 src="flags/italy_small_flagi.gif">
+<img id="f2" name=f2 src="flagi/italy_small_flag.gif">
 <script>
    const el2 = document.getElementById("f2");
 	el2.addEventListener("click", function() {
@@ -310,7 +312,7 @@ function scroll() {
 </script>
 
 <!-- США -->
-<img id="f3" src="flags/united_states_small_flagi.gif">
+<img id="f3" src="flagi/united_states_small_flag.gif">
 <script>
    const el3 = document.getElementById("f3");
 	el3.addEventListener("click", function() {
@@ -329,7 +331,7 @@ function scroll() {
 </script>
 
 <!-- Египет -->
-<img id="f4" src="flags/egypt_small_flagi.gif">
+<img id="f4" src="flagi/egypt_small_flag.gif">
 <script>
    const el4 = document.getElementById("f4");
 	el4.addEventListener("click", function() {
