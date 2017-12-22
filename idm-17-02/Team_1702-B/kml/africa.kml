@@ -78,9 +78,9 @@
     </Style>
     <Style id="noDrivingDirections">
       <BalloonStyle>
-        <text><![CDATA[
-          <b>$[name]</b>
-          <br /><br />
+        <text>""<![CDATA[
+          <b>АФРИКА</b>
+          <br Территория: 30 221 532 км² /><br Включает:55 государств /><br Плотность:\n30,51 чел./км² />
           $[description]
         ]]></text>
       </BalloonStyle>
