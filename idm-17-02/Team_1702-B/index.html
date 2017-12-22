@@ -78,27 +78,28 @@ function scroll() {
 		<input type="checkbox" name="NA" value="NA1" checked>Северная Америка</p>
 </div>
 </section>
-			
-			
+
+
 	<div id="map" align="center"></div>
 	<div id="content-window"></div>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap"></script>
 
-			
-<script type="text/javascript" language="javascript">
+
+<!--<script type="text/javascript" language="javascript">
 function slide_door(){
     $('#box').slideToggle(300);
 }
-</script> 
+</script> -->
+
+	</form>
+	</div>
 
 
+<!-- // Код для входа в нарнию
 
+<a href='#none' onclick='slide_door()'>Отправиться в нарнию</a> -->
 
-<!-- // Код для входа в нарнию -->
-
-<a href='#none' onclick='slide_door()'>Отправиться в нарнию</a> 
-	
- <img src='flagi/afghanistan_small_flag.gif'>
+<!-- <img src='flagi/afghanistan_small_flag.gif'>
 <img src='flagi/albania_small_flag.gif'>
 <img src='flagi/algeria_small_flag.gif'>
 <img src='flagi/andorra_small_flag.gif'>
@@ -290,11 +291,11 @@ function slide_door(){
 <img src='flagi/vietnam_small_flag.gif'>
 <img src='flagi/yemen_small_flag.gif'>
 <img src='flagi/zambia_small_flag.gif'>
-<img src='flagi/zimbabwe_small_flag.gif'>
+<img src='flagi/zimbabwe_small_flag.gif'>-->
 
 
 
-<! <div  id='box1' class="wrapper" style='padding:10px; display:none;'>
+<!-- <div  id='box1' class="wrapper" style='padding:10px; display:none;'>
 
 	<input type="checkbox" id="check">
 	<div class="door"></div>
@@ -316,11 +317,119 @@ $('#check').on('click',function(){
  <!-- --------------------КОНЕЦ -------------------->
 
 
+<!--<script type="text/javascript" language="javascript">
+function slide_door(){
+    $('#box1').slideToggle(300);
+}
+</script> -->
+
+			<!-- Начало двери -->
+<a id="narnia"  href='#none' >Отправиться в нарнию</a>
+
+<!-- Флаги, при нажатии на которые выполняется необходимый скрипт -->
+
+<!-- Франция -->
+<img id="f1" src="flagi/france_small_flag.gif" >
+<script>
+  const el1 = document.getElementById("f1");
+  el1.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper1")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper2"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper4"))
+    	{ alert("Упс. Не повезло =(")}
+  });
+
+</script>
+
+<!-- Италия -->
+<img id="f2" name=f2 src="flagi/italy_small_flag.gif">
+<script>
+   const el2 = document.getElementById("f2");
+	el2.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper2") || $("#box1").hasClass("wrapper3")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper4"))
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
+
+<!-- США -->
+<img id="f3" src="flagi/united_states_small_flag.gif">
+<script>
+   const el3 = document.getElementById("f3");
+	el3.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper4")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper2"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3"))
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
+
+<!-- Египет -->
+<img id="f4" src="flagi/egypt_small_flag.gif">
+<script>
+   const el4 = document.getElementById("f4");
+	el4.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper4"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper2"))
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3"))
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
+
+<script>
+$("#narnia").on('click', () => {
+	slide_door();
+
+  })
+</script>
+
+
+<div  id='box1' class="wrapper" style='padding:10px; display:none;'>
+	<input type="checkbox" id="check">
+	<div class="door"></div>
+	<label for="check"></label>
+</div>
+
+
 <script type="text/javascript" language="javascript">
 function slide_door(){
     $('#box1').slideToggle(300);
 }
 </script>
+<script>
+$('#check').on('click',function(){
+	if($(this).prop('checked')){
+	    $('#box1').removeClass();
+        $('#box1').addClass(showPictures());
+}
+});
+</script>
+
 
 	  <div id="modal-test" class="modal">
     <div class="modal-body">
@@ -328,8 +437,6 @@ function slide_door(){
       </form>
     </div>
   </div>
-	     
-	     
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
 	<script type="text/javascript">
@@ -657,6 +764,13 @@ function closeModal(el) {
 
 
 	 </script>
+
+
+	<button class="btn btn-medium" title="Италия">
+
+    <i class="icon-excel" ></i>
+
+</button>
 
      </body>
 </html>
