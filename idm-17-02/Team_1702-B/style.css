@@ -28,7 +28,7 @@ header {
 	width: 100%;
 	height: 100vh;
 	min-height: 480px;
-	background: url("img/main-screen.jpg") 50% fixed no-repeat;
+	background: url("../img/main-screen.jpg") 50% fixed no-repeat;
 	-webkit-background-size: cover;
 	background-size: cover;
 	display: -webkit-flex;
