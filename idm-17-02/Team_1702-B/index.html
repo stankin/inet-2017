@@ -324,12 +324,12 @@ function slide_door(){
 </script> -->
 
 			<!-- Начало двери -->
-<a id="narnia"  href='#none'>Отправиться в нарнию</a>
+<a id="narnia"  href='#none' >Отправиться в нарнию</a>
 
 <!-- Флаги, при нажатии на которые выполняется необходимый скрипт -->
 
 <!-- Франция -->
-<img id="f1" src="flagi/france_small_flag.gif" >
+<img id="f1" src="flags/france_small_flag.gif" onclick="whatIsIt()">
 <script>
   const el1 = document.getElementById("f1");       
   el1.addEventListener("click", function() {
@@ -340,16 +340,16 @@ function slide_door(){
     	{ alert("Упс. Не повезло =(")}
     else if($("#box1").hasClass("wrapper3")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper4")) 
+    else if($("#box1").hasClass("wrapper")) 
     	{ alert("Упс. Не повезло =(")}
-	  else if($("#box1").hasClass("wrapper")) 
+    else if($("#box1").hasClass("wrapper4")) 
     	{ alert("Упс. Не повезло =(")}
   });
 
 </script>
 
 <!-- Италия -->
-<img id="f2" name=f2 src="flagi/italy_small_flag.gif">
+<img id="f2" name=f2 src="flags/italy_small_flag.gif">
 <script>
    const el2 = document.getElementById("f2");
 	el2.addEventListener("click", function() {
@@ -366,7 +366,7 @@ function slide_door(){
 </script>
 
 <!-- США -->
-<img id="f3" src="flagi/united_states_small_flag.gif">
+<img id="f3" src="flags/united_states_small_flag.gif">
 <script>
    const el3 = document.getElementById("f3");
 	el3.addEventListener("click", function() {
@@ -385,7 +385,7 @@ function slide_door(){
 </script>
 
 <!-- Египет -->
-<img id="f4" src="flagi/egypt_small_flag.gif">
+<img id="f4" src="flags/egypt_small_flag.gif">
 <script>
    const el4 = document.getElementById("f4");
 	el4.addEventListener("click", function() {
@@ -423,7 +423,6 @@ function slide_door(){
     $('#box1').slideToggle(300);
 }
 </script>
-		
 <script>
 $('#check').on('click',function(){
 	if($(this).prop('checked')){	
