@@ -13,7 +13,7 @@ function initMap() {
     var text = "АФРИКА\n\nТерритория:\n30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²"
     showInContentWindow(text);
   });
-  AsiaKml.addListener('click', function(kmlEvent) {
+ /* AsiaKml.addListener('click', function(kmlEvent) {
     var text = "АЗИЯ\n\nТерритория:\n44 579 000 км²\n\nВключает:\n49 государств\n\nПлотность:\n87 чел./км²"
     showInContentWindow(text);
   });
@@ -29,5 +29,5 @@ function initMap() {
   function showInContentWindow(text) {
     var sidediv = document.getElementById('content-window');
     sidediv.innerHTML = text;
-  }
+  }*/
 }
