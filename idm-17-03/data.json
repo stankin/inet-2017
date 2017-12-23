@@ -41,8 +41,8 @@
         "role": "РП КО",
         "linkForPage":"Volodina",
         "markFirstModule":"50",
-        "linkProject":"",
-        "markSecondModule":""
+        "linkProject":"https://volodinaksenia.github.io/",
+        "markSecondModule":"50"
     },
     {
         "firstName":"Гладких Дмитрий Александрович",
@@ -50,7 +50,7 @@
         "role": "БА КО",
         "linkForPage":"Gladkikh",
         "markFirstModule":"25",
-        "linkProject":"",
+        "linkProject":"https://volodinaksenia.github.io/",
         "markSecondModule":""
     },
     {
@@ -69,7 +69,7 @@
         "linkForPage":"Dosan",
         "markFirstModule":"40",
         "linkProject":"https://github.com/deadcorg/FinFirst/",
-        "markSecondModule":""
+        "markSecondModule":"50"
     },
     {
         "firstName":"Игнатов Петр Валерьевич",
@@ -95,8 +95,8 @@
         "role": "РП АД",
         "linkForPage":"Lapshinov",
         "markFirstModule":"47",
-        "linkProject":"",
-        "markSecondModule":""
+        "linkProject":"https://volodinaksenia.github.io/",
+        "markSecondModule":"48"
     },
     {
         "firstName":"Мартынова Вероника Михайловна",
@@ -114,7 +114,7 @@
         "linkForPage":"Matveeva",
         "markFirstModule":"50",
         "linkProject":"https://kereat.github.io/Cowboys-games/",
-        "markSecondModule":""
+        "markSecondModule":"50"
     },
     {
         "firstName":"Рассахан Никита Дмитриевич",
@@ -123,7 +123,7 @@
         "linkForPage":"Rassahan",
         "markFirstModule":"50",
         "linkProject":"https://github.com/deadcorg/FinFirst/",
-        "markSecondModule":""
+        "markSecondModule":"50"
     },
     {
         "firstName":"Романов Виктор Викторович",
@@ -140,8 +140,8 @@
         "role": "ВН БА",
         "linkForPage":"Ribnikova",
         "markFirstModule":"47",
-        "linkProject":"",
-        "markSecondModule":""
+        "linkProject":"https://volodinaksenia.github.io/",
+        "markSecondModule":"48"
     },
     {
         "firstName":"Федосов Максим Евгеньевич",
@@ -150,7 +150,7 @@
         "linkForPage":"Fedosov",
         "markFirstModule":"50",
         "linkProject":"https://github.com/deadcorg/FinFirst/",
-        "markSecondModule":""
+        "markSecondModule":"50"
     },
     {
         "firstName":"Чернова Людмила Александровна",
@@ -158,7 +158,7 @@
         "role": "ВН НИ",
         "linkForPage":"Chernova",
         "markFirstModule":"50",
-        "linkProject":"",
+        "linkProject":"https://volodinaksenia.github.io/",
         "markSecondModule":""
     },
     {

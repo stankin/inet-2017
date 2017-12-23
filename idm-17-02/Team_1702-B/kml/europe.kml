@@ -1,28 +1,45 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
-<Document><name>My document</name>
-<description>Content</description>
-<Style id="Lump">
-<LineStyle><color>CD0000FF</color><width>2</width></LineStyle>
-<PolyStyle><color>9AFF0000</color></PolyStyle>
-</Style>
-<Style id="Path">
-<LineStyle><color>FF0000FF</color><width>3</width></LineStyle>
-</Style>
-<Style id="markerstyle">
-<IconStyle><Icon><href>
-http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png
-</href></Icon></IconStyle>
-</Style>
-<Placemark><name>NAME</name>
-<description>YES</description>
-<styleUrl>#Lump</styleUrl>
-<Polygon>
-<tessellate>1</tessellate>
-<altitudeMode>clampToGround</altitudeMode>
-<outerBoundaryIs><LinearRing><coordinates>
-45.878906,66.998844,0.0 
+  <Document>
+    <name>KML Europe</name>
+    <open>1</open>
+    <description>Unleash your creativity with the help of these examples!</description>
+    <Style id="redLineBluePoly">
+      <LineStyle>
+        <color>ff0000ff</color>
+      </LineStyle>
+      <PolyStyle>
+        <color>ffff0000</color>
+      </PolyStyle>
+    </Style>
+    <Style id="transRedPoly">
+      <LineStyle>
+        <width>1.5</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>7d0000ff</color>
+      </PolyStyle>
+    </Style>
+    <Folder>
+      <name>Europe</name>
+      <visibility>0</visibility>
+      <description>Examples of polygon shapes</description>
+      <Folder>
+        <name>Europe</name>
+        <visibility>0</visibility>
+        <description>A collection showing how easy it is to create 3-dimensional
+          buildings</description>
+        <Placemark>
+          <name>Building 40</name>
+          <visibility>0</visibility>
+          <styleUrl>#transRedPoly</styleUrl>
+          <Polygon>
+            <extrude>1</extrude>
+            <altitudeMode>relativeToGround</altitudeMode>
+            <outerBoundaryIs>
+              <LinearRing>
+                <coordinates> 
+				45.878906,66.998844,0.0 
 48.867188,46.195042,0.0 
 48.823242,45.736860,0.0 
 48.251953,45.614037,0.0 
@@ -182,8 +199,12 @@ http://maps.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png
 45.175781,67.508568,0.0 
 45.351563,67.238062,0.0 
 45.878906,66.998844,0.0 
-</coordinates></LinearRing></outerBoundaryIs>
-</Polygon>
-</Placemark>
-</Document>
+				</coordinates>
+              </LinearRing>
+            </outerBoundaryIs>
+          </Polygon>
+        </Placemark>
+      </Folder>
+    </Folder>
+  </Document>
 </kml>

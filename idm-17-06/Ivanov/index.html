@@ -5,6 +5,11 @@
     <title>Личная страница Алексея Иванова</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script type="text/javascript" charset="utf-8">
+      function showAnswers() {
+        console.log(window.refs.GET);
+      }
+    </script>
   </head>
   <body class="main">
     <section class="main-container">
@@ -24,8 +29,11 @@
       
       <section class="main-container__lab">
         <p class="main-container__lab-header">Лабораторная работа №2 "Разработка простого веб-приложения"</p>
-        <p class="main-container__lab-desc">Приложение находится в разработке. Название проекта: Mirry.</p>
+        <p class="main-container__lab-desc">Название проекта: <a href="https://github.com/DmitryKuk/mirry" target="_blank" class="main-container__link">Mirry</a></p>
         <p class="main-container__lab-desc">В команде являюсь frontend-разработчиком и дипломатом.</p>
+        <p class="main-container__lab-desc">Используемые технологии: Vue.js, Vuex, REST, Webpack, HTML, SCSS.</p>
+        <p class="main-container__lab-desc">Личный репозиторий <a href="https://github.com/lesha38" target="_blank" class="main-container__link">github</a></p>
+        <p class="main-container__lab-img"><img src="assets/screen-4.png" alt="" class="main-container__img"></p>
         <p class="main-container__lab-img"><img src="assets/screen-2.png" alt="" class="main-container__img"></p>
       </section>
       
@@ -38,6 +46,19 @@
       <section class="main-container__lab">
         <p class="main-container__lab-header">Подготовка к экзамену</p>
         <p class="main-container__lab-desc">Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте. Презентации лекций и тесты расположены на <a href="https://yadi.sk/d/evI_RRva3Mab5W" target="_blank" class="main-container__link">Яндекс-Диске</a>.</p>
+        <p class="main-container__lab-desc">Формулировка тестового вопроса по курсу.</p>
+        <p class="main-container__lab-header">Выберите все основные типы http запросов в REST API:
+          <ul>
+            <li>GET</li>
+            <li>POP</li>
+            <li>MAIL</li>
+            <li>POST</li>
+            <li>DELETE</li>
+            <li>PUSH</li>
+            <li>PUT</li>
+            <li>PATCH</li>
+          </ul>
+        </p>
       </section>
     </section>
   </body>
