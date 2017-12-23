@@ -66,6 +66,8 @@
 
 2. Mirry: https://github.com/DmitryKuk/mirry
 
+3. Flappy Qube+: https://github.com/Newsmako/Sproject
+
 Не стесняемся, оцениваем проекты [здесь](https://onedrive.live.com/survey?resid=7898162C7CE728BA!118&authkey=!AGZj9cvhuhtJnns)!!!
 
 # Примерный образ результата:
