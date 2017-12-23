@@ -1,0 +1,124 @@
+.image1 {
+ margin-left: auto;
+ margin-right: auto;
+ overflow:hidden;
+ width: 343px;
+ height:89px;
+ }
+.image2 {
+ margin-left: auto;
+ margin-right: auto;
+ overflow:hidden;
+ width: 630px;
+ height:438px;
+
+ }
+.image1 img {
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+ }
+ 
+.image1 img:hover{
+ -webkit-transform: scale(1.02);
+ -moz-transform: scale(1.02);
+ -o-transform: scale(1.02);
+ }
+.image2 img {
+ -moz-transition: all 1s ease-out;
+ -o-transition: all 1s ease-out;
+ -webkit-transition: all 1s ease-out;
+ }
+ 
+.image2 img:hover{
+ -webkit-transform: scale(1.02);
+ -moz-transform: scale(1.02);
+ -o-transform: scale(1.02);
+ }
+ul {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем отступы*/
+  padding-left: 0; /*убираем отступы*/
+  margin-top:25px; /*делаем отступ сверху*/
+  background:#6495ED; /*добавляем фон всему меню (заменив этот параметр, вы поменяете цвет всего меню)*/
+  height: 50px; /*задаем высоту*/
+  font-weight: bold;
+}
+ul a {
+  text-decoration: none; /*убираем подчеркивание текста ссылок*/
+  background:#6495ED; /*добавляем фон к пункту меню (заменив этот параметр, вы поменяете цвет всех пунктов меню)*/
+  color:#fff; /*меняем цвет ссылок*/
+  padding:0px 15px; /*добавляем отступ*/
+  font-family: arial; /*меняем шрифт*/
+  line-height:50px; /*ровняем меню по вертикали*/
+  display: block; 
+  border-right: 1px solid #FFFFFF; /*добавляем бордюр справа*/
+  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  -o-transition: all 0.3s 0.01s ease;
+  -webkit-transition: all 0.3s 0.01s ease;
+}
+ul a:hover {
+  background:#4169E0;/*добавляем эффект при наведении*/
+}
+ul li {
+  float:left; /*Размещаем список горизонтально для реализации меню*/
+}
+.divmain {
+    margin: 5px 10px 15px 10px;
+    padding: 20px;
+}
+.ot{
+    margin-left: 50px;
+    margin-top: -10px;
+}
+.ot1{
+    width: 280px;
+    margin-left: 50px;
+    margin-top: -10px;
+    background: #90EE90;
+}
+.ot2{
+   font-style: italic;
+   font-size:15;
+}
+.ss{
+    text-decoration: none;
+    font-family: arial;
+    margin-left: 10px;
+    color: #6495ED;
+    border: 1px solid rgba(100, 149, 237, 0.2);
+    padding: 2px;
+}
+.ss:hover{
+    color: #4169E0;
+    border: 1px solid rgba(100, 149, 237, 0.4);
+}
+.href_2{
+    width:150px;
+    height:50px;
+    font-family: arial;
+    margin-left: 50px;
+    background:#6495ED;
+    text-align: center;
+    line-height: 50px;
+     overflow: hidden;
+  text-shadow: 0 0 #4169E0,
+               0 0 #4169E0,
+               0 0 skyblue;
+  color: transparent;
+  transition: all 1s;
+    
+    
+}
+.href_2:hover{
+    background:#4169E0;
+     text-shadow: 0 -500px rgba(100, 149, 237, 0),
+                  0 500px rgba(100, 149, 237, 0),
+                 0 0 skyblue;
+    
+}
+.ll{
+    text-decoration: none;
+    font-family: arial;
+    color:#fff;
+}
