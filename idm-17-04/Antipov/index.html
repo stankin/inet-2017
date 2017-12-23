@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<meta charset="UTF-8">
 	<head> 
@@ -9,12 +9,14 @@
 	background:#f0f0f0;
 	padding:20px;
 }
-
 body {
-	width: 250px;
+	width: 700px;
 	margin: 0 auto;
+
 }
 
+.cont 
+{background-color: gray;}
 .push_button {
 	position: relative;
 	width:220px;
@@ -26,6 +28,8 @@ body {
 	font-family:'Oswald', Helvetica;
 	display: block;
 	margin: 30px;
+margin-left: auto;
+margin-right: auto;
 }
 .push_button:before {
 	background:#f0f0f0;
@@ -45,7 +49,6 @@ body {
 	top: -6px; bottom: -10px;
 	z-index: -1;
 }
-
 .push_button:active {
 	-webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset;
 	top:5px;
@@ -55,7 +58,6 @@ body {
 	bottom: -5px;
 	content: "";
 }
-
 .red {
 	text-shadow:-1px -1px 0 #A84155;
 	background: #D25068;
@@ -75,7 +77,6 @@ body {
 	-moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
 	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #AD4257, 0 4px 2px rgba(0, 0, 0, .5);
 }
-
 .red:hover {
 	background: #F66C7B;
 	background-image:-webkit-linear-gradient(top, #D25068, #F66C7B);
@@ -84,7 +85,6 @@ body {
 	background-image:-o-linear-gradient(top, #D25068, #F66C7B);
 	background-image:linear-gradient(top, #D25068, #F66C7B);
 }
-
 .blue {
 	text-shadow:-1px -1px 0 #2C7982;
 	background: #3EACBA;
@@ -103,7 +103,6 @@ body {
 	-moz-box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
 	box-shadow:0 1px 0 rgba(255, 255, 255, .5) inset, 0 -1px 0 rgba(255, 255, 255, .1) inset, 0 4px 0 #338A94, 0 4px 2px rgba(0, 0, 0, .5);
 }
-
 .blue:hover {
 	background: #48C6D4;
 	background-image:-webkit-linear-gradient(top, #3EACBA, #48C6D4);
@@ -115,20 +114,50 @@ body {
 </style>
 	</head>
 <body>
+<div class=cont>
 	<h1 style="color: rgba(0,0,0,0.6);
 text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+text-align: center;
 ">Антипов Алексей</h1>
 	<h3 style="color: rgba(0,0,0,0.6);
 text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+text-align: center;
 ">Группа - ИДМ-17-04</h3>
 	<h3 style="color: rgba(0,0,0,0.6);
 text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+text-align: center;
 ">Интернет-технологии</h3>
-	
+	</div>
 	<a class="push_button red" href="http://paul.1gb.ru/stankin/oop/sandbox/idb-13-13/Antipov/">Прошлая страница</a><br>
 	<a class="push_button blue" href="https://github.com/stankin/oop/wiki/%D0%9B%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D0%B0%D1%8F-%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0-%E2%84%964">Прошлогодняя статья</a><br>
 	<a class="push_button red"style="text-shadow: 0px 0px 6px; rgba(255,255,255,0.7)" href="https://github.com/stankin/inet-2017/wiki/%D0%92%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F">Статья о вирутализации</a><br>
 	<a class="push_button blue"style="text-shadow: 0px 0px 6px; rgba(255,255,255,0.7)" href = "https://github.com/dreamteamstankin/project">Командный проект</a><br>
+    <section id="lab3" class="four">
+      <div class="container">
+        <h2 align="center">Лабораторная работа 3</h2>
+       Выполнение:<br>
+        <p>1. Рассчитываем данные для таблицы IP адресов<img src="6.png"><br></p>
 	
+	<p>2. Разместим два компьютера и коммутатор. Настроим между ними адресацию.<br></p>
+	 Выполняем проверку работоспособности созданой сети.
+	 Добавляем на рабочее поле новый коммутатор с двумя компьютерами.
+	Настроим адресацию из другой подсети.
+	<img src="3.bmp"><br></p>
+	<p>3. Соединяем коммутаторы между собой и выполняем проверку работоспособности сети.<br></p>
+	<p>4. Настраиваем 	интерфейсы маршрутизатора. Проверяем сеть.<br>
+	<img src="3.jpg"><br></p>
+	<p>5. Проверяем сеть. Отправляем сообщение из А в В, а далее из В в С.<br>
+	<img src="4.jpg"><br></p>
+
+	 <section id="lab4" class="two">
+      <div class="container">
+        <h2 align="center">Вопрос для экзамена</h2>
+        <div class="textmain">
+ 	Ответить на вопрос:<br><br>
+          Что такое VPN? <br><br>
+	 Правильный ответ: виртуальная частная сеть
+          <br />
+          
+        </div>
 </body>
 </html>	

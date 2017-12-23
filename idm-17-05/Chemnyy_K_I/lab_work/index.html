@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type"  />
+	<title>Лабораторные работы</title>
+	<link href="css/core.css" rel="stylesheet">
+	<link href="onepage_scroll/onepage-scroll.css" rel="stylesheet">
+	<script src="onepage_scroll/onepagescroll.js"></script>
+</head>
+<body>
+<div class="main">
+	<section class="page1">
+		<div class="wrapper_content">
+			<h1>Интернет - технологии</h1>
+			<h2>this.Сourse(4 lab works)</h2>
+			<ol>
+				<li>Создание сайта для отчёта</li>
+				<li>Разработка web-приложения</li>
+				<li>Настройка локальной сети передачи данных</li>
+				<li>Подготовка к экзамену</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="page2">
+		<div class="wrapper_content">
+			<h1 class="light">Создание сайта для отчёта</h1>
+			<h2 class="light">Цель работы: Создание сайта-отчёта в системе контроля версий github.</h2>
+			<ol class="light">
+				<li>Fork репозитория stankin/inet-2017</li>
+				<li>Клонировать репозиторий на локальный ПК</li>
+				<li>Создание сайта с блекжеком, JS и CSS</li>
+				<li>создать commit с изменениями</li>
+				<li>pull request</li>
+			</ol>
+		</div>
+	</section>
+	<section class="page3">
+		<div class="wrapper_content">
+			<div class="our_team">
+				<img class="photo" src="content/pizza.png">
+				<img class="photo" src="content/sanya.png" data-description="gblh">
+				<img class="photo" src="content/kokokostik.png">
+				<img class="photo" src="content/pidri.png">
+			</div>
+			<div class="text">
+				<h1>Разработка web-приложения</h1>
+				<h2>Цель: Спроектировать и разработать коллективное web-приложение.</h2>
+				<h2>Здесь будет ссылка на web-приложение. Но это не точно.</h2>
+			</div>
+		</div>
+	</section>
+	<section class="page4">
+		<div class="wrapper_content">
+			<h1 class="light">Настройка локальной сети передачи данных</h1>
+			<h2 class="light">Цель: настройка коммутаторов и маршрутизаторов</h2>
+			<ol class="light">
+				<li>Рассчитаем диапазон подсетей </li>
+				<li>Размести компьютеры и коммутатор</li>
+				<li>Настроим адресацию</li>
+				<li>Настроим статическую маршрутизацию</li>
+				<li>Установи баннер на сетевое оборудование</li>
+			</ol>
+		</div>
+	</section>
+	<section class="page5">
+		<div class="wrapper_content">
+			<h2>Подготовка к экамену</h2>
+			<ol>
+				<li>Страдать фигней всю сессию</li>
+				<li>Вспомнить про лабы</li>
+				<li>Паниковать</li>
+				<li>Затариться энергетиками</li>
+				<li>Работать всю ночь</li>
+				<li>????</li>
+				<li>НУ ПОСТАВЬТЕ ПЯТЬ, Я ЖЕ СДЕЛЯЛЬ</li>
+			</ol>
+		</div>
+	</section>
+</div>
+
+<script type="text/javascript">
+	onePageScroll(".main", {
+	   sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+	   easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in", 
+	                                    // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+	   animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+	   pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+	   updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+	   beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+	   afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+	   loop: true,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+	   keyboard: true,                  // You can activate the keyboard controls
+	   responsiveFallback: false        // You can fallback to normal page scroll by defining the width of the browser in which
+	                                    // you want the responsive fallback to be triggered. For example, set this to 600 and whenever 
+	                                    // the browser's width is less than 600, the fallback will kick in.
+	});
+</script>
+
+</body>
+</html>

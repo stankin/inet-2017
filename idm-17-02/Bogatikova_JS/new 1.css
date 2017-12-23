@@ -5,3 +5,65 @@
 .photobg2 {
 	 background: url('img/i2.jpg') no-repeat center center;
 }
+h1 { 
+    font-size: 200%; 
+    font-family: Verdana, TimesNewRoman, Helvetica, sans-serif; 
+    color: white; 
+	
+   }
+   h2 { 
+    font-size: 200%; 
+    font-family:Monotype Corsiva;      
+	 color: white; 
+
+	 
+   } 
+  
+  
+   
+    .left-column {
+    width: 32%;
+    min-height: 420px;
+        background: url('img/i9.jpg') no-repeat center center;
+    float: left;
+ }
+
+.whiteblock {
+    width: 1%;
+    min-height: 420px;
+    background-color: #000000;
+    float: left;
+    }
+	
+    .right-column {
+    width: 32%;
+    min-height: 420px;
+   background: url('img/i9.jpg') no-repeat center center;
+    float: right;
+    }
+	.middle-column {
+	 width: 34%;
+    min-height: 420px;
+   background: url('img/i9.jpg') no-repeat center center;
+    float: left;
+	 
+	}
+
+    .footer {
+    clear: both;
+    }
+
+    .footer-2 {
+    background: url('img/chernyy_fon_linii_fioletovyy_cvet_grafika_2560x1440.jpg') no-repeat center center;
+      clear: both;
+	  min-height: 500px;
+    }
+
+	.animation {
+	background-color: black;
+
+}	
+.animation2 {
+	background-color: white;
+
+}	

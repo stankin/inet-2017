@@ -1,0 +1,18 @@
+.center{
+margin: 0 auto;
+display: block;
+width: 1023px;
+text-align: center;
+}
+.right{
+text-align: right;
+}
+span{
+font-weight: 600; 
+}
+p{
+font-size: 13pt; 
+}
+code{
+	font-size: 10pt;
+}

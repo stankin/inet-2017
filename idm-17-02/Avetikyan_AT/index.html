@@ -6,17 +6,17 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="css/main.css" rel="stylesheet">
 	</head>
-		
+
 	<body>
 		<header>
-			<div class="heading"> 
+			<div class="heading">
 				<h1>Аветикян Артём Тигранович</h1>
 				<p>ИДМ-17-02</p>
 				<a href="#lab" class="goto">Посмотреть работы</a>
 		 	</div>
 		</header>
 		<main>
-			
+
 
 				<section class="lab-item" id="lab">
 				<div>
@@ -25,9 +25,9 @@
 					<p class="lab-description"> Создание персональной страницы-отчета на GitHub и работа с git.</p>
 					<a href="#id1" class="lab-heading" onClick="toggleVisability(event, this.getAttribute('href'));">Открыть задачи <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
 						<ol id="id1">
-					<li>Зарегистрироваться на <a href="https://stankin.github.io/inet-2017/idm-17-02/Avetikyan_AT/index.html" target="_blank">GitHub</a>.</li>
-					<li>Создать <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Avetikyan_AT/index.html" target="_blank">персональную веб страницу</a> - отчет с использованием <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Avetikyan_AT/index.html" target="_blank">html</a>, <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Avetikyan_AT/css/main.css" target="_blank">css</a>, <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Avetikyan_AT/clock.js" target="_blank">js</a>.</li>  
-					<li>Загрузить персональную веб страницу - отчет в <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Avetikyan_AT" target="_blank">репозиторий</a> ИДМ-17 по курсу "Интернет-технологии" на GitHub. Папка с исходными кодами в репозитории.</li>
+					<li>Зарегистрироваться на GitHub. Страница пользователя</li>
+					<li>Создать персональную веб страницу-отчет с использованием html, css, js. Персональная страница-отчет. Исходный код на index.html и css.</li>
+					<li>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub. Папка с исходными кодами в репозитории.</li>
 						</ol>
 					</div>
 				</section>
@@ -60,14 +60,57 @@
 					<h2>Лабораторная работа №3</h2>
 					<h3>Настройка локальной сети передачи данных</h3>
 				<p class="lab-description">Настройка коммутаторов и маршрутизаторов</p>
-				<a href="#">Отчет по лабараторной работе №3</a>
+
+				<a href="#id4-1" class="lab-heading" onClick="toggleVisability(event, this.getAttribute('href'));">Открыть отчет<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+			 <ol id="id4-1">
+				<h4>Цель данной работы – ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.</h4><br>
+				<h4>Расчет диапазонов подсетей.</h4>
+			  <table border="1">
+				  <tr><th></th><th>LAN A</th><th>LAN B</th><th>LAN C</th></tr>
+				  <tr><td>Количество хостов в сети</td><td>9</td><td>1765</td><td>190</td></tr>
+				  <tr><td>Префиксная маска</td><td>/28</td><td>/21</td><td>/24</td></tr>
+				  <tr><td>Адрес подсети</td><td>192.168.1.0</td><td>172.16.1.0</td><td>10.10.1.0</td></tr>
+				  <tr><td>Адрес первого хоста</td><td>192.168.1.1</td><td>172.16.1.0</td><td>10.10.1.1</td></tr>
+				  <tr><td>Адрес последнего хоста</td><td>192.168.1.14</td><td>172.16.7.254</td><td>10.10.1.254</td></tr>
+				  <tr><td>Broadcast</td><td>192.168.1.15</td><td>172.16.7.255</td><td>10.10.1.255</td></tr>
+				</table><br>
+				<h4>Расчет адресов устройств.</h4>
+			  <table border="1">
+				  <tr><th>Устройство</th><th>IP</th><th>Маска</th><th>Шлюз по умолчанию</th></tr>
+					<tr><td>PC0</td><td>192.168.1.2</td><td>255.255.255.240</td><td>192.168.1.1</td></tr>
+					<tr><td>PC1</td><td>192.168.1.14</td><td>255.255.255.240</td><td>192.168.1.1</td></tr>
+					<tr><td>PC2</td><td>10.10.1.2</td><td>255.255.255.0</td><td>10.10.1.1</td></tr>
+					<tr><td>PC3</td><td>172.16.0.2</td><td>255.255.248.0</td><td>172.16.0.1</td></tr>
+					<tr><td>PC4</td><td>172.16.7.254</td><td>255.255.248.0</td><td>172.16.0.1</td></tr>
+		    </table><br>
+				  <h4>1. Разместить два компьютера и коммутатор, настроить между ними адресацию.</h4>
+        	  <p><img src="img/1.jpg" >
+        	 	  <br>
+								<br>
+					<h4>2. Добавить еще один коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</h4>
+						<p><img src="img/2.jpg" >
+							<br>
+								<br>
+							 <h4>3. Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут].</h4><br>
+							 <h4>4. Установить баннер на сетевое оборудование: banner motd [баннер].</h4>
 				</div>
 				</section>
 
 				<section class="lab-item">
 					<div>
 					<h2>Подготовка к экзамену</h2>
-				<p class="lab-description">Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</p>
+				<p class="lab-description">Формулировка одного вопроса по теме "Интернет-технологии":</p>
+					<a href="#id3-1" class="lab-heading" onClick="toggleVisability(event, this.getAttribute('href'));">Показать вопрос:<i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+					<ol id="id3-1">
+						<h4>Какой из приведенных тегов позволяет создавать нумерованные списки? <a href="http://htmlbook.ru/html/ol" target="_blank"> (Источник)</a></h4>
+					<li>OL</li>
+				 	<li>DL</li>
+				 	<li>UL</li>
+				 	<li>DT</li>
+
+				 <a href="#id3-2" class="lab-heading" onClick="toggleVisability(event, this.getAttribute('href'));">Ответ: <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+				<ol id="id3-2">
+					<h4>OL</h4>
 				</div>
 				</section>
 
@@ -80,7 +123,7 @@
   				:
  				<div class="sec"></div>
 			</div></section>
-			
+
 		</main>
 		<script src="clock.js"></script>
 		<script src="main.js"></script>

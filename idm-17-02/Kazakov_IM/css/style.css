@@ -1,20 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 html {
   background-color: #594c4a;
 }
-body{
-  background-color: #008B8B;
-}
-* {
-  box-sizing: border-box;
-    margin: 0;
-  padding: 0;
-}
 
+body{
+  background-color: #008B8B ;
+}
 #cat{
   max-width: 256px;
   max-height: 256px;
 }
-
 .red{
   background-color: #FF3C40;
 }
@@ -48,6 +47,7 @@ body{
 }
 .head{
   text-align: center;
+  //font-style: oblique;
 }
 
 .center{
@@ -60,6 +60,7 @@ body{
 #GROUP{
   text-decoration: none;
   color:black;
+  //font-size: 20px;
 }
 #name{
   text-align: center;
@@ -92,6 +93,27 @@ svg {
   transform: scale(1.7);
 }
 
-
-
-
+table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+text-align: center;
+}
+th, td:first-child {
+background: #AFCDE7;
+color: black;
+padding: 10px 20px;
+}
+th, td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: white;
+}
+td {
+background: #D8E6F3;
+}
+th:first-child, td:first-child {
+text-align: center-left;
+}
+.svag {
+  width: auto;}

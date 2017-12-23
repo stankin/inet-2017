@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body{
+	overflow-x: hidden;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+a:hover{
+	text-decoration: none;
+}
+.screen3 a{
+	color: #fff;
+}
+.screen4 a{
+	color: #fff;
+}
+.screen5 a{
+	color: #fff;
+}
+.screen6 a{
+	color: #fff;
+}
+
+
+.screen1{
+	color: #342733;
+	height: 100vh;
+	background-color: #A0A645;
+}
+.screen1 h1{
+	font-size: 50px;
+}
+.title-h1{
+	margin-top: 40vh;
+}
+.screen1 p{
+	font-size: 20px;
+}
+.screen2{
+	padding-top: 70px;
+	height: 100vh;
+	background-color: #E0BA7B;
+}
+.screen2 h1 {
+	font-size: 70px;
+}
+.screen2 ol li {
+	font-size: 25px;
+}
+.screen3{
+		white-space: nowrap;
+	padding-top: 70px;
+	height: 100vh;
+	background-color: #CA6D44;
+}
+.screen3 h1 {
+	font-size: 70px;
+}
+.screen3 ol li {
+	font-size: 25px;
+}
+
+.screen4{
+	color: #E0BA7B;
+	padding-top: 70px;
+	height: 100vh;
+	background-color: #914036;
+}
+.screen4 h1 {
+	font-size: 70px;
+}
+.screen4 ol li {
+	font-size: 25px;
+}
+.screen5{
+	color: #E0BA7B;
+	height: 520vh;
+	background-color: #342733;
+}
+.screen5 h1 {
+	font-size: 70px;
+}
+.screen5 p {
+	font-size: 19px;
+}
+.screen5 strong{
+	color: #fff;
+}
+.screen5 ol li {
+	font-size: 25px;
+}
+.screen6{
+	padding-top: 70px;
+	height: 100vh;
+	background-color: #A0A645;
+}
+.screen6 h1 {
+	font-size: 70px;
+}
+.screen6 p {
+	font-size: 25px;
+}
+.screen6 ol li {
+	font-size: 25px;
+}
+.screen7{
+	padding-top: 50px;
+	height: 13vh;
+	background-color: #333;
+}
+.screen7 a{
+	margin-left: 35px;
+	text-decoration: none;
+	color: #E0BA7B;
+	display: inline;
+}
+/*btn*/
+
+.wrap {
+	top: 50%;
+	left: 50%;
+	margin-top: 300px;
+	text-align: center;
+}
+table{
+	font-size: 25px;
+}
+.button {
+	-webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	-o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+	display: block;
+	margin: 20px auto;
+	max-width: 180px;
+	text-decoration: none;
+	border-radius: 4px;
+	padding: 20px 30px;
+}
+
+.button {
+	color: rgba(30, 22, 54, 0.6);
+	box-shadow: rgba(30, 22, 54, 0.4) 0 0px 0px 2px inset;
+}
+
+.button:hover {
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.85);
+	box-shadow: rgba(30, 22, 54, 0.7) 0 0px 0px 40px inset;
+}

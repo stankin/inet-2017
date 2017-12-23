@@ -17,9 +17,9 @@
 
 	//	чекбоксы
 
-	var checkboxes = $('.all-products input[type=checkbox]');
+	var checkboxes = $('.all-products');
 
-	checkboxes.click(function () {
+	checkboxes.on('click', 'input[type=checkbox]', function () {
 
 		var that = $(this),
 			specName = that.attr('name');
@@ -65,15 +65,29 @@
 	$('.filters button').click(function (e) {
 		e.preventDefault();
 		window.location.hash = '#';
+        var checkboxes = $('input:checkbox');
+        if (checkboxes.is(':checked')) {
+            $('input:checkbox').prop('checked', false);
+        }
+        
 	});
-
+    
+	$('#reindex').click(function (e) {
+		e.preventDefault();
+		window.location.hash = '#';
+        var checkboxes = $('input:checkbox');
+        if (checkboxes.is(':checked')) {
+            $('input:checkbox').prop('checked', false);
+        }
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        
+	});
 
 	// кнопка открытия каждого рецепта
 
 	var singleProductPage = $('.single-product');
 
 	singleProductPage.on('click', function (e) {
-
 		if (singleProductPage.hasClass('visible')) {
 
 			var clicked = $(e.target);
@@ -81,7 +95,8 @@
 			// если нажать "закрыть" или просто на фон, то вернуться назад
 			if (clicked.hasClass('cltypee') || clicked.hasClass('overlay')) {
 				// поменять юрл на прошлый с фильтром
-				createQueryHash(filters);
+				renderNullPage(1,products);
+                createQueryHash(filters);
 			}
 
 		}
@@ -142,6 +157,7 @@
                 // Получить индекс того, какой рецепт мы хотим показать и вызываем соответствующую функцию
                 var index = url.split('#product/')[1].trim();
 
+                $('html, body').animate({scrollTop: 0},500);
 				renderSingleProductPage(index, products);
 			},
 
@@ -273,7 +289,45 @@
 		page.addClass('visible');
 
 	}
+	function renderNullPage(index, data){
 
+		var page = $('.single-product');
+        var	container = $('.preview-large');
+        var	container0 = $('.preview-large0');
+        var container1 = $('.preview-large1');
+        var container2 = $('.preview-large2');
+        var container3 = $('.preview-large3');
+        var container4 = $('.preview-large4');
+        var container5 = $('.preview-large5');
+        var container6 = $('.preview-large6');
+
+		// найти нужный рецепт с помощью перебора данных объекта и поиска индекса
+		if(data.length){
+			data.forEach(function (item) {
+				if(item.id == index){
+					// заполняем страницу данными
+					container.find('h3').text();
+                    container.find('img').attr('src', item.name);
+                    container.find('p').text(item.name);
+                    container0.find('p').text(item.name);
+                    container1.find('img').attr('src', item.name);
+					container1.find('p').text(item.name);
+                    container2.find('img').attr('src', item.name);
+					container2.find('p').text(item.name);
+                    container3.find('img').attr('src', item.name);
+					container3.find('p').text(item.name);
+                    container4.find('img').attr('src', item.name);
+					container4.find('p').text(item.name);
+                    container5.find('img').attr('src', item.name);
+					container5.find('p').text(item.name);
+                    container6.find('img').attr('src', item.name);
+				}
+			});
+		}
+        
+		page.addClass('visible');
+
+	}
 	// Find and render the filtered data results. Arguments are:
 	// filters - our global variable - the object with arrays about what we are searching for.
 	// products - an object with the full products list (from product.json).
@@ -356,17 +410,36 @@
 
 	// Get the filters object, turn it into a string and write it into the hash.
 	function createQueryHash(filters){
-
 		// Here we check if filters isn't empty.
 		if(!$.isEmptyObject(filters)){
 			// Stringify the object via JSON.stringify and write it after the '#filter' keyword.
-			window.location.hash = '#filter/' + JSON.stringify(filters);
+		    
+            window.location.hash = '#filter/' + JSON.stringify(filters);
+            
 		}
 		else{
 			// If it's empty change the hash to '#' (the homepage).
-			window.location.hash = '#';
+        	
+        	window.location.hash = '#';
+            
 		}
 
 	}
+
+
+//Checkboxes
+var expanded = false;
+
+function showCheckboxes() {
+  var checkboxes = document.getElementById("checkboxes");
+  if (!expanded) {
+    checkboxes.style.display = "block";
+    expanded = true;
+  } else {
+    checkboxes.style.display = "none";
+    expanded = false;
+  }
+}
+
 
 });
