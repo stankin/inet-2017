@@ -70,8 +70,7 @@
 
 Не стесняемся, оцениваем проекты [здесь](https://onedrive.live.com/survey?resid=7898162C7CE728BA!118&authkey=!AGZj9cvhuhtJnns)!!!
 
-## Рейтинг проектов: https://ribnikova.github.io/ver.2/ 
-
+## Рейтинг проектов [здесь](https://ribnikova.github.io/ver.2/)
 # Примерный образ результата:
 1. Список по группам (коллективная работа):
 
