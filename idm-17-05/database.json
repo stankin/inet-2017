@@ -7,7 +7,7 @@
     {"name": "Ермишин Станислав Вячеславович",      "m1": "50",    "m2": "",    "href":"Ermishin_S_ V/index.html",        "team":"",              "roles":""},
     {"name": "Жуков Игорь Маркович",                "m1": "50",    "m2": "50",    "href":"Zhukov_I_M/index.html",        "team":"Команда 2",     "roles":"СП, АД"},
     {"name": "Задыхин Евгений Николаевич",          "m1": "--",    "m2": "",    "href":"",        "team":"DCP TEAM",      "roles":""},
-    {"name": "Квасняк Александр Владиславович",     "m1": "--",    "m2": "",    "href":"helloiamhard.github.io",        "team":"Acbon'",              "roles":"full stack"},
+    {"name": "Квасняк Александр Владиславович",     "m1": "--",    "m2": "",    "href":"https://helloiamhard.github.io",        "team":"Acbon'",              "roles":"full stack"},
     {"name": "Князев Кирилл Константинович",        "m1": "36",    "m2": "",    "href":"knyazev/index.html",        "team":"DCP TEAM",      "roles":"Бизнес-анализ"},
     {"name": "Колпаков Артём Олегович",             "m1": "--",    "m2": "",    "href":"Kolpakov/index.html",        "team":"Команда 1",     "roles":""},
     {"name": "Муталимов Тимур Магомед-Солтанович",  "m1": "--",    "m2": "",    "href":"Mutalimov/index.html",        "team":"",              "roles":"ALL in one"},
@@ -24,6 +24,6 @@
     {"name": "Солобаева Кристина",                  "m1": "--",    "m2": "",    "href":"",        "team":"",              "roles":""},
     {"name": "Сурьянинова Алина Андреевна",         "m1": "45",    "m2": "",    "href":"https://unocorn.github.io",        "team":"DCP TEAM",      "roles":"КО - Консалтинг"},
     {"name": "Тополев-Солдунов Сергей Максимович",  "m1": "--",    "m2": "",    "href":"",        "team":"DCP TEAM",      "roles":""},
-    {"name": "Чемный Константин Игоревич",          "m1": "25",    "m2": "",    "href":"https://jollylate.github.io",        "team":"",              "roles":""},
+    {"name": "Чемный Константин Игоревич",          "m1": "25",    "m2": "",    "href":"https://jollylate.github.io",        "team":"Acbon'",              "roles":""},
     {"name": "Штырев Григорий Алексеевич",          "m1": "25",    "m2": "",    "href":"Shtyryov/index.html",        "team":"Команда 1",     "roles":"РП"}
   ]
