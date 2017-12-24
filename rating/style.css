@@ -1,0 +1,32 @@
+
+body {
+  margin: 0;
+  background: #AFEEEE;
+}
+
+h1 { text-align: center;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif; }
+
+table 
+{   text-align: center;
+    margin: auto;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	border-collapse: separate;
+	border-spacing: 5px;
+	background: #FFA07A/*E5E0D2*/;
+	color: #414E41;
+	border: 16px solid #FFFFFF /*ECE9E0*/;
+	border-radius: 20px;
+	opacity: 1;
+}
+th 
+{
+	font-size: 18px;
+	padding: 10px;
+}
+td 
+{
+	background:#FFFACD /*F0C198*/;
+	padding: 10px;
+	opacity: 1;
+}
