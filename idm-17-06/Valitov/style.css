@@ -1,0 +1,41 @@
+body
+{
+    margin: 35px;
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.head
+{
+    background: #DAF;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Zapf Dingbats";
+    font-size: 20pt;
+}
+.containes
+{
+    background: #AAF;
+    padding: 20px;
+    border: solid 4px #CCD;
+    font-family: "Book Antiqua";
+    font-size: 14pt;
+}
+summary
+{    
+    padding: 12px;
+}
+
+blockquote
+{
+    text-align: right;
+    font-style: oblique;
+}
+
+img
+{
+    width: 500px;
+    border: solid 2px #CCD;
+}
