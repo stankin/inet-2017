@@ -223,7 +223,7 @@ color: white;
     user-select: none;
 }
 input:checked ~ .door {
-	right: 80%;
+	right: 90%;
 }
 input {
     margin-top: auto;
