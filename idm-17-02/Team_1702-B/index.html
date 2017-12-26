@@ -2,17 +2,15 @@
 	<head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="style.css">
-
+	
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js2/js2.js"></script>
-	<script type="text/javascript" src="js2/map.js"></script>
 	</head>
-
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <link rel="stylesheet" type="text/css" href="Style1.css">
 <script language="JavaScript">
 <!-- hide
-var scrtxt = "Тесты по информатике и информационным технологиям" ;
+var scrtxt = "Тесты по информатике и информационным технологиям" ; 
 var length = scrtxt.length;
 var width = 100;
 var pos = -(width + 2);
@@ -35,25 +33,15 @@ function scroll() {
 }
 // -->
 </script>
-
-	<body>
-		<header>
-			<div class="heading">
-				<h1>Добро пожаловать на проект группы Team_1702-B <br>под названием "Страны мира"</h1><br>
-				<p>«Страны мира» - это интерактивный проект, созданный для того, <br>чтобы пользователь смог получить общую информацию о всех без исключения странах мира.<br>Информация содержит данные о площади страны, ее населении, денежных единицах и достопримечательностях.<br>Данные сопровождаются картами и фотографиями, что позволяет получить актуальную и мультимедийную информацию.
-<br>Для проверки усвоения материала проект содержит тест.
-Для того чтобы начать, нажмите кнопку «Перейти»</p>
-				<a href="#lab" class="goto">Перейти</a>
-		 	</div>
-		</header>
-	<section id="lab">
+	<body background="Images/maxresdefault.jpg" onLoad="scroll()">
+	<body bgcolor="white">
 <form name=test>
 <div align="center">
 <table border="0" cellpadding="0" width="900">
 <nav>
 			<ul class="Menu">
-				<li><a class="menus" href=""> Главная	 </a></li>
-				<li><a class="menus" href=""> Интерактивные карты частей света	 </a>
+				<li><a href=""> Главная	 </a></li>
+				<li><a href=""> Интерактивные карты частей света	 </a>
 					<ul class="Submenu">
 						<li><a href="">Европа</a></li>
 						<li><a href="">Азия</a></li>
@@ -63,8 +51,8 @@ function scroll() {
 						<li><a href="">Северная Америка</a></li>
 					</ul>
 				</li>
-				<li><a class="menus" href="#modal-test" onClick="showModal(this)"> Тест </a></li>
-				<li><a class="menus" href=""> О проекте </a></li>
+				<li><a href="Viktorina.html"> Викторина </a></li>
+				<li><a href=""> О проекте </a></li>
 			</ul>
 		</nav>
 	<div class="checkbox">
@@ -72,29 +60,199 @@ function scroll() {
 		<p><b>Части света, выделенные на карте</b></p>
 		<p><input type="checkbox" name="EU" value="EU1" checked>Европа<Br>
 		<input type="checkbox" name="AS" value="AS1" checked>Азия<Br>
-		<input type="checkbox" name="AF" value="AF1" checked>Африка<Br>
-		<input type="checkbox" name="AU" value="AU1" checked>Австралия<Br>
+		<input type="checkbox" name="AF" value="AF1" checked>Африка<Br> 
+		<input type="checkbox" name="AU" value="AU1" checked>Австралия<Br> 
 		<input type="checkbox" name="SA" value="SA1" checked>Южная Америка<Br>
 		<input type="checkbox" name="NA" value="NA1" checked>Северная Америка</p>
-</div>
-</section>
-			
-			
+</div>		
 	<div id="map" align="center"></div>
-	<div id="content-window"></div>
-	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap"></script>
+        <script>
+         function initMap() {
+         var stankin = {lat: 55.789745, lng: 37.595052};
+         var map = new google.maps.Map(document.getElementById('map'),{zoom: 4,center: stankin});
+         var marker = new google.maps.Marker({position: stankin,map: map});
+         }
+        </script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap">
+        </script>
+	<a href='#none' onclick='slide_dox()'>Пройти тест</a>
+ <Script Language="JavaScript">
+<!--Начало сценария
+var res="2413242413"
+function check_me()
+{
+	var count=0
+	with(document.test)
+	{
+		if (!Q1[0].checked&&!Q1[1].checked&&!Q1[2].checked&&!Q1[3].checked) {count+=1};
+		if (!Q2[0].checked&&!Q2[1].checked&&!Q2[2].checked&&!Q2[3].checked) {count+=1};
+		if (!Q3[0].checked&&!Q3[1].checked&&!Q3[2].checked&&!Q3[3].checked) {count+=1};
+		if (!Q4[0].checked&&!Q4[1].checked&&!Q4[2].checked&&!Q4[3].checked) {count+=1};
+		if (!Q5[0].checked&&!Q5[1].checked&&!Q5[2].checked&&!Q5[3].checked) {count+=1};
+		if (!Q6[0].checked&&!Q6[1].checked&&!Q6[2].checked&&!Q6[3].checked) {count+=1};
+		if (!Q7[0].checked&&!Q7[1].checked&&!Q7[2].checked&&!Q7[3].checked) {count+=1};
+		if (!Q8[0].checked&&!Q8[1].checked&&!Q8[2].checked&&!Q8[3].checked) {count+=1};
+		if (!Q9[0].checked&&!Q9[1].checked&&!Q9[2].checked&&!Q9[3].checked) {count+=1};
+		if (!Q10[0].checked&&!Q10[1].checked&&!Q10[2].checked&&!Q10[3].checked) {count+=1};
+		if (count>0) {alert("Вы выполнили не все задания. Проверьте себя.")} 
+		else answer()
+	}
+}
+function control(k,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10)
+{
+	if (k==1&&f1.checked) return true;
+	if (k==2&&f2.checked) return true;
+	if (k==3&&f3.checked) return true;
+	if (k==4&&f4.checked) return true;
+	if (k==5&&f5.checked) return true;
+	if (k==6&&f6.checked) return true;
+	if (k==7&&f7.checked) return true;
+	if (k==8&&f8.checked) return true;
+	if (k==9&&f9.checked) return true;
+	if (k==10&&f10.checked) return true;
+	return false;
+}
+function answer()
+{
+	answ="";
+	with(document)
+	{
+		answ+=control(res.charAt(0),test.Q1[0],test.Q1[1],test.Q1[2],test.Q1[3])?"1":"0"
+		answ+=control(res.charAt(1),test.Q2[0],test.Q2[1],test.Q2[2],test.Q2[3])?"1":"0"
+		answ+=control(res.charAt(2),test.Q3[0],test.Q3[1],test.Q3[2],test.Q3[3])?"1":"0"
+		answ+=control(res.charAt(3),test.Q4[0],test.Q4[1],test.Q4[2],test.Q4[3])?"1":"0"
+		answ+=control(res.charAt(4),test.Q5[0],test.Q5[1],test.Q5[2],test.Q5[3])?"1":"0"
+		answ+=control(res.charAt(5),test.Q6[0],test.Q6[1],test.Q6[2],test.Q6[3])?"1":"0"
+		answ+=control(res.charAt(6),test.Q7[0],test.Q7[1],test.Q7[2],test.Q7[3])?"1":"0"
+		answ+=control(res.charAt(7),test.Q8[0],test.Q8[1],test.Q8[2],test.Q8[3])?"1":"0"
+		answ+=control(res.charAt(8),test.Q9[0],test.Q9[1],test.Q9[2],test.Q9[3])?"1":"0"
+		answ+=control(res.charAt(9),test.Q10[0],test.Q10[1],test.Q10[2],test.Q10[3])?"1":"0"
+		showResult();
+	}
+}
+function showResult()
+{
+	var nok=0;
+	var i,s;
+	for (i=0;i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+                  if(nok<4) s='"НЕУДОВЛЕТВОРИТЕЛЬНО"';
+                  if(nok==4) s='"УДОВЛЕТВОРИТЕЛЬНО"';
+	if(nok>4 && nok<7) s='"УДОВЛЕТВОРИТЕЛЬНО"';
+	if(nok==7) s='"ХОРОШО"';
+	if(nok>7 && nok<10) s='"ХОРОШО"';
+	if(nok==10) s='"ОТЛИЧНО"';
+	document.test.s1.value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Загляните в окно рядом с номером задания. Если ответ правильный, то там (+). Если Вы ошиблись, там (-).";
+	with(document.test)
+	{
+		if (answ.charAt(0)=="1") {T1.value=" +"} else {T1.value=" -"};
+		if (answ.charAt(1)=="1") {T2.value=" +"} else {T2.value=" -"};
+		if (answ.charAt(2)=="1") {T3.value=" +"} else {T3.value=" -"};
+		if (answ.charAt(3)=="1") {T4.value=" +"} else {T4.value=" -"};
+		if (answ.charAt(4)=="1") {T5.value=" +"} else {T5.value=" -"};
+		if (answ.charAt(5)=="1") {T6.value=" +"} else {T6.value=" -"};
+		if (answ.charAt(6)=="1") {T7.value=" +"} else {T7.value=" -"};
+		if (answ.charAt(7)=="1") {T8.value=" +"} else {T8.value=" -"};
+                if (answ.charAt(8)=="1") {T9.value=" +"} else {T9.value=" -"};
+		if (answ.charAt(9)=="1") {T10.value=" +"} else {T10.value=" -"};
+	}
+}
+</script>
+</head>
+<script type="text/javascript" language="javascript">
+function slide_dox(){
+    $('#box').slideToggle(300);
+}
+</script>
+<div id='box' style='padding:10px; display:none;'>
+<center><font face="Arial,Helvetica,sans-serif" color="000099"><h3>Викторина «Страны мира»</h3></center>
 
+<ol>
 
-	</form>
-	</div>
+ <H4><INPUT size=1 name=T1> Вопрос 1. Столица Индии: </H4>
+ <INPUT type=radio name=Q1> Мапуту <BR>
+ <INPUT type=radio name=Q1> Нью-Дели <BR>
+ <INPUT type=radio name=Q1> Мумбаи <BR>
+ <INPUT type=radio name=Q1> Париж <BR><BR>
 
-			<!-- Начало двери -->
+ <H4><INPUT size=1 name=T2> Вопрос 2. Флаг Великобритании: </H4>
+ <INPUT type=radio name=Q2> <img class="Viki" src="Images/IS.jpg" alt="Израиль"> <BR>
+ <INPUT type=radio name=Q2> <img class="Viki" src="Images/CR.jpg" alt="Хорватия"> <BR>
+ <INPUT type=radio name=Q2> <img class="Viki" src="Images/FI.jpg" alt="Фиджи"> <BR>
+ <INPUT type=radio name=Q2> <img class="Viki" src="Images/GB.jpg" alt="Великобритания"> <BR><BR>
+
+ <H4><INPUT size=1 name=T3> Вопрос 3. Денежная единица Казахстана: </H4>
+ <INPUT type=radio name=Q3> Тенге <BR>
+ <INPUT type=radio name=Q3> Рубль <BR>
+ <INPUT type=radio name=Q3> Лев <BR>
+ <INPUT type=radio name=Q3> Гривна <BR><BR>
+
+ <H4><INPUT size=1 name=T4> Вопрос 4. Первое место по населению занимает: </H4>
+ <INPUT type=radio name=Q4> Индия <BR>
+ <INPUT type=radio name=Q4> США <BR>
+ <INPUT type=radio name=Q4> Китай <BR>
+ <INPUT type=radio name=Q4> Россия <BR><BR>
+
+ <H4><INPUT size=1 name=T5> Вопрос 5. Антананариву является столицей: </H4>
+ <INPUT type=radio name=Q5> Турции <BR>
+ <INPUT type=radio name=Q5> Мадагаскара <BR>
+ <INPUT type=radio name=Q5> Эфиопии <BR>
+ <INPUT type=radio name=Q5> Индонезии <BR><BR>
+
+ <H4><INPUT size=1 name=T6> Вопрос 6. Второе место по площади занимает: </H4>
+ <INPUT type=radio name=Q6> Россия <BR>
+ <INPUT type=radio name=Q6> Бразилия <BR>
+ <INPUT type=radio name=Q6> Австралия <BR>
+ <INPUT type=radio name=Q6> Канада <BR><BR>
+
+ <H4><INPUT size=1 name=T7> Вопрос 7. Флаг <img class="Viki" src="Images\SW.jpg" alt="Швеция"> принадлежит: </H4>
+ <INPUT type=radio name=Q7> Финляндии <BR>
+ <INPUT type=radio name=Q7> Швеции <BR>
+ <INPUT type=radio name=Q7> Исландии <BR>
+ <INPUT type=radio name=Q7> Грузии <BR>
+
+ <H4><INPUT size=1 name=T8> Вопрос 8. Официальный язык Бельгии: </H4>
+ <INPUT type=radio name=Q8> Французский <BR>
+ <INPUT type=radio name=Q8> Нидерландкий <BR>
+ <INPUT type=radio name=Q8> Немецкий <BR>
+ <INPUT type=radio name=Q8> Все вышеперечисленные <BR>
+
+ <H4><INPUT size=1 name=T9> Вопрос 9. Форма правления в России: </H4>
+ <INPUT type=radio name=Q9> Президентская <BR>
+ <INPUT type=radio name=Q9> Парламентская <BR>
+ <INPUT type=radio name=Q9> Монархия <BR>
+ <INPUT type=radio name=Q9> Смешанная <BR>
+
+ <H4><INPUT size=1 name=T10> Вопрос 10. Форинт является денежной единицей: </H4>
+ <INPUT type=radio name=Q10> Польши <BR>
+ <INPUT type=radio name=Q10> Монголии <BR>
+ <INPUT type=radio name=Q10> Венгрии <BR>
+ <INPUT type=radio name=Q10> Боливии <BR>
+
+</ol>
+
+<br>
+<center>
+<p> <textarea rows=4 cols=70 name=s1> </textarea> </p>
+<input type=button value="Показать результат" onClick=check_me()>&nbsp;&nbsp;&nbsp;&nbsp;
+<input type=reset value="Сбросить ответы">
+</center>
+<br><br>
+
+</form>
+</div>
+</script>
+		
+</form>
+</div>
+
+<!-- Начало двери -->
 <a id="narnia"  href='#none' >Отправиться в нарнию</a>
 
 <!-- Флаги, при нажатии на которые выполняется необходимый скрипт -->
 
 <!-- Франция -->
-<img id="f1" src="flagi/france_small_flag.gif" onclick="whatIsIt()">
+<img id="f1" src="flags/france_small_flag.gif" onclick="whatIsIt()">
 <script>
   const el1 = document.getElementById("f1");       
   el1.addEventListener("click", function() {
@@ -105,8 +263,6 @@ function scroll() {
     	{ alert("Упс. Не повезло =(")}
     else if($("#box1").hasClass("wrapper3")) 
     	{ alert("Упс. Не повезло =(")}
-    else if($("#box1").hasClass("wrapper")) 
-    	{ alert("Упс. Не повезло =(")}
     else if($("#box1").hasClass("wrapper4")) 
     	{ alert("Упс. Не повезло =(")}
   });
@@ -114,7 +270,7 @@ function scroll() {
 </script>
 
 <!-- Италия -->
-<img id="f2" name=f2 src="flagi/italy_small_flag.gif">
+<img id="f2" name=f2 src="flags/italy_small_flag.gif">
 <script>
    const el2 = document.getElementById("f2");
 	el2.addEventListener("click", function() {
@@ -131,7 +287,7 @@ function scroll() {
 </script>
 
 <!-- США -->
-<img id="f3" src="flagi/united_states_small_flag.gif">
+<img id="f3" src="flags/united_states_small_flag.gif">
 <script>
    const el3 = document.getElementById("f3");
 	el3.addEventListener("click", function() {
@@ -150,7 +306,7 @@ function scroll() {
 </script>
 
 <!-- Египет -->
-<img id="f4" src="flagi/egypt_small_flag.gif">
+<img id="f4" src="flags/egypt_small_flag.gif">
 <script>
    const el4 = document.getElementById("f4");
 	el4.addEventListener("click", function() {
@@ -177,9 +333,7 @@ $("#narnia").on('click', () => {
 
 
 <div  id='box1' class="wrapper" style='padding:10px; display:none;'>	
-	<input type="checkbox" id="check">
 	<div class="door"></div>
-	<label for="check"></label>
 </div>
 
 
@@ -189,373 +343,19 @@ function slide_door(){
 }
 </script>
 <script>
-$('#check').on('click',function(){
-	if($(this).prop('checked')){	
+var q = true;
+$('#box1').on('click',function(){
+	if(q){	
+		console.log('111');
 	    $('#box1').removeClass();	
         $('#box1').addClass(showPictures());
+        $('.door').addClass('opened');
+}else{
+	$('.door').removeClass('opened');
 }
+q = !q;
 });
 </script>
-
-
-	  <div id="modal-test" class="modal">
-    <div class="modal-body">
-      <form action="javascript: void(0)" id="form-questions">
-      </form>
-    </div>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-
-	<script type="text/javascript">
-// Question
-
-var questions = [
-  {
-    "id": 1,
-    "heading": "Столица Индии:",
-    "options": [
-      {
-        "name": "Мапуту",
-        "true": false
-      },
-      {
-        "name": "Нью-Дели",
-        "true": true
-      },
-      {
-        "name": "Мумбай",
-        "true": false
-      },
-      {
-        "name": "Париж",
-        "true": false
-      }
-    ]
-  },
-  {
-    "id": 2,
-    "heading": "Флаг Великобритании:",
-    "options": [
-      {
-        "name": "<img src='img/2.jpg'>",
-        "true": false
-      },
-      {
-        "name": "<img src='img/3.jpg'>",
-        "true": false
-      },
-      {
-        "name": "<img src='img/4.jpg'>",
-        "true": true
-      },
-      {
-        "name": "<img src='img/5.jpg'>",
-        "true": false
-      }
-    ]
-  },
-  {
-    "id": 3,
-    "heading": "Денежная единица Казахстана:",
-    "options": [
-      {
-        "name": "Тенге",
-        "true": true
-      },
-      {
-        "name": "Рубль",
-        "true": false
-      },
-      {
-        "name": "Лев",
-        "true": false
-      },
-      {
-        "name": "Гривна",
-        "true": false
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "heading": "Первое место по населению занимает:",
-    "options": [
-      {
-        "name": "Индия",
-        "true": false
-      },
-      {
-        "name": "США",
-        "true": false
-      },
-      {
-        "name": "Китай",
-        "true": true
-      },
-      {
-        "name": "Россия",
-        "true": false
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "heading": "Антананариву является столицей:",
-    "options": [
-      {
-        "name": "Турции",
-        "true": false
-      },
-      {
-        "name": "Мадагаскара",
-        "true": true
-      },
-      {
-        "name": "Эфиопии",
-        "true": false
-      },
-      {
-        "name": "Индонезии",
-        "true": false
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "heading": "Второе место по площади занимает:",
-    "options": [
-      {
-        "name": "Россия",
-        "true": false
-      },
-      {
-        "name": "Бразилия",
-        "true": false
-      },
-      {
-        "name": "Австралия",
-        "true": false
-      },
-      {
-        "name": "Канада",
-        "true": true
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "heading": "Флаг <img src='img/1.jpg'> принадлежит:",
-    "options": [
-      {
-        "name": "Финляндии",
-        "true": false
-      },
-      {
-        "name": "Швеции",
-        "true": true
-      },
-      {
-        "name": "Исландии",
-        "true": false
-      },
-      {
-        "name": "Грузии",
-        "true": false
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "heading": "Официальный язык Бельгии:",
-    "options": [
-      {
-        "name": "Французский",
-        "true": false
-      },
-      {
-        "name": "Нидерландский",
-        "true": false
-      },
-      {
-        "name": "Немецкий",
-        "true": false
-      },
-      {
-        "name": "Все вышеперечисленные",
-        "true": true
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "heading": "Форма правления в России:",
-    "options": [
-      {
-        "name": "Президентская",
-        "true": true
-      },
-      {
-        "name": "Парламентская",
-        "true": false
-      },
-      {
-        "name": "Монархия",
-        "true": false
-      },
-      {
-        "name": "Смешанная",
-        "true": false
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "heading": "Форинт является денежной единицей:",
-    "options": [
-      {
-        "name": "Польши",
-        "true": false
-      },
-      {
-        "name": "Монголии",
-        "true": false
-      },
-      {
-        "name": "Венгрии",
-        "true": true
-      },
-      {
-        "name": "Боливии",
-        "true": false
-      }
-    ]
-  }
-];
-
-function nextQues(element) {
-  var $next = $(element).parent().next();
-  $(element).parent().hide(300);
-  $next.length ? $next.show(300) : showResult();
-}
-
-function checkAnswer() {
-  var result = {
-        "trueId": [],
-        "falseId": []
-      };
-  $('#form-questions input[type="radio"]:checked').each(function(index) {
-    var optionNumber = $(this).attr("id").split("option-")[1].split('-')[0] - 1;
-    var thisId = $(this).attr("id").split("option-")[1].split('-')[1] - 1;
-    var thisOption = questions[thisId].options[optionNumber].true;
-
-    thisOption ? result.trueId.push(thisId+1) : result.falseId.push(thisId+1)
-  });
-
-  return result
-}
-
-function showResult() {
-  var answers = checkAnswer();
-  var trueId = answers.trueId;
-  var falseId = answers.falseId;
-  var trueLen = trueId.length;
-  var falseLen = falseId.length;
-
-  $("#form-questions").append('<p class="resultat">Количество верных ответов: ' + trueLen + '; <br>Количество неверных ответов: ' + falseLen + ';</p>');
-
-  var rating;
-
-  var persent = 100 * trueLen / questions.length;
-
-  if (persent < 40) {
-    rating = "Неудовлетворительно"
-  } if (persent >= 40 && trueLen < 70) {
-    rating = "Удовлетворительно"
-  } if (persent >= 70 && trueLen < 100) {
-    rating = "Хорошо"
-  } if ( persent == 100) {
-    rating = "Отлично"
-  }
-
-  console.log(persent);
-  $("#form-questions").append('<p class="resultat">Ваша оценка: ' + rating + '</p>')
-
-  var i = 0;
-  $("#form-questions").append("<ul></ul>")
-  for (i; i< trueId.length; i++) {
-    var ques = questions[trueId[i]-1].heading
-    $("#form-questions ul").append('<li class="true">' + ques + '</li>');
-  }
-  var i = 0;
-  for (i; i< falseId.length; i++) {
-    var ques = questions[falseId[i]-1].heading
-    $("#form-questions ul").append('<li class="false">' + ques + '</li>');
-  }
-
-}
-
-var $formQuestion = $("#form-questions");
-
-for (var i = 0; i < questions.length; i++) {
-  var question = questions[i];
-  var options = question.options;
-  var display = ( i + 1 == 1 ) ? "block" : "none";
-  $formQuestion.append('<div style="display:' +  display + '" class="question" id="question-' + question.id + '"><h4 class="question-heading">' + question.heading + '</h4><div class="question-body"></div><button class="otvet" onClick="nextQues(this)" disabled="disabled">Ответить</button></div>');
-};
-
-$("#form-questions .question").each(function(index) {
-  var questionOptions = questions[index].options;
-  for (var i = 0; i < questionOptions.length; i++) {
-    $(this).find('.question-body').append('<div><input type="radio" id="option-' + (i * 1 + 1) + '-' + +(index + 1) + '" name="option-' + +(index + 1) + '" value="' + questionOptions[i].name + '"><label for="option-' + (i * 1 + 1) + '-' + +(index + 1) + '">' + questionOptions[i].name + '</label></div>');
-  }
-});
-
-$("input[type='radio']").on('change', function() {
-  console.log($(this).attr("id").split("option-")[1].split('-')[0])
-  $(this).parent().parent().parent().find('button').attr('disabled', false);
-});
-
-
-
-// Modal
-
-function showModal(el) {
-  var link = el.getAttribute('href');
-  $(link).addClass('modal-opened');
-  $(link).append('<div class="modal-close" onClick="closeModal(this)">X</div>')
-}
-
-function closeModal(el) {
-  el.parentElement.classList.remove('modal-opened');
-}
-
-
-	 </script>
 
      </body>
 </html>
-
-<!-- <a href='#none' onclick='slide_door()'>Отправиться в нарнию</a>
-
-<script>
-$('#check').on('click',function(){
-	if($(this).prop('checked')){
-	    $('#box1').removeClass();
-        $('#box1').addClass(showPictures());
-}
-});
-</script>
-
-<div  id='box1' style='padding:10px; display:none;'>
-	<input type="checkbox" id="check">
-	<div class="door"></div>
-	<label for="check"></label>
-</div>
-
-
-
-<script>
-function slide_door(){
-    $('#box1').slideToggle(300)
-}
-</script> -->
