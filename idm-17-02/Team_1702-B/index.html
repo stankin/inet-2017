@@ -1,29 +1,55 @@
-<html>
 	<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
-  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="Style1.css">
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script type="text/javascript" src="js2/js2.js"></script>
 	<script type="text/javascript" src="js2/map.js"></script>
 	</head>
 
-<body>	
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<link rel="stylesheet" type="text/css" href="Style1.css">
+<script language="JavaScript">
+<!-- hide
+var scrtxt = "Тесты по информатике и информационным технологиям" ;
+var length = scrtxt.length;
+var width = 100;
+var pos = -(width + 2);
+function scroll() {
+  pos++;
+  var scroller = "";
+  if (pos == length) {
+    pos = -(width + 2);
+  }
+  if (pos < 0) {
+    for (var i = 1; i <= Math.abs(pos); i++) {
+      scroller = scroller+" ";}
+    scroller = scroller + scrtxt.substring(0, width - i + 1);
+  }
+  else {
+    scroller = scroller + scrtxt.substring(pos, width + pos);
+  }
+  window.status = scroller;
+  setTimeout("scroll()", 100);
+}
+// -->
+</script>
+
+	<body>
 		<header>
 			<div class="heading">
-				<h1>Добро пожаловать на проект группы Team_1702-B <br>под названием "Страны мира"</h1>
-				<p>«Страны мира» - это интерактивный проект, созданный для того, <br>чтобы пользователь смог получить общую информацию о всех без исключения странах мира.<br>Информация содержит данные о площади страны, ее населении, денежных единицах и достопримечательностях.<br>Данные сопровождаются картами и фотографиями, что позволяет получить актуальную и мультимедийную информацию. <br>Для проверки усвоения материала проект содержит тест. Для того чтобы начать, нажмите кнопку «Перейти»</p>
+				<h1>Добро пожаловать на проект группы Team_1702-B <br>под названием "Страны мира"</h1><br>
+				<p>«Страны мира» - это интерактивный проект, созданный для того, <br>чтобы пользователь смог получить общую информацию о всех без исключения странах мира.<br>Информация содержит данные о площади страны, ее населении, денежных единицах и достопримечательностях.<br>Данные сопровождаются картами и фотографиями, что позволяет получить актуальную и мультимедийную информацию.
+<br>Для проверки усвоения материала проект содержит тест.
+Для того чтобы начать, нажмите кнопку «Перейти»</p>
 				<a href="#lab" class="goto">Перейти</a>
 		 	</div>
 		</header>
-    <section id="lab">
-      <form name=test> </form>
-      <div align="left">
-      <nav> 
-      <table border="0" cellpadding="0" width="400">
-                   
+	<section id="lab">
+<form name=test>
+<div align="center">
+<table border="0" cellpadding="0" width="900">
+<nav>
 			<ul class="Menu">
 				<li><a class="menus" href=""> Главная	 </a></li>
 				<li><a class="menus" href=""> Интерактивные карты частей света	 </a>
@@ -38,30 +64,28 @@
 				</li>
 				<li><a class="menus" href="#modal-test" onClick="showModal(this)"> Тест </a></li>
 				<li><a class="menus" href=""> О проекте </a></li>
-      </ul>			  
-	    <div class="checkbox">
-	           <form>
-		            <div id="caption"><p><b>Части света, выделенные на карте</b></p></div>
-                <br>
-                <p>
-		            <input type="checkbox" name="EU" value="EU1" checked>Европа<br>
-		            <input type="checkbox" name="AS" value="AS1" checked>Азия<br>
-		            <input type="checkbox" name="AF" value="AF1" checked>Африка<br>
-		            <input type="checkbox" name="AU" value="AU1" checked>Австралия<br>
-		            <input type="checkbox" name="SA" value="SA1" checked>Южная Америка<br>
-		            <input type="checkbox" name="NA" value="NA1" checked>Северная Америка
-                </p>
-			       </form>              
-      </div>		
-      	
-      </table>
-      </nav>
-      </div>
-	      <div id="map" align="center"></div>
-	      <div id="content-window"></div>
-	      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap"></script>
-      </section>  
-        
+			</ul>
+		</nav>
+	<div class="checkbox">
+	<form>
+		<p><b>Части света, выделенные на карте</b></p>
+		<p><input type="checkbox" name="EU" value="EU1" checked>Европа<Br>
+		<input type="checkbox" name="AS" value="AS1" checked>Азия<Br>
+		<input type="checkbox" name="AF" value="AF1" checked>Африка<Br>
+		<input type="checkbox" name="AU" value="AU1" checked>Австралия<Br>
+		<input type="checkbox" name="SA" value="SA1" checked>Южная Америка<Br>
+		<input type="checkbox" name="NA" value="NA1" checked>Северная Америка</p>
+</div>
+</section>
+			
+			
+	<div id="map" align="center"></div>
+	<div id="content-window"></div>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap"></script>
+
+
+	</form>
+	</div>
         
         
         
