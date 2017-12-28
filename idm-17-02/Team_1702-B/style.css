@@ -69,6 +69,7 @@ nav {
 #map {
         height: 500px;
         width: 75%;
+		align: center;
  }
 
 #content-window {
@@ -144,7 +145,13 @@ p {
 background-color: #00008B;
 color: white;
 }
-
+#caption {
+ margin-top: 50px;
+}
+.checkbox {
+  text-align: left;
+  margin-left: 200px;
+}
 
 .wrapper {
 	background: url('3.jpg') no-repeat center;
