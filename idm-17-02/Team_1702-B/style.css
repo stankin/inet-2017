@@ -69,7 +69,6 @@ nav {
 #map {
         height: 500px;
         width: 75%;
-		align: center;
  }
 
 #content-window {
@@ -145,13 +144,7 @@ p {
 background-color: #00008B;
 color: white;
 }
-#caption {
- margin-top: 50px;
-}
-.checkbox {
-  text-align: left;
-  margin-left: 200px;
-}
+
 
 .wrapper {
 	background: url('3.jpg') no-repeat center;
@@ -229,8 +222,8 @@ color: white;
     -webkit-user-select: none;
     user-select: none;
 }
-input:checked ~ .door {
-	right: 90%;
+.door.opened {
+	right: 80%;
 }
 input {
     margin-top: auto;
