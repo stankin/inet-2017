@@ -248,6 +248,7 @@ input {
   z-index: 10;
   background-color: #fff;
   line-height: 1.5;
+  text-align: center;
 }
 .modal-opened {
   display: block;
