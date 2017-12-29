@@ -1,0 +1,77 @@
+#imGroup_1 { float: left; }
+#imGroup_1 > div { float: left; }
+#imCell_1 { display: block; position: relative; overflow: hidden; }
+#imCellStyle_1 { position: relative; box-sizing: border-box; text-align: center; z-index: 2;}
+#imCellStyleGraphics_1 { position: absolute; top: 3px; bottom: 3px; background: #FFFFFF url('../images/gradient.png') repeat-x left top;}
+#imProductList_1 h4 { margin-bottom: 1em; }
+#imProductList_1 h4 a { color: #000000; text-decoration: none; }
+#imProductList_1 .imProductListCont { position: relative; text-align: left; float: left; padding: 8px; height: 132px; border-top: 1px solid #808080; border-bottom: 1px solid #808080; border-left: 1px solid #808080; border-right: 1px solid #808080; background-color: #FFFFFF; font: normal normal normal 8pt 'Tahoma'; color: #000000; background-color: #FFFFFF; text-decoration: none;  margin: 0 4px 4px 0; }
+#imProductList_1 .imProductListCont.imLastRow { margin-bottom: 0 }
+#imProductList_1 .imProductListCont.imLastCol { margin-right: 0 }
+#imProductList_1 input { border-radius: 0px; box-shadow: none; position: absolute; bottom: 0; width: 30px; height: 17px; border: 1px solid #000000; background-color: #FFFFFF; font: normal normal normal 8pt 'Tahoma'; color: #000000; text-decoration: none; ; text-align: right; padding-left: 5px; padding-right: 5px; }
+#imProductList_1 .imProductListPrice { position: absolute; bottom: 0; left: 0; padding: 4px 0; display: block; }
+#imProductList_1 select { border: 1px solid #000000; display: inline-block; line-height: 22px; height: 22px; font: normal normal normal 8pt 'Tahoma'; color: #000000; background-color: #FFFFFF; text-decoration: none; }
+#imProductList_1 .imProductListText .product-options,
+#imProductList_1 .imProductListText .product-availability { height: 24px; margin: 0 0 6px 0; }
+#imProductList_1 .imProductListText .product-available-quantity { display: inline-block; }
+#imProductList_1 .imProductListImage { float: left; }
+#imProductList_1 .imProductListText { float: right; }
+#imProductList_1 .imProductListImage { text-align: center; padding: 0; }
+#imProductList_1 .imProductListImage img { vertical-align: top; }
+#imProductList_1 .imProductListText { position: relative; height: 132px; }
+#imProductList_1 .imProductListText .overflow-controller { margin-bottom: 10px; overflow: auto; }
+#imProductList_1 .imProductListText .height-1 { height: 96px; }
+#imProductList_1 .imProductListText .height-2 { height: 66px; }
+#imProductList_1 .imProductListText .height-3 { height: 36px; }
+#imProductList_1 .imProductListText .height-4 { height: 6px; }
+@media (min-width: 1048px) {
+	#imGroup_1 { width: 1038px; }
+	#imCell_1 { width: 1032px; min-height: 310px;  padding-top: 3px; padding-bottom: 3px; padding-left: 3px; padding-right: 3px; }
+	#imCellStyle_1 { width: 1032px; min-height: 310px; padding: 3px 3px 3px 3px; border-top: 0; border-bottom: 0; border-left: 0; border-right: 0; }
+	#imCellStyleGraphics_1 { left: 3px; right: 3px; }
+	#imProductList_1 .imProductListCont { width: 493px; }
+	#imProductList_1 .imProductListImage { width: 50%; }#imProductList_1 .imProductListImage img { margin: 0 auto; width: 90% !important; height: auto !important; }#imProductList_1 .imProductListText { width: 50%; }
+	#imGroup_2 { width: 1038px; height: 15px; }
+	#imGroup_3 { width: 1038px; height: 0px; }
+	
+}
+@media  (max-width: 1047px) and (min-width: 720px) {
+	#imGroup_1 { width: 710px; }
+	#imCell_1 { width: 706px; min-height: 310px;  padding-top: 3px; padding-bottom: 3px; padding-left: 2px; padding-right: 2px; }
+	#imCellStyle_1 { width: 706px; min-height: 310px; padding: 3px 3px 3px 3px; border-top: 0; border-bottom: 0; border-left: 0; border-right: 0; }
+	#imCellStyleGraphics_1 { left: 2px; right: 2px; }
+	#imProductList_1 .imProductListCont { width: 328px; }
+	#imProductList_1 .imProductListImage { width: 50%; }#imProductList_1 .imProductListImage img { margin: 0 auto; width: 90% !important; height: auto !important; }#imProductList_1 .imProductListText { width: 50%; }
+	#imProductList_1 .imProductListCont.imLastRow { margin-bottom: 4px; }
+	#imProductList_1 .imProductListCont.imLastCol { margin-right: 4px; }
+	#imGroup_2 { width: 710px; height: 15px; }
+	#imGroup_3 { width: 710px; height: 0px; }
+	
+}
+@media  (max-width: 719px) and (min-width: 480px) {
+	#imGroup_1 { width: 470px; }
+	#imCell_1 { width: 468px; min-height: 618px;  padding-top: 3px; padding-bottom: 3px; padding-left: 1px; padding-right: 1px; }
+	#imCellStyle_1 { width: 468px; min-height: 618px; padding: 3px 3px 3px 3px; border-top: 0; border-bottom: 0; border-left: 0; border-right: 0; }
+	#imCellStyleGraphics_1 { left: 1px; right: 1px; }
+	#imProductList_1 .imProductListCont { box-sizing: border-box; width: 100%; height: auto; }
+	#imProductList_1 .imProductListImage { width: 50%; }#imProductList_1 .imProductListImage img { margin: 0 auto; width: 90% !important; height: auto !important; }#imProductList_1 .imProductListText { width: 50%; }
+	#imProductList_1 .imProductListCont.imLastRow { margin-bottom: 4px; }
+	#imProductList_1 .imProductListCont.imLastCol { margin-right: 4px; }
+	#imGroup_2 { width: 470px; height: 15px; }
+	#imGroup_3 { width: 470px; height: 0px; }
+	
+}
+@media  (max-width: 479px) {
+	#imGroup_1 { width: 100%; clear: left; }
+	#imCell_1 { clear: left; }
+	#imCell_1 { width: 100%; min-height: 12px;  padding-top: 3px; padding-bottom: 3px; padding-left: 5px; padding-right: 5px; box-sizing: border-box; }
+	#imCellStyle_1 { width: 100%; min-height: 0px; padding: 3px 3px -609px 3px; }
+	#imCellStyleGraphics_1 { top: 3px; bottom: 3px; left: 5px; right: 5px; }
+	#imProductList_1 .imProductListCont { box-sizing: border-box; width: 100%; height: auto; }
+	#imProductList_1 .imProductListImage { width: 50%; }#imProductList_1 .imProductListImage img { margin: 0 auto; width: 90% !important; height: auto !important; }#imProductList_1 .imProductListText { width: 50%; }
+	#imProductList_1 .imProductListCont.imLastRow { margin-bottom: 4px; }
+	#imProductList_1 .imProductListCont.imLastCol { margin-right: 4px; }
+	#imGroup_2 { display: none; clear: left; }
+	#imGroup_3 { display: none; clear: left; }
+	
+}
