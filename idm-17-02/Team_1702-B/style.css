@@ -69,6 +69,7 @@ nav {
 #map {
         height: 500px;
         width: 75%;
+	text-align:center;
  }
 
 #content-window {
