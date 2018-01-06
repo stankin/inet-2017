@@ -43,10 +43,9 @@ div
 .tftable tr:hover {background-color:#ffff99;}
 .screen{ text-align: center;}
 .screenSite{text-align: center; }
-#exam {color:#AFB8B8;  font-family: 'Raleway', sans-serif; }
+#exam {color:#AFB8B8;  font-family: 'Raleway', sans-serif; max-width: 90%;}
 #exam b{color:#525050;}
 #role{ width: 300px;  padding: 10px;  margin: auto;color:#AFB8B8; font-size: 16px; font-family: 'Raleway', sans-serif;}
 ol {list-style-type: upper-alpha;}
 #demands { text-align: center;}
 
-#exam{max-width: 90%;}
