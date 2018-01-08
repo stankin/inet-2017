@@ -12,21 +12,27 @@ function initMap() {
 	
   AfricaKml.addListener('click', function(kmlEvent){
     infowindow.setContent("АФРИКА\n\nТерритория:\n 30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²");
+	  infowindow.open(map, this);
   });
   AsiaKml.addListener('click', function(kmlEvent) {
     infowindow.setContent("АЗИЯ\n\nТерритория:\n44 579 000 км²\n\nВключает:\n49 государств\n\nПлотность:\n87 чел./км²");
+	  infowindow.open(map, this);
   });
   AustraliaKml.addListener('click', function(kmlEvent) {
     infowindow.setContent("АВСТРАЛИЯ\n\nТерритория:\n7 692 024 км²\n\nПлотность:\n2,8 чел./км²");
+	  infowindow.open(map, this);
   });
   EuropeKml.addListener('click', function(kmlEvent) {
     infowindow.setContent("ЕВРОПА\n\nТерритория:\n10,18 млн км²\n\nВключает:\n50 государств\n\nПлотность:\n72,5 чел./км²");
+	  infowindow.open(map, this);
   });
   NorthAmericaKml.addListener('click', function(kmlEvent) {
     infowindow.setContent("СЕВЕРНАЯ АМЕРИКА\n\nТерритория:\n24,25 млн км²\n\nВключает:\n23 государств\n\nПлотность:\n22,9 чел./км²");
+	  infowindow.open(map, this);
   });
   SouthAmericaKml.addListener('click', function(kmlEvent) {
     infowindow.setContent("ЮЖНАЯ АМЕРИКА\n\nТерритория:\n17,84 млн км²\n\nВключает:\n12 государств\n\nПлотность:\n21,4 чел./км²");
+	  infowindow.open(map, this);
   });
   function showInContentWindow(text) {
     var sidediv = document.getElementById('content-window');
