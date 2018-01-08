@@ -9,6 +9,12 @@ function initMap() {
  	 var EuropeKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/europe.kml',map: map});
  	 var NorthAmericaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/north_america.kml',map: map});
  	 var SouthAmericaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/south_america.kml',map: map});
+	
+	var contentString = 'АФРИКА\n\nТерритория:\n 30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²';
+	var infowindow = new google.maps.InfoWindow({
+          content: contentString
+        });
+
   AfricaKml.addListener('click', function(kmlEvent){
     var text = kmlEvent.featureData.description;
     showInContentWindow("АФРИКА\n\nТерритория:\n 30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²");
