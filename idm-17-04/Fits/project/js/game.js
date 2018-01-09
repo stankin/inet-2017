@@ -15,20 +15,20 @@ var shapes = [
   0,0,1],
  [1,1,0,0, 
   1,1],
- [1,1,0,0, //Z
+ [1,1,0,0, 
   0,1,1],
- [0,1,1,0, //S
+ [0,1,1,0, 
   1,1],
- [0,1,0,0, //T
+ [0,1,0,0, 
   1,1,1 ]
 ];
-var colors = [ //Ìàññèâ öâåòîâ
+var colors = [ 
  'cyan', 'orange', 'blue', 'yellow', 'red', 'lime', 'purple'
 ];
-var shaped = 0; //Åñòü ëè ñëåäóþùàÿ ôèãóðêà
-var savedShape; //Ñëåäóþùàÿ ôèãóðêà
+var shaped = 0; 
+var savedShape; 
 
-function drawNewShape (current) { //Íàðèñîâàòü ñëåäóþùóþ ôèãóðó íà îòäåëüíîé êàíâå
+function drawNewShape (current) { 
  var canvas = document.getElementById ('figurecanvas');
  var ctx = canvas.getContext ('2d');
  var width = canvas.width, height = canvas.height;
@@ -47,7 +47,7 @@ function drawNewShape (current) { //Íàðèñîâàòü ñëåäóþùóþ ôè
  }
 }
 
-function generateShape () { //Ñãåíåðèðîâàòü ñëåäóþùóþ ôèãóðó
+function generateShape () { 
  var id = Math.floor (Math.random()*shapes.length);
  var shape = shapes[id];
  var current = [];
@@ -63,26 +63,26 @@ function generateShape () { //Ñãåíåðèðîâàòü ñëåäóþùóþ ôè
  return current;
 }
 
-function newShape() { //Ñîçäàòü íîâóþ ôèãóðêó 4x4 â ìàññèâå current
- if (shaped) { //Åñòü ñîõðàí¸ííàÿ
+function newShape() { 
+ if (shaped) { 
   for (var i=0; i<savedShape.length; i++) current[i] = savedShape[i]; 
  }
- else { //Íåò ñîõðàí¸ííîé
+ else { 
   current = generateShape();
   shaped = 1;
  }
  savedShape = generateShape();
- currentX = Math.floor((columns-4)/2); currentY = 0; //Íà÷àëüíàÿ ïîçèöèÿ íîâîé ôèãóðêè
+ currentX = Math.floor((columns-4)/2); currentY = 0; 
 }
 
-function init() { //Î÷èñòèòü ñòàêàí
+function init() { 
  for (var y=0; y<rows; ++y) {
   board[y] = [];
   for (var x=0; x<columns; x++) board[y][x] = 0;
  }
 }
 
-function countPlus (lines0) { //Ïîäñ÷¸ò î÷êîâ
+function countPlus (lines0) { 
  lines += lines0; 
  var bonus = [0, 100, 300, 700, 1500];
  count += bonus[lines0];
@@ -91,7 +91,7 @@ function countPlus (lines0) { //Ïîäñ÷¸ò î÷êîâ
   "Lines: "+lines+"<br>Count: "+count+"<br>Record: "+maxCount;
 }
 
-function freeze() { //Îñòàíîâèòü ôèãóðêó è çàïèñàòü å¸ ïîëîæåíèå â board
+function freeze() { 
  for (var y=0; y<4; y++) {
   for (var x=0; x<4; x++) {
    if (current[y][x]) board[y+currentY][x+currentX] = current[y][x];
@@ -99,7 +99,7 @@ function freeze() { //Îñòàíîâèòü ôèãóðêó è çàïèñàòü å
  }
 }
 
-function rotate( current ) { //Âðàùåíèå òåêóùåé ôèãóðêè current ïðîòèâ ÷àñîâîé ñòðåëêè
+function rotate( current ) {
  var newCurrent = [];
  for (var y=0; y<4; y++) {
   newCurrent[y] = [];
@@ -108,7 +108,7 @@ function rotate( current ) { //Âðàùåíèå òåêóùåé ôèãóðêè cu
  return newCurrent;
 }
 
-function clearLines() { //Ïðîâåðèòü, åñòü ëè çàïîëíåííûå ëèíèè è î÷èñòèòü èõ
+function clearLines() { 
  var cleared = 0;
  for (var y=rows-1; y>-1; y--) {
   var rowFilled = true;
@@ -118,7 +118,7 @@ function clearLines() { //Ïðîâåðèòü, åñòü ëè çàïîëíåííû
     break;
    }
   }
-  if (rowFilled) { //Î÷èñòèòü ëèíèþ
+  if (rowFilled) { 
    cleared++;
    document.getElementById ('clearsound').play();
    for (var yy=y; yy>0; yy--) {
@@ -132,10 +132,10 @@ function clearLines() { //Ïðîâåðèòü, åñòü ëè çàïîëíåííû
  return cleared;
 }
 
-function keyPress( key ) { //Îáðàáîò÷èê íàæàòèé êëàâèø
+function keyPress( key ) { 
  switch ( key ) {
   case 'escape':    
-   window.alert ('paused'); //Â JS óæå åñòü ìîäàëüíîå îêíî :)
+   window.alert ('paused'); 
   break;
   case 'left':
    if (valid(-1)) --currentX;
@@ -153,7 +153,7 @@ function keyPress( key ) { //Îáðàáîò÷èê íàæàòèé êëàâèø
  }
 }
 
-function valid (offsetX,offsetY,newCurrent) { //Ïðîâåðêà äîïóñòèìîñòè èòîãîâîé ïîçèöèè ôèãóðû current
+function valid (offsetX,offsetY,newCurrent) { 
  offsetX = offsetX || 0;
  offsetY = offsetY || 0;
  offsetX = currentX + offsetX;
@@ -165,7 +165,7 @@ function valid (offsetX,offsetY,newCurrent) { //Ïðîâåðêà äîïóñòè�
     if (typeof(board[y+offsetY])=='undefined' || typeof(board[y+offsetY][x+offsetX])=='undefined'
      || board[y+offsetY][x+offsetX]
      || x+offsetX<0 || y+offsetY>=rows || x+offsetX>=columns) {
-     if (offsetY==1) lose=true; //Êîíåö èãðû, åñëè òåêóùàÿ ôèãóðà - íà âåðõíåé ëèíèè
+     if (offsetY==1) lose=true; 
      return false;
     }
    }
@@ -174,7 +174,7 @@ function valid (offsetX,offsetY,newCurrent) { //Ïðîâåðêà äîïóñòè�
  return true;
 }
 
-function playGame() { //Êîíòðîëü ïàäåíèÿ ôèãóðêè, ñîçäàíèå íîâîé è î÷èñòêà ëèíèè
+function playGame() { 
  if (valid(0,1)) currentY++;
  else {
   freeze();
@@ -188,12 +188,12 @@ function playGame() { //Êîíòðîëü ïàäåíèÿ ôèãóðêè, ñîçä
  }
 }
 
-function newGame() { //Íîâàÿ èãðà
+function newGame() { 
  clearInterval (interval);
  init ();
  shaped = 0; newShape ();
  lose = false; lines = 0; count = 0; countPlus (0); 
- interval = setInterval (playGame,300); //ñêîðîñòü èãðû, ìñ
+ interval = setInterval (playGame,300); 
 }
 
 newGame();
