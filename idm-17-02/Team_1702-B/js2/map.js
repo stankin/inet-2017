@@ -3,16 +3,23 @@ function initMap() {
          var map = new google.maps.Map(document.getElementById('map'),{zoom: 4,center: stankin});
          var marker = new google.maps.Marker({position: stankin,map: map});
 	
-	 var AfricaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/africa.kml', map: map});
+	 //var AfricaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/africa.kml', map: map});
   	 var AsiaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/asia.kml',map: map});
    	 var AustraliaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/australia.kml',map: map});
  	 var EuropeKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/europe.kml',map: map});
  	 var NorthAmericaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/north_america.kml',map: map});
  	 var SouthAmericaKml = new google.maps.KmlLayer({url: 'https://sites.google.com/site/radtarasov/kml/south_america.kml',map: map});
 	
-  AfricaKml.addListener('click', function(kmlEvent){
-    infowindow.setContent("АФРИКА\n\nТерритория:\n 30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²");
-  });
+var AfricaKml = new google.maps.Map(document.getElementById('map'), mapOptions),
+contentString = 'АФРИКА\n\nТерритория:\n 30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²',
+infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 500
+});
+	
+ // AfricaKml.addListener('click', function(kmlEvent){
+ //   infowindow.setContent("АФРИКА\n\nТерритория:\n 30 221 532 км²\n\nВключает:\n55 государств\n\nПлотность:\n30,51 чел./км²");
+ // });
   AsiaKml.addListener('click', function(kmlEvent) {
     infowindow.setContent("АЗИЯ\n\nТерритория:\n44 579 000 км²\n\nВключает:\n49 государств\n\nПлотность:\n87 чел./км²");
   });
