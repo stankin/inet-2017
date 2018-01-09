@@ -317,4 +317,13 @@ input {
 
 #narnia{
 text-align:center;
+font-family: Haettenschweiler;
+ font-size: 20px;
+ position: relative;
+ border-color: black;
+ border-style: solid;
+ border-width: 1px;
+ border-radius: 5px;
+ background: MediumAquamarine;
+cursor: pointer;
 }
