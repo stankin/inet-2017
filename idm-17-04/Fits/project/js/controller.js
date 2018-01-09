@@ -1,14 +1,14 @@
 document.body.onkeydown = function (e) {
- var keys = { //Клавиши
+ var keys = {
   37: 'left',
-  39: 'right', //Стрелки влево и вправо
+  39: 'right', 
   40: 'down',
-  32: 'down', //Вниз - пробелом или стрелкой вниз
-  38: 'rotate', //Вращение- стрелкой вверх
-  27: 'escape' //Пауза по клавише Esc
+  32: 'down', 
+  38: 'rotate', 
+  27: 'escape'
  };
- if (typeof(keys[e.keyCode])!='undefined') { //Если код клавиши допустимый,
-  keyPress (keys[e.keyCode]); //Передать его обработчику
-  render(); //и перерисовать стакан
+ if (typeof(keys[e.keyCode])!='undefined') { 
+  keyPress (keys[e.keyCode]); 
+  render(); 
  }
 };
