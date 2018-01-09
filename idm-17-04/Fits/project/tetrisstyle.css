@@ -24,7 +24,7 @@
  margin: 0px;
 }
 .clear {
- clear: left; /* Отмена обтекания */
+ clear: left; 
 }
 .info {
  text-align: left;
