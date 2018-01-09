@@ -3,12 +3,12 @@ var ctx = canvas.getContext ('2d');
 var width = canvas.width, height = canvas.height;
 var blockWidth = width / columns, blockHeight = height / rows;
 
-function drawBlock (x,y) { //Íàðèñîâàòü ôèãóðó â ïîçèöèè (x,y)
+function drawBlock (x,y) { 
  ctx.fillRect (blockWidth*x, blockHeight*y, blockWidth-1, blockHeight-1);
  ctx.strokeRect (blockWidth*x, blockHeight*y, blockWidth-1, blockHeight-1);
 }
 
-function render() { //Íàðèñîâàòü ñòàêàí è ôèãóðû
+function render() { 
  ctx.clearRect( 0, 0, width, height );
  ctx.strokeStyle = 'black';
  for (var x=0; x<columns; x++) {
@@ -31,4 +31,4 @@ function render() { //Íàðèñîâàòü ñòàêàí è ôèãóðû
  }
 }
 
-setInterval (render,50); //÷àñòîòà ïåðåðèñîâêè, ìñ
+setInterval (render,50); 
