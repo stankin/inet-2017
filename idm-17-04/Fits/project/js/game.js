@@ -1,19 +1,19 @@
-var columns = 10, rows = 20; //Классические размеры стакана
-var board = []; //Стакан
-var lose; //Конец игры
-var lines = 0; //Убрано линий
-var count = 0; //Счёт
-var maxCount = 0; //Рекорд
-var interval; //Скорость игры в мс
-var current; //Текущая фигурка
-var currentX, currentY; //Позиция текущей фигурки
-var shapes = [ //Массив фигур
- [1,1,1,1], //I
- [1,1,1,0, //L
+var columns = 10, rows = 20; 
+var board = []; 
+var lose; 
+var lines = 0; 
+var count = 0;
+var maxCount = 0;
+var interval; 
+var current; 
+var currentX, currentY; 
+var shapes = [
+ [1,1,1,1], 
+ [1,1,1,0, 
   1],
- [1,1,1,0, //J
+ [1,1,1,0, 
   0,0,1],
- [1,1,0,0, //O
+ [1,1,0,0, 
   1,1],
  [1,1,0,0, //Z
   0,1,1],
@@ -22,13 +22,13 @@ var shapes = [ //Массив фигур
  [0,1,0,0, //T
   1,1,1 ]
 ];
-var colors = [ //Массив цветов
+var colors = [ //ГЊГ Г±Г±ГЁГў Г¶ГўГҐГІГ®Гў
  'cyan', 'orange', 'blue', 'yellow', 'red', 'lime', 'purple'
 ];
-var shaped = 0; //Есть ли следующая фигурка
-var savedShape; //Следующая фигурка
+var shaped = 0; //Г…Г±ГІГј Г«ГЁ Г±Г«ГҐГ¤ГіГѕГ№Г Гї ГґГЁГЈГіГ°ГЄГ 
+var savedShape; //Г‘Г«ГҐГ¤ГіГѕГ№Г Гї ГґГЁГЈГіГ°ГЄГ 
 
-function drawNewShape (current) { //Нарисовать следующую фигуру на отдельной канве
+function drawNewShape (current) { //ГЌГ Г°ГЁГ±Г®ГўГ ГІГј Г±Г«ГҐГ¤ГіГѕГ№ГіГѕ ГґГЁГЈГіГ°Гі Г­Г  Г®ГІГ¤ГҐГ«ГјГ­Г®Г© ГЄГ Г­ГўГҐ
  var canvas = document.getElementById ('figurecanvas');
  var ctx = canvas.getContext ('2d');
  var width = canvas.width, height = canvas.height;
@@ -47,7 +47,7 @@ function drawNewShape (current) { //Нарисовать следующую фигуру на отдельной кан
  }
 }
 
-function generateShape () { //Сгенерировать следующую фигуру
+function generateShape () { //Г‘ГЈГҐГ­ГҐГ°ГЁГ°Г®ГўГ ГІГј Г±Г«ГҐГ¤ГіГѕГ№ГіГѕ ГґГЁГЈГіГ°Гі
  var id = Math.floor (Math.random()*shapes.length);
  var shape = shapes[id];
  var current = [];
@@ -63,26 +63,26 @@ function generateShape () { //Сгенерировать следующую фигуру
  return current;
 }
 
-function newShape() { //Создать новую фигурку 4x4 в массиве current
- if (shaped) { //Есть сохранённая
+function newShape() { //Г‘Г®Г§Г¤Г ГІГј Г­Г®ГўГіГѕ ГґГЁГЈГіГ°ГЄГі 4x4 Гў Г¬Г Г±Г±ГЁГўГҐ current
+ if (shaped) { //Г…Г±ГІГј Г±Г®ГµГ°Г Г­ВёГ­Г­Г Гї
   for (var i=0; i<savedShape.length; i++) current[i] = savedShape[i]; 
  }
- else { //Нет сохранённой
+ else { //ГЌГҐГІ Г±Г®ГµГ°Г Г­ВёГ­Г­Г®Г©
   current = generateShape();
   shaped = 1;
  }
  savedShape = generateShape();
- currentX = Math.floor((columns-4)/2); currentY = 0; //Начальная позиция новой фигурки
+ currentX = Math.floor((columns-4)/2); currentY = 0; //ГЌГ Г·Г Г«ГјГ­Г Гї ГЇГ®Г§ГЁГ¶ГЁГї Г­Г®ГўГ®Г© ГґГЁГЈГіГ°ГЄГЁ
 }
 
-function init() { //Очистить стакан
+function init() { //ГЋГ·ГЁГ±ГІГЁГІГј Г±ГІГ ГЄГ Г­
  for (var y=0; y<rows; ++y) {
   board[y] = [];
   for (var x=0; x<columns; x++) board[y][x] = 0;
  }
 }
 
-function countPlus (lines0) { //Подсчёт очков
+function countPlus (lines0) { //ГЏГ®Г¤Г±Г·ВёГІ Г®Г·ГЄГ®Гў
  lines += lines0; 
  var bonus = [0, 100, 300, 700, 1500];
  count += bonus[lines0];
@@ -91,7 +91,7 @@ function countPlus (lines0) { //Подсчёт очков
   "Lines: "+lines+"<br>Count: "+count+"<br>Record: "+maxCount;
 }
 
-function freeze() { //Остановить фигурку и записать её положение в board
+function freeze() { //ГЋГ±ГІГ Г­Г®ГўГЁГІГј ГґГЁГЈГіГ°ГЄГі ГЁ Г§Г ГЇГЁГ±Г ГІГј ГҐВё ГЇГ®Г«Г®Г¦ГҐГ­ГЁГҐ Гў board
  for (var y=0; y<4; y++) {
   for (var x=0; x<4; x++) {
    if (current[y][x]) board[y+currentY][x+currentX] = current[y][x];
@@ -99,7 +99,7 @@ function freeze() { //Остановить фигурку и записать её положение в board
  }
 }
 
-function rotate( current ) { //Вращение текущей фигурки current против часовой стрелки
+function rotate( current ) { //Г‚Г°Г Г№ГҐГ­ГЁГҐ ГІГҐГЄГіГ№ГҐГ© ГґГЁГЈГіГ°ГЄГЁ current ГЇГ°Г®ГІГЁГў Г·Г Г±Г®ГўГ®Г© Г±ГІГ°ГҐГ«ГЄГЁ
  var newCurrent = [];
  for (var y=0; y<4; y++) {
   newCurrent[y] = [];
@@ -108,7 +108,7 @@ function rotate( current ) { //Вращение текущей фигурки current против часовой с
  return newCurrent;
 }
 
-function clearLines() { //Проверить, есть ли заполненные линии и очистить их
+function clearLines() { //ГЏГ°Г®ГўГҐГ°ГЁГІГј, ГҐГ±ГІГј Г«ГЁ Г§Г ГЇГ®Г«Г­ГҐГ­Г­Г»ГҐ Г«ГЁГ­ГЁГЁ ГЁ Г®Г·ГЁГ±ГІГЁГІГј ГЁГµ
  var cleared = 0;
  for (var y=rows-1; y>-1; y--) {
   var rowFilled = true;
@@ -118,7 +118,7 @@ function clearLines() { //Проверить, есть ли заполненные линии и очистить их
     break;
    }
   }
-  if (rowFilled) { //Очистить линию
+  if (rowFilled) { //ГЋГ·ГЁГ±ГІГЁГІГј Г«ГЁГ­ГЁГѕ
    cleared++;
    document.getElementById ('clearsound').play();
    for (var yy=y; yy>0; yy--) {
@@ -132,10 +132,10 @@ function clearLines() { //Проверить, есть ли заполненные линии и очистить их
  return cleared;
 }
 
-function keyPress( key ) { //Обработчик нажатий клавиш
+function keyPress( key ) { //ГЋГЎГ°Г ГЎГ®ГІГ·ГЁГЄ Г­Г Г¦Г ГІГЁГ© ГЄГ«Г ГўГЁГё
  switch ( key ) {
   case 'escape':    
-   window.alert ('paused'); //В JS уже есть модальное окно :)
+   window.alert ('paused'); //Г‚ JS ГіГ¦ГҐ ГҐГ±ГІГј Г¬Г®Г¤Г Г«ГјГ­Г®ГҐ Г®ГЄГ­Г® :)
   break;
   case 'left':
    if (valid(-1)) --currentX;
@@ -153,7 +153,7 @@ function keyPress( key ) { //Обработчик нажатий клавиш
  }
 }
 
-function valid (offsetX,offsetY,newCurrent) { //Проверка допустимости итоговой позиции фигуры current
+function valid (offsetX,offsetY,newCurrent) { //ГЏГ°Г®ГўГҐГ°ГЄГ  Г¤Г®ГЇГіГ±ГІГЁГ¬Г®Г±ГІГЁ ГЁГІГ®ГЈГ®ГўГ®Г© ГЇГ®Г§ГЁГ¶ГЁГЁ ГґГЁГЈГіГ°Г» current
  offsetX = offsetX || 0;
  offsetY = offsetY || 0;
  offsetX = currentX + offsetX;
@@ -165,7 +165,7 @@ function valid (offsetX,offsetY,newCurrent) { //Проверка допустимости итоговой п
     if (typeof(board[y+offsetY])=='undefined' || typeof(board[y+offsetY][x+offsetX])=='undefined'
      || board[y+offsetY][x+offsetX]
      || x+offsetX<0 || y+offsetY>=rows || x+offsetX>=columns) {
-     if (offsetY==1) lose=true; //Конец игры, если текущая фигура - на верхней линии
+     if (offsetY==1) lose=true; //ГЉГ®Г­ГҐГ¶ ГЁГЈГ°Г», ГҐГ±Г«ГЁ ГІГҐГЄГіГ№Г Гї ГґГЁГЈГіГ°Г  - Г­Г  ГўГҐГ°ГµГ­ГҐГ© Г«ГЁГ­ГЁГЁ
      return false;
     }
    }
@@ -174,7 +174,7 @@ function valid (offsetX,offsetY,newCurrent) { //Проверка допустимости итоговой п
  return true;
 }
 
-function playGame() { //Контроль падения фигурки, создание новой и очистка линии
+function playGame() { //ГЉГ®Г­ГІГ°Г®Г«Гј ГЇГ Г¤ГҐГ­ГЁГї ГґГЁГЈГіГ°ГЄГЁ, Г±Г®Г§Г¤Г Г­ГЁГҐ Г­Г®ГўГ®Г© ГЁ Г®Г·ГЁГ±ГІГЄГ  Г«ГЁГ­ГЁГЁ
  if (valid(0,1)) currentY++;
  else {
   freeze();
@@ -188,12 +188,12 @@ function playGame() { //Контроль падения фигурки, создание новой и очистка линии
  }
 }
 
-function newGame() { //Новая игра
+function newGame() { //ГЌГ®ГўГ Гї ГЁГЈГ°Г 
  clearInterval (interval);
  init ();
  shaped = 0; newShape ();
  lose = false; lines = 0; count = 0; countPlus (0); 
- interval = setInterval (playGame,300); //скорость игры, мс
+ interval = setInterval (playGame,300); //Г±ГЄГ®Г°Г®Г±ГІГј ГЁГЈГ°Г», Г¬Г±
 }
 
 newGame();
