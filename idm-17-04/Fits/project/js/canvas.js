@@ -3,12 +3,12 @@ var ctx = canvas.getContext ('2d');
 var width = canvas.width, height = canvas.height;
 var blockWidth = width / columns, blockHeight = height / rows;
 
-function drawBlock (x,y) { //Нарисовать фигуру в позиции (x,y)
+function drawBlock (x,y) { //ГЌГ Г°ГЁГ±Г®ГўГ ГІГј ГґГЁГЈГіГ°Гі Гў ГЇГ®Г§ГЁГ¶ГЁГЁ (x,y)
  ctx.fillRect (blockWidth*x, blockHeight*y, blockWidth-1, blockHeight-1);
  ctx.strokeRect (blockWidth*x, blockHeight*y, blockWidth-1, blockHeight-1);
 }
 
-function render() { //Нарисовать стакан и фигуры
+function render() { //ГЌГ Г°ГЁГ±Г®ГўГ ГІГј Г±ГІГ ГЄГ Г­ ГЁ ГґГЁГЈГіГ°Г»
  ctx.clearRect( 0, 0, width, height );
  ctx.strokeStyle = 'black';
  for (var x=0; x<columns; x++) {
@@ -31,4 +31,4 @@ function render() { //Нарисовать стакан и фигуры
  }
 }
 
-setInterval (render,50); //частота перерисовки, мс
+setInterval (render,50); //Г·Г Г±ГІГ®ГІГ  ГЇГҐГ°ГҐГ°ГЁГ±Г®ГўГЄГЁ, Г¬Г±
