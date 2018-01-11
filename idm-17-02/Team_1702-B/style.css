@@ -329,3 +329,7 @@ input {
   transition: .5s linear;
   cursor: pointer;
 }
+
+.overflow-hidden {
+	overflow: hidden;
+}
