@@ -10,12 +10,12 @@
 	<script type="text/javascript" src="js2/map.js"></script>
 	</head>
 
-<body>	
+<body class="overflow-hidden">	
 		<header>
 			<div class="heading">
 				<h1>Добро пожаловать на проект группы Team_1702-B <br>под названием "Страны мира"</h1>
 				<p>«Страны мира» - это интерактивный проект, созданный для того, <br>чтобы пользователь смог получить общую информацию о всех без исключения странах мира.<br>Информация содержит данные о площади страны, ее населении, денежных единицах и достопримечательностях.<br>Данные сопровождаются картами и фотографиями, что позволяет получить актуальную и мультимедийную информацию. <br>Для проверки усвоения материала проект содержит тест. Для того чтобы начать, нажмите кнопку «Перейти»</p>
-				<a href="#lab" class="goto">Перейти</a>
+				<a id="goto" href="#lab" class="goto">Перейти</a>
 		 	</div>
 		</header>
     <section id="lab">
@@ -172,6 +172,15 @@ isOpened = !isOpened;
 });
 </script>
 
+<script>
+ $("#goto").on("click", function() {$("body").removeClass('overflow-hidden');
+ var scroll_el = $(this).attr('href'); 
+         if ($(scroll_el).length != 0) {
+ 	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+         }
+ 	    return false;
+});
+</script>
 
 	  <div id="modal-test" class="modal">
     <div class="modal-body">
