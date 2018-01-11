@@ -280,7 +280,7 @@ function showResult() {
     var ques = questions[falseId[i]-1].heading
     $("#form-questions ul").append('<li class="false">' + ques + '</li>');
   }
-
+  $("#form-questions").append('<button onClick="location.reload()">Начать заново</button>');
 }
 
 var $formQuestion = $("#form-questions");
