@@ -317,8 +317,6 @@ input {
 
 #narnia{
   display: block;
-  position: absolute;
-  right: 50px;
   padding: 10px 5px;
   text-decoration: none;
   color: white;
