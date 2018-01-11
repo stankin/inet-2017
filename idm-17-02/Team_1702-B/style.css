@@ -316,15 +316,15 @@ input {
 }
 
 #narnia{
-text-align:center;
-font-family: Haettenschweiler;
-padding: 10px 5px;
- font-size: 100%;
- position: relative;
- border-color: black;
- border-style: solid;
- border-width: 1px;
- border-radius: 5px;
- background: MediumAquamarine;
-cursor: pointer;
+  display: block;
+  padding: 10px 5px;
+  text-decoration: none;
+  color: white;
+  box-shadow: 1px 3px 25px #07007A;
+  border-radius: 10px;
+  background-color: #0047AB;
+  outline: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+  cursor: pointer;
 }
