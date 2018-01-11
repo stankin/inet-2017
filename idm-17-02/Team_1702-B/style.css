@@ -318,7 +318,8 @@ input {
 #narnia{
 text-align:center;
 font-family: Haettenschweiler;
- font-size: 50%;
+padding: 10px 5px;
+ font-size: 100%;
  position: relative;
  border-color: black;
  border-style: solid;
