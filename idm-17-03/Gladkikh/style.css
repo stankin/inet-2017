@@ -1,0 +1,81 @@
+
+body {
+    background: url("4240113.jpg"); 
+    background-size:contain;
+color: WhiteSmoke;     
+   }
+
+.head{
+
+   margin-bottom: 30px;
+   font-size: 40px;
+   font-weight: 100;
+   line-height: 1.1;
+   text-align: center;
+}
+.lab1{
+	 padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "cursive";
+    font-size: 20pt;
+}
+.lab2{
+ padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "cursive";
+    font-size: 20pt;
+}
+.lab3{
+ padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "cursive";
+    font-size: 20pt;
+}
+.exam{
+ padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "cursive";
+    font-size: 20pt;	
+}
+th{
+
+border:1px solid black;
+}
+
+td{
+
+border:1px solid black;
+padding: 4px 2px;
+}
+
+img{
+
+height: 500px;
+
+width: 400px;
+display: inline-block;
+}
+
+.img {
+text-align:center;
+}
+.footer
+{
+width:100%;
+text-align:center;
+margin-top:30px;
+font-family: segoe print;
+}
+.footer p, .footer a
+{
+font: 14px Verdana, Arial, Helvetica, sans-serif;
+color:#00CED1;
+}
