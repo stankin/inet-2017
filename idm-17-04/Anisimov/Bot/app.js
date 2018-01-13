@@ -93,7 +93,6 @@ bot.onText(/\/song (.+)/, function(msg, match) {
                                         };
                                         download(mp3, rnd + ".mp3", function() {
                                             bot.sendAudio(userId, rnd + ".mp3", {
-                                            bot.sendAudio(userId, rnd + ".mp3", {
                                                 performer: performer,
                                                 title: title
                                             }).then(function(resp) {
