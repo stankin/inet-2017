@@ -56,6 +56,11 @@ font-size: 20px;
 .hov-color-black:hover {
   color: #FFBF24;
 }
+
+.hov-color-hz.is-current,
+.hov-color-hz:hover {
+  color: #95849F;
+}
 .wide {
   box-sizing: border-box;
   width: 100%;
@@ -73,4 +78,7 @@ font-size: 20px;
 }
 #lr3 {
 	background-color: #444444;
+}
+#lr4 {
+	background-color: #95849F;
 }
