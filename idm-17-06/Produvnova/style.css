@@ -1,0 +1,36 @@
+.container {
+    font-size: 17px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+
+.text {
+    text-align: left;
+    margin-left: 0px;
+}
+
+img {
+    width: 90%;
+}
+
+.main-container {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 100%;
+    background-color: #FFEBCD;
+    border-radius: 5px;
+}
+
+.header {
+    height: 40px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #C0C0C0
+}
+
+.container {
+    
+}
+
