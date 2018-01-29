@@ -1,0 +1,215 @@
+body{
+	 background: #FFF;
+	 margin: auto;
+	 background-color: rgb(238,238,238); 
+	@include filter-gradient(#eeeeee, #cccccc, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(radial-gradient(center, ellipse cover, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%));
+}
+section {
+	padding-top:50px;
+}
+
+.text1{
+    font-size: 120%; 
+    font-family: 'Roboto Condensed', sans-serif; 
+    color: #black; 
+	text-align: justify;	
+	text-indent: 20px;
+	padding: 25px 25px;
+
+}
+.frame{	
+	z-index: 0;
+	width: 960px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:250px;
+	background: #87CEFA;
+	border: 2px solid; 
+}
+
+.space{
+	margin-top: 20%;
+}
+
+.st1 a:link { 
+	text-decoration: none; 
+	color: black;
+} 
+.st1 a:visited { text-decoration: none; } 
+.st1 a:active { text-decoration: none; }
+.st1 a:hover {
+	text-decoration: underline; 
+	color: blue; 
+} 
+
+.st4{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	right: 0;
+	top: 0;
+}
+span{
+	font-size: 12pt;
+}
+
+.logo{
+	height: 153 px;
+	width: 67 px;
+	padding: auto;
+}
+
+.logo12{
+	padding-left: 40%;
+	padding-right: 40%;
+	width: 20%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+header{
+	background: #FFF;
+	position: fixed;
+	top:0;
+	width:100%;
+	z-index: 3;
+	border-bottom: 3px solid #A9A9A9;
+}
+
+.bottom1{	
+	font-size: 24;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	bottom: 0;
+	height: auto;
+	padding-top:10px;
+	padding-bottom:10px;
+	border-top: 3px solid #A9A9A9;
+ 
+}
+
+nav  {
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    float: left;
+    list-style: none;
+    background: #FFF;
+}
+
+nav li {
+    float:left;
+}
+
+nav a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif; 
+	font-weight: bold;
+	font-size: 24;
+    letter-spacing: 1px;          
+ }
+ 
+nav a:hover, nav a:focus {
+    color: #000;
+	text-decoration: underline;
+}
+
+nav a:active {
+    -moz-box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+}
+
+.button{
+	vertical-align: middle;
+	text-align:center;
+}
+
+
+.popup {
+	position: fixed;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+}
+
+	.popup_bg {
+		background:rgba(0,0,0,0.4);
+		position:absolute;
+		z-index:1;
+		height:100%;
+		width:100%;
+	}
+	
+	
+	.form {
+		position: relative;
+		margin:15% auto;
+		z-index:2;
+		width:200px;
+		padding:40px 30px;
+		background:#FFFFFF;
+		text-align: left;
+		border:1px solid #666666;
+		border-radius:20px;
+		box-shadow:0 0 2px rgba(0,0,0,0.5);
+	}
+
+		.form input {
+			width:96%;
+			padding:5px 2%;
+			margin:10px 0;
+			border-radius:4px;
+		}
+		
+		
+/* наша HTML таблица */
+table#result{
+border-spacing:0.1em;
+margin-bottom:1em;
+margin-top:25px;
+border-collapse: collapse; 
+}
+
+/* ячейки таблицы */
+table#result td{
+border:1px solid #CCCCCC;
+padding:0.3em 1em;
+background: #fff; 
+}
+
+/* заголовки таблицы */
+table#result thead td{
+cursor:pointer;
+cursor:hand;
+font-weight:bold;
+text-align:center;
+vertical-align:middle
+}
+
+/* заголовок отсортированного столбца */
+table#result thead td.curcol{
+background-color:#999999;
+color:#FFFFFF
+}		
+		
+		

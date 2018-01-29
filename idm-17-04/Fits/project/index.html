@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Tetris</title>
+  <link rel='stylesheet' type="text/css" href='tetrisstyle.css'/>
+ </head>
+ <body>
+
+ <div id="tetris">
+  <div id="tetrisleft">
+   <canvas id="tetriscanvas" width="300" height="600"></canvas>
+   <audio id="clearsound" src="sound/pop.ogg" preload="auto"></audio>
+   <audio autoplay loop>
+    <source src="sound/music.ogg" type="audio/ogg; codecs=vorbis" preload="auto">
+    <small>Извините, тег audio не поддерживается вашим браузером</small>
+   </audio>
+  </div>
+  <div id="tetrisright">
+   <div align="center"><b>SUPERTETRIS</b></div>
+   <p class="info">&harr;: move left/right;
+   <br>&uarr;: rotate;
+   <br>&darr; or _: drop;
+   <br>Esc: pause
+   </p>
+   <canvas id="figurecanvas" width="120" height="120"></canvas>
+   <p class="info" id="tetriscount"></p>
+  </div>
+  <div class="clear"></div>
+ </div>
+ <script src='js/game.js'></script>
+ <script src='js/controller.js'></script>
+ <script src='js/canvas.js'></script>
+
+ </body>
+</html>

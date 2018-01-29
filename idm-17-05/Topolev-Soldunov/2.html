@@ -1,0 +1,235 @@
+ <nav role='navigation'>
+  <ul>
+    <li><a href="index.html">√À¿¬Õ¿ﬂ</a></li>
+    <li><a href="1.html">À¿¡Œ–¿“Œ–Õ¿ﬂ –¿¡Œ“¿ 1</a></li>
+    <li><a href="2.html">À¿¡Œ–¿“Œ–Õ¿ﬂ –¿¡Œ“¿ 2</a></li>
+    <li><a href="3.html">À¿¡Œ–¿“Œ–Õ¿ﬂ –¿¡Œ“¿ 3</a></li>
+    <li><a href="4.html">› «¿Ã≈Õ¿÷»ŒÕÕ€… ¬Œœ–Œ—</a></li>
+   
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <script
+           src="http://code.jquery.com/jquery-3.1.1.min.js"
+           integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+           crossorigin="anonymous">
+      </script>
+      <style>
+         #test {
+            width: 300px;
+            height: 600px;
+            margin: 10px auto;
+         }
+      </style>
+      
+      <script type="text/javascript">
+
+         var blockSize = 60;
+         var blockColors = ["red", "green", "blue", "yellow", "black", "white"];
+         var activeBlock = {
+            x: 2,
+            y: -1,
+            color: ""
+         }
+         var gameGrid = [[],[],[],[],[]];
+         var gameSpeed = 200;
+         var keyReady = true;
+         var canvas;
+         var ctx;
+         var dropActive;
+
+         function drawBackground() {
+            canvas = document.getElementById('minitris');
+            ctx = canvas.getContext('2d');
+            canvas.width = 300;
+            canvas.height = 480;
+            ctx.fillStyle   = '#111';
+            ctx.fillRect(0,0,canvas.width,canvas.height);
+            activeBlock.color = blockColors[Math.floor(Math.random() * 6)];
+            dropActive = setInterval(moveBlock,gameSpeed);
+         }
+         function eraseBlock(x, y) {
+            ctx.fillStyle = '#111';
+            ctx.fillRect((x)*blockSize,(y)*blockSize,blockSize,blockSize);
+         }
+         function drawBlock(x, y, color) {
+            ctx.fillStyle = '#999';
+            ctx.fillRect((x)*blockSize,(y)*blockSize,blockSize,blockSize);
+            ctx.fillStyle = color;
+            ctx.fillRect((x)*blockSize+4,(y)*blockSize+4,blockSize-8,blockSize-8);
+         }
+         function dropBlocks(x, y) {
+            if (gameGrid[x][y-1] && !gameGrid[x][y]) {
+               eraseBlock(x, y-1);
+               gameGrid[x][y] = gameGrid[x][y-1];
+               drawBlock(x, y, gameGrid[x][y]);
+               gameGrid[x][y-1] = undefined;
+               dropBlocks(x, y-1);
+            }
+            else if (gameGrid[x][y-2] && !gameGrid[x][y]) {
+               eraseBlock(x, y-2);
+               gameGrid[x][y] = gameGrid[x][y-2];
+               drawBlock(x, y, gameGrid[x][y]);
+               gameGrid[x][y-2] = undefined;
+               dropBlocks(x, y-1);
+            }
+         }
+         function checkBlocks(x, y) {
+            var matchingBlocks = [[x, y]];
+            var blockColor = gameGrid[x][y];
+            //check 1 block left
+            if (x > 0) {
+               if (gameGrid[x-1][y] == blockColor) {
+                  matchingBlocks.push([x-1, y]);
+                  // check 2 left
+                  if (x > 1) {
+                     if (gameGrid[x-2][y] == blockColor) {
+                        matchingBlocks.push([x-2, y]);
+                     }
+                  }
+                  //check 1 left, 1 up
+                  if (y > 0) {
+                     if (gameGrid[x-1][y-1] == blockColor) {
+                        matchingBlocks.push([x-1, y-1]);
+                     }
+                  }
+                  //check 1 left, 1 down
+                  if (y < 7) {
+                     if (gameGrid[x-1][y+1] == blockColor) {
+                        matchingBlocks.push([x-1, y+1]);
+                     }
+                  }
+               }
+            } 
+            // check 1 block right
+            if (x < 4)
+               if (gameGrid[x+1][y] == blockColor) {
+                  matchingBlocks.push([x+1, y]);
+                  // check 2 right
+                  if (x < 3) {
+                     if (gameGrid[x+2][y] == blockColor) {
+                        matchingBlocks.push([x+2, y]);
+                     }
+                  }
+                  //check 1 right, 1 up
+                  if (y > 0) {
+                     if (gameGrid[x+1][y-1] == blockColor) {
+                        matchingBlocks.push([x+1, y-1]);
+                     }
+                  }
+                  //check 1 right, 1 down
+                  if (y < 7) {
+                     if (gameGrid[x+1][y+1] == blockColor) {
+                        matchingBlocks.push([x+1, y+1]);
+                     }
+                  }
+               }
+            // check 1 block down
+            if (y < 7)
+               if (gameGrid[x][y+1] == blockColor) {
+                  matchingBlocks.push([x, y+1]);
+                  //check 1 left, 1 down
+                  if (x > 0) {
+                     if (gameGrid[x-1][y+1] == blockColor) {
+                        matchingBlocks.push([x-1, y+1]);
+                     }
+                  }
+                  //check 1 right, 1 down
+                  if (x < 4) {
+                     if (gameGrid[x+1][y+1] == blockColor) {
+                        matchingBlocks.push([x+1, y+1]);
+                     }
+                  }
+                  //check 2 down
+                  if (y < 6) {
+                     if (gameGrid[x][y+2] == blockColor) {
+                        matchingBlocks.push([x, y+2]);
+                     }
+                  }
+                  //check 1 up, useful for dropped blocks
+                  if (y > 0) {
+                     if (gameGrid[x][y-1] == blockColor) {
+                        matchingBlocks.push([x, y-1]);
+                     }
+                  }
+               }
+            //Remove the matching blocks if 3 or more
+            if (matchingBlocks.length >= 3) {
+               for (var i = 0; i < matchingBlocks.length; i++) {
+                  eraseBlock(matchingBlocks[i][0], matchingBlocks[i][1]);
+                  gameGrid[matchingBlocks[i][0]][matchingBlocks[i][1]] = undefined;
+               }
+               for (var i = 1; i < matchingBlocks.length; i++) {
+                  dropBlocks(matchingBlocks[i][0], matchingBlocks[i][1]);
+               }
+               for (var i = 1; i < matchingBlocks.length; i++) {
+                  if (gameGrid[matchingBlocks[i][0]][matchingBlocks[i][1]]) {
+                     checkBlocks(matchingBlocks[i][0], matchingBlocks[i][1]);
+                  }
+               }
+            }
+         }
+         function moveDown() {
+            if ((activeBlock.y < 7) && !gameGrid[activeBlock.x][activeBlock.y+1]) {
+               if (activeBlock.y == -1) keyReady = true;
+               else eraseBlock(activeBlock.x, activeBlock.y);
+               drawBlock(activeBlock.x, activeBlock.y+1, activeBlock.color);
+               activeBlock.y++;
+               return true;
+            }
+            else return false;
+         }
+         function moveBlock() {
+            if (!moveDown()) {
+               console.log("yes");
+               keyReady = false;
+               gameGrid[activeBlock.x][activeBlock.y] = activeBlock.color;
+               checkBlocks(activeBlock.x, activeBlock.y);
+               activeBlock.x = 2;
+               activeBlock.y = -1;
+               activeBlock.color = blockColors[Math.floor(Math.random() * 6)];
+            }
+         }
+         function moveLeft() {
+            if (activeBlock.x > 0) {
+               if (!gameGrid[activeBlock.x-1][activeBlock.y]) {
+                  eraseBlock(activeBlock.x, activeBlock.y);
+                  drawBlock(activeBlock.x-1, activeBlock.y, activeBlock.color);
+                  activeBlock.x--;
+               }
+            }
+         }
+         function moveRight() {
+            if (activeBlock.x < 4) {
+               if (!gameGrid[activeBlock.x+1][activeBlock.y]) {
+                  eraseBlock(activeBlock.x, activeBlock.y);
+                  drawBlock(activeBlock.x+1, activeBlock.y, activeBlock.color);
+                  activeBlock.x++;
+               }
+            }
+         }
+         $(document).ready(function() {
+            $(document).keydown(function(event) {
+               if (keyReady) {
+                  console.log(event.keyCode);
+                  switch(event.keyCode) {
+                     case 37: moveLeft();
+                       break;
+                     case 39: moveRight();
+                       break;
+                     case 40: moveDown();
+                       break;
+                  }
+               }
+               
+            });
+         });
+      </script>
+		
+   </head>
+   
+   <body id="test" onload="drawBackground();">
+      <canvas id="minitris"></canvas>
+   </body>
+	
+</html>

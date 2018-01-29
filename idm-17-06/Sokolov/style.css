@@ -1,0 +1,35 @@
+body
+{    
+  margin: 30px;   
+  padding-left: 300px;  
+  padding-right: 300px;  
+  background-color: #87CEFA;
+}
+.head
+{  
+  background: #CCD;   
+  padding: 10px;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center; 
+  font-family: "Arial";  
+  font-size: 20pt;
+}
+.containes
+{    
+  background: #98FB98;   
+  padding: 15px;  
+  border: solid 4px #CCD; 
+  font-family: "Courier"; 
+  font-size: 14pt;
+}
+summary
+{      
+  padding: 12px;
+}
+blockquote
+{  
+  text-align: right;   
+  font-style: oblique;
+}
+

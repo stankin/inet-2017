@@ -1,0 +1,48 @@
+body
+{
+    margin: 30px;
+    padding-left: 200px;
+    padding-right: 200px;
+    background:#CCD;
+}
+@font-face {
+    font-family: Medieval English; /* Гарнитура шрифта */
+    src: url(medieval-english-normal.ttf); /* Путь к файлу со шрифтом */
+   }
+   
+.head
+{
+    background: #20b2aa;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Medieval English";
+    font-size: 30pt;
+    //color: white;
+    font-weight: bolder;
+    border: solid 4px #006666;
+    border-collapse: collapse;
+    
+}
+
+.containes
+{
+    background: #00cccc;
+    padding: 15px;
+    border: solid 4px #006666;
+    font-family: "Medieval English";
+    font-size: 18pt;
+    font-weight:bolder;
+}
+
+summary
+{   
+    padding: 12px;
+}
+
+blockquote
+{
+    text-align: right;
+    font-style: oblique;
+}

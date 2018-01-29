@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+body{
+	font-family: 'Comfortaa', cursive;
+	overflow-x: hidden;
+}
+.lab1, .lab2, .lab3, .lab4{
+	display: none;
+}
+h2{
+	color: 
+}
+.labClick1, .labClick2, .labClick3, .labClic4{
+	cursor: pointer;
+}
+.row{
+	background-color: rgba(255,255,255,0.75);
+}
+.header{
+	background-color: #C23447;
+	height: 25vh;
+}
+.header a{
+	color: #fff;
+}
+.content{
+	color: #DDC4A0;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	height: 400vh;
+	background-color: #3A373E;
+}
+li{
+	font-size: 17px;
+}
+th{
+	font-size: 20px;
+	padding: 7px 7px 7px 7px;
+}
+p{
+	font-size: 20px;
+}

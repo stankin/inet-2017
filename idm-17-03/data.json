@@ -1,0 +1,182 @@
+{"users":[
+    {
+        "firstName":"Атмаджиди Константин Дмитриевич",
+        "groupname":"команда '17-03-ПМ-1'",
+        "role": "РП БА",
+        "linkForPage":"Atmadjidi",
+        "markFirstModule":"40",
+        "linkProject":"https://yourleg.github.io/Fractal_tree/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Байрак Денис Андреевич",
+        "groupname":"",
+        "role": "",
+        "linkForPage":"Bayrak Denis",
+        "markFirstModule":"25",
+        "linkProject":"",
+        "markSecondModule":""
+    },
+    {
+        "firstName":"Бережков Михаил Сергеевич",
+        "groupname":"команда '17-03-ПМ-1'",
+        "role": "СП ПП",
+        "linkForPage":"https://yourleg.github.io/Berezhkov/",
+        "markFirstModule":"50",
+        "linkProject":"https://yourleg.github.io/Fractal_tree/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Винников Александр Викторович",
+        "groupname":"команда '17-03-ПМ-1'",
+        "role": "РП АД",
+        "linkForPage":"Vinnikov",
+        "markFirstModule":"50",
+        "linkProject":"https://yourleg.github.io/Fractal_tree/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Володина Ксения Сергеевна",
+        "groupname":"команда '17-03-ФМ-2'",
+        "role": "РП КО",
+        "linkForPage":"Volodina",
+        "markFirstModule":"50",
+        "linkProject":"https://volodinaksenia.github.io/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Гладких Дмитрий Александрович",
+        "groupname":"команда '17-03-ФМ-2'",
+        "role": "БА КО",
+        "linkForPage":"Gladkikh",
+        "markFirstModule":"25",
+        "linkProject":"https://volodinaksenia.github.io/",
+        "markSecondModule":""
+    },
+    {
+        "firstName":"Дмитриева Надежда Владимировна",
+        "groupname":"команда '17-03-ПМ-ФМ-3'",
+        "role": "НИ БА",
+        "linkForPage":"Dmitrieva",
+        "markFirstModule":"47",
+        "linkProject":"https://kereat.github.io/Cowboys-games/",
+        "markSecondModule":"45"
+    },
+    {
+        "firstName":"Досан Роман Сергеевич",
+        "groupname":"команда '17-03-ПМ-2'",
+        "role": "КО ВН",
+        "linkForPage":"Dosan",
+        "markFirstModule":"40",
+        "linkProject":"https://github.com/deadcorg/FinFirst/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Игнатов Петр Валерьевич",
+        "groupname":"команда '17-03-ПМ-ФМ-3'",
+        "role": "РП АД",
+        "linkForPage":"Ignatov",
+        "markFirstModule":"40",
+        "linkProject":"https://kereat.github.io/Cowboys-games/",
+        "markSecondModule":"40"
+    },
+    {
+        "firstName":"Куницина Анастасия Викторовна",
+        "groupname":"команда '17-03-ПМ-1'",
+        "role": "ВН НИ",
+        "linkForPage":"Kunitsina",
+        "markFirstModule":"50",
+        "linkProject":"https://yourleg.github.io/Fractal_tree/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Лапшинов Никита Алексеевич",
+        "groupname":"команда '17-03-ФМ-2'",
+        "role": "РП АД",
+        "linkForPage":"Lapshinov",
+        "markFirstModule":"47",
+        "linkProject":"https://volodinaksenia.github.io/",
+        "markSecondModule":"48"
+    },
+    {
+        "firstName":"Мартынова Вероника Михайловна",
+        "groupname":"команда '17-03-ПМ-1'",
+        "role": "БА КО",
+        "linkForPage":"Martynova",
+        "markFirstModule":"50",
+        "linkProject":"https://yourleg.github.io/Fractal_tree/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Матвеева Алена Игоревна",
+        "groupname":"команда '17-03-ПМ-ФМ-3'",
+        "role": "ВН КО",
+        "linkForPage":"Matveeva",
+        "markFirstModule":"50",
+        "linkProject":"https://kereat.github.io/Cowboys-games/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Рассахан Никита Дмитриевич",
+        "groupname":"команда '17-03-ПМ-2'",
+        "role": "РП БА",
+        "linkForPage":"Rassahan",
+        "markFirstModule":"50",
+        "linkProject":"https://github.com/deadcorg/FinFirst/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Романов Виктор Викторович",
+        "groupname":"команда '17-03-ПМ-2'",
+        "role": "СП АД",
+        "linkForPage":"Romanov",
+        "markFirstModule":"",
+        "linkProject":"https://github.com/deadcorg/FinFirst/",
+        "markSecondModule":""
+    },
+    {
+        "firstName":"Рыбникова Евгения Владимировна",
+        "groupname":"команда '17-03-ФМ-2'",
+        "role": "ВН БА",
+        "linkForPage":"Ribnikova",
+        "markFirstModule":"47",
+        "linkProject":"https://volodinaksenia.github.io/",
+        "markSecondModule":"48"
+    },
+    {
+        "firstName":"Федосов Максим Евгеньевич",
+        "groupname":"команда '17-03-ПМ-2'",
+        "role": "ПП НИ",
+        "linkForPage":"Fedosov",
+        "markFirstModule":"50",
+        "linkProject":"https://github.com/deadcorg/FinFirst/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Чернова Людмила Александровна",
+        "groupname":"команда '17-03-ФМ-2'",
+        "role": "ВН НИ",
+        "linkForPage":"Chernova",
+        "markFirstModule":"50",
+        "linkProject":"https://volodinaksenia.github.io/",
+        "markSecondModule":""
+    },
+    {
+        "firstName":"Чикунов Никита Сергеевич",
+        "groupname":"команда '17-03-ПМ-ФМ-3'",
+        "role": "СП ПП",
+        "linkForPage":"Chikunov",
+        "markFirstModule":"50",
+        "linkProject":"https://kereat.github.io/Cowboys-games/",
+        "markSecondModule":"50"
+    },
+    {
+        "firstName":"Юлбарсова Барнохон Баходиржоновна",
+        "groupname":"",
+        "role": "",
+        "linkForPage":"",
+        "markFirstModule":"",
+        "linkProject":"",
+        "markSecondModule":""
+    }
+]}

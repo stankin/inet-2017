@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<title> Онлайн Казино</title>
+    <script src="js/game2.js"></script>
+    <script src="js/mem.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body OnLoad="init()">
+
+
+<div class="container">
+    <h1>Качественный игровой контент</h1>
+    <nav>
+
+        <a href="#page2" class="button1">Игра №1</a>
+        <a href="#page3" class="button1">Игра №2</a>
+        <a href="#page4" class="button1">Игра №3</a>
+
+    </nav>
+    <div class="page" id="page1" ><img id="bg" src="Choose-your-own-adventure.jpg"> </div>
+    <div class="page" id="page2">
+        <h1 id="krest">Нереально крутые крестики нолики </h1>
+        <div class="container2">
+
+        <div class="table">
+            <div class="cell" id="0" onclick="move(0, 'player')"></div>
+            <div class="cell" id="1" onclick="move(1, 'player')"></div>
+            <div class="cell" id="2" onclick="move(2, 'player')"></div>
+            <div class="cell" id="3" onclick="move(3, 'player')"></div>
+            <div class="cell" id="4" onclick="move(4, 'player')"></div>
+            <div class="cell" id="5" onclick="move(5, 'player')"></div>
+            <div class="cell" id="6" onclick="move(6, 'player')"></div>
+            <div class="cell" id="7" onclick="move(7, 'player')"></div>
+            <div class="cell" id="8" onclick="move(8, 'player')"></div>
+        </div>
+    </div>
+    </div>>
+
+    <div class="page" id="page3">
+		<h1 id="krest">Тест на память</h1>
+		<form name="f">
+		<center>
+		<table cellpadding="0" cellspacing="0" border="0">
+		<script language="javascript" src="js/mem1.js"></script>
+		
+		</table><br>
+		<input type="button" value=" " style="font-weight: bold" name="b" onClick="init()">
+		</form>
+		</center> 
+	</div>
+    <div class="page" id="page4">
+        <center id="fon">
+            <table>
+                <tr>
+                    <td>
+                        <h1>Захватчики</h1>
+                            <script language="javascript" src="js/game3.js"></script>
+                        </center>
+                    </td>
+                    <td class="help">
+                        <h2>Инструкция</h2>
+                             <ul style="text-align: left;">
+                                 <li> Игра "Захватчики" - захватчики спускаются к Вам сверху.
+                                 <li> Цель игры: как можно больше набрать очков.
+                                 <li> Очки начисляются за убитых захватчиков.
+                                 <li> Захватчики не должны добраться до последней точки, если хотя бы один захватчик добрался до последней точки - вы проиграли.
+                                 <li> При нажатие кнопки -х- (кнопка огня), мы убиваем захватчиков в том столбце, в котором нажали на кнопку огня.
+                                 <li> Для начала игра нажмите кнопку - СТАРТ.
+                                 <li> Приятной игры!
+                              </ul>
+                     </td>
+                 </tr>
+            </table>
+    </div>
+</div>
+
+</body>
+</html>

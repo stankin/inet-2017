@@ -1,0 +1,172 @@
+<html>
+
+<head>
+    <title>me_another</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="one">
+            <img src="images/lab.svg" width="45px">
+            <h1 style="margin: 0px;">Personal page Semenov_aa</h1>
+        </div>
+
+        <div>
+            <p> "Task list" </p>
+            
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex1: Экосистема разработки программ с открытым кодом.
+            </button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Зарегистрироваться на <a href="https://github.com/meanother">github.com</a></li>
+                    <li>Создать персональную веб страницу-отчет с использованием html, css, js. <a href="https://stankin.github.io/inet-2017/idm-17-02/Semenov_aa/index.html">my personal page</a></li>
+                    <li>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub.(Папка с исходными кодами в репозитории)<a href="https://github.com/stankin/inet-2017/tree/master/idm-17-02/Semenov_aa">my personal page</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex2: Разработка простого веб-приложения.</button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Собрать команду для разработки веб-приложения (SPA) и распределить роли.
+                    <li>Создать персональную страницу по макету. Исходный код для html: <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Semenov_aa/index.html">html code</a></li>
+                    <li>Прописать стили страницы. Исходный код для css<a href="https://github.com/stankin/inet-2017/blob/master/idm-17-02/Semenov_aa/css/style.css">css code</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex3: Настройка локальной сети передачи данных. </button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+<ul>
+						 Цель данной работы – ознакомиться с принципами работы компьютерных сетей, базовой настройкой сетевого оборудования и статической маршрутизацией.
+		        <b><p><center class="lab">Расчет диапазонов подсетей.</center></p></b>
+			<p>
+			<table border="3" align="center">
+			<tr>
+				<td rowspan="2"></td><td><b>LAN A</b></td><td><b>LAN B</b></td><td><b>LAN C</b></td>
+			</tr>
+			<tr>
+				<td>137</td><td>30</td><td>37</td>
+			</tr>
+			<tr>
+				<td><b>Префиксная маска</b></td><td>/26</td><td>/25</td><td>/22</td>
+			</tr>
+			<tr>
+				<td><b>Адрес подсети</b></td><td>192.168.7.0</td><td>172.16.5.0</td><td>10.10.7.0</td>
+			</tr>
+			<tr>
+				<td><b>Минимальный адрес</b></td><td>192.168.7.1</td><td>172.16.5.1</td><td>10.10.5.1</td>
+			</tr>
+			<tr>
+				<td><b>Максимальный адрес</b></td><td>192.168.7.62</td><td>172.16.5.126</td><td>10.10.9.254</td>
+			</tr>
+			<tr>
+				<td><b>Broadcast</b></td><td>192.168.7.63</td><td>172.16.5.127</td><td>10.10.9.255</td>
+			</tr>
+	                </table>
+			</p>
+		        <b><p><center>Адреса устройств.</center></p></b>
+			<p>
+		        <table border="3" align="center">
+			<tr>
+				<td><b>Устройство</b></td><td><b>IP</b></td><td><b>Маска</b></td><td><b>Шлюз по умолчанию</b></td>
+			</tr>
+			<tr>
+				<td>PC0</td><td>192.168.7.12/td><td>255.255.255.192</td><td>192.168.7.1</td>
+			</tr>
+			<tr>
+				<td>PC1</td><td>192.168.7.11</td><td>255.255.255.192</td><td>192.168.7.1</td>
+			</tr>
+			<tr>
+				<td>PC2</td><td>172.16.7.126</td><td>255.255.255.128</td><td>172.16.7.1</td>
+			</tr>
+			<tr>
+				<td>PC3</td><td>172.16.7.125</td><td>255.255.255.128</td><td>172.16.7.1</td>
+			</tr>
+			<tr>
+				<td>PC4</td><td>10.10.7.254</td><td>255.255.252.0</td><td>10.10.7.1</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 0/0</td><td>192.168.7.1</td><td>255.255.255.192</td><td>–</td>
+			</tr>
+			<tr>
+			        <td>Router0 FastEthernet 1/0</td><td>172.16.7.1</td><td>255.255.255.128</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router0 FastEthernet 6/0</td><td>15.15.7.1</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 0/0</td><td>15.15.7.2</td><td>255.255.255.252</td><td>–</td>
+			</tr>
+			<tr>
+				<td>Router12 FastEthernet 1/0</td><td>10.10.7.1</td><td>255.255.252.0</td><td>–</td>
+			</tr>
+			</table>
+			</p>
+                                 <b><p><center>1. Разместить два компьютера и коммутатор, настроить между ними адресацию.</center></p><b>
+				 <p align="center"><img src="images/1.png" width="70%" height="70%" /></p>
+				 <b><p><center>2. Добавить еще один коммутатор с двумя компьютерами и маршрутизаторы. Провести настройку.</center></p><b>
+				 <p align="center"><img src="images/2.png" width="70%" height="70%" /></p>
+				 <b><p><center>3. Настроить статическую маршрутизацию при помощи команды: ip route [сеть назначения] [маска] [маршрут]</center></p><b>
+				 <b><p><center>4. Установить баннер на сетевое оборудование: banner motd [баннер]</center></p><b>
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex4: Подготовка к экзамену. </button>
+            <div class="panel">
+                <h3> Tasks: </h3>
+                <ul type="circle">
+                    <li>Самооценка прохождения теста по инновациям, формулировка одного вопроса по теме "Интернет-технологии" в одной из форм, встречающихся в тесте (выбор одного, выбор многих, упорядочивание, соответствие)</li>
+
+                </ul>
+            </div>
+        </div>
+        
+        <div>
+            <button class="accordion"><img src="images/Звезда-40.png" width="33px">Lab_ex4: What times o'clock?? </button>
+            <div class="panel">
+                <h3> Time: </h3>
+                <ul type="circle">
+<main>
+<section class="lab-item" id="parentcanvas">
+<div class="clock">
+<div class="hour"></div>
+:
+<div class="min"></div>
+:
+<div class="sec"></div>
+</div></section>
+</main>
+<script src="clock.js"></script>
+            </div>
+        </div>
+    </div>
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].onclick = function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            }
+        }
+    </script>
+
+    
+</body>
+
+</html>

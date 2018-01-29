@@ -8,20 +8,20 @@ app.controller('AppCtrl', ['$scope','$http', function($scope,$http){
       field: 'name'
     },
     {
-      name:'Module #1',  
+      name:'Модуль #1',  
       field: 'm1'
     },
     {
-      name: 'Module #2', 
+      name: 'Модуль #2', 
       field: 'm2'
     },
     {
-        name: 'Roles', 
-        field: 'roles'
+      name: 'Роли', 
+      field: 'roles'
     },
     {
-        name: 'Team', 
-        field: 'team'
+      name: 'Команда', 
+      field: 'team'
     }
   ];
   
@@ -29,14 +29,14 @@ app.controller('AppCtrl', ['$scope','$http', function($scope,$http){
 
   $http.get("database.json")
   .then(function(response){
-    $scope.content = $scope.$$childHead.orderBy(response.data,'team',true);
+    $scope.content = $scope.$$childHead.orderBy(response.data,'name',false);
     console.log($scope.$$childHead)
     $scope.$$childHead.order('name',true);
   })
   
   $scope.custom = {name: 'bold', description:'grey',last_modified: 'grey'};
   $scope.sortable = ['name', 'm1', 'm2','team', 'roles'];
-  $scope.count = 25;
+  $scope.count = 50;
 
 }]);
 

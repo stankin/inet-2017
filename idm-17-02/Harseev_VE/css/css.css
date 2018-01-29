@@ -1,0 +1,270 @@
+body{
+	 background: #FFF;
+	 margin: 0;
+	 padding: 0;
+}
+H1 {
+	color: #000;
+	font-size: 200%;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.st1{
+    font-size: 120%; 
+    font-family: 'Roboto Condensed', sans-serif; 
+    color: #black; 
+	text-align: justify;	
+	text-indent: 20px;
+	padding: 100px 150px 0px 100px;
+
+}
+.frame{	
+	position: relative;
+	width: 960px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	top:250px;
+	background-color: rgb(238,238,238); 
+	@include filter-gradient(#eeeeee, #cccccc, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(radial-gradient(center, ellipse cover, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%));
+	border-radius:50px;
+-moz-border-radius:50px;
+-webkit-border-radius:50px;
+padding-bottom: 40px;
+-webkit-box-shadow:0px 0px 81px 0px #000000 ;
+-moz-box-shadow:0px 0px 81px 0px #000000 ;
+box-shadow:0px 0px 81px 0px #000000 ;
+}
+
+.space{
+	padding-top: 20%;
+}
+
+.st2{
+    font-size: 100%; 
+    font-family: 'Roboto Condensed', sans-serif; 
+    color: #black; 
+	text-align: justify;	
+	text-indent: 20px;
+	position: relative;	
+	width: 50%;	
+	left: 15%;
+	padding-bottom: 40px;
+}
+.st3{
+    font-size: 120%; 
+    font-family: 'Roboto Condensed', sans-serif; 
+    color: #black; 
+	text-align: center;	
+	text-indent: 20px;
+	padding: 50px 100px 0px 100px;
+
+}
+
+.st1 a:link { 
+	text-decoration: none; 
+	color: black;
+} 
+.st1 a:visited { text-decoration: none; } 
+.st1 a:active { text-decoration: none; }
+.st1 a:hover {
+	text-decoration: underline; 
+	color: blue; 
+} 
+
+.st4{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	right: 0;
+	top: 0;
+}
+
+.logo{
+	width: 200px;
+	height: 116px;
+	padding-left: 250px;
+}
+
+.imgresult{
+	width: 480px;
+	height: 320px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+	padding: auto;
+}
+
+header{
+	background: #FFF;
+	position: fixed;
+	width:100%;
+	z-index: 1;
+	border-bottom: 3px solid #A9A9A9;
+}
+
+.bottom1{	
+	font-size: 200%;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-align: center;
+	position: relative;
+	bottom: 0;
+	height: 50px;
+	padding-top:20px;
+	background-color: rgb(238,238,238); 
+	@include filter-gradient(#eeeeee, #cccccc, horizontal); // IE6-9 fallback on horizontal gradient
+	@include background-image(radial-gradient(center, ellipse cover, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%));
+}
+
+nav  {
+
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
+
+nav ul {
+    padding: .10em;
+    float: left;
+    list-style: none;
+    background: #FFF;
+}
+
+nav li {
+    float:left;
+}
+
+nav a {
+    float:left;
+    padding: .8em 1.5em;
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto Condensed', sans-serif; 
+	font-weight: bold;
+	font-size: 36;
+    letter-spacing: 1px;          
+ }
+ 
+nav a:hover, nav a:focus {
+    color: #000;
+	text-decoration: underline;
+}
+
+nav a:active {
+    -moz-box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.3) inset;
+}
+
+
+	
+ #game-area {
+ margin:0px;
+ padding:0px;
+}
+
+#game-area:focus { outline: none; }
+
+a.snake-link, a.snake-link:link, a.snake-link:visited {
+  color: #FCFC54; 
+}
+
+a.snake-link:hover {
+  color: #FfFf54; 
+}
+
+
+.snake-panel-component {
+    position: absolute;
+    font-family: Verdana, arial, helvetica, sans-serif; 
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    background-color: #FC5454;
+    padding: 8px;
+    margin: 0px;
+	
+}
+
+.snake-snakebody-block {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FF0000;
+    position: absolute;
+    border: 0px solid #000080;
+    background-repeat: no-repeat;
+}
+
+.snake-snakebody-alive {
+   background-image: url('snakeblock.png');
+}
+.snake-snakebody-dead {
+   background-image: url('deadblock.png');
+}
+
+.snake-food-block {
+    margin: 0px;
+    padding: 0px;
+    background-color: #FF0000;
+    border: 0px solid #000080;
+    position: absolute;
+}
+
+.snake-playing-field {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    background-color: #0000A8;
+    border: 0px solid #0000A8;
+}
+
+.snake-game-container {
+    border-width: 0px;
+    border-style: none;
+    zoom: 1;
+    background-color: #FC5454;
+    position: relative;
+
+}
+            
+.snake-welcome-dialog {
+    padding: 8px;
+    margin: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 150px;
+    margin-top: -100px;
+    margin-left: -158px;
+    text-align: center;
+    display: block;
+}
+
+.snake-try-again-dialog {
+    padding: 8px;
+    margin: 0px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Verdana, arial, helvetica, sans-serif;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 100px;
+    margin-top: -75px;
+    margin-left: -158px;
+    text-align: center;
+    display: none;
+}

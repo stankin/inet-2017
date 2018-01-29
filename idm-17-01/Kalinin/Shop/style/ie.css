@@ -1,0 +1,11 @@
+body {position: relative;}
+/* ######################### MENU STYLE #########################*/
+#imPage { z-index: 9000; }
+#imMnMn li .imMnMnBorder .imMnMnImg img { padding-top: 3px; }
+#imMnMn ul ul li .imMnMnLevelImg { z-index: 10000; float: right; position: relative; top: -14px; left: -5px; display: block; width: 7px; height: 7px; background-image: url('../res/imIconMenuLeft.gif'); background-position: center center; margin-right: 0;}
+/* Margin & position fix */
+#imMnMn > ul > li { display: inline; }
+
+
+/* MENU POSITION : HORIZONTAL VerticalOneColumn */
+#imMnMn .imMnMnBorder { width: 100%; }

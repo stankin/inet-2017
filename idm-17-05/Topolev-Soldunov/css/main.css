@@ -1,0 +1,34 @@
+
+
+
+body{ 
+	background-color: rgb(255, 255, 255); 
+	border-bottom-style: solid; 
+	border-bottom-width: 15РХ; 
+	border-left-style: solid; 
+	border-left-width: 15РХ; 
+	border-right-style: solid; 
+	border-right-width: 15РХ; 
+	border-top-style: solid; 
+	border-top-width: 15РХ; 
+	margin: 0px; 
+}
+
+
+#id_286077{ 
+	background-color: rgb(21, 255, 0); 
+	font-family: Arial; 
+	text-align: center; 
+}
+
+
+#id_286125{ 
+	font-weight: bolder; 
+}
+
+
+#id_286167{ 
+	float: none; 
+	z-index: -500; 
+}
+

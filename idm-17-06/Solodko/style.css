@@ -1,0 +1,41 @@
+body
+{
+    margin: 30px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.head
+{
+    background: #CCD;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Arial";
+    font-size: 20pt;
+}
+.containes
+{
+    background: #DDF;
+    padding: 20px;
+    border: solid 4px #CCD;
+    font-family: "Courier";
+    font-size: 14pt;
+}
+summary
+{    
+    padding: 12px;
+}
+
+blockquote
+{
+    text-align: right;
+    font-style: oblique;
+}
+
+img
+{
+    width: 500px;
+    border: solid 2px #CCD;
+}

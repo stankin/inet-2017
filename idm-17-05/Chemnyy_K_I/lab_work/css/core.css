@@ -1,0 +1,252 @@
+body{
+	font-family: 'helvetica', 'roboto', 'open sans';
+	color: #dadbdb;
+	text-shadow: 2px 2px 0px #2b2b2e;
+}
+
+.light{
+	color: #4e4e53;
+	text-shadow: 2px 2px 0px #d3d3d5
+}
+
+.main section.page1{
+	background: url(../content/start_fon.png) no-repeat;
+	background-size: cover;
+}	
+
+
+.main section.page1 .wrapper_content{
+	position: relative;
+	display: block;
+	z-index: 3;
+	left: 100px;
+	margin-top: 0;
+	margin-left: 12%;
+	max-width: 900px;
+	padding: 0;
+}
+
+
+section.page1 .wrapper_content  h1{
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 5em;
+	padding-top: 11%;
+
+}
+
+section.page1 .wrapper_content  h2{
+	display: block;
+	margin-top: 2vh;
+	margin-bottom: 0;
+	text-align: right;
+	font-size: 3em;
+	padding: 0;
+}
+
+section.page1 .wrapper_content  ol{
+	display: block;
+	margin-top: 6vh;
+	margin-left: 40px;
+	font-size: 2em;
+	padding: 0;
+}
+
+
+
+
+/* Страница 2*/
+.main section.page2{
+	background: url(../content/page2_fon.png) no-repeat;
+	background-size: cover;
+}	
+
+
+.main section.page2 .wrapper_content{
+	position: relative;
+	display: block;
+	z-index: 3;
+	left: 100px;
+	margin-top: 0;
+	margin-left: 10%;
+	max-width: 700px;
+	padding: 0;
+}
+
+
+section.page2 .wrapper_content  h1{
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 4em;
+	padding-top: 5%;
+
+}
+
+section.page2 .wrapper_content  h2{
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 0;
+	text-align: left;
+	font-size: 2.5em;
+	padding: 0;
+}
+
+section.page2 .wrapper_content  ol{
+	display: block;
+	margin-top: 20px;
+	margin-left: 40px;
+	font-size: 2em;
+	padding: 0;
+}
+
+
+/* Страница 3*/
+
+.main section.page3{
+	background: url(../content/page3_fon.png) no-repeat;
+	background-size: cover;
+}	
+
+
+.main section.page3 .wrapper_content{
+	position: relative;
+	display: block;
+	z-index: 3;
+	left: 100px;
+	margin: 0;
+	margin-left: -110px;
+	padding: 0;
+}
+
+
+section.page3 div.wrapper_content .photo{
+	margin: 10px;
+	width: 40%;
+}
+
+
+section.page3 div.wrapper_content .our_team{
+	position: relative;
+	display: block;
+	float: left;
+	z-index: 3;
+	margin: 0 0 0 0px;
+	padding: 5% 0 0 0;
+	max-width: 40%;
+	text-align: center;
+}
+
+section.page3 div.wrapper_content .text{
+	position: relative;
+	display: block;
+	float: right;
+	z-index: 3;
+	margin: 0;
+	padding: 4% 0 0 0;
+	max-width: 60%;
+}
+
+section.page3 .wrapper_content  h1{
+	display: block;
+	margin-top: 10%;
+	margin-bottom: 0;
+	font-size: 3em;
+	padding-top: 5%;
+
+}
+
+section.page3 .wrapper_content  h2{
+	position: relative;
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 2.5em;
+	padding: 20px 90px 0 0;
+}
+
+
+/* Страница 4*/
+.main section.page4{
+	background: url(../content/page4_fon.png) no-repeat;
+	background-size: cover;
+}	
+
+
+.main section.page4 .wrapper_content{
+	position: relative;
+	display: block;
+	z-index: 3;
+	left: 100px;
+	margin-top: 0;
+	margin-left: 2%;
+	max-width: 800px;
+	padding: 0;
+}
+
+section.page4 .wrapper_content  h1{
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 3em;
+	padding-top: 8%;
+
+}
+
+section.page4 .wrapper_content  h2{
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+	font-size: 2.5em;
+	padding-top: 5%;
+}
+
+section.page4 .wrapper_content  ol{
+	display: block;
+	margin-top: 20px;
+	margin-left: 40px;
+	font-size: 2em;
+	padding: 0;
+}
+
+
+
+/* Страница 5*/
+
+.main section.page5{
+	background: url(../content/page5_fon.png) no-repeat;
+	background-size: cover;
+}	
+
+
+.main section.page5 .wrapper_content{
+	position: relative;
+	display: block;
+	z-index: 3;
+	left: 100px;
+	margin-top: 0;
+	margin-left: 10%;
+	max-width: 700px;
+	padding: 0;
+}
+
+
+
+section.page5 .wrapper_content  h2{
+	display: block;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: left;
+	font-size: 3em;
+	padding-top: 10%;
+}
+
+section.page5 .wrapper_content  ol{
+	display: block;
+	margin-top: 20px;
+	margin-left: 40px;
+	font-size: 2em;
+	padding: 0;
+}

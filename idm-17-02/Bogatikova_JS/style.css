@@ -1,0 +1,77 @@
+CSS
+.nev-wrapper {
+  font-family: Lato, Sans-serif
+  background: #fff;
+  margin: 0;
+  width: 500px;
+  height: 500px;
+  padding: 0px;
+  perspective: 1500px;
+}
+.nev-menu {
+  margin: 200px auto;
+  position: absolute;
+  top:5.6%;
+  background: #62278d;
+  background: linear-gradient(to bottom,  hsl(110, 90%, 50%) 0%, hsl(20, 90%, 40%) 40%);
+  width: 463px;
+  height: 668px;
+  border-width: 20px 0;
+  border-style: solid;
+  border-color: #fff;
+  color: #fff;
+  transform-style: preserve-3d;
+  
+  transform: translateY(0px) rotateX(0deg) rotateZ(0deg);
+}
+.nev-menu:before {
+  content: '';
+  position: absolute;
+  height: 30px;
+  width: 300px;
+  top: 370px;
+  left: 0px;
+  transform: rotateX(90deg) translateY(-15px) translateZ(15px);
+  background: #fff;
+}
+
+.nev-top {
+  padding: 15px 0px 15px 20px;
+  width: 100%;
+}
+
+.middle {
+  position: relative;
+  min-height: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  transform-style: preserve-3d;
+}
+.book {
+  margin: 0;
+  padding: 15px 0 15px 40px;
+  outline: 0 none;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(1px);
+  z-index: 1;
+}
+.book:hover {
+  box-shadow: inset 0 0 80px 0 rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+.menu-back {
+  position: absolute;
+  background: transparent;
+  top: -30px;
+  left: 0;
+  width: 300px;
+  height: 360px;
+  transform: translateZ(-29px);
+  box-shadow: 70px 70px 50px -20px #555;
+}
+
+

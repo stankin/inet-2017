@@ -1,0 +1,90 @@
+<html>
+	<head>
+		<title>Отчёт по курсу «Интернет-технологии»</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/fon.css">
+     	<link rel="stylesheet" href="css/table.css">
+	</head>
+
+	<body>
+		<div class="layer1">
+		<div class="layer2">
+		<br>
+		<br>
+		<br>
+		<p>Чикунов Никита Сергеевич</p>
+		<p>ИДМ-17-03</p></div>
+
+		<div class="center"><h2>Лабораторная работа №1</h2>
+		<p>ЭКОСИСТЕМА РАЗРАБОТКИ ПРОГРАММ С ОТКРЫТЫМ КОДОМ</p>  
+		<p>Создание персональной страницы-отчета на GitHub и работа с git</p></div> 
+
+		<ol><span>Задачи:</span>
+		<li>Зарегистрироваться на GitHub. <a href="https://github.com/Kereat">Страница пользователя</a></li>
+		<li>Создать персональную веб страницу-отчет с использованием html и css. Исходный код <a href="https://github.com/stankin/inet-2017/blob/master/idm-17-03/Chikunov/index.html">index.html</a> и <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-03/Chikunov/css">css</a>.</li>
+		<li>Загрузить персональную веб страницу-отчет в репозиторий ИДМ-17 по курсу "Интернет-технологии" на GitHub. <a href="https://github.com/stankin/inet-2017/tree/master/idm-17-03/Chikunov">Папка с исходными кодами</a> в репозитории.</li>
+		</ol>
+
+		<br>
+		<br>
+		<br>
+
+		<div class="center"><h2>Лабораторная работа №2</h2>
+		<p>РАЗРАБОТКА ПРОСТОГО ВЕБ-ПРИЛОЖЕНИЯ</p>
+		<p>Проектирование и разработка индивидуального или коллективного веб-приложения (SPA) <br> с использованием HTML, CSS, JavaScript</p></div> 
+
+		<ol><span>Задачи:</span>
+		<li>Собрать команду для разработки веб-приложения (SPA) и распределить роли.</li>
+		<li>Прописать стили страницы. <a href="https://github.com/Kereat/Cowboys-games/tree/master/css">Исходный код</a> на CSS.</li>
+		<li>Прописать <a href="https://github.com/Kereat/Cowboys-games/tree/master/js">JavaScript-функционал.</a></li>
+		<li>Выложить <a href="https://github.com/Kereat/Cowboys-games">исходники кода</a> проекта в репозиторий</li>
+		<li><a href="https://kereat.github.io/Cowboys-games/">Опубликовать проект</a> на каком-либо ресурсе</li>
+		<li>Подготовить "презентацию"" проекта</li>
+		<li>Реализовать функции библиотеки <a href="https://ru.wikipedia.org/wiki/JQuery">jQuery</a> и подхода <a href="https://ru.wikipedia.org/wiki/AJAX">AJAX</a> на странице отчёта</li>
+		</ol>
+		<details>
+		<summary>Показать/скрыть "презентацию"</summary>
+		<p id="area"></p></details>
+		<script type="text/javascript">   
+			$("#area").load("preview.html");
+		</script>
+		<br>
+		<br>
+		<br>
+
+		<div class="center"><h2>Лабораторная работа №3</h2>
+		<p>НАСТРОЙКА ЛОКАЛЬНОЙ СЕТИ ПЕРЕДАЧИ ДАННЫХ</p>
+		<p>Настройка коммутаторов и маршрутизаторов</p></div>
+		<ol><span>Задачи:</span>
+		<li>Соединить коммутаторы между собой и проверить работоспособность сети</li>
+		<li>Настроить интерфейсы маршрутизатора для существующих подсетей</li>
+		<li>Соединить маршрутизаторы и настроить между ними сеть </li>
+		<li>Настроить статическую маршрутизацию между сетями</li>
+		</ol>
+		<ol><span>Заметки по работе с лабораторной работой:</span>
+		<li>После создания двух сетей, при подключении комутаторов друг к другу, доступ из сети A к B не появился, так как коммутаторы могут работать только в одной сети, а для объединения двух сете необходим маршрутизатор.</li>
+		<li>При настройке сети необходимо указывать шлюз по умолчанию, для того чтобы была возможность отпарвлять файлы в другую сеть.</li>
+		<li>При подключении маршрутизаторов друг к другу необходимо настраивать статическую или динамическую маршрутизацию, потому что маршрутизатор "знает" только о сетях подключенных к нему напрямую. После настройки маршрутизации router пакеты могут перенаправляться по адресу.</li>
+		</ol>
+
+		<br>
+		<br>
+		<br>
+
+		<div class="center"><h2>Подготовка в экзамену</h2></div>
+		<ol><span>Выберите пункт, в котором заданный цвет отличен от красного или допущена ошибка.</span>
+		<li>color: red</li>
+		<li>color: #ff0000</li>
+		<li>color: #f00</li>
+		<li><b>color: hsl( 300, 0%, 0%)</b></li>
+		<li>color: hsla(0, 100%, 50%, 0.5)</li>
+		<li>color: rgb(255, 0, 0)</li>
+		<li>color: rgba(255, 0, 0, 1)</li>
+		</ol>
+
+		<p>Правильный ответ - 4</p>
+		<p><a href="http://anton.shevchuk.name/jquery-book/">Пруф</a> на вопрос. Глава "CSS. О Цветах".</p>
+
+		</div>
+	</body>
+</html>

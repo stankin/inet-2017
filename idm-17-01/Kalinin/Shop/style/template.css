@@ -1,0 +1,47 @@
+html { position: relative; margin: 0; padding: 0; background-image: url('bg.jpg'); background-position: center top; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-color: transparent; }
+body { margin: 0; padding: 0; text-align: left; }
+#imPage { margin: 15px auto 15px auto; width: 1048px; position: relative; }
+#imHeaderBg { position: absolute; left: 0; top: 0; height: 165px; width: 100%; background-color: transparent; }
+#imHeader { margin-bottom: 41px; height: 418px; background-color: transparent; background-image: url('top.png'); background-position: top left; background-repeat: no-repeat; }
+#imMnMn { position: absolute; top: 418px; left: 0; height: 31px; width: 1043px; padding: 5px 5px 5px 0px; background-color: transparent; }
+#imMnMn > ul { text-align: left; }
+#imMnMnGraphics { display: none; }
+#imMnMn li { display: inline; }
+#imContent { min-height: 380px; position: relative; width: 1038px; padding: 5px 5px 5px 5px; }
+#imContentGraphics { min-height: 380px; position: absolute; top: 459px; bottom: 97px; left: 0; width: 1048px; background-image: url('content.png'); background-position: right top; background-repeat: repeat-y; background-attachment: scroll; background-color: transparent; }
+#imFooterBg { position: absolute; left: 0; bottom: 0; height: 90px; width: 100%; background-color: transparent; }
+#imFooter { position: relative; margin: 0 auto; height: 97px; width: 1048px; background-color: #FFFFFF; }
+#imFooterResponsiveContent { display: none; }
+@media (max-width: 1047px) {
+	html { background-image: url('responsive-bg.jpg'); background-position: center top; background-repeat: no-repeat; background-size: cover; background-attachment: fixed; background-color: transparent; }
+	#imPage { padding-top: 0; margin: 0px auto 0px auto; }
+	#imHeaderBg { height: 165px; background-image: none; background-color: transparent; }
+	#imHeader { margin-bottom: 36px; height: 126px; background-image: url('responsive-top.jpg'); background-position: center center; background-repeat: no-repeat; background-attachment: scroll; background-color: transparent; }
+	#imMnMn { position: absolute; top: 126px; left: 0; height: 26px; padding: 5px 5px 5px 0px; background-image: none; background-color: transparent; }
+	#imMnMn > ul { text-align: left; }
+	#imMnMnGraphics { display: none; }
+	#imMnMn li { display: inline; }
+	#imContent { min-height: 380px; padding: 5px 5px 5px 5px; }
+	#imContentGraphics { min-height: 380px; top: 162px; bottom: 97px; left: 0; background-image: none; background-color: #FFFFFF; }
+	#imFooterBg { height: 90px; width: 100%; background-image: none; background-color: transparent; }
+	#imFooter { min-height: 97px; height: auto; background-image: none; background-color: #FFFFFF; }
+	#imFooterResponsiveContent { display: inline-block; margin-top: 15px; margin-bottom: 15px; margin-left: 15px; margin-right: 15px; font: normal normal normal 9pt 'Tahoma'; color: #C1B78E; background-color: transparent; text-align: left; text-decoration: none; }
+	#imHeaderFlashBackground, #imFooterFlashBackground, .imTemplateContent, #imFooPad, #imBtMn, #imPgMn { display: none; }
+}
+
+@media  (max-width: 1047px) and (min-width: 720px) {
+	#imPage, #imContentGraphics, #imFooter { width: 720px; }
+	#imMnMn { width: 715px; }
+	#imContent { width: 710px; }
+}
+
+@media  (max-width: 719px) and (min-width: 480px) {
+	#imPage, #imContentGraphics, #imFooter { width: 480px; }
+	#imMnMn { width: 475px; }
+	#imContent { width: 470px; }
+}
+
+@media  (max-width: 479px) {
+	#imPage, #imMnMn, #imContent, #imContentGraphics, #imFooter { box-sizing: border-box; width: 100%; }
+	#imMnMn { height: 36px; }
+}

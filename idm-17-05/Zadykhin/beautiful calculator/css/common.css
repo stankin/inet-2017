@@ -1,0 +1,128 @@
+html {
+    background-image: linear-gradient(45deg, #ddefff 5%, #4991a1, #316174, #394457);
+    background-attachment: fixed;
+}
+
+body {
+    color: #a5d09c;
+    font: 300 18px/1.6 "Source Sans Pro", sans-serif;
+    margin: 0;
+    padding: 5em 0 2em;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 300;
+    margin: 0 auto 1em;
+    cursor: pointer;
+}
+
+.copyright {
+    background: -webkit-linear-gradient(45deg, #14146e 5% , #225882, #1b44ff);
+    /*background: #3842d0;*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 400;
+    margin: 0 auto;
+    width: 11em;
+}
+
+.wrap {
+    font-size: 28px;
+    margin: 0 auto;
+    width: 10em;
+    overflow: hidden;
+    height: auto;
+}
+
+.view {
+    font-family: "DSDIGI" !important;
+    color: #c5eaff;
+    float: left;
+    line-height: 3em;
+    text-align: right;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 9.5em;
+    height: 3em;
+    margin: 0.25em;
+}
+
+button {
+    border: 0;
+    background: rgba(41, 46, 92, 0.28);
+    color: #c5eaff;
+    cursor: pointer;
+    float: left;
+    font: inherit;
+    margin: 0.25em;
+    width: 2em;
+    height: 2em;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background: #4991a1;
+}
+
+button:focus {
+    outline: 0;
+
+}
+
+button:focus:after {
+    animation: zoom 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    content: attr(num);
+    font-size: 100px;
+    position: absolute;
+    top: 1.5em;
+    left: 50%;
+}
+
+@font-face {
+    font-family: 'DSDIGI';
+    src: url('../fonts/DSDIGI.eot');
+    src: url('../fonts/DSDIGI.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/DSDIGI.woff') format('woff'),
+    url('../fonts/DSDIGI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(.2);
+        opacity: 1;
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (min-width: 420px) {
+    .wrap {
+        width: 16em;
+    }
+
+    .view {
+        width: 15em;
+        margin: 0.5em;
+    }
+
+    button {
+        width: 3em;
+        height: 3em;
+        margin: 0.5em;
+    }
+
+    .copyright {
+        width: 20em;
+    }
+}

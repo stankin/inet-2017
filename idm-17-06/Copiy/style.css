@@ -1,0 +1,35 @@
+body
+{
+    margin: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #000000;
+}
+.head
+{
+    background: #6A9A8A;
+    border: solid 4px #1F2E29;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Calibri";
+    font-size: 20pt;
+    text-align: center;
+}
+.containes
+{
+    background: #B4CCC4;
+    padding: 15px;
+    border: solid 4px #1F2E29;
+    font-family: "Calibri";
+    font-size: 14pt;
+}
+summary
+{    
+    padding: 12px;
+}
+blockquote
+{
+    text-align: right;
+    font-style: oblique;
+}

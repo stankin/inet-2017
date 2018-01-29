@@ -1,0 +1,220 @@
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  
+  <meta http-equiv="Content-Type" content="text/html; charset=windows-1251"/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="Style1.css">
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js2/js2.js"></script>
+	<script type="text/javascript" src="js2/map.js"></script>
+	</head>
+
+<body class="overflow-hidden">	
+		<header>
+			<div class="heading">
+				<h1>Добро пожаловать на проект группы Team_1702-B <br>под названием "Страны мира"</h1>
+				<p>«Страны мира» - это интерактивный проект, созданный для того, <br>чтобы пользователь смог получить общую информацию о всех без исключения странах мира.<br>Информация содержит данные о площади страны, ее населении, денежных единицах и достопримечательностях.<br>Данные сопровождаются картами и фотографиями, что позволяет получить актуальную и мультимедийную информацию. <br>Для проверки усвоения материала проект содержит тест. Для того чтобы начать, нажмите кнопку «Перейти»</p>
+				<a id="goto" href="#lab" class="goto">Перейти</a>
+		 	</div>
+		</header>
+    <section id="lab">
+      <form name=test>
+      <div class="vse">
+      <nav> 
+      <table border="0" cellpadding="0" width="400">
+                   
+			<ul class="Menu">
+				<li><a class="menus" href=""> Главная	 </a></li>
+				<li><a class="menus" href="#modal-test" onClick="showModal(this)"> Тест </a></li>
+				<li><a class="menus" href=""> О проекте </a></li>
+      </ul>
+	      <div class="checkbox">
+            <form>
+                <p><input type="checkbox" name="EU" value="EU1">Европа
+                <input type="checkbox" name="AS" value="AS1"> Азия
+                <input type="checkbox" name="AF" value="AF1">Африка 
+                <input type="checkbox" name="AU" value="AU1">Австралия
+                <input type="checkbox" name="SA" value="SA1">Южная Америка
+                <input type="checkbox" name="NA" value="NA1">Северная Америка
+				<input type="button" value="Выбрать" class="knopka"></p>
+				
+            </form>
+        </div>
+
+      </div>		
+      	
+      </table>
+      </nav>
+      </div>
+      </form>
+	      <div id="map"></div>
+	      <div id="content-window"></div>
+	      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTGd8xI_Tz0Im3QmVxHEEt0m-taVxCg1w&callback=initMap"></script>
+      </section>  
+        
+        
+        
+        
+  
+	
+
+			<!-- Начало двери -->
+	<ul class="Menu">
+		<p align="center"><li><a id="narnia"  href='#none'>Отправиться в нарнию</a><li></p>
+	</ul>
+
+<script>
+$("#narnia").on('click', () => {
+	 $('#box1').slideToggle();    
+  })
+</script> 
+
+
+<!-- Флаги, при нажатии на которые выполняется необходимый скрипт -->
+
+<!-- Франция -->
+<img id="f1" src="flagi/france_small_flag.gif">
+<script>
+  const el1 = document.getElementById("f1");       
+  el1.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper1")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper2")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper4")) 
+    	{ alert("Упс. Не повезло =(")}
+  });
+
+</script>
+
+<!-- Италия -->
+<img id="f2" name=f2 src="flagi/italy_small_flag.gif">
+<script>
+   const el2 = document.getElementById("f2");
+	el2.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper2") || $("#box1").hasClass("wrapper3")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper4")) 
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
+
+<!-- США -->
+<img id="f3" src="flagi/united_states_small_flag.gif">
+<script>
+   const el3 = document.getElementById("f3");
+	el3.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper4")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper2")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3")) 
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
+
+<!-- Египет -->
+<img id="f4" src="flagi/egypt_small_flag.gif">
+<script>
+   const el4 = document.getElementById("f4");
+	el4.addEventListener("click", function() {
+    if ($("#box1").hasClass("wrapper")) {
+    	alert("Вы угадали!");
+    }
+    else if($("#box1").hasClass("wrapper4")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper1")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper2")) 
+    	{ alert("Упс. Не повезло =(")}
+    else if($("#box1").hasClass("wrapper3")) 
+    	{ alert("Упс. Не повезло =(")}
+  });
+</script>
+
+
+
+
+<div  id='box1' class="wrapper" style='padding:10px; display:none;'>	
+	<div class="door"></div>	
+</div>
+
+
+
+<script>
+var isOpened = true;
+$('#box1').on('click',function(){
+	if(isOpened) {	
+	    $('#box1').removeClass();	
+        $('#box1').addClass(showPictures());
+        $('.door').addClass('opened');
+}else{
+  $('.door').removeClass('opened');
+}
+isOpened = !isOpened;
+});
+</script>
+
+<script>
+ $("#goto").on("click", function() {$("body").removeClass('overflow-hidden');
+ var scroll_el = $(this).attr('href'); 
+         if ($(scroll_el).length != 0) {
+ 	    $('html, body').animate({ scrollTop: $(scroll_el).offset().top }, 500);
+         }
+ 	    return false;
+});
+</script>
+
+	  <div id="modal-test" class="modal">
+    <div class="modal-body">
+      <form action="javascript: void(0)" id="form-questions">
+      </form>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="js2/test.js"></script>
+
+     </body>
+</html>
+
+<!-- <a href='#none' onclick='slide_door()'>Отправиться в нарнию</a>
+
+<script>
+$('#check').on('click',function(){
+	if($(this).prop('checked')){
+	    $('#box1').removeClass();
+        $('#box1').addClass(showPictures());
+}
+});
+</script>
+
+<div  id='box1' style='padding:10px; display:none;'>
+	<input type="checkbox" id="check">
+	<div class="door"></div>
+	<label for="check"></label>
+</div>
+
+
+
+<script>
+function slide_door(){
+    $('#box1').slideToggle(300)
+}
+</script> -->
