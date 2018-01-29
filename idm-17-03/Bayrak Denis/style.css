@@ -1,4 +1,5 @@
-﻿table{
+﻿
+table{
 border:1px solid black;
 border-collapse: collapse;
 padding: {1, 4}
@@ -11,11 +12,6 @@ padding: 10px 5px;
 }
 tr{ 
 background: Gold;
-}
-img {
-Width: 300px;
-height: 300px;
-display:block;
 }
 body {
 background: Aquamarine;
