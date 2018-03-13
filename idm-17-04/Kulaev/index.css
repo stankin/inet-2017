@@ -1,0 +1,24 @@
+
+.bl{
+	display: flex;
+	font-size: 22px;
+}
+
+.left{
+	width: 20%;
+    background: #d4cfcf;
+    padding: 20px;
+    height: 700px;
+}
+.right{
+	width: 70%;
+    background: #81cfff61;
+    margin-left: 50px;
+    padding: 20px;
+    height: 600px;
+    text-align: center;
+}
+
+span{
+	margin: 10px;
+}
