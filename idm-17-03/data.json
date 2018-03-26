@@ -175,8 +175,8 @@
         "groupname":"",
         "role": "",
         "linkForPage":"",
-        "markFirstModule":"",
-        "linkProject":"",
-        "markSecondModule":""
+        "markFirstModule":"25",
+        "linkProject":"https://maribennet.github.io/",
+        "markSecondModule":"25"
     }
 ]}
