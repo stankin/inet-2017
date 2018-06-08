@@ -25,5 +25,7 @@
     {"name": "Сурьянинова Алина Андреевна",         "m1": "45",    "m2": "",    "href":"https://unocorn.github.io",       "team":"DCP TEAM",      "roles":"КО - Консалтинг"},
     {"name": "Тополев-Солдунов Сергей Максимович",  "m1": "--",    "m2": "",    "href":"Topolev-Soldunov/index.html",     "team":"none",      "roles":""},
     {"name": "Чемный Константин Игоревич",          "m1": "25",    "m2": "",    "href":"https://jollylate.github.io",     "team":"Acbon'",              "roles":""},
-    {"name": "Штырев Григорий Алексеевич",          "m1": "25",    "m2": "",    "href":"Shtyryov/index.html",        "team":"Команда 1",     "roles":"РП"}
+    {"name": "Штырев Григорий Алексеевич",          "m1": "25",    "m2": "",    "href":"Shtyryov/index.html",        "team":"Команда 1",     "roles":"РП"},
+    {"name": "Полещук Артем",                       "m1": "45",    "m2": "45",  "href":"https://artyom6994.github.io/artyom/1.html",        "team":"",     "roles":""}
+    
   ]
