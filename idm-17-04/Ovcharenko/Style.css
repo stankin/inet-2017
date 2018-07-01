@@ -1,0 +1,31 @@
+.class0{
+    background-color: #6495ED;
+	background-image: url(1.jpg);
+    border: solid 1px black; 
+}
+   .class1 { 
+    width: 200px; 
+    background-color: #fc0;
+    padding: 5px;
+    padding-right: 20px; 
+    border: solid 1px black; 
+    float: right;
+	position: relative; 
+	text-align: left;
+   }
+   .class2 { 
+    background-color: #FFB6C1;
+	background-image: url(2.jpg);
+    border: solid 1px black; 
+   }
+      .class3 { 
+    background-color: #FF6347;
+	background-image: url(3.jpg);
+    border: solid 1px black; 
+   }
+         .class4 { 
+    background-color: #FFE4B5;
+	background-image: url(4.jpg);
+    border: solid 1px black; 
+	color:white;
+   }
