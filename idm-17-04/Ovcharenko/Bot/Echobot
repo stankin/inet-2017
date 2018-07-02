@@ -1,0 +1,20 @@
+var TelegramBot = require('node-telegram-bot-api');
+
+// Устанавливаем токен, который выдавал нам бот.
+var token = '521603203:AAGar9rSkswa3CJ4yZpgrjLO8l2mPPF9b7U';
+
+var bot = new TelegramBot(token, {polling: true});
+
+var CronJob = require('node-telegram-bot-api');
+
+var notes = [];
+
+bot.onText(/\/say (.+)/, (msg, match) => {
+var userId = msg.chat.id;
+var text = match[1];
+var time = match[2];
+var note = notes.push({'uid':userId, 'time':match[2], 'text':match[1]});
+bot.sendMessage(userId, match[1]);
+bot.sendMessage(notes[i]['uid'], 'Напоминаю: '+ notes[i]['text']);
+notes.pop(i,1);
+}, null, true, 'Europe');
